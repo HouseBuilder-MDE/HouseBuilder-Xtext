@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: it.univaq.disim.housebuilder.xtext
+Bundle-ManifestVersion: 2
+Bundle-Name: it.univaq.disim.housebuilder.xtext
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: it.univaq.disim.housebuilder.xtext; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: it.univaq.disim.housebuilder,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: it.univaq.disim.housebuilder.xtext.formatting2,
+ it.univaq.disim.housebuilder.xtext.generator,
+ it.univaq.disim.housebuilder.xtext.validation,
+ it.univaq.disim.housebuilder.xtext,
+ it.univaq.disim.housebuilder.xtext.scoping,
+ it.univaq.disim.housebuilder.xtext.serializer,
+ it.univaq.disim.housebuilder.xtext.parser.antlr,
+ it.univaq.disim.housebuilder.xtext.services,
+ it.univaq.disim.housebuilder.xtext.parser.antlr.internal
+Import-Package: org.apache.log4j
