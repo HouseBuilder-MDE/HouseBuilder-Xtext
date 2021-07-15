@@ -1,0 +1,9 @@
+grammar it.univaq.disim.housebuilder.xtext.HouseBuilder with org.eclipse.xtext.common.Terminals
+
+generate houseBuilder "http://www.univaq.it/disim/housebuilder/xtext/HouseBuilder"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
