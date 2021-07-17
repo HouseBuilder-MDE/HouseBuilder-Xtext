@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'EDate'", "'E'", "'e'", "'THERMOSTAT'", "'APPLIANCE'", "'SOCKET'", "'ROLLER_SHUTTERS'", "'GATE'", "'IDRAULIC'", "'PNEUMATIC'", "'ELECTRICAL'", "'THERMAL'", "'MECHANICAL'", "'TEMPERATURE'", "'PRESSURE'", "'PROXIMITY'", "'ACCELEROMETER'", "'GAS'", "'SMOKE'", "'VIDEO_SURVAILLANCE_CAMERA'", "'SIMPLE'", "'BATHROOM'", "'LIVING_ROOM'", "'BEDROOM'", "'HALLWAY'", "'STUDY'", "'ENTRANCE'", "'STORAGE_ROOM'", "'GARAGE'", "'LAUNDRY_ROOM'", "'HOBBY_ROOM'", "'CELLAR'", "'LUNCHROOM'", "'RUMPUS_ROOM'", "'STAIRS'", "'KITCHEN'", "'BALCONY'", "'GARDEN'", "'TERRACE'", "'ASPALTH'", "'TERRAIN'", "'PAVING'", "'DOOR_WINDOW'", "'PANIC_DOOR'", "'ENTRANCE_DOOR'", "'SLIDING_DOOR'", "'EMPTY'", "'House'", "'{'", "'floors'", "'}'", "'entrances'", "'state'", "'province'", "'city'", "'postalCode'", "'address'", "'buildingDate'", "','", "'passages'", "'controllers'", "'Floor'", "'level'", "'spaces'", "'Passage'", "'doorType'", "'doorsNumber'", "'width'", "'height'", "'spaceA'", "'spaceB'", "'devices'", "'Controller'", "'model'", "'actuators'", "'sensors'", "'os'", "'osVersion'", "'Entrance'", "'space'", "'-'", "'.'", "'Device'", "'type'", "'actuator'", "'Sensor'", "'value'", "'Room'", "'length'", "'roomType'", "'('", "')'", "'passagesA'", "'passagesB'", "'windows'", "'ExternalSpace'", "'ground'", "'Actuator'", "'device'", "'Window'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'EDate'", "'E'", "'e'", "'THERMOSTAT'", "'APPLIANCE'", "'SOCKET'", "'ROLLER_SHUTTERS'", "'GATE'", "'IDRAULIC'", "'PNEUMATIC'", "'ELECTRICAL'", "'THERMAL'", "'MECHANICAL'", "'TEMPERATURE'", "'PRESSURE'", "'PROXIMITY'", "'ACCELEROMETER'", "'GAS'", "'SMOKE'", "'VIDEO_SURVAILLANCE_CAMERA'", "'SIMPLE'", "'BATHROOM'", "'LIVING_ROOM'", "'BEDROOM'", "'HALLWAY'", "'STUDY'", "'ENTRANCE'", "'STORAGE_ROOM'", "'GARAGE'", "'LAUNDRY_ROOM'", "'HOBBY_ROOM'", "'CELLAR'", "'LUNCHROOM'", "'RUMPUS_ROOM'", "'STAIRS'", "'KITCHEN'", "'BALCONY'", "'GARDEN'", "'TERRACE'", "'ASPALTH'", "'TERRAIN'", "'PAVING'", "'DOOR_WINDOW'", "'PANIC_DOOR'", "'ENTRANCE_DOOR'", "'SLIDING_DOOR'", "'EMPTY'", "'House'", "'{'", "'floors'", "'}'", "'entrances'", "'state'", "'province'", "'city'", "'postalCode'", "'address'", "'buildingDate'", "','", "'passages'", "'controllers'", "'Floor'", "'level'", "'spaces'", "'Passage'", "'doorType'", "'doorsNumber'", "'width'", "'height'", "'spaceA'", "'spaceB'", "'devices'", "'Controller'", "'model'", "'actuators'", "'sensors'", "'os'", "'osVersion'", "'Entrance'", "'space'", "'-'", "'.'", "'Device'", "'type'", "'actuator'", "'Sensor'", "'value'", "'Room'", "'length'", "'roomType'", "'('", "')'", "'windows'", "'ExternalSpace'", "'ground'", "'Actuator'", "'device'", "'Window'"
     };
     public static final int T__50=50;
     public static final int T__59=59;
@@ -114,7 +114,6 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     public static final int T__76=76;
     public static final int T__80=80;
     public static final int T__81=81;
-    public static final int T__110=110;
     public static final int T__82=82;
     public static final int T__83=83;
     public static final int RULE_WS=9;
@@ -123,7 +122,6 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     public static final int T__108=108;
     public static final int T__89=89;
     public static final int T__107=107;
-    public static final int T__109=109;
     public static final int T__84=84;
     public static final int T__104=104;
     public static final int T__85=85;
@@ -1733,7 +1731,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             if ( (LA1_0==98) ) {
                 alt1=1;
             }
-            else if ( (LA1_0==106) ) {
+            else if ( (LA1_0==104) ) {
                 alt1=2;
             }
             else {
@@ -18436,7 +18434,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             int alt43=2;
             int LA43_0 = input.LA(1);
 
-            if ( (LA43_0==103) ) {
+            if ( (LA43_0==62) ) {
                 alt43=1;
             }
             switch (alt43) {
@@ -18532,7 +18530,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             int alt44=2;
             int LA44_0 = input.LA(1);
 
-            if ( (LA44_0==104) ) {
+            if ( (LA44_0==82) ) {
                 alt44=1;
             }
             switch (alt44) {
@@ -18628,7 +18626,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             int alt45=2;
             int LA45_0 = input.LA(1);
 
-            if ( (LA45_0==62) ) {
+            if ( (LA45_0==103) ) {
                 alt45=1;
             }
             switch (alt45) {
@@ -18669,22 +18667,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group__14"
-    // InternalHouseBuilderV2.g:6042:1: rule__Room__Group__14 : rule__Room__Group__14__Impl rule__Room__Group__15 ;
+    // InternalHouseBuilderV2.g:6042:1: rule__Room__Group__14 : rule__Room__Group__14__Impl ;
     public final void rule__Room__Group__14() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6046:1: ( rule__Room__Group__14__Impl rule__Room__Group__15 )
-            // InternalHouseBuilderV2.g:6047:2: rule__Room__Group__14__Impl rule__Room__Group__15
+            // InternalHouseBuilderV2.g:6046:1: ( rule__Room__Group__14__Impl )
+            // InternalHouseBuilderV2.g:6047:2: rule__Room__Group__14__Impl
             {
-            pushFollow(FOLLOW_44);
-            rule__Room__Group__14__Impl();
-
-            state._fsp--;
-
             pushFollow(FOLLOW_2);
-            rule__Room__Group__15();
+            rule__Room__Group__14__Impl();
 
             state._fsp--;
 
@@ -18707,42 +18700,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group__14__Impl"
-    // InternalHouseBuilderV2.g:6054:1: rule__Room__Group__14__Impl : ( ( rule__Room__Group_14__0 )? ) ;
+    // InternalHouseBuilderV2.g:6053:1: rule__Room__Group__14__Impl : ( '}' ) ;
     public final void rule__Room__Group__14__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6058:1: ( ( ( rule__Room__Group_14__0 )? ) )
-            // InternalHouseBuilderV2.g:6059:1: ( ( rule__Room__Group_14__0 )? )
+            // InternalHouseBuilderV2.g:6057:1: ( ( '}' ) )
+            // InternalHouseBuilderV2.g:6058:1: ( '}' )
             {
-            // InternalHouseBuilderV2.g:6059:1: ( ( rule__Room__Group_14__0 )? )
-            // InternalHouseBuilderV2.g:6060:2: ( rule__Room__Group_14__0 )?
+            // InternalHouseBuilderV2.g:6058:1: ( '}' )
+            // InternalHouseBuilderV2.g:6059:2: '}'
             {
-             before(grammarAccess.getRoomAccess().getGroup_14()); 
-            // InternalHouseBuilderV2.g:6061:2: ( rule__Room__Group_14__0 )?
-            int alt46=2;
-            int LA46_0 = input.LA(1);
-
-            if ( (LA46_0==82) ) {
-                alt46=1;
-            }
-            switch (alt46) {
-                case 1 :
-                    // InternalHouseBuilderV2.g:6061:3: rule__Room__Group_14__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__Room__Group_14__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getRoomAccess().getGroup_14()); 
+             before(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_14()); 
+            match(input,61,FOLLOW_2); 
+             after(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_14()); 
 
             }
 
@@ -18764,181 +18736,15 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__Room__Group__14__Impl"
 
 
-    // $ANTLR start "rule__Room__Group__15"
-    // InternalHouseBuilderV2.g:6069:1: rule__Room__Group__15 : rule__Room__Group__15__Impl rule__Room__Group__16 ;
-    public final void rule__Room__Group__15() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:6073:1: ( rule__Room__Group__15__Impl rule__Room__Group__16 )
-            // InternalHouseBuilderV2.g:6074:2: rule__Room__Group__15__Impl rule__Room__Group__16
-            {
-            pushFollow(FOLLOW_44);
-            rule__Room__Group__15__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group__16();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group__15"
-
-
-    // $ANTLR start "rule__Room__Group__15__Impl"
-    // InternalHouseBuilderV2.g:6081:1: rule__Room__Group__15__Impl : ( ( rule__Room__Group_15__0 )? ) ;
-    public final void rule__Room__Group__15__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:6085:1: ( ( ( rule__Room__Group_15__0 )? ) )
-            // InternalHouseBuilderV2.g:6086:1: ( ( rule__Room__Group_15__0 )? )
-            {
-            // InternalHouseBuilderV2.g:6086:1: ( ( rule__Room__Group_15__0 )? )
-            // InternalHouseBuilderV2.g:6087:2: ( rule__Room__Group_15__0 )?
-            {
-             before(grammarAccess.getRoomAccess().getGroup_15()); 
-            // InternalHouseBuilderV2.g:6088:2: ( rule__Room__Group_15__0 )?
-            int alt47=2;
-            int LA47_0 = input.LA(1);
-
-            if ( (LA47_0==105) ) {
-                alt47=1;
-            }
-            switch (alt47) {
-                case 1 :
-                    // InternalHouseBuilderV2.g:6088:3: rule__Room__Group_15__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__Room__Group_15__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getRoomAccess().getGroup_15()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group__15__Impl"
-
-
-    // $ANTLR start "rule__Room__Group__16"
-    // InternalHouseBuilderV2.g:6096:1: rule__Room__Group__16 : rule__Room__Group__16__Impl ;
-    public final void rule__Room__Group__16() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:6100:1: ( rule__Room__Group__16__Impl )
-            // InternalHouseBuilderV2.g:6101:2: rule__Room__Group__16__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__Room__Group__16__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group__16"
-
-
-    // $ANTLR start "rule__Room__Group__16__Impl"
-    // InternalHouseBuilderV2.g:6107:1: rule__Room__Group__16__Impl : ( '}' ) ;
-    public final void rule__Room__Group__16__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:6111:1: ( ( '}' ) )
-            // InternalHouseBuilderV2.g:6112:1: ( '}' )
-            {
-            // InternalHouseBuilderV2.g:6112:1: ( '}' )
-            // InternalHouseBuilderV2.g:6113:2: '}'
-            {
-             before(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_16()); 
-            match(input,61,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_16()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group__16__Impl"
-
-
     // $ANTLR start "rule__Room__Group_9__0"
-    // InternalHouseBuilderV2.g:6123:1: rule__Room__Group_9__0 : rule__Room__Group_9__0__Impl rule__Room__Group_9__1 ;
+    // InternalHouseBuilderV2.g:6069:1: rule__Room__Group_9__0 : rule__Room__Group_9__0__Impl rule__Room__Group_9__1 ;
     public final void rule__Room__Group_9__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6127:1: ( rule__Room__Group_9__0__Impl rule__Room__Group_9__1 )
-            // InternalHouseBuilderV2.g:6128:2: rule__Room__Group_9__0__Impl rule__Room__Group_9__1
+            // InternalHouseBuilderV2.g:6073:1: ( rule__Room__Group_9__0__Impl rule__Room__Group_9__1 )
+            // InternalHouseBuilderV2.g:6074:2: rule__Room__Group_9__0__Impl rule__Room__Group_9__1
             {
             pushFollow(FOLLOW_45);
             rule__Room__Group_9__0__Impl();
@@ -18969,17 +18775,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_9__0__Impl"
-    // InternalHouseBuilderV2.g:6135:1: rule__Room__Group_9__0__Impl : ( 'roomType' ) ;
+    // InternalHouseBuilderV2.g:6081:1: rule__Room__Group_9__0__Impl : ( 'roomType' ) ;
     public final void rule__Room__Group_9__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6139:1: ( ( 'roomType' ) )
-            // InternalHouseBuilderV2.g:6140:1: ( 'roomType' )
+            // InternalHouseBuilderV2.g:6085:1: ( ( 'roomType' ) )
+            // InternalHouseBuilderV2.g:6086:1: ( 'roomType' )
             {
-            // InternalHouseBuilderV2.g:6140:1: ( 'roomType' )
-            // InternalHouseBuilderV2.g:6141:2: 'roomType'
+            // InternalHouseBuilderV2.g:6086:1: ( 'roomType' )
+            // InternalHouseBuilderV2.g:6087:2: 'roomType'
             {
              before(grammarAccess.getRoomAccess().getRoomTypeKeyword_9_0()); 
             match(input,100,FOLLOW_2); 
@@ -19006,14 +18812,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_9__1"
-    // InternalHouseBuilderV2.g:6150:1: rule__Room__Group_9__1 : rule__Room__Group_9__1__Impl ;
+    // InternalHouseBuilderV2.g:6096:1: rule__Room__Group_9__1 : rule__Room__Group_9__1__Impl ;
     public final void rule__Room__Group_9__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6154:1: ( rule__Room__Group_9__1__Impl )
-            // InternalHouseBuilderV2.g:6155:2: rule__Room__Group_9__1__Impl
+            // InternalHouseBuilderV2.g:6100:1: ( rule__Room__Group_9__1__Impl )
+            // InternalHouseBuilderV2.g:6101:2: rule__Room__Group_9__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Room__Group_9__1__Impl();
@@ -19039,21 +18845,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_9__1__Impl"
-    // InternalHouseBuilderV2.g:6161:1: rule__Room__Group_9__1__Impl : ( ( rule__Room__RoomTypeAssignment_9_1 ) ) ;
+    // InternalHouseBuilderV2.g:6107:1: rule__Room__Group_9__1__Impl : ( ( rule__Room__RoomTypeAssignment_9_1 ) ) ;
     public final void rule__Room__Group_9__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6165:1: ( ( ( rule__Room__RoomTypeAssignment_9_1 ) ) )
-            // InternalHouseBuilderV2.g:6166:1: ( ( rule__Room__RoomTypeAssignment_9_1 ) )
+            // InternalHouseBuilderV2.g:6111:1: ( ( ( rule__Room__RoomTypeAssignment_9_1 ) ) )
+            // InternalHouseBuilderV2.g:6112:1: ( ( rule__Room__RoomTypeAssignment_9_1 ) )
             {
-            // InternalHouseBuilderV2.g:6166:1: ( ( rule__Room__RoomTypeAssignment_9_1 ) )
-            // InternalHouseBuilderV2.g:6167:2: ( rule__Room__RoomTypeAssignment_9_1 )
+            // InternalHouseBuilderV2.g:6112:1: ( ( rule__Room__RoomTypeAssignment_9_1 ) )
+            // InternalHouseBuilderV2.g:6113:2: ( rule__Room__RoomTypeAssignment_9_1 )
             {
              before(grammarAccess.getRoomAccess().getRoomTypeAssignment_9_1()); 
-            // InternalHouseBuilderV2.g:6168:2: ( rule__Room__RoomTypeAssignment_9_1 )
-            // InternalHouseBuilderV2.g:6168:3: rule__Room__RoomTypeAssignment_9_1
+            // InternalHouseBuilderV2.g:6114:2: ( rule__Room__RoomTypeAssignment_9_1 )
+            // InternalHouseBuilderV2.g:6114:3: rule__Room__RoomTypeAssignment_9_1
             {
             pushFollow(FOLLOW_2);
             rule__Room__RoomTypeAssignment_9_1();
@@ -19086,14 +18892,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10__0"
-    // InternalHouseBuilderV2.g:6177:1: rule__Room__Group_10__0 : rule__Room__Group_10__0__Impl rule__Room__Group_10__1 ;
+    // InternalHouseBuilderV2.g:6123:1: rule__Room__Group_10__0 : rule__Room__Group_10__0__Impl rule__Room__Group_10__1 ;
     public final void rule__Room__Group_10__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6181:1: ( rule__Room__Group_10__0__Impl rule__Room__Group_10__1 )
-            // InternalHouseBuilderV2.g:6182:2: rule__Room__Group_10__0__Impl rule__Room__Group_10__1
+            // InternalHouseBuilderV2.g:6127:1: ( rule__Room__Group_10__0__Impl rule__Room__Group_10__1 )
+            // InternalHouseBuilderV2.g:6128:2: rule__Room__Group_10__0__Impl rule__Room__Group_10__1
             {
             pushFollow(FOLLOW_46);
             rule__Room__Group_10__0__Impl();
@@ -19124,17 +18930,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10__0__Impl"
-    // InternalHouseBuilderV2.g:6189:1: rule__Room__Group_10__0__Impl : ( 'sensors' ) ;
+    // InternalHouseBuilderV2.g:6135:1: rule__Room__Group_10__0__Impl : ( 'sensors' ) ;
     public final void rule__Room__Group_10__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6193:1: ( ( 'sensors' ) )
-            // InternalHouseBuilderV2.g:6194:1: ( 'sensors' )
+            // InternalHouseBuilderV2.g:6139:1: ( ( 'sensors' ) )
+            // InternalHouseBuilderV2.g:6140:1: ( 'sensors' )
             {
-            // InternalHouseBuilderV2.g:6194:1: ( 'sensors' )
-            // InternalHouseBuilderV2.g:6195:2: 'sensors'
+            // InternalHouseBuilderV2.g:6140:1: ( 'sensors' )
+            // InternalHouseBuilderV2.g:6141:2: 'sensors'
             {
              before(grammarAccess.getRoomAccess().getSensorsKeyword_10_0()); 
             match(input,86,FOLLOW_2); 
@@ -19161,14 +18967,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10__1"
-    // InternalHouseBuilderV2.g:6204:1: rule__Room__Group_10__1 : rule__Room__Group_10__1__Impl rule__Room__Group_10__2 ;
+    // InternalHouseBuilderV2.g:6150:1: rule__Room__Group_10__1 : rule__Room__Group_10__1__Impl rule__Room__Group_10__2 ;
     public final void rule__Room__Group_10__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6208:1: ( rule__Room__Group_10__1__Impl rule__Room__Group_10__2 )
-            // InternalHouseBuilderV2.g:6209:2: rule__Room__Group_10__1__Impl rule__Room__Group_10__2
+            // InternalHouseBuilderV2.g:6154:1: ( rule__Room__Group_10__1__Impl rule__Room__Group_10__2 )
+            // InternalHouseBuilderV2.g:6155:2: rule__Room__Group_10__1__Impl rule__Room__Group_10__2
             {
             pushFollow(FOLLOW_3);
             rule__Room__Group_10__1__Impl();
@@ -19199,17 +19005,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10__1__Impl"
-    // InternalHouseBuilderV2.g:6216:1: rule__Room__Group_10__1__Impl : ( '(' ) ;
+    // InternalHouseBuilderV2.g:6162:1: rule__Room__Group_10__1__Impl : ( '(' ) ;
     public final void rule__Room__Group_10__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6220:1: ( ( '(' ) )
-            // InternalHouseBuilderV2.g:6221:1: ( '(' )
+            // InternalHouseBuilderV2.g:6166:1: ( ( '(' ) )
+            // InternalHouseBuilderV2.g:6167:1: ( '(' )
             {
-            // InternalHouseBuilderV2.g:6221:1: ( '(' )
-            // InternalHouseBuilderV2.g:6222:2: '('
+            // InternalHouseBuilderV2.g:6167:1: ( '(' )
+            // InternalHouseBuilderV2.g:6168:2: '('
             {
              before(grammarAccess.getRoomAccess().getLeftParenthesisKeyword_10_1()); 
             match(input,101,FOLLOW_2); 
@@ -19236,14 +19042,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10__2"
-    // InternalHouseBuilderV2.g:6231:1: rule__Room__Group_10__2 : rule__Room__Group_10__2__Impl rule__Room__Group_10__3 ;
+    // InternalHouseBuilderV2.g:6177:1: rule__Room__Group_10__2 : rule__Room__Group_10__2__Impl rule__Room__Group_10__3 ;
     public final void rule__Room__Group_10__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6235:1: ( rule__Room__Group_10__2__Impl rule__Room__Group_10__3 )
-            // InternalHouseBuilderV2.g:6236:2: rule__Room__Group_10__2__Impl rule__Room__Group_10__3
+            // InternalHouseBuilderV2.g:6181:1: ( rule__Room__Group_10__2__Impl rule__Room__Group_10__3 )
+            // InternalHouseBuilderV2.g:6182:2: rule__Room__Group_10__2__Impl rule__Room__Group_10__3
             {
             pushFollow(FOLLOW_47);
             rule__Room__Group_10__2__Impl();
@@ -19274,21 +19080,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10__2__Impl"
-    // InternalHouseBuilderV2.g:6243:1: rule__Room__Group_10__2__Impl : ( ( rule__Room__SensorsAssignment_10_2 ) ) ;
+    // InternalHouseBuilderV2.g:6189:1: rule__Room__Group_10__2__Impl : ( ( rule__Room__SensorsAssignment_10_2 ) ) ;
     public final void rule__Room__Group_10__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6247:1: ( ( ( rule__Room__SensorsAssignment_10_2 ) ) )
-            // InternalHouseBuilderV2.g:6248:1: ( ( rule__Room__SensorsAssignment_10_2 ) )
+            // InternalHouseBuilderV2.g:6193:1: ( ( ( rule__Room__SensorsAssignment_10_2 ) ) )
+            // InternalHouseBuilderV2.g:6194:1: ( ( rule__Room__SensorsAssignment_10_2 ) )
             {
-            // InternalHouseBuilderV2.g:6248:1: ( ( rule__Room__SensorsAssignment_10_2 ) )
-            // InternalHouseBuilderV2.g:6249:2: ( rule__Room__SensorsAssignment_10_2 )
+            // InternalHouseBuilderV2.g:6194:1: ( ( rule__Room__SensorsAssignment_10_2 ) )
+            // InternalHouseBuilderV2.g:6195:2: ( rule__Room__SensorsAssignment_10_2 )
             {
              before(grammarAccess.getRoomAccess().getSensorsAssignment_10_2()); 
-            // InternalHouseBuilderV2.g:6250:2: ( rule__Room__SensorsAssignment_10_2 )
-            // InternalHouseBuilderV2.g:6250:3: rule__Room__SensorsAssignment_10_2
+            // InternalHouseBuilderV2.g:6196:2: ( rule__Room__SensorsAssignment_10_2 )
+            // InternalHouseBuilderV2.g:6196:3: rule__Room__SensorsAssignment_10_2
             {
             pushFollow(FOLLOW_2);
             rule__Room__SensorsAssignment_10_2();
@@ -19321,14 +19127,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10__3"
-    // InternalHouseBuilderV2.g:6258:1: rule__Room__Group_10__3 : rule__Room__Group_10__3__Impl rule__Room__Group_10__4 ;
+    // InternalHouseBuilderV2.g:6204:1: rule__Room__Group_10__3 : rule__Room__Group_10__3__Impl rule__Room__Group_10__4 ;
     public final void rule__Room__Group_10__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6262:1: ( rule__Room__Group_10__3__Impl rule__Room__Group_10__4 )
-            // InternalHouseBuilderV2.g:6263:2: rule__Room__Group_10__3__Impl rule__Room__Group_10__4
+            // InternalHouseBuilderV2.g:6208:1: ( rule__Room__Group_10__3__Impl rule__Room__Group_10__4 )
+            // InternalHouseBuilderV2.g:6209:2: rule__Room__Group_10__3__Impl rule__Room__Group_10__4
             {
             pushFollow(FOLLOW_47);
             rule__Room__Group_10__3__Impl();
@@ -19359,33 +19165,33 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10__3__Impl"
-    // InternalHouseBuilderV2.g:6270:1: rule__Room__Group_10__3__Impl : ( ( rule__Room__Group_10_3__0 )* ) ;
+    // InternalHouseBuilderV2.g:6216:1: rule__Room__Group_10__3__Impl : ( ( rule__Room__Group_10_3__0 )* ) ;
     public final void rule__Room__Group_10__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6274:1: ( ( ( rule__Room__Group_10_3__0 )* ) )
-            // InternalHouseBuilderV2.g:6275:1: ( ( rule__Room__Group_10_3__0 )* )
+            // InternalHouseBuilderV2.g:6220:1: ( ( ( rule__Room__Group_10_3__0 )* ) )
+            // InternalHouseBuilderV2.g:6221:1: ( ( rule__Room__Group_10_3__0 )* )
             {
-            // InternalHouseBuilderV2.g:6275:1: ( ( rule__Room__Group_10_3__0 )* )
-            // InternalHouseBuilderV2.g:6276:2: ( rule__Room__Group_10_3__0 )*
+            // InternalHouseBuilderV2.g:6221:1: ( ( rule__Room__Group_10_3__0 )* )
+            // InternalHouseBuilderV2.g:6222:2: ( rule__Room__Group_10_3__0 )*
             {
              before(grammarAccess.getRoomAccess().getGroup_10_3()); 
-            // InternalHouseBuilderV2.g:6277:2: ( rule__Room__Group_10_3__0 )*
-            loop48:
+            // InternalHouseBuilderV2.g:6223:2: ( rule__Room__Group_10_3__0 )*
+            loop46:
             do {
-                int alt48=2;
-                int LA48_0 = input.LA(1);
+                int alt46=2;
+                int LA46_0 = input.LA(1);
 
-                if ( (LA48_0==69) ) {
-                    alt48=1;
+                if ( (LA46_0==69) ) {
+                    alt46=1;
                 }
 
 
-                switch (alt48) {
+                switch (alt46) {
             	case 1 :
-            	    // InternalHouseBuilderV2.g:6277:3: rule__Room__Group_10_3__0
+            	    // InternalHouseBuilderV2.g:6223:3: rule__Room__Group_10_3__0
             	    {
             	    pushFollow(FOLLOW_8);
             	    rule__Room__Group_10_3__0();
@@ -19397,7 +19203,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop48;
+            	    break loop46;
                 }
             } while (true);
 
@@ -19424,14 +19230,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10__4"
-    // InternalHouseBuilderV2.g:6285:1: rule__Room__Group_10__4 : rule__Room__Group_10__4__Impl ;
+    // InternalHouseBuilderV2.g:6231:1: rule__Room__Group_10__4 : rule__Room__Group_10__4__Impl ;
     public final void rule__Room__Group_10__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6289:1: ( rule__Room__Group_10__4__Impl )
-            // InternalHouseBuilderV2.g:6290:2: rule__Room__Group_10__4__Impl
+            // InternalHouseBuilderV2.g:6235:1: ( rule__Room__Group_10__4__Impl )
+            // InternalHouseBuilderV2.g:6236:2: rule__Room__Group_10__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Room__Group_10__4__Impl();
@@ -19457,17 +19263,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10__4__Impl"
-    // InternalHouseBuilderV2.g:6296:1: rule__Room__Group_10__4__Impl : ( ')' ) ;
+    // InternalHouseBuilderV2.g:6242:1: rule__Room__Group_10__4__Impl : ( ')' ) ;
     public final void rule__Room__Group_10__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6300:1: ( ( ')' ) )
-            // InternalHouseBuilderV2.g:6301:1: ( ')' )
+            // InternalHouseBuilderV2.g:6246:1: ( ( ')' ) )
+            // InternalHouseBuilderV2.g:6247:1: ( ')' )
             {
-            // InternalHouseBuilderV2.g:6301:1: ( ')' )
-            // InternalHouseBuilderV2.g:6302:2: ')'
+            // InternalHouseBuilderV2.g:6247:1: ( ')' )
+            // InternalHouseBuilderV2.g:6248:2: ')'
             {
              before(grammarAccess.getRoomAccess().getRightParenthesisKeyword_10_4()); 
             match(input,102,FOLLOW_2); 
@@ -19494,14 +19300,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10_3__0"
-    // InternalHouseBuilderV2.g:6312:1: rule__Room__Group_10_3__0 : rule__Room__Group_10_3__0__Impl rule__Room__Group_10_3__1 ;
+    // InternalHouseBuilderV2.g:6258:1: rule__Room__Group_10_3__0 : rule__Room__Group_10_3__0__Impl rule__Room__Group_10_3__1 ;
     public final void rule__Room__Group_10_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6316:1: ( rule__Room__Group_10_3__0__Impl rule__Room__Group_10_3__1 )
-            // InternalHouseBuilderV2.g:6317:2: rule__Room__Group_10_3__0__Impl rule__Room__Group_10_3__1
+            // InternalHouseBuilderV2.g:6262:1: ( rule__Room__Group_10_3__0__Impl rule__Room__Group_10_3__1 )
+            // InternalHouseBuilderV2.g:6263:2: rule__Room__Group_10_3__0__Impl rule__Room__Group_10_3__1
             {
             pushFollow(FOLLOW_3);
             rule__Room__Group_10_3__0__Impl();
@@ -19532,17 +19338,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10_3__0__Impl"
-    // InternalHouseBuilderV2.g:6324:1: rule__Room__Group_10_3__0__Impl : ( ',' ) ;
+    // InternalHouseBuilderV2.g:6270:1: rule__Room__Group_10_3__0__Impl : ( ',' ) ;
     public final void rule__Room__Group_10_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6328:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:6329:1: ( ',' )
+            // InternalHouseBuilderV2.g:6274:1: ( ( ',' ) )
+            // InternalHouseBuilderV2.g:6275:1: ( ',' )
             {
-            // InternalHouseBuilderV2.g:6329:1: ( ',' )
-            // InternalHouseBuilderV2.g:6330:2: ','
+            // InternalHouseBuilderV2.g:6275:1: ( ',' )
+            // InternalHouseBuilderV2.g:6276:2: ','
             {
              before(grammarAccess.getRoomAccess().getCommaKeyword_10_3_0()); 
             match(input,69,FOLLOW_2); 
@@ -19569,14 +19375,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10_3__1"
-    // InternalHouseBuilderV2.g:6339:1: rule__Room__Group_10_3__1 : rule__Room__Group_10_3__1__Impl ;
+    // InternalHouseBuilderV2.g:6285:1: rule__Room__Group_10_3__1 : rule__Room__Group_10_3__1__Impl ;
     public final void rule__Room__Group_10_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6343:1: ( rule__Room__Group_10_3__1__Impl )
-            // InternalHouseBuilderV2.g:6344:2: rule__Room__Group_10_3__1__Impl
+            // InternalHouseBuilderV2.g:6289:1: ( rule__Room__Group_10_3__1__Impl )
+            // InternalHouseBuilderV2.g:6290:2: rule__Room__Group_10_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Room__Group_10_3__1__Impl();
@@ -19602,21 +19408,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_10_3__1__Impl"
-    // InternalHouseBuilderV2.g:6350:1: rule__Room__Group_10_3__1__Impl : ( ( rule__Room__SensorsAssignment_10_3_1 ) ) ;
+    // InternalHouseBuilderV2.g:6296:1: rule__Room__Group_10_3__1__Impl : ( ( rule__Room__SensorsAssignment_10_3_1 ) ) ;
     public final void rule__Room__Group_10_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6354:1: ( ( ( rule__Room__SensorsAssignment_10_3_1 ) ) )
-            // InternalHouseBuilderV2.g:6355:1: ( ( rule__Room__SensorsAssignment_10_3_1 ) )
+            // InternalHouseBuilderV2.g:6300:1: ( ( ( rule__Room__SensorsAssignment_10_3_1 ) ) )
+            // InternalHouseBuilderV2.g:6301:1: ( ( rule__Room__SensorsAssignment_10_3_1 ) )
             {
-            // InternalHouseBuilderV2.g:6355:1: ( ( rule__Room__SensorsAssignment_10_3_1 ) )
-            // InternalHouseBuilderV2.g:6356:2: ( rule__Room__SensorsAssignment_10_3_1 )
+            // InternalHouseBuilderV2.g:6301:1: ( ( rule__Room__SensorsAssignment_10_3_1 ) )
+            // InternalHouseBuilderV2.g:6302:2: ( rule__Room__SensorsAssignment_10_3_1 )
             {
              before(grammarAccess.getRoomAccess().getSensorsAssignment_10_3_1()); 
-            // InternalHouseBuilderV2.g:6357:2: ( rule__Room__SensorsAssignment_10_3_1 )
-            // InternalHouseBuilderV2.g:6357:3: rule__Room__SensorsAssignment_10_3_1
+            // InternalHouseBuilderV2.g:6303:2: ( rule__Room__SensorsAssignment_10_3_1 )
+            // InternalHouseBuilderV2.g:6303:3: rule__Room__SensorsAssignment_10_3_1
             {
             pushFollow(FOLLOW_2);
             rule__Room__SensorsAssignment_10_3_1();
@@ -19649,14 +19455,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11__0"
-    // InternalHouseBuilderV2.g:6366:1: rule__Room__Group_11__0 : rule__Room__Group_11__0__Impl rule__Room__Group_11__1 ;
+    // InternalHouseBuilderV2.g:6312:1: rule__Room__Group_11__0 : rule__Room__Group_11__0__Impl rule__Room__Group_11__1 ;
     public final void rule__Room__Group_11__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6370:1: ( rule__Room__Group_11__0__Impl rule__Room__Group_11__1 )
-            // InternalHouseBuilderV2.g:6371:2: rule__Room__Group_11__0__Impl rule__Room__Group_11__1
+            // InternalHouseBuilderV2.g:6316:1: ( rule__Room__Group_11__0__Impl rule__Room__Group_11__1 )
+            // InternalHouseBuilderV2.g:6317:2: rule__Room__Group_11__0__Impl rule__Room__Group_11__1
             {
             pushFollow(FOLLOW_46);
             rule__Room__Group_11__0__Impl();
@@ -19687,21 +19493,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11__0__Impl"
-    // InternalHouseBuilderV2.g:6378:1: rule__Room__Group_11__0__Impl : ( 'passagesA' ) ;
+    // InternalHouseBuilderV2.g:6324:1: rule__Room__Group_11__0__Impl : ( 'entrances' ) ;
     public final void rule__Room__Group_11__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6382:1: ( ( 'passagesA' ) )
-            // InternalHouseBuilderV2.g:6383:1: ( 'passagesA' )
+            // InternalHouseBuilderV2.g:6328:1: ( ( 'entrances' ) )
+            // InternalHouseBuilderV2.g:6329:1: ( 'entrances' )
             {
-            // InternalHouseBuilderV2.g:6383:1: ( 'passagesA' )
-            // InternalHouseBuilderV2.g:6384:2: 'passagesA'
+            // InternalHouseBuilderV2.g:6329:1: ( 'entrances' )
+            // InternalHouseBuilderV2.g:6330:2: 'entrances'
             {
-             before(grammarAccess.getRoomAccess().getPassagesAKeyword_11_0()); 
-            match(input,103,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getPassagesAKeyword_11_0()); 
+             before(grammarAccess.getRoomAccess().getEntrancesKeyword_11_0()); 
+            match(input,62,FOLLOW_2); 
+             after(grammarAccess.getRoomAccess().getEntrancesKeyword_11_0()); 
 
             }
 
@@ -19724,14 +19530,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11__1"
-    // InternalHouseBuilderV2.g:6393:1: rule__Room__Group_11__1 : rule__Room__Group_11__1__Impl rule__Room__Group_11__2 ;
+    // InternalHouseBuilderV2.g:6339:1: rule__Room__Group_11__1 : rule__Room__Group_11__1__Impl rule__Room__Group_11__2 ;
     public final void rule__Room__Group_11__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6397:1: ( rule__Room__Group_11__1__Impl rule__Room__Group_11__2 )
-            // InternalHouseBuilderV2.g:6398:2: rule__Room__Group_11__1__Impl rule__Room__Group_11__2
+            // InternalHouseBuilderV2.g:6343:1: ( rule__Room__Group_11__1__Impl rule__Room__Group_11__2 )
+            // InternalHouseBuilderV2.g:6344:2: rule__Room__Group_11__1__Impl rule__Room__Group_11__2
             {
             pushFollow(FOLLOW_3);
             rule__Room__Group_11__1__Impl();
@@ -19762,17 +19568,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11__1__Impl"
-    // InternalHouseBuilderV2.g:6405:1: rule__Room__Group_11__1__Impl : ( '(' ) ;
+    // InternalHouseBuilderV2.g:6351:1: rule__Room__Group_11__1__Impl : ( '(' ) ;
     public final void rule__Room__Group_11__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6409:1: ( ( '(' ) )
-            // InternalHouseBuilderV2.g:6410:1: ( '(' )
+            // InternalHouseBuilderV2.g:6355:1: ( ( '(' ) )
+            // InternalHouseBuilderV2.g:6356:1: ( '(' )
             {
-            // InternalHouseBuilderV2.g:6410:1: ( '(' )
-            // InternalHouseBuilderV2.g:6411:2: '('
+            // InternalHouseBuilderV2.g:6356:1: ( '(' )
+            // InternalHouseBuilderV2.g:6357:2: '('
             {
              before(grammarAccess.getRoomAccess().getLeftParenthesisKeyword_11_1()); 
             match(input,101,FOLLOW_2); 
@@ -19799,14 +19605,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11__2"
-    // InternalHouseBuilderV2.g:6420:1: rule__Room__Group_11__2 : rule__Room__Group_11__2__Impl rule__Room__Group_11__3 ;
+    // InternalHouseBuilderV2.g:6366:1: rule__Room__Group_11__2 : rule__Room__Group_11__2__Impl rule__Room__Group_11__3 ;
     public final void rule__Room__Group_11__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6424:1: ( rule__Room__Group_11__2__Impl rule__Room__Group_11__3 )
-            // InternalHouseBuilderV2.g:6425:2: rule__Room__Group_11__2__Impl rule__Room__Group_11__3
+            // InternalHouseBuilderV2.g:6370:1: ( rule__Room__Group_11__2__Impl rule__Room__Group_11__3 )
+            // InternalHouseBuilderV2.g:6371:2: rule__Room__Group_11__2__Impl rule__Room__Group_11__3
             {
             pushFollow(FOLLOW_47);
             rule__Room__Group_11__2__Impl();
@@ -19837,31 +19643,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11__2__Impl"
-    // InternalHouseBuilderV2.g:6432:1: rule__Room__Group_11__2__Impl : ( ( rule__Room__PassagesAAssignment_11_2 ) ) ;
+    // InternalHouseBuilderV2.g:6378:1: rule__Room__Group_11__2__Impl : ( ( rule__Room__EntrancesAssignment_11_2 ) ) ;
     public final void rule__Room__Group_11__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6436:1: ( ( ( rule__Room__PassagesAAssignment_11_2 ) ) )
-            // InternalHouseBuilderV2.g:6437:1: ( ( rule__Room__PassagesAAssignment_11_2 ) )
+            // InternalHouseBuilderV2.g:6382:1: ( ( ( rule__Room__EntrancesAssignment_11_2 ) ) )
+            // InternalHouseBuilderV2.g:6383:1: ( ( rule__Room__EntrancesAssignment_11_2 ) )
             {
-            // InternalHouseBuilderV2.g:6437:1: ( ( rule__Room__PassagesAAssignment_11_2 ) )
-            // InternalHouseBuilderV2.g:6438:2: ( rule__Room__PassagesAAssignment_11_2 )
+            // InternalHouseBuilderV2.g:6383:1: ( ( rule__Room__EntrancesAssignment_11_2 ) )
+            // InternalHouseBuilderV2.g:6384:2: ( rule__Room__EntrancesAssignment_11_2 )
             {
-             before(grammarAccess.getRoomAccess().getPassagesAAssignment_11_2()); 
-            // InternalHouseBuilderV2.g:6439:2: ( rule__Room__PassagesAAssignment_11_2 )
-            // InternalHouseBuilderV2.g:6439:3: rule__Room__PassagesAAssignment_11_2
+             before(grammarAccess.getRoomAccess().getEntrancesAssignment_11_2()); 
+            // InternalHouseBuilderV2.g:6385:2: ( rule__Room__EntrancesAssignment_11_2 )
+            // InternalHouseBuilderV2.g:6385:3: rule__Room__EntrancesAssignment_11_2
             {
             pushFollow(FOLLOW_2);
-            rule__Room__PassagesAAssignment_11_2();
+            rule__Room__EntrancesAssignment_11_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRoomAccess().getPassagesAAssignment_11_2()); 
+             after(grammarAccess.getRoomAccess().getEntrancesAssignment_11_2()); 
 
             }
 
@@ -19884,14 +19690,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11__3"
-    // InternalHouseBuilderV2.g:6447:1: rule__Room__Group_11__3 : rule__Room__Group_11__3__Impl rule__Room__Group_11__4 ;
+    // InternalHouseBuilderV2.g:6393:1: rule__Room__Group_11__3 : rule__Room__Group_11__3__Impl rule__Room__Group_11__4 ;
     public final void rule__Room__Group_11__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6451:1: ( rule__Room__Group_11__3__Impl rule__Room__Group_11__4 )
-            // InternalHouseBuilderV2.g:6452:2: rule__Room__Group_11__3__Impl rule__Room__Group_11__4
+            // InternalHouseBuilderV2.g:6397:1: ( rule__Room__Group_11__3__Impl rule__Room__Group_11__4 )
+            // InternalHouseBuilderV2.g:6398:2: rule__Room__Group_11__3__Impl rule__Room__Group_11__4
             {
             pushFollow(FOLLOW_47);
             rule__Room__Group_11__3__Impl();
@@ -19922,33 +19728,33 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11__3__Impl"
-    // InternalHouseBuilderV2.g:6459:1: rule__Room__Group_11__3__Impl : ( ( rule__Room__Group_11_3__0 )* ) ;
+    // InternalHouseBuilderV2.g:6405:1: rule__Room__Group_11__3__Impl : ( ( rule__Room__Group_11_3__0 )* ) ;
     public final void rule__Room__Group_11__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6463:1: ( ( ( rule__Room__Group_11_3__0 )* ) )
-            // InternalHouseBuilderV2.g:6464:1: ( ( rule__Room__Group_11_3__0 )* )
+            // InternalHouseBuilderV2.g:6409:1: ( ( ( rule__Room__Group_11_3__0 )* ) )
+            // InternalHouseBuilderV2.g:6410:1: ( ( rule__Room__Group_11_3__0 )* )
             {
-            // InternalHouseBuilderV2.g:6464:1: ( ( rule__Room__Group_11_3__0 )* )
-            // InternalHouseBuilderV2.g:6465:2: ( rule__Room__Group_11_3__0 )*
+            // InternalHouseBuilderV2.g:6410:1: ( ( rule__Room__Group_11_3__0 )* )
+            // InternalHouseBuilderV2.g:6411:2: ( rule__Room__Group_11_3__0 )*
             {
              before(grammarAccess.getRoomAccess().getGroup_11_3()); 
-            // InternalHouseBuilderV2.g:6466:2: ( rule__Room__Group_11_3__0 )*
-            loop49:
+            // InternalHouseBuilderV2.g:6412:2: ( rule__Room__Group_11_3__0 )*
+            loop47:
             do {
-                int alt49=2;
-                int LA49_0 = input.LA(1);
+                int alt47=2;
+                int LA47_0 = input.LA(1);
 
-                if ( (LA49_0==69) ) {
-                    alt49=1;
+                if ( (LA47_0==69) ) {
+                    alt47=1;
                 }
 
 
-                switch (alt49) {
+                switch (alt47) {
             	case 1 :
-            	    // InternalHouseBuilderV2.g:6466:3: rule__Room__Group_11_3__0
+            	    // InternalHouseBuilderV2.g:6412:3: rule__Room__Group_11_3__0
             	    {
             	    pushFollow(FOLLOW_8);
             	    rule__Room__Group_11_3__0();
@@ -19960,7 +19766,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop49;
+            	    break loop47;
                 }
             } while (true);
 
@@ -19987,14 +19793,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11__4"
-    // InternalHouseBuilderV2.g:6474:1: rule__Room__Group_11__4 : rule__Room__Group_11__4__Impl ;
+    // InternalHouseBuilderV2.g:6420:1: rule__Room__Group_11__4 : rule__Room__Group_11__4__Impl ;
     public final void rule__Room__Group_11__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6478:1: ( rule__Room__Group_11__4__Impl )
-            // InternalHouseBuilderV2.g:6479:2: rule__Room__Group_11__4__Impl
+            // InternalHouseBuilderV2.g:6424:1: ( rule__Room__Group_11__4__Impl )
+            // InternalHouseBuilderV2.g:6425:2: rule__Room__Group_11__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Room__Group_11__4__Impl();
@@ -20020,17 +19826,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11__4__Impl"
-    // InternalHouseBuilderV2.g:6485:1: rule__Room__Group_11__4__Impl : ( ')' ) ;
+    // InternalHouseBuilderV2.g:6431:1: rule__Room__Group_11__4__Impl : ( ')' ) ;
     public final void rule__Room__Group_11__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6489:1: ( ( ')' ) )
-            // InternalHouseBuilderV2.g:6490:1: ( ')' )
+            // InternalHouseBuilderV2.g:6435:1: ( ( ')' ) )
+            // InternalHouseBuilderV2.g:6436:1: ( ')' )
             {
-            // InternalHouseBuilderV2.g:6490:1: ( ')' )
-            // InternalHouseBuilderV2.g:6491:2: ')'
+            // InternalHouseBuilderV2.g:6436:1: ( ')' )
+            // InternalHouseBuilderV2.g:6437:2: ')'
             {
              before(grammarAccess.getRoomAccess().getRightParenthesisKeyword_11_4()); 
             match(input,102,FOLLOW_2); 
@@ -20057,14 +19863,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11_3__0"
-    // InternalHouseBuilderV2.g:6501:1: rule__Room__Group_11_3__0 : rule__Room__Group_11_3__0__Impl rule__Room__Group_11_3__1 ;
+    // InternalHouseBuilderV2.g:6447:1: rule__Room__Group_11_3__0 : rule__Room__Group_11_3__0__Impl rule__Room__Group_11_3__1 ;
     public final void rule__Room__Group_11_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6505:1: ( rule__Room__Group_11_3__0__Impl rule__Room__Group_11_3__1 )
-            // InternalHouseBuilderV2.g:6506:2: rule__Room__Group_11_3__0__Impl rule__Room__Group_11_3__1
+            // InternalHouseBuilderV2.g:6451:1: ( rule__Room__Group_11_3__0__Impl rule__Room__Group_11_3__1 )
+            // InternalHouseBuilderV2.g:6452:2: rule__Room__Group_11_3__0__Impl rule__Room__Group_11_3__1
             {
             pushFollow(FOLLOW_3);
             rule__Room__Group_11_3__0__Impl();
@@ -20095,17 +19901,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11_3__0__Impl"
-    // InternalHouseBuilderV2.g:6513:1: rule__Room__Group_11_3__0__Impl : ( ',' ) ;
+    // InternalHouseBuilderV2.g:6459:1: rule__Room__Group_11_3__0__Impl : ( ',' ) ;
     public final void rule__Room__Group_11_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6517:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:6518:1: ( ',' )
+            // InternalHouseBuilderV2.g:6463:1: ( ( ',' ) )
+            // InternalHouseBuilderV2.g:6464:1: ( ',' )
             {
-            // InternalHouseBuilderV2.g:6518:1: ( ',' )
-            // InternalHouseBuilderV2.g:6519:2: ','
+            // InternalHouseBuilderV2.g:6464:1: ( ',' )
+            // InternalHouseBuilderV2.g:6465:2: ','
             {
              before(grammarAccess.getRoomAccess().getCommaKeyword_11_3_0()); 
             match(input,69,FOLLOW_2); 
@@ -20132,14 +19938,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11_3__1"
-    // InternalHouseBuilderV2.g:6528:1: rule__Room__Group_11_3__1 : rule__Room__Group_11_3__1__Impl ;
+    // InternalHouseBuilderV2.g:6474:1: rule__Room__Group_11_3__1 : rule__Room__Group_11_3__1__Impl ;
     public final void rule__Room__Group_11_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6532:1: ( rule__Room__Group_11_3__1__Impl )
-            // InternalHouseBuilderV2.g:6533:2: rule__Room__Group_11_3__1__Impl
+            // InternalHouseBuilderV2.g:6478:1: ( rule__Room__Group_11_3__1__Impl )
+            // InternalHouseBuilderV2.g:6479:2: rule__Room__Group_11_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Room__Group_11_3__1__Impl();
@@ -20165,31 +19971,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_11_3__1__Impl"
-    // InternalHouseBuilderV2.g:6539:1: rule__Room__Group_11_3__1__Impl : ( ( rule__Room__PassagesAAssignment_11_3_1 ) ) ;
+    // InternalHouseBuilderV2.g:6485:1: rule__Room__Group_11_3__1__Impl : ( ( rule__Room__EntrancesAssignment_11_3_1 ) ) ;
     public final void rule__Room__Group_11_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6543:1: ( ( ( rule__Room__PassagesAAssignment_11_3_1 ) ) )
-            // InternalHouseBuilderV2.g:6544:1: ( ( rule__Room__PassagesAAssignment_11_3_1 ) )
+            // InternalHouseBuilderV2.g:6489:1: ( ( ( rule__Room__EntrancesAssignment_11_3_1 ) ) )
+            // InternalHouseBuilderV2.g:6490:1: ( ( rule__Room__EntrancesAssignment_11_3_1 ) )
             {
-            // InternalHouseBuilderV2.g:6544:1: ( ( rule__Room__PassagesAAssignment_11_3_1 ) )
-            // InternalHouseBuilderV2.g:6545:2: ( rule__Room__PassagesAAssignment_11_3_1 )
+            // InternalHouseBuilderV2.g:6490:1: ( ( rule__Room__EntrancesAssignment_11_3_1 ) )
+            // InternalHouseBuilderV2.g:6491:2: ( rule__Room__EntrancesAssignment_11_3_1 )
             {
-             before(grammarAccess.getRoomAccess().getPassagesAAssignment_11_3_1()); 
-            // InternalHouseBuilderV2.g:6546:2: ( rule__Room__PassagesAAssignment_11_3_1 )
-            // InternalHouseBuilderV2.g:6546:3: rule__Room__PassagesAAssignment_11_3_1
+             before(grammarAccess.getRoomAccess().getEntrancesAssignment_11_3_1()); 
+            // InternalHouseBuilderV2.g:6492:2: ( rule__Room__EntrancesAssignment_11_3_1 )
+            // InternalHouseBuilderV2.g:6492:3: rule__Room__EntrancesAssignment_11_3_1
             {
             pushFollow(FOLLOW_2);
-            rule__Room__PassagesAAssignment_11_3_1();
+            rule__Room__EntrancesAssignment_11_3_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRoomAccess().getPassagesAAssignment_11_3_1()); 
+             after(grammarAccess.getRoomAccess().getEntrancesAssignment_11_3_1()); 
 
             }
 
@@ -20212,16 +20018,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12__0"
-    // InternalHouseBuilderV2.g:6555:1: rule__Room__Group_12__0 : rule__Room__Group_12__0__Impl rule__Room__Group_12__1 ;
+    // InternalHouseBuilderV2.g:6501:1: rule__Room__Group_12__0 : rule__Room__Group_12__0__Impl rule__Room__Group_12__1 ;
     public final void rule__Room__Group_12__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6559:1: ( rule__Room__Group_12__0__Impl rule__Room__Group_12__1 )
-            // InternalHouseBuilderV2.g:6560:2: rule__Room__Group_12__0__Impl rule__Room__Group_12__1
+            // InternalHouseBuilderV2.g:6505:1: ( rule__Room__Group_12__0__Impl rule__Room__Group_12__1 )
+            // InternalHouseBuilderV2.g:6506:2: rule__Room__Group_12__0__Impl rule__Room__Group_12__1
             {
-            pushFollow(FOLLOW_46);
+            pushFollow(FOLLOW_4);
             rule__Room__Group_12__0__Impl();
 
             state._fsp--;
@@ -20250,21 +20056,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12__0__Impl"
-    // InternalHouseBuilderV2.g:6567:1: rule__Room__Group_12__0__Impl : ( 'passagesB' ) ;
+    // InternalHouseBuilderV2.g:6513:1: rule__Room__Group_12__0__Impl : ( 'devices' ) ;
     public final void rule__Room__Group_12__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6571:1: ( ( 'passagesB' ) )
-            // InternalHouseBuilderV2.g:6572:1: ( 'passagesB' )
+            // InternalHouseBuilderV2.g:6517:1: ( ( 'devices' ) )
+            // InternalHouseBuilderV2.g:6518:1: ( 'devices' )
             {
-            // InternalHouseBuilderV2.g:6572:1: ( 'passagesB' )
-            // InternalHouseBuilderV2.g:6573:2: 'passagesB'
+            // InternalHouseBuilderV2.g:6518:1: ( 'devices' )
+            // InternalHouseBuilderV2.g:6519:2: 'devices'
             {
-             before(grammarAccess.getRoomAccess().getPassagesBKeyword_12_0()); 
-            match(input,104,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getPassagesBKeyword_12_0()); 
+             before(grammarAccess.getRoomAccess().getDevicesKeyword_12_0()); 
+            match(input,82,FOLLOW_2); 
+             after(grammarAccess.getRoomAccess().getDevicesKeyword_12_0()); 
 
             }
 
@@ -20287,16 +20093,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12__1"
-    // InternalHouseBuilderV2.g:6582:1: rule__Room__Group_12__1 : rule__Room__Group_12__1__Impl rule__Room__Group_12__2 ;
+    // InternalHouseBuilderV2.g:6528:1: rule__Room__Group_12__1 : rule__Room__Group_12__1__Impl rule__Room__Group_12__2 ;
     public final void rule__Room__Group_12__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6586:1: ( rule__Room__Group_12__1__Impl rule__Room__Group_12__2 )
-            // InternalHouseBuilderV2.g:6587:2: rule__Room__Group_12__1__Impl rule__Room__Group_12__2
+            // InternalHouseBuilderV2.g:6532:1: ( rule__Room__Group_12__1__Impl rule__Room__Group_12__2 )
+            // InternalHouseBuilderV2.g:6533:2: rule__Room__Group_12__1__Impl rule__Room__Group_12__2
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_28);
             rule__Room__Group_12__1__Impl();
 
             state._fsp--;
@@ -20325,21 +20131,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12__1__Impl"
-    // InternalHouseBuilderV2.g:6594:1: rule__Room__Group_12__1__Impl : ( '(' ) ;
+    // InternalHouseBuilderV2.g:6540:1: rule__Room__Group_12__1__Impl : ( '{' ) ;
     public final void rule__Room__Group_12__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6598:1: ( ( '(' ) )
-            // InternalHouseBuilderV2.g:6599:1: ( '(' )
+            // InternalHouseBuilderV2.g:6544:1: ( ( '{' ) )
+            // InternalHouseBuilderV2.g:6545:1: ( '{' )
             {
-            // InternalHouseBuilderV2.g:6599:1: ( '(' )
-            // InternalHouseBuilderV2.g:6600:2: '('
+            // InternalHouseBuilderV2.g:6545:1: ( '{' )
+            // InternalHouseBuilderV2.g:6546:2: '{'
             {
-             before(grammarAccess.getRoomAccess().getLeftParenthesisKeyword_12_1()); 
-            match(input,101,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getLeftParenthesisKeyword_12_1()); 
+             before(grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_12_1()); 
+            match(input,59,FOLLOW_2); 
+             after(grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_12_1()); 
 
             }
 
@@ -20362,16 +20168,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12__2"
-    // InternalHouseBuilderV2.g:6609:1: rule__Room__Group_12__2 : rule__Room__Group_12__2__Impl rule__Room__Group_12__3 ;
+    // InternalHouseBuilderV2.g:6555:1: rule__Room__Group_12__2 : rule__Room__Group_12__2__Impl rule__Room__Group_12__3 ;
     public final void rule__Room__Group_12__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6613:1: ( rule__Room__Group_12__2__Impl rule__Room__Group_12__3 )
-            // InternalHouseBuilderV2.g:6614:2: rule__Room__Group_12__2__Impl rule__Room__Group_12__3
+            // InternalHouseBuilderV2.g:6559:1: ( rule__Room__Group_12__2__Impl rule__Room__Group_12__3 )
+            // InternalHouseBuilderV2.g:6560:2: rule__Room__Group_12__2__Impl rule__Room__Group_12__3
             {
-            pushFollow(FOLLOW_47);
+            pushFollow(FOLLOW_7);
             rule__Room__Group_12__2__Impl();
 
             state._fsp--;
@@ -20400,31 +20206,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12__2__Impl"
-    // InternalHouseBuilderV2.g:6621:1: rule__Room__Group_12__2__Impl : ( ( rule__Room__PassagesBAssignment_12_2 ) ) ;
+    // InternalHouseBuilderV2.g:6567:1: rule__Room__Group_12__2__Impl : ( ( rule__Room__DevicesAssignment_12_2 ) ) ;
     public final void rule__Room__Group_12__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6625:1: ( ( ( rule__Room__PassagesBAssignment_12_2 ) ) )
-            // InternalHouseBuilderV2.g:6626:1: ( ( rule__Room__PassagesBAssignment_12_2 ) )
+            // InternalHouseBuilderV2.g:6571:1: ( ( ( rule__Room__DevicesAssignment_12_2 ) ) )
+            // InternalHouseBuilderV2.g:6572:1: ( ( rule__Room__DevicesAssignment_12_2 ) )
             {
-            // InternalHouseBuilderV2.g:6626:1: ( ( rule__Room__PassagesBAssignment_12_2 ) )
-            // InternalHouseBuilderV2.g:6627:2: ( rule__Room__PassagesBAssignment_12_2 )
+            // InternalHouseBuilderV2.g:6572:1: ( ( rule__Room__DevicesAssignment_12_2 ) )
+            // InternalHouseBuilderV2.g:6573:2: ( rule__Room__DevicesAssignment_12_2 )
             {
-             before(grammarAccess.getRoomAccess().getPassagesBAssignment_12_2()); 
-            // InternalHouseBuilderV2.g:6628:2: ( rule__Room__PassagesBAssignment_12_2 )
-            // InternalHouseBuilderV2.g:6628:3: rule__Room__PassagesBAssignment_12_2
+             before(grammarAccess.getRoomAccess().getDevicesAssignment_12_2()); 
+            // InternalHouseBuilderV2.g:6574:2: ( rule__Room__DevicesAssignment_12_2 )
+            // InternalHouseBuilderV2.g:6574:3: rule__Room__DevicesAssignment_12_2
             {
             pushFollow(FOLLOW_2);
-            rule__Room__PassagesBAssignment_12_2();
+            rule__Room__DevicesAssignment_12_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRoomAccess().getPassagesBAssignment_12_2()); 
+             after(grammarAccess.getRoomAccess().getDevicesAssignment_12_2()); 
 
             }
 
@@ -20447,16 +20253,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12__3"
-    // InternalHouseBuilderV2.g:6636:1: rule__Room__Group_12__3 : rule__Room__Group_12__3__Impl rule__Room__Group_12__4 ;
+    // InternalHouseBuilderV2.g:6582:1: rule__Room__Group_12__3 : rule__Room__Group_12__3__Impl rule__Room__Group_12__4 ;
     public final void rule__Room__Group_12__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6640:1: ( rule__Room__Group_12__3__Impl rule__Room__Group_12__4 )
-            // InternalHouseBuilderV2.g:6641:2: rule__Room__Group_12__3__Impl rule__Room__Group_12__4
+            // InternalHouseBuilderV2.g:6586:1: ( rule__Room__Group_12__3__Impl rule__Room__Group_12__4 )
+            // InternalHouseBuilderV2.g:6587:2: rule__Room__Group_12__3__Impl rule__Room__Group_12__4
             {
-            pushFollow(FOLLOW_47);
+            pushFollow(FOLLOW_7);
             rule__Room__Group_12__3__Impl();
 
             state._fsp--;
@@ -20485,33 +20291,33 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12__3__Impl"
-    // InternalHouseBuilderV2.g:6648:1: rule__Room__Group_12__3__Impl : ( ( rule__Room__Group_12_3__0 )* ) ;
+    // InternalHouseBuilderV2.g:6594:1: rule__Room__Group_12__3__Impl : ( ( rule__Room__Group_12_3__0 )* ) ;
     public final void rule__Room__Group_12__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6652:1: ( ( ( rule__Room__Group_12_3__0 )* ) )
-            // InternalHouseBuilderV2.g:6653:1: ( ( rule__Room__Group_12_3__0 )* )
+            // InternalHouseBuilderV2.g:6598:1: ( ( ( rule__Room__Group_12_3__0 )* ) )
+            // InternalHouseBuilderV2.g:6599:1: ( ( rule__Room__Group_12_3__0 )* )
             {
-            // InternalHouseBuilderV2.g:6653:1: ( ( rule__Room__Group_12_3__0 )* )
-            // InternalHouseBuilderV2.g:6654:2: ( rule__Room__Group_12_3__0 )*
+            // InternalHouseBuilderV2.g:6599:1: ( ( rule__Room__Group_12_3__0 )* )
+            // InternalHouseBuilderV2.g:6600:2: ( rule__Room__Group_12_3__0 )*
             {
              before(grammarAccess.getRoomAccess().getGroup_12_3()); 
-            // InternalHouseBuilderV2.g:6655:2: ( rule__Room__Group_12_3__0 )*
-            loop50:
+            // InternalHouseBuilderV2.g:6601:2: ( rule__Room__Group_12_3__0 )*
+            loop48:
             do {
-                int alt50=2;
-                int LA50_0 = input.LA(1);
+                int alt48=2;
+                int LA48_0 = input.LA(1);
 
-                if ( (LA50_0==69) ) {
-                    alt50=1;
+                if ( (LA48_0==69) ) {
+                    alt48=1;
                 }
 
 
-                switch (alt50) {
+                switch (alt48) {
             	case 1 :
-            	    // InternalHouseBuilderV2.g:6655:3: rule__Room__Group_12_3__0
+            	    // InternalHouseBuilderV2.g:6601:3: rule__Room__Group_12_3__0
             	    {
             	    pushFollow(FOLLOW_8);
             	    rule__Room__Group_12_3__0();
@@ -20523,7 +20329,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop50;
+            	    break loop48;
                 }
             } while (true);
 
@@ -20550,14 +20356,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12__4"
-    // InternalHouseBuilderV2.g:6663:1: rule__Room__Group_12__4 : rule__Room__Group_12__4__Impl ;
+    // InternalHouseBuilderV2.g:6609:1: rule__Room__Group_12__4 : rule__Room__Group_12__4__Impl ;
     public final void rule__Room__Group_12__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6667:1: ( rule__Room__Group_12__4__Impl )
-            // InternalHouseBuilderV2.g:6668:2: rule__Room__Group_12__4__Impl
+            // InternalHouseBuilderV2.g:6613:1: ( rule__Room__Group_12__4__Impl )
+            // InternalHouseBuilderV2.g:6614:2: rule__Room__Group_12__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Room__Group_12__4__Impl();
@@ -20583,21 +20389,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12__4__Impl"
-    // InternalHouseBuilderV2.g:6674:1: rule__Room__Group_12__4__Impl : ( ')' ) ;
+    // InternalHouseBuilderV2.g:6620:1: rule__Room__Group_12__4__Impl : ( '}' ) ;
     public final void rule__Room__Group_12__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6678:1: ( ( ')' ) )
-            // InternalHouseBuilderV2.g:6679:1: ( ')' )
+            // InternalHouseBuilderV2.g:6624:1: ( ( '}' ) )
+            // InternalHouseBuilderV2.g:6625:1: ( '}' )
             {
-            // InternalHouseBuilderV2.g:6679:1: ( ')' )
-            // InternalHouseBuilderV2.g:6680:2: ')'
+            // InternalHouseBuilderV2.g:6625:1: ( '}' )
+            // InternalHouseBuilderV2.g:6626:2: '}'
             {
-             before(grammarAccess.getRoomAccess().getRightParenthesisKeyword_12_4()); 
-            match(input,102,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getRightParenthesisKeyword_12_4()); 
+             before(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_12_4()); 
+            match(input,61,FOLLOW_2); 
+             after(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_12_4()); 
 
             }
 
@@ -20620,16 +20426,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12_3__0"
-    // InternalHouseBuilderV2.g:6690:1: rule__Room__Group_12_3__0 : rule__Room__Group_12_3__0__Impl rule__Room__Group_12_3__1 ;
+    // InternalHouseBuilderV2.g:6636:1: rule__Room__Group_12_3__0 : rule__Room__Group_12_3__0__Impl rule__Room__Group_12_3__1 ;
     public final void rule__Room__Group_12_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6694:1: ( rule__Room__Group_12_3__0__Impl rule__Room__Group_12_3__1 )
-            // InternalHouseBuilderV2.g:6695:2: rule__Room__Group_12_3__0__Impl rule__Room__Group_12_3__1
+            // InternalHouseBuilderV2.g:6640:1: ( rule__Room__Group_12_3__0__Impl rule__Room__Group_12_3__1 )
+            // InternalHouseBuilderV2.g:6641:2: rule__Room__Group_12_3__0__Impl rule__Room__Group_12_3__1
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_28);
             rule__Room__Group_12_3__0__Impl();
 
             state._fsp--;
@@ -20658,17 +20464,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12_3__0__Impl"
-    // InternalHouseBuilderV2.g:6702:1: rule__Room__Group_12_3__0__Impl : ( ',' ) ;
+    // InternalHouseBuilderV2.g:6648:1: rule__Room__Group_12_3__0__Impl : ( ',' ) ;
     public final void rule__Room__Group_12_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6706:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:6707:1: ( ',' )
+            // InternalHouseBuilderV2.g:6652:1: ( ( ',' ) )
+            // InternalHouseBuilderV2.g:6653:1: ( ',' )
             {
-            // InternalHouseBuilderV2.g:6707:1: ( ',' )
-            // InternalHouseBuilderV2.g:6708:2: ','
+            // InternalHouseBuilderV2.g:6653:1: ( ',' )
+            // InternalHouseBuilderV2.g:6654:2: ','
             {
              before(grammarAccess.getRoomAccess().getCommaKeyword_12_3_0()); 
             match(input,69,FOLLOW_2); 
@@ -20695,14 +20501,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12_3__1"
-    // InternalHouseBuilderV2.g:6717:1: rule__Room__Group_12_3__1 : rule__Room__Group_12_3__1__Impl ;
+    // InternalHouseBuilderV2.g:6663:1: rule__Room__Group_12_3__1 : rule__Room__Group_12_3__1__Impl ;
     public final void rule__Room__Group_12_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6721:1: ( rule__Room__Group_12_3__1__Impl )
-            // InternalHouseBuilderV2.g:6722:2: rule__Room__Group_12_3__1__Impl
+            // InternalHouseBuilderV2.g:6667:1: ( rule__Room__Group_12_3__1__Impl )
+            // InternalHouseBuilderV2.g:6668:2: rule__Room__Group_12_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Room__Group_12_3__1__Impl();
@@ -20728,31 +20534,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_12_3__1__Impl"
-    // InternalHouseBuilderV2.g:6728:1: rule__Room__Group_12_3__1__Impl : ( ( rule__Room__PassagesBAssignment_12_3_1 ) ) ;
+    // InternalHouseBuilderV2.g:6674:1: rule__Room__Group_12_3__1__Impl : ( ( rule__Room__DevicesAssignment_12_3_1 ) ) ;
     public final void rule__Room__Group_12_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6732:1: ( ( ( rule__Room__PassagesBAssignment_12_3_1 ) ) )
-            // InternalHouseBuilderV2.g:6733:1: ( ( rule__Room__PassagesBAssignment_12_3_1 ) )
+            // InternalHouseBuilderV2.g:6678:1: ( ( ( rule__Room__DevicesAssignment_12_3_1 ) ) )
+            // InternalHouseBuilderV2.g:6679:1: ( ( rule__Room__DevicesAssignment_12_3_1 ) )
             {
-            // InternalHouseBuilderV2.g:6733:1: ( ( rule__Room__PassagesBAssignment_12_3_1 ) )
-            // InternalHouseBuilderV2.g:6734:2: ( rule__Room__PassagesBAssignment_12_3_1 )
+            // InternalHouseBuilderV2.g:6679:1: ( ( rule__Room__DevicesAssignment_12_3_1 ) )
+            // InternalHouseBuilderV2.g:6680:2: ( rule__Room__DevicesAssignment_12_3_1 )
             {
-             before(grammarAccess.getRoomAccess().getPassagesBAssignment_12_3_1()); 
-            // InternalHouseBuilderV2.g:6735:2: ( rule__Room__PassagesBAssignment_12_3_1 )
-            // InternalHouseBuilderV2.g:6735:3: rule__Room__PassagesBAssignment_12_3_1
+             before(grammarAccess.getRoomAccess().getDevicesAssignment_12_3_1()); 
+            // InternalHouseBuilderV2.g:6681:2: ( rule__Room__DevicesAssignment_12_3_1 )
+            // InternalHouseBuilderV2.g:6681:3: rule__Room__DevicesAssignment_12_3_1
             {
             pushFollow(FOLLOW_2);
-            rule__Room__PassagesBAssignment_12_3_1();
+            rule__Room__DevicesAssignment_12_3_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRoomAccess().getPassagesBAssignment_12_3_1()); 
+             after(grammarAccess.getRoomAccess().getDevicesAssignment_12_3_1()); 
 
             }
 
@@ -20775,16 +20581,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13__0"
-    // InternalHouseBuilderV2.g:6744:1: rule__Room__Group_13__0 : rule__Room__Group_13__0__Impl rule__Room__Group_13__1 ;
+    // InternalHouseBuilderV2.g:6690:1: rule__Room__Group_13__0 : rule__Room__Group_13__0__Impl rule__Room__Group_13__1 ;
     public final void rule__Room__Group_13__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6748:1: ( rule__Room__Group_13__0__Impl rule__Room__Group_13__1 )
-            // InternalHouseBuilderV2.g:6749:2: rule__Room__Group_13__0__Impl rule__Room__Group_13__1
+            // InternalHouseBuilderV2.g:6694:1: ( rule__Room__Group_13__0__Impl rule__Room__Group_13__1 )
+            // InternalHouseBuilderV2.g:6695:2: rule__Room__Group_13__0__Impl rule__Room__Group_13__1
             {
-            pushFollow(FOLLOW_46);
+            pushFollow(FOLLOW_4);
             rule__Room__Group_13__0__Impl();
 
             state._fsp--;
@@ -20813,21 +20619,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13__0__Impl"
-    // InternalHouseBuilderV2.g:6756:1: rule__Room__Group_13__0__Impl : ( 'entrances' ) ;
+    // InternalHouseBuilderV2.g:6702:1: rule__Room__Group_13__0__Impl : ( 'windows' ) ;
     public final void rule__Room__Group_13__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6760:1: ( ( 'entrances' ) )
-            // InternalHouseBuilderV2.g:6761:1: ( 'entrances' )
+            // InternalHouseBuilderV2.g:6706:1: ( ( 'windows' ) )
+            // InternalHouseBuilderV2.g:6707:1: ( 'windows' )
             {
-            // InternalHouseBuilderV2.g:6761:1: ( 'entrances' )
-            // InternalHouseBuilderV2.g:6762:2: 'entrances'
+            // InternalHouseBuilderV2.g:6707:1: ( 'windows' )
+            // InternalHouseBuilderV2.g:6708:2: 'windows'
             {
-             before(grammarAccess.getRoomAccess().getEntrancesKeyword_13_0()); 
-            match(input,62,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getEntrancesKeyword_13_0()); 
+             before(grammarAccess.getRoomAccess().getWindowsKeyword_13_0()); 
+            match(input,103,FOLLOW_2); 
+             after(grammarAccess.getRoomAccess().getWindowsKeyword_13_0()); 
 
             }
 
@@ -20850,16 +20656,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13__1"
-    // InternalHouseBuilderV2.g:6771:1: rule__Room__Group_13__1 : rule__Room__Group_13__1__Impl rule__Room__Group_13__2 ;
+    // InternalHouseBuilderV2.g:6717:1: rule__Room__Group_13__1 : rule__Room__Group_13__1__Impl rule__Room__Group_13__2 ;
     public final void rule__Room__Group_13__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6775:1: ( rule__Room__Group_13__1__Impl rule__Room__Group_13__2 )
-            // InternalHouseBuilderV2.g:6776:2: rule__Room__Group_13__1__Impl rule__Room__Group_13__2
+            // InternalHouseBuilderV2.g:6721:1: ( rule__Room__Group_13__1__Impl rule__Room__Group_13__2 )
+            // InternalHouseBuilderV2.g:6722:2: rule__Room__Group_13__1__Impl rule__Room__Group_13__2
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_48);
             rule__Room__Group_13__1__Impl();
 
             state._fsp--;
@@ -20888,21 +20694,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13__1__Impl"
-    // InternalHouseBuilderV2.g:6783:1: rule__Room__Group_13__1__Impl : ( '(' ) ;
+    // InternalHouseBuilderV2.g:6729:1: rule__Room__Group_13__1__Impl : ( '{' ) ;
     public final void rule__Room__Group_13__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6787:1: ( ( '(' ) )
-            // InternalHouseBuilderV2.g:6788:1: ( '(' )
+            // InternalHouseBuilderV2.g:6733:1: ( ( '{' ) )
+            // InternalHouseBuilderV2.g:6734:1: ( '{' )
             {
-            // InternalHouseBuilderV2.g:6788:1: ( '(' )
-            // InternalHouseBuilderV2.g:6789:2: '('
+            // InternalHouseBuilderV2.g:6734:1: ( '{' )
+            // InternalHouseBuilderV2.g:6735:2: '{'
             {
-             before(grammarAccess.getRoomAccess().getLeftParenthesisKeyword_13_1()); 
-            match(input,101,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getLeftParenthesisKeyword_13_1()); 
+             before(grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_13_1()); 
+            match(input,59,FOLLOW_2); 
+             after(grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_13_1()); 
 
             }
 
@@ -20925,16 +20731,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13__2"
-    // InternalHouseBuilderV2.g:6798:1: rule__Room__Group_13__2 : rule__Room__Group_13__2__Impl rule__Room__Group_13__3 ;
+    // InternalHouseBuilderV2.g:6744:1: rule__Room__Group_13__2 : rule__Room__Group_13__2__Impl rule__Room__Group_13__3 ;
     public final void rule__Room__Group_13__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6802:1: ( rule__Room__Group_13__2__Impl rule__Room__Group_13__3 )
-            // InternalHouseBuilderV2.g:6803:2: rule__Room__Group_13__2__Impl rule__Room__Group_13__3
+            // InternalHouseBuilderV2.g:6748:1: ( rule__Room__Group_13__2__Impl rule__Room__Group_13__3 )
+            // InternalHouseBuilderV2.g:6749:2: rule__Room__Group_13__2__Impl rule__Room__Group_13__3
             {
-            pushFollow(FOLLOW_47);
+            pushFollow(FOLLOW_7);
             rule__Room__Group_13__2__Impl();
 
             state._fsp--;
@@ -20963,31 +20769,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13__2__Impl"
-    // InternalHouseBuilderV2.g:6810:1: rule__Room__Group_13__2__Impl : ( ( rule__Room__EntrancesAssignment_13_2 ) ) ;
+    // InternalHouseBuilderV2.g:6756:1: rule__Room__Group_13__2__Impl : ( ( rule__Room__WindowsAssignment_13_2 ) ) ;
     public final void rule__Room__Group_13__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6814:1: ( ( ( rule__Room__EntrancesAssignment_13_2 ) ) )
-            // InternalHouseBuilderV2.g:6815:1: ( ( rule__Room__EntrancesAssignment_13_2 ) )
+            // InternalHouseBuilderV2.g:6760:1: ( ( ( rule__Room__WindowsAssignment_13_2 ) ) )
+            // InternalHouseBuilderV2.g:6761:1: ( ( rule__Room__WindowsAssignment_13_2 ) )
             {
-            // InternalHouseBuilderV2.g:6815:1: ( ( rule__Room__EntrancesAssignment_13_2 ) )
-            // InternalHouseBuilderV2.g:6816:2: ( rule__Room__EntrancesAssignment_13_2 )
+            // InternalHouseBuilderV2.g:6761:1: ( ( rule__Room__WindowsAssignment_13_2 ) )
+            // InternalHouseBuilderV2.g:6762:2: ( rule__Room__WindowsAssignment_13_2 )
             {
-             before(grammarAccess.getRoomAccess().getEntrancesAssignment_13_2()); 
-            // InternalHouseBuilderV2.g:6817:2: ( rule__Room__EntrancesAssignment_13_2 )
-            // InternalHouseBuilderV2.g:6817:3: rule__Room__EntrancesAssignment_13_2
+             before(grammarAccess.getRoomAccess().getWindowsAssignment_13_2()); 
+            // InternalHouseBuilderV2.g:6763:2: ( rule__Room__WindowsAssignment_13_2 )
+            // InternalHouseBuilderV2.g:6763:3: rule__Room__WindowsAssignment_13_2
             {
             pushFollow(FOLLOW_2);
-            rule__Room__EntrancesAssignment_13_2();
+            rule__Room__WindowsAssignment_13_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRoomAccess().getEntrancesAssignment_13_2()); 
+             after(grammarAccess.getRoomAccess().getWindowsAssignment_13_2()); 
 
             }
 
@@ -21010,16 +20816,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13__3"
-    // InternalHouseBuilderV2.g:6825:1: rule__Room__Group_13__3 : rule__Room__Group_13__3__Impl rule__Room__Group_13__4 ;
+    // InternalHouseBuilderV2.g:6771:1: rule__Room__Group_13__3 : rule__Room__Group_13__3__Impl rule__Room__Group_13__4 ;
     public final void rule__Room__Group_13__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6829:1: ( rule__Room__Group_13__3__Impl rule__Room__Group_13__4 )
-            // InternalHouseBuilderV2.g:6830:2: rule__Room__Group_13__3__Impl rule__Room__Group_13__4
+            // InternalHouseBuilderV2.g:6775:1: ( rule__Room__Group_13__3__Impl rule__Room__Group_13__4 )
+            // InternalHouseBuilderV2.g:6776:2: rule__Room__Group_13__3__Impl rule__Room__Group_13__4
             {
-            pushFollow(FOLLOW_47);
+            pushFollow(FOLLOW_7);
             rule__Room__Group_13__3__Impl();
 
             state._fsp--;
@@ -21048,33 +20854,33 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13__3__Impl"
-    // InternalHouseBuilderV2.g:6837:1: rule__Room__Group_13__3__Impl : ( ( rule__Room__Group_13_3__0 )* ) ;
+    // InternalHouseBuilderV2.g:6783:1: rule__Room__Group_13__3__Impl : ( ( rule__Room__Group_13_3__0 )* ) ;
     public final void rule__Room__Group_13__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6841:1: ( ( ( rule__Room__Group_13_3__0 )* ) )
-            // InternalHouseBuilderV2.g:6842:1: ( ( rule__Room__Group_13_3__0 )* )
+            // InternalHouseBuilderV2.g:6787:1: ( ( ( rule__Room__Group_13_3__0 )* ) )
+            // InternalHouseBuilderV2.g:6788:1: ( ( rule__Room__Group_13_3__0 )* )
             {
-            // InternalHouseBuilderV2.g:6842:1: ( ( rule__Room__Group_13_3__0 )* )
-            // InternalHouseBuilderV2.g:6843:2: ( rule__Room__Group_13_3__0 )*
+            // InternalHouseBuilderV2.g:6788:1: ( ( rule__Room__Group_13_3__0 )* )
+            // InternalHouseBuilderV2.g:6789:2: ( rule__Room__Group_13_3__0 )*
             {
              before(grammarAccess.getRoomAccess().getGroup_13_3()); 
-            // InternalHouseBuilderV2.g:6844:2: ( rule__Room__Group_13_3__0 )*
-            loop51:
+            // InternalHouseBuilderV2.g:6790:2: ( rule__Room__Group_13_3__0 )*
+            loop49:
             do {
-                int alt51=2;
-                int LA51_0 = input.LA(1);
+                int alt49=2;
+                int LA49_0 = input.LA(1);
 
-                if ( (LA51_0==69) ) {
-                    alt51=1;
+                if ( (LA49_0==69) ) {
+                    alt49=1;
                 }
 
 
-                switch (alt51) {
+                switch (alt49) {
             	case 1 :
-            	    // InternalHouseBuilderV2.g:6844:3: rule__Room__Group_13_3__0
+            	    // InternalHouseBuilderV2.g:6790:3: rule__Room__Group_13_3__0
             	    {
             	    pushFollow(FOLLOW_8);
             	    rule__Room__Group_13_3__0();
@@ -21086,7 +20892,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop51;
+            	    break loop49;
                 }
             } while (true);
 
@@ -21113,14 +20919,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13__4"
-    // InternalHouseBuilderV2.g:6852:1: rule__Room__Group_13__4 : rule__Room__Group_13__4__Impl ;
+    // InternalHouseBuilderV2.g:6798:1: rule__Room__Group_13__4 : rule__Room__Group_13__4__Impl ;
     public final void rule__Room__Group_13__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6856:1: ( rule__Room__Group_13__4__Impl )
-            // InternalHouseBuilderV2.g:6857:2: rule__Room__Group_13__4__Impl
+            // InternalHouseBuilderV2.g:6802:1: ( rule__Room__Group_13__4__Impl )
+            // InternalHouseBuilderV2.g:6803:2: rule__Room__Group_13__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Room__Group_13__4__Impl();
@@ -21146,21 +20952,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13__4__Impl"
-    // InternalHouseBuilderV2.g:6863:1: rule__Room__Group_13__4__Impl : ( ')' ) ;
+    // InternalHouseBuilderV2.g:6809:1: rule__Room__Group_13__4__Impl : ( '}' ) ;
     public final void rule__Room__Group_13__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6867:1: ( ( ')' ) )
-            // InternalHouseBuilderV2.g:6868:1: ( ')' )
+            // InternalHouseBuilderV2.g:6813:1: ( ( '}' ) )
+            // InternalHouseBuilderV2.g:6814:1: ( '}' )
             {
-            // InternalHouseBuilderV2.g:6868:1: ( ')' )
-            // InternalHouseBuilderV2.g:6869:2: ')'
+            // InternalHouseBuilderV2.g:6814:1: ( '}' )
+            // InternalHouseBuilderV2.g:6815:2: '}'
             {
-             before(grammarAccess.getRoomAccess().getRightParenthesisKeyword_13_4()); 
-            match(input,102,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getRightParenthesisKeyword_13_4()); 
+             before(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_13_4()); 
+            match(input,61,FOLLOW_2); 
+             after(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_13_4()); 
 
             }
 
@@ -21183,16 +20989,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13_3__0"
-    // InternalHouseBuilderV2.g:6879:1: rule__Room__Group_13_3__0 : rule__Room__Group_13_3__0__Impl rule__Room__Group_13_3__1 ;
+    // InternalHouseBuilderV2.g:6825:1: rule__Room__Group_13_3__0 : rule__Room__Group_13_3__0__Impl rule__Room__Group_13_3__1 ;
     public final void rule__Room__Group_13_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6883:1: ( rule__Room__Group_13_3__0__Impl rule__Room__Group_13_3__1 )
-            // InternalHouseBuilderV2.g:6884:2: rule__Room__Group_13_3__0__Impl rule__Room__Group_13_3__1
+            // InternalHouseBuilderV2.g:6829:1: ( rule__Room__Group_13_3__0__Impl rule__Room__Group_13_3__1 )
+            // InternalHouseBuilderV2.g:6830:2: rule__Room__Group_13_3__0__Impl rule__Room__Group_13_3__1
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_48);
             rule__Room__Group_13_3__0__Impl();
 
             state._fsp--;
@@ -21221,17 +21027,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13_3__0__Impl"
-    // InternalHouseBuilderV2.g:6891:1: rule__Room__Group_13_3__0__Impl : ( ',' ) ;
+    // InternalHouseBuilderV2.g:6837:1: rule__Room__Group_13_3__0__Impl : ( ',' ) ;
     public final void rule__Room__Group_13_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6895:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:6896:1: ( ',' )
+            // InternalHouseBuilderV2.g:6841:1: ( ( ',' ) )
+            // InternalHouseBuilderV2.g:6842:1: ( ',' )
             {
-            // InternalHouseBuilderV2.g:6896:1: ( ',' )
-            // InternalHouseBuilderV2.g:6897:2: ','
+            // InternalHouseBuilderV2.g:6842:1: ( ',' )
+            // InternalHouseBuilderV2.g:6843:2: ','
             {
              before(grammarAccess.getRoomAccess().getCommaKeyword_13_3_0()); 
             match(input,69,FOLLOW_2); 
@@ -21258,14 +21064,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13_3__1"
-    // InternalHouseBuilderV2.g:6906:1: rule__Room__Group_13_3__1 : rule__Room__Group_13_3__1__Impl ;
+    // InternalHouseBuilderV2.g:6852:1: rule__Room__Group_13_3__1 : rule__Room__Group_13_3__1__Impl ;
     public final void rule__Room__Group_13_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6910:1: ( rule__Room__Group_13_3__1__Impl )
-            // InternalHouseBuilderV2.g:6911:2: rule__Room__Group_13_3__1__Impl
+            // InternalHouseBuilderV2.g:6856:1: ( rule__Room__Group_13_3__1__Impl )
+            // InternalHouseBuilderV2.g:6857:2: rule__Room__Group_13_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Room__Group_13_3__1__Impl();
@@ -21291,31 +21097,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__Group_13_3__1__Impl"
-    // InternalHouseBuilderV2.g:6917:1: rule__Room__Group_13_3__1__Impl : ( ( rule__Room__EntrancesAssignment_13_3_1 ) ) ;
+    // InternalHouseBuilderV2.g:6863:1: rule__Room__Group_13_3__1__Impl : ( ( rule__Room__WindowsAssignment_13_3_1 ) ) ;
     public final void rule__Room__Group_13_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:6921:1: ( ( ( rule__Room__EntrancesAssignment_13_3_1 ) ) )
-            // InternalHouseBuilderV2.g:6922:1: ( ( rule__Room__EntrancesAssignment_13_3_1 ) )
+            // InternalHouseBuilderV2.g:6867:1: ( ( ( rule__Room__WindowsAssignment_13_3_1 ) ) )
+            // InternalHouseBuilderV2.g:6868:1: ( ( rule__Room__WindowsAssignment_13_3_1 ) )
             {
-            // InternalHouseBuilderV2.g:6922:1: ( ( rule__Room__EntrancesAssignment_13_3_1 ) )
-            // InternalHouseBuilderV2.g:6923:2: ( rule__Room__EntrancesAssignment_13_3_1 )
+            // InternalHouseBuilderV2.g:6868:1: ( ( rule__Room__WindowsAssignment_13_3_1 ) )
+            // InternalHouseBuilderV2.g:6869:2: ( rule__Room__WindowsAssignment_13_3_1 )
             {
-             before(grammarAccess.getRoomAccess().getEntrancesAssignment_13_3_1()); 
-            // InternalHouseBuilderV2.g:6924:2: ( rule__Room__EntrancesAssignment_13_3_1 )
-            // InternalHouseBuilderV2.g:6924:3: rule__Room__EntrancesAssignment_13_3_1
+             before(grammarAccess.getRoomAccess().getWindowsAssignment_13_3_1()); 
+            // InternalHouseBuilderV2.g:6870:2: ( rule__Room__WindowsAssignment_13_3_1 )
+            // InternalHouseBuilderV2.g:6870:3: rule__Room__WindowsAssignment_13_3_1
             {
             pushFollow(FOLLOW_2);
-            rule__Room__EntrancesAssignment_13_3_1();
+            rule__Room__WindowsAssignment_13_3_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRoomAccess().getEntrancesAssignment_13_3_1()); 
+             after(grammarAccess.getRoomAccess().getWindowsAssignment_13_3_1()); 
 
             }
 
@@ -21337,1141 +21143,15 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__Room__Group_13_3__1__Impl"
 
 
-    // $ANTLR start "rule__Room__Group_14__0"
-    // InternalHouseBuilderV2.g:6933:1: rule__Room__Group_14__0 : rule__Room__Group_14__0__Impl rule__Room__Group_14__1 ;
-    public final void rule__Room__Group_14__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:6937:1: ( rule__Room__Group_14__0__Impl rule__Room__Group_14__1 )
-            // InternalHouseBuilderV2.g:6938:2: rule__Room__Group_14__0__Impl rule__Room__Group_14__1
-            {
-            pushFollow(FOLLOW_4);
-            rule__Room__Group_14__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_14__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14__0"
-
-
-    // $ANTLR start "rule__Room__Group_14__0__Impl"
-    // InternalHouseBuilderV2.g:6945:1: rule__Room__Group_14__0__Impl : ( 'devices' ) ;
-    public final void rule__Room__Group_14__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:6949:1: ( ( 'devices' ) )
-            // InternalHouseBuilderV2.g:6950:1: ( 'devices' )
-            {
-            // InternalHouseBuilderV2.g:6950:1: ( 'devices' )
-            // InternalHouseBuilderV2.g:6951:2: 'devices'
-            {
-             before(grammarAccess.getRoomAccess().getDevicesKeyword_14_0()); 
-            match(input,82,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getDevicesKeyword_14_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14__0__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_14__1"
-    // InternalHouseBuilderV2.g:6960:1: rule__Room__Group_14__1 : rule__Room__Group_14__1__Impl rule__Room__Group_14__2 ;
-    public final void rule__Room__Group_14__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:6964:1: ( rule__Room__Group_14__1__Impl rule__Room__Group_14__2 )
-            // InternalHouseBuilderV2.g:6965:2: rule__Room__Group_14__1__Impl rule__Room__Group_14__2
-            {
-            pushFollow(FOLLOW_28);
-            rule__Room__Group_14__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_14__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14__1"
-
-
-    // $ANTLR start "rule__Room__Group_14__1__Impl"
-    // InternalHouseBuilderV2.g:6972:1: rule__Room__Group_14__1__Impl : ( '{' ) ;
-    public final void rule__Room__Group_14__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:6976:1: ( ( '{' ) )
-            // InternalHouseBuilderV2.g:6977:1: ( '{' )
-            {
-            // InternalHouseBuilderV2.g:6977:1: ( '{' )
-            // InternalHouseBuilderV2.g:6978:2: '{'
-            {
-             before(grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_14_1()); 
-            match(input,59,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_14_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14__1__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_14__2"
-    // InternalHouseBuilderV2.g:6987:1: rule__Room__Group_14__2 : rule__Room__Group_14__2__Impl rule__Room__Group_14__3 ;
-    public final void rule__Room__Group_14__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:6991:1: ( rule__Room__Group_14__2__Impl rule__Room__Group_14__3 )
-            // InternalHouseBuilderV2.g:6992:2: rule__Room__Group_14__2__Impl rule__Room__Group_14__3
-            {
-            pushFollow(FOLLOW_7);
-            rule__Room__Group_14__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_14__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14__2"
-
-
-    // $ANTLR start "rule__Room__Group_14__2__Impl"
-    // InternalHouseBuilderV2.g:6999:1: rule__Room__Group_14__2__Impl : ( ( rule__Room__DevicesAssignment_14_2 ) ) ;
-    public final void rule__Room__Group_14__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7003:1: ( ( ( rule__Room__DevicesAssignment_14_2 ) ) )
-            // InternalHouseBuilderV2.g:7004:1: ( ( rule__Room__DevicesAssignment_14_2 ) )
-            {
-            // InternalHouseBuilderV2.g:7004:1: ( ( rule__Room__DevicesAssignment_14_2 ) )
-            // InternalHouseBuilderV2.g:7005:2: ( rule__Room__DevicesAssignment_14_2 )
-            {
-             before(grammarAccess.getRoomAccess().getDevicesAssignment_14_2()); 
-            // InternalHouseBuilderV2.g:7006:2: ( rule__Room__DevicesAssignment_14_2 )
-            // InternalHouseBuilderV2.g:7006:3: rule__Room__DevicesAssignment_14_2
-            {
-            pushFollow(FOLLOW_2);
-            rule__Room__DevicesAssignment_14_2();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRoomAccess().getDevicesAssignment_14_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14__2__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_14__3"
-    // InternalHouseBuilderV2.g:7014:1: rule__Room__Group_14__3 : rule__Room__Group_14__3__Impl rule__Room__Group_14__4 ;
-    public final void rule__Room__Group_14__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7018:1: ( rule__Room__Group_14__3__Impl rule__Room__Group_14__4 )
-            // InternalHouseBuilderV2.g:7019:2: rule__Room__Group_14__3__Impl rule__Room__Group_14__4
-            {
-            pushFollow(FOLLOW_7);
-            rule__Room__Group_14__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_14__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14__3"
-
-
-    // $ANTLR start "rule__Room__Group_14__3__Impl"
-    // InternalHouseBuilderV2.g:7026:1: rule__Room__Group_14__3__Impl : ( ( rule__Room__Group_14_3__0 )* ) ;
-    public final void rule__Room__Group_14__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7030:1: ( ( ( rule__Room__Group_14_3__0 )* ) )
-            // InternalHouseBuilderV2.g:7031:1: ( ( rule__Room__Group_14_3__0 )* )
-            {
-            // InternalHouseBuilderV2.g:7031:1: ( ( rule__Room__Group_14_3__0 )* )
-            // InternalHouseBuilderV2.g:7032:2: ( rule__Room__Group_14_3__0 )*
-            {
-             before(grammarAccess.getRoomAccess().getGroup_14_3()); 
-            // InternalHouseBuilderV2.g:7033:2: ( rule__Room__Group_14_3__0 )*
-            loop52:
-            do {
-                int alt52=2;
-                int LA52_0 = input.LA(1);
-
-                if ( (LA52_0==69) ) {
-                    alt52=1;
-                }
-
-
-                switch (alt52) {
-            	case 1 :
-            	    // InternalHouseBuilderV2.g:7033:3: rule__Room__Group_14_3__0
-            	    {
-            	    pushFollow(FOLLOW_8);
-            	    rule__Room__Group_14_3__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop52;
-                }
-            } while (true);
-
-             after(grammarAccess.getRoomAccess().getGroup_14_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14__3__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_14__4"
-    // InternalHouseBuilderV2.g:7041:1: rule__Room__Group_14__4 : rule__Room__Group_14__4__Impl ;
-    public final void rule__Room__Group_14__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7045:1: ( rule__Room__Group_14__4__Impl )
-            // InternalHouseBuilderV2.g:7046:2: rule__Room__Group_14__4__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_14__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14__4"
-
-
-    // $ANTLR start "rule__Room__Group_14__4__Impl"
-    // InternalHouseBuilderV2.g:7052:1: rule__Room__Group_14__4__Impl : ( '}' ) ;
-    public final void rule__Room__Group_14__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7056:1: ( ( '}' ) )
-            // InternalHouseBuilderV2.g:7057:1: ( '}' )
-            {
-            // InternalHouseBuilderV2.g:7057:1: ( '}' )
-            // InternalHouseBuilderV2.g:7058:2: '}'
-            {
-             before(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_14_4()); 
-            match(input,61,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_14_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14__4__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_14_3__0"
-    // InternalHouseBuilderV2.g:7068:1: rule__Room__Group_14_3__0 : rule__Room__Group_14_3__0__Impl rule__Room__Group_14_3__1 ;
-    public final void rule__Room__Group_14_3__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7072:1: ( rule__Room__Group_14_3__0__Impl rule__Room__Group_14_3__1 )
-            // InternalHouseBuilderV2.g:7073:2: rule__Room__Group_14_3__0__Impl rule__Room__Group_14_3__1
-            {
-            pushFollow(FOLLOW_28);
-            rule__Room__Group_14_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_14_3__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14_3__0"
-
-
-    // $ANTLR start "rule__Room__Group_14_3__0__Impl"
-    // InternalHouseBuilderV2.g:7080:1: rule__Room__Group_14_3__0__Impl : ( ',' ) ;
-    public final void rule__Room__Group_14_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7084:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:7085:1: ( ',' )
-            {
-            // InternalHouseBuilderV2.g:7085:1: ( ',' )
-            // InternalHouseBuilderV2.g:7086:2: ','
-            {
-             before(grammarAccess.getRoomAccess().getCommaKeyword_14_3_0()); 
-            match(input,69,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getCommaKeyword_14_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14_3__0__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_14_3__1"
-    // InternalHouseBuilderV2.g:7095:1: rule__Room__Group_14_3__1 : rule__Room__Group_14_3__1__Impl ;
-    public final void rule__Room__Group_14_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7099:1: ( rule__Room__Group_14_3__1__Impl )
-            // InternalHouseBuilderV2.g:7100:2: rule__Room__Group_14_3__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_14_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14_3__1"
-
-
-    // $ANTLR start "rule__Room__Group_14_3__1__Impl"
-    // InternalHouseBuilderV2.g:7106:1: rule__Room__Group_14_3__1__Impl : ( ( rule__Room__DevicesAssignment_14_3_1 ) ) ;
-    public final void rule__Room__Group_14_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7110:1: ( ( ( rule__Room__DevicesAssignment_14_3_1 ) ) )
-            // InternalHouseBuilderV2.g:7111:1: ( ( rule__Room__DevicesAssignment_14_3_1 ) )
-            {
-            // InternalHouseBuilderV2.g:7111:1: ( ( rule__Room__DevicesAssignment_14_3_1 ) )
-            // InternalHouseBuilderV2.g:7112:2: ( rule__Room__DevicesAssignment_14_3_1 )
-            {
-             before(grammarAccess.getRoomAccess().getDevicesAssignment_14_3_1()); 
-            // InternalHouseBuilderV2.g:7113:2: ( rule__Room__DevicesAssignment_14_3_1 )
-            // InternalHouseBuilderV2.g:7113:3: rule__Room__DevicesAssignment_14_3_1
-            {
-            pushFollow(FOLLOW_2);
-            rule__Room__DevicesAssignment_14_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRoomAccess().getDevicesAssignment_14_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_14_3__1__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_15__0"
-    // InternalHouseBuilderV2.g:7122:1: rule__Room__Group_15__0 : rule__Room__Group_15__0__Impl rule__Room__Group_15__1 ;
-    public final void rule__Room__Group_15__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7126:1: ( rule__Room__Group_15__0__Impl rule__Room__Group_15__1 )
-            // InternalHouseBuilderV2.g:7127:2: rule__Room__Group_15__0__Impl rule__Room__Group_15__1
-            {
-            pushFollow(FOLLOW_4);
-            rule__Room__Group_15__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_15__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15__0"
-
-
-    // $ANTLR start "rule__Room__Group_15__0__Impl"
-    // InternalHouseBuilderV2.g:7134:1: rule__Room__Group_15__0__Impl : ( 'windows' ) ;
-    public final void rule__Room__Group_15__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7138:1: ( ( 'windows' ) )
-            // InternalHouseBuilderV2.g:7139:1: ( 'windows' )
-            {
-            // InternalHouseBuilderV2.g:7139:1: ( 'windows' )
-            // InternalHouseBuilderV2.g:7140:2: 'windows'
-            {
-             before(grammarAccess.getRoomAccess().getWindowsKeyword_15_0()); 
-            match(input,105,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getWindowsKeyword_15_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15__0__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_15__1"
-    // InternalHouseBuilderV2.g:7149:1: rule__Room__Group_15__1 : rule__Room__Group_15__1__Impl rule__Room__Group_15__2 ;
-    public final void rule__Room__Group_15__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7153:1: ( rule__Room__Group_15__1__Impl rule__Room__Group_15__2 )
-            // InternalHouseBuilderV2.g:7154:2: rule__Room__Group_15__1__Impl rule__Room__Group_15__2
-            {
-            pushFollow(FOLLOW_48);
-            rule__Room__Group_15__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_15__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15__1"
-
-
-    // $ANTLR start "rule__Room__Group_15__1__Impl"
-    // InternalHouseBuilderV2.g:7161:1: rule__Room__Group_15__1__Impl : ( '{' ) ;
-    public final void rule__Room__Group_15__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7165:1: ( ( '{' ) )
-            // InternalHouseBuilderV2.g:7166:1: ( '{' )
-            {
-            // InternalHouseBuilderV2.g:7166:1: ( '{' )
-            // InternalHouseBuilderV2.g:7167:2: '{'
-            {
-             before(grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_15_1()); 
-            match(input,59,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_15_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15__1__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_15__2"
-    // InternalHouseBuilderV2.g:7176:1: rule__Room__Group_15__2 : rule__Room__Group_15__2__Impl rule__Room__Group_15__3 ;
-    public final void rule__Room__Group_15__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7180:1: ( rule__Room__Group_15__2__Impl rule__Room__Group_15__3 )
-            // InternalHouseBuilderV2.g:7181:2: rule__Room__Group_15__2__Impl rule__Room__Group_15__3
-            {
-            pushFollow(FOLLOW_7);
-            rule__Room__Group_15__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_15__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15__2"
-
-
-    // $ANTLR start "rule__Room__Group_15__2__Impl"
-    // InternalHouseBuilderV2.g:7188:1: rule__Room__Group_15__2__Impl : ( ( rule__Room__WindowsAssignment_15_2 ) ) ;
-    public final void rule__Room__Group_15__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7192:1: ( ( ( rule__Room__WindowsAssignment_15_2 ) ) )
-            // InternalHouseBuilderV2.g:7193:1: ( ( rule__Room__WindowsAssignment_15_2 ) )
-            {
-            // InternalHouseBuilderV2.g:7193:1: ( ( rule__Room__WindowsAssignment_15_2 ) )
-            // InternalHouseBuilderV2.g:7194:2: ( rule__Room__WindowsAssignment_15_2 )
-            {
-             before(grammarAccess.getRoomAccess().getWindowsAssignment_15_2()); 
-            // InternalHouseBuilderV2.g:7195:2: ( rule__Room__WindowsAssignment_15_2 )
-            // InternalHouseBuilderV2.g:7195:3: rule__Room__WindowsAssignment_15_2
-            {
-            pushFollow(FOLLOW_2);
-            rule__Room__WindowsAssignment_15_2();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRoomAccess().getWindowsAssignment_15_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15__2__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_15__3"
-    // InternalHouseBuilderV2.g:7203:1: rule__Room__Group_15__3 : rule__Room__Group_15__3__Impl rule__Room__Group_15__4 ;
-    public final void rule__Room__Group_15__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7207:1: ( rule__Room__Group_15__3__Impl rule__Room__Group_15__4 )
-            // InternalHouseBuilderV2.g:7208:2: rule__Room__Group_15__3__Impl rule__Room__Group_15__4
-            {
-            pushFollow(FOLLOW_7);
-            rule__Room__Group_15__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_15__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15__3"
-
-
-    // $ANTLR start "rule__Room__Group_15__3__Impl"
-    // InternalHouseBuilderV2.g:7215:1: rule__Room__Group_15__3__Impl : ( ( rule__Room__Group_15_3__0 )* ) ;
-    public final void rule__Room__Group_15__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7219:1: ( ( ( rule__Room__Group_15_3__0 )* ) )
-            // InternalHouseBuilderV2.g:7220:1: ( ( rule__Room__Group_15_3__0 )* )
-            {
-            // InternalHouseBuilderV2.g:7220:1: ( ( rule__Room__Group_15_3__0 )* )
-            // InternalHouseBuilderV2.g:7221:2: ( rule__Room__Group_15_3__0 )*
-            {
-             before(grammarAccess.getRoomAccess().getGroup_15_3()); 
-            // InternalHouseBuilderV2.g:7222:2: ( rule__Room__Group_15_3__0 )*
-            loop53:
-            do {
-                int alt53=2;
-                int LA53_0 = input.LA(1);
-
-                if ( (LA53_0==69) ) {
-                    alt53=1;
-                }
-
-
-                switch (alt53) {
-            	case 1 :
-            	    // InternalHouseBuilderV2.g:7222:3: rule__Room__Group_15_3__0
-            	    {
-            	    pushFollow(FOLLOW_8);
-            	    rule__Room__Group_15_3__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop53;
-                }
-            } while (true);
-
-             after(grammarAccess.getRoomAccess().getGroup_15_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15__3__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_15__4"
-    // InternalHouseBuilderV2.g:7230:1: rule__Room__Group_15__4 : rule__Room__Group_15__4__Impl ;
-    public final void rule__Room__Group_15__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7234:1: ( rule__Room__Group_15__4__Impl )
-            // InternalHouseBuilderV2.g:7235:2: rule__Room__Group_15__4__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_15__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15__4"
-
-
-    // $ANTLR start "rule__Room__Group_15__4__Impl"
-    // InternalHouseBuilderV2.g:7241:1: rule__Room__Group_15__4__Impl : ( '}' ) ;
-    public final void rule__Room__Group_15__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7245:1: ( ( '}' ) )
-            // InternalHouseBuilderV2.g:7246:1: ( '}' )
-            {
-            // InternalHouseBuilderV2.g:7246:1: ( '}' )
-            // InternalHouseBuilderV2.g:7247:2: '}'
-            {
-             before(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_15_4()); 
-            match(input,61,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_15_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15__4__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_15_3__0"
-    // InternalHouseBuilderV2.g:7257:1: rule__Room__Group_15_3__0 : rule__Room__Group_15_3__0__Impl rule__Room__Group_15_3__1 ;
-    public final void rule__Room__Group_15_3__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7261:1: ( rule__Room__Group_15_3__0__Impl rule__Room__Group_15_3__1 )
-            // InternalHouseBuilderV2.g:7262:2: rule__Room__Group_15_3__0__Impl rule__Room__Group_15_3__1
-            {
-            pushFollow(FOLLOW_48);
-            rule__Room__Group_15_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_15_3__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15_3__0"
-
-
-    // $ANTLR start "rule__Room__Group_15_3__0__Impl"
-    // InternalHouseBuilderV2.g:7269:1: rule__Room__Group_15_3__0__Impl : ( ',' ) ;
-    public final void rule__Room__Group_15_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7273:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:7274:1: ( ',' )
-            {
-            // InternalHouseBuilderV2.g:7274:1: ( ',' )
-            // InternalHouseBuilderV2.g:7275:2: ','
-            {
-             before(grammarAccess.getRoomAccess().getCommaKeyword_15_3_0()); 
-            match(input,69,FOLLOW_2); 
-             after(grammarAccess.getRoomAccess().getCommaKeyword_15_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15_3__0__Impl"
-
-
-    // $ANTLR start "rule__Room__Group_15_3__1"
-    // InternalHouseBuilderV2.g:7284:1: rule__Room__Group_15_3__1 : rule__Room__Group_15_3__1__Impl ;
-    public final void rule__Room__Group_15_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7288:1: ( rule__Room__Group_15_3__1__Impl )
-            // InternalHouseBuilderV2.g:7289:2: rule__Room__Group_15_3__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__Room__Group_15_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15_3__1"
-
-
-    // $ANTLR start "rule__Room__Group_15_3__1__Impl"
-    // InternalHouseBuilderV2.g:7295:1: rule__Room__Group_15_3__1__Impl : ( ( rule__Room__WindowsAssignment_15_3_1 ) ) ;
-    public final void rule__Room__Group_15_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7299:1: ( ( ( rule__Room__WindowsAssignment_15_3_1 ) ) )
-            // InternalHouseBuilderV2.g:7300:1: ( ( rule__Room__WindowsAssignment_15_3_1 ) )
-            {
-            // InternalHouseBuilderV2.g:7300:1: ( ( rule__Room__WindowsAssignment_15_3_1 ) )
-            // InternalHouseBuilderV2.g:7301:2: ( rule__Room__WindowsAssignment_15_3_1 )
-            {
-             before(grammarAccess.getRoomAccess().getWindowsAssignment_15_3_1()); 
-            // InternalHouseBuilderV2.g:7302:2: ( rule__Room__WindowsAssignment_15_3_1 )
-            // InternalHouseBuilderV2.g:7302:3: rule__Room__WindowsAssignment_15_3_1
-            {
-            pushFollow(FOLLOW_2);
-            rule__Room__WindowsAssignment_15_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRoomAccess().getWindowsAssignment_15_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__Group_15_3__1__Impl"
-
-
     // $ANTLR start "rule__ExternalSpace__Group__0"
-    // InternalHouseBuilderV2.g:7311:1: rule__ExternalSpace__Group__0 : rule__ExternalSpace__Group__0__Impl rule__ExternalSpace__Group__1 ;
+    // InternalHouseBuilderV2.g:6879:1: rule__ExternalSpace__Group__0 : rule__ExternalSpace__Group__0__Impl rule__ExternalSpace__Group__1 ;
     public final void rule__ExternalSpace__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7315:1: ( rule__ExternalSpace__Group__0__Impl rule__ExternalSpace__Group__1 )
-            // InternalHouseBuilderV2.g:7316:2: rule__ExternalSpace__Group__0__Impl rule__ExternalSpace__Group__1
+            // InternalHouseBuilderV2.g:6883:1: ( rule__ExternalSpace__Group__0__Impl rule__ExternalSpace__Group__1 )
+            // InternalHouseBuilderV2.g:6884:2: rule__ExternalSpace__Group__0__Impl rule__ExternalSpace__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__ExternalSpace__Group__0__Impl();
@@ -22502,20 +21182,20 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__0__Impl"
-    // InternalHouseBuilderV2.g:7323:1: rule__ExternalSpace__Group__0__Impl : ( 'ExternalSpace' ) ;
+    // InternalHouseBuilderV2.g:6891:1: rule__ExternalSpace__Group__0__Impl : ( 'ExternalSpace' ) ;
     public final void rule__ExternalSpace__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7327:1: ( ( 'ExternalSpace' ) )
-            // InternalHouseBuilderV2.g:7328:1: ( 'ExternalSpace' )
+            // InternalHouseBuilderV2.g:6895:1: ( ( 'ExternalSpace' ) )
+            // InternalHouseBuilderV2.g:6896:1: ( 'ExternalSpace' )
             {
-            // InternalHouseBuilderV2.g:7328:1: ( 'ExternalSpace' )
-            // InternalHouseBuilderV2.g:7329:2: 'ExternalSpace'
+            // InternalHouseBuilderV2.g:6896:1: ( 'ExternalSpace' )
+            // InternalHouseBuilderV2.g:6897:2: 'ExternalSpace'
             {
              before(grammarAccess.getExternalSpaceAccess().getExternalSpaceKeyword_0()); 
-            match(input,106,FOLLOW_2); 
+            match(input,104,FOLLOW_2); 
              after(grammarAccess.getExternalSpaceAccess().getExternalSpaceKeyword_0()); 
 
             }
@@ -22539,14 +21219,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__1"
-    // InternalHouseBuilderV2.g:7338:1: rule__ExternalSpace__Group__1 : rule__ExternalSpace__Group__1__Impl rule__ExternalSpace__Group__2 ;
+    // InternalHouseBuilderV2.g:6906:1: rule__ExternalSpace__Group__1 : rule__ExternalSpace__Group__1__Impl rule__ExternalSpace__Group__2 ;
     public final void rule__ExternalSpace__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7342:1: ( rule__ExternalSpace__Group__1__Impl rule__ExternalSpace__Group__2 )
-            // InternalHouseBuilderV2.g:7343:2: rule__ExternalSpace__Group__1__Impl rule__ExternalSpace__Group__2
+            // InternalHouseBuilderV2.g:6910:1: ( rule__ExternalSpace__Group__1__Impl rule__ExternalSpace__Group__2 )
+            // InternalHouseBuilderV2.g:6911:2: rule__ExternalSpace__Group__1__Impl rule__ExternalSpace__Group__2
             {
             pushFollow(FOLLOW_4);
             rule__ExternalSpace__Group__1__Impl();
@@ -22577,21 +21257,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__1__Impl"
-    // InternalHouseBuilderV2.g:7350:1: rule__ExternalSpace__Group__1__Impl : ( ( rule__ExternalSpace__NameAssignment_1 ) ) ;
+    // InternalHouseBuilderV2.g:6918:1: rule__ExternalSpace__Group__1__Impl : ( ( rule__ExternalSpace__NameAssignment_1 ) ) ;
     public final void rule__ExternalSpace__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7354:1: ( ( ( rule__ExternalSpace__NameAssignment_1 ) ) )
-            // InternalHouseBuilderV2.g:7355:1: ( ( rule__ExternalSpace__NameAssignment_1 ) )
+            // InternalHouseBuilderV2.g:6922:1: ( ( ( rule__ExternalSpace__NameAssignment_1 ) ) )
+            // InternalHouseBuilderV2.g:6923:1: ( ( rule__ExternalSpace__NameAssignment_1 ) )
             {
-            // InternalHouseBuilderV2.g:7355:1: ( ( rule__ExternalSpace__NameAssignment_1 ) )
-            // InternalHouseBuilderV2.g:7356:2: ( rule__ExternalSpace__NameAssignment_1 )
+            // InternalHouseBuilderV2.g:6923:1: ( ( rule__ExternalSpace__NameAssignment_1 ) )
+            // InternalHouseBuilderV2.g:6924:2: ( rule__ExternalSpace__NameAssignment_1 )
             {
              before(grammarAccess.getExternalSpaceAccess().getNameAssignment_1()); 
-            // InternalHouseBuilderV2.g:7357:2: ( rule__ExternalSpace__NameAssignment_1 )
-            // InternalHouseBuilderV2.g:7357:3: rule__ExternalSpace__NameAssignment_1
+            // InternalHouseBuilderV2.g:6925:2: ( rule__ExternalSpace__NameAssignment_1 )
+            // InternalHouseBuilderV2.g:6925:3: rule__ExternalSpace__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__NameAssignment_1();
@@ -22624,14 +21304,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__2"
-    // InternalHouseBuilderV2.g:7365:1: rule__ExternalSpace__Group__2 : rule__ExternalSpace__Group__2__Impl rule__ExternalSpace__Group__3 ;
+    // InternalHouseBuilderV2.g:6933:1: rule__ExternalSpace__Group__2 : rule__ExternalSpace__Group__2__Impl rule__ExternalSpace__Group__3 ;
     public final void rule__ExternalSpace__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7369:1: ( rule__ExternalSpace__Group__2__Impl rule__ExternalSpace__Group__3 )
-            // InternalHouseBuilderV2.g:7370:2: rule__ExternalSpace__Group__2__Impl rule__ExternalSpace__Group__3
+            // InternalHouseBuilderV2.g:6937:1: ( rule__ExternalSpace__Group__2__Impl rule__ExternalSpace__Group__3 )
+            // InternalHouseBuilderV2.g:6938:2: rule__ExternalSpace__Group__2__Impl rule__ExternalSpace__Group__3
             {
             pushFollow(FOLLOW_43);
             rule__ExternalSpace__Group__2__Impl();
@@ -22662,17 +21342,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__2__Impl"
-    // InternalHouseBuilderV2.g:7377:1: rule__ExternalSpace__Group__2__Impl : ( '{' ) ;
+    // InternalHouseBuilderV2.g:6945:1: rule__ExternalSpace__Group__2__Impl : ( '{' ) ;
     public final void rule__ExternalSpace__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7381:1: ( ( '{' ) )
-            // InternalHouseBuilderV2.g:7382:1: ( '{' )
+            // InternalHouseBuilderV2.g:6949:1: ( ( '{' ) )
+            // InternalHouseBuilderV2.g:6950:1: ( '{' )
             {
-            // InternalHouseBuilderV2.g:7382:1: ( '{' )
-            // InternalHouseBuilderV2.g:7383:2: '{'
+            // InternalHouseBuilderV2.g:6950:1: ( '{' )
+            // InternalHouseBuilderV2.g:6951:2: '{'
             {
              before(grammarAccess.getExternalSpaceAccess().getLeftCurlyBracketKeyword_2()); 
             match(input,59,FOLLOW_2); 
@@ -22699,14 +21379,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__3"
-    // InternalHouseBuilderV2.g:7392:1: rule__ExternalSpace__Group__3 : rule__ExternalSpace__Group__3__Impl rule__ExternalSpace__Group__4 ;
+    // InternalHouseBuilderV2.g:6960:1: rule__ExternalSpace__Group__3 : rule__ExternalSpace__Group__3__Impl rule__ExternalSpace__Group__4 ;
     public final void rule__ExternalSpace__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7396:1: ( rule__ExternalSpace__Group__3__Impl rule__ExternalSpace__Group__4 )
-            // InternalHouseBuilderV2.g:7397:2: rule__ExternalSpace__Group__3__Impl rule__ExternalSpace__Group__4
+            // InternalHouseBuilderV2.g:6964:1: ( rule__ExternalSpace__Group__3__Impl rule__ExternalSpace__Group__4 )
+            // InternalHouseBuilderV2.g:6965:2: rule__ExternalSpace__Group__3__Impl rule__ExternalSpace__Group__4
             {
             pushFollow(FOLLOW_23);
             rule__ExternalSpace__Group__3__Impl();
@@ -22737,17 +21417,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__3__Impl"
-    // InternalHouseBuilderV2.g:7404:1: rule__ExternalSpace__Group__3__Impl : ( 'length' ) ;
+    // InternalHouseBuilderV2.g:6972:1: rule__ExternalSpace__Group__3__Impl : ( 'length' ) ;
     public final void rule__ExternalSpace__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7408:1: ( ( 'length' ) )
-            // InternalHouseBuilderV2.g:7409:1: ( 'length' )
+            // InternalHouseBuilderV2.g:6976:1: ( ( 'length' ) )
+            // InternalHouseBuilderV2.g:6977:1: ( 'length' )
             {
-            // InternalHouseBuilderV2.g:7409:1: ( 'length' )
-            // InternalHouseBuilderV2.g:7410:2: 'length'
+            // InternalHouseBuilderV2.g:6977:1: ( 'length' )
+            // InternalHouseBuilderV2.g:6978:2: 'length'
             {
              before(grammarAccess.getExternalSpaceAccess().getLengthKeyword_3()); 
             match(input,99,FOLLOW_2); 
@@ -22774,14 +21454,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__4"
-    // InternalHouseBuilderV2.g:7419:1: rule__ExternalSpace__Group__4 : rule__ExternalSpace__Group__4__Impl rule__ExternalSpace__Group__5 ;
+    // InternalHouseBuilderV2.g:6987:1: rule__ExternalSpace__Group__4 : rule__ExternalSpace__Group__4__Impl rule__ExternalSpace__Group__5 ;
     public final void rule__ExternalSpace__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7423:1: ( rule__ExternalSpace__Group__4__Impl rule__ExternalSpace__Group__5 )
-            // InternalHouseBuilderV2.g:7424:2: rule__ExternalSpace__Group__4__Impl rule__ExternalSpace__Group__5
+            // InternalHouseBuilderV2.g:6991:1: ( rule__ExternalSpace__Group__4__Impl rule__ExternalSpace__Group__5 )
+            // InternalHouseBuilderV2.g:6992:2: rule__ExternalSpace__Group__4__Impl rule__ExternalSpace__Group__5
             {
             pushFollow(FOLLOW_22);
             rule__ExternalSpace__Group__4__Impl();
@@ -22812,21 +21492,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__4__Impl"
-    // InternalHouseBuilderV2.g:7431:1: rule__ExternalSpace__Group__4__Impl : ( ( rule__ExternalSpace__LengthAssignment_4 ) ) ;
+    // InternalHouseBuilderV2.g:6999:1: rule__ExternalSpace__Group__4__Impl : ( ( rule__ExternalSpace__LengthAssignment_4 ) ) ;
     public final void rule__ExternalSpace__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7435:1: ( ( ( rule__ExternalSpace__LengthAssignment_4 ) ) )
-            // InternalHouseBuilderV2.g:7436:1: ( ( rule__ExternalSpace__LengthAssignment_4 ) )
+            // InternalHouseBuilderV2.g:7003:1: ( ( ( rule__ExternalSpace__LengthAssignment_4 ) ) )
+            // InternalHouseBuilderV2.g:7004:1: ( ( rule__ExternalSpace__LengthAssignment_4 ) )
             {
-            // InternalHouseBuilderV2.g:7436:1: ( ( rule__ExternalSpace__LengthAssignment_4 ) )
-            // InternalHouseBuilderV2.g:7437:2: ( rule__ExternalSpace__LengthAssignment_4 )
+            // InternalHouseBuilderV2.g:7004:1: ( ( rule__ExternalSpace__LengthAssignment_4 ) )
+            // InternalHouseBuilderV2.g:7005:2: ( rule__ExternalSpace__LengthAssignment_4 )
             {
              before(grammarAccess.getExternalSpaceAccess().getLengthAssignment_4()); 
-            // InternalHouseBuilderV2.g:7438:2: ( rule__ExternalSpace__LengthAssignment_4 )
-            // InternalHouseBuilderV2.g:7438:3: rule__ExternalSpace__LengthAssignment_4
+            // InternalHouseBuilderV2.g:7006:2: ( rule__ExternalSpace__LengthAssignment_4 )
+            // InternalHouseBuilderV2.g:7006:3: rule__ExternalSpace__LengthAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__LengthAssignment_4();
@@ -22859,14 +21539,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__5"
-    // InternalHouseBuilderV2.g:7446:1: rule__ExternalSpace__Group__5 : rule__ExternalSpace__Group__5__Impl rule__ExternalSpace__Group__6 ;
+    // InternalHouseBuilderV2.g:7014:1: rule__ExternalSpace__Group__5 : rule__ExternalSpace__Group__5__Impl rule__ExternalSpace__Group__6 ;
     public final void rule__ExternalSpace__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7450:1: ( rule__ExternalSpace__Group__5__Impl rule__ExternalSpace__Group__6 )
-            // InternalHouseBuilderV2.g:7451:2: rule__ExternalSpace__Group__5__Impl rule__ExternalSpace__Group__6
+            // InternalHouseBuilderV2.g:7018:1: ( rule__ExternalSpace__Group__5__Impl rule__ExternalSpace__Group__6 )
+            // InternalHouseBuilderV2.g:7019:2: rule__ExternalSpace__Group__5__Impl rule__ExternalSpace__Group__6
             {
             pushFollow(FOLLOW_23);
             rule__ExternalSpace__Group__5__Impl();
@@ -22897,17 +21577,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__5__Impl"
-    // InternalHouseBuilderV2.g:7458:1: rule__ExternalSpace__Group__5__Impl : ( 'width' ) ;
+    // InternalHouseBuilderV2.g:7026:1: rule__ExternalSpace__Group__5__Impl : ( 'width' ) ;
     public final void rule__ExternalSpace__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7462:1: ( ( 'width' ) )
-            // InternalHouseBuilderV2.g:7463:1: ( 'width' )
+            // InternalHouseBuilderV2.g:7030:1: ( ( 'width' ) )
+            // InternalHouseBuilderV2.g:7031:1: ( 'width' )
             {
-            // InternalHouseBuilderV2.g:7463:1: ( 'width' )
-            // InternalHouseBuilderV2.g:7464:2: 'width'
+            // InternalHouseBuilderV2.g:7031:1: ( 'width' )
+            // InternalHouseBuilderV2.g:7032:2: 'width'
             {
              before(grammarAccess.getExternalSpaceAccess().getWidthKeyword_5()); 
             match(input,78,FOLLOW_2); 
@@ -22934,14 +21614,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__6"
-    // InternalHouseBuilderV2.g:7473:1: rule__ExternalSpace__Group__6 : rule__ExternalSpace__Group__6__Impl rule__ExternalSpace__Group__7 ;
+    // InternalHouseBuilderV2.g:7041:1: rule__ExternalSpace__Group__6 : rule__ExternalSpace__Group__6__Impl rule__ExternalSpace__Group__7 ;
     public final void rule__ExternalSpace__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7477:1: ( rule__ExternalSpace__Group__6__Impl rule__ExternalSpace__Group__7 )
-            // InternalHouseBuilderV2.g:7478:2: rule__ExternalSpace__Group__6__Impl rule__ExternalSpace__Group__7
+            // InternalHouseBuilderV2.g:7045:1: ( rule__ExternalSpace__Group__6__Impl rule__ExternalSpace__Group__7 )
+            // InternalHouseBuilderV2.g:7046:2: rule__ExternalSpace__Group__6__Impl rule__ExternalSpace__Group__7
             {
             pushFollow(FOLLOW_49);
             rule__ExternalSpace__Group__6__Impl();
@@ -22972,21 +21652,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__6__Impl"
-    // InternalHouseBuilderV2.g:7485:1: rule__ExternalSpace__Group__6__Impl : ( ( rule__ExternalSpace__WidthAssignment_6 ) ) ;
+    // InternalHouseBuilderV2.g:7053:1: rule__ExternalSpace__Group__6__Impl : ( ( rule__ExternalSpace__WidthAssignment_6 ) ) ;
     public final void rule__ExternalSpace__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7489:1: ( ( ( rule__ExternalSpace__WidthAssignment_6 ) ) )
-            // InternalHouseBuilderV2.g:7490:1: ( ( rule__ExternalSpace__WidthAssignment_6 ) )
+            // InternalHouseBuilderV2.g:7057:1: ( ( ( rule__ExternalSpace__WidthAssignment_6 ) ) )
+            // InternalHouseBuilderV2.g:7058:1: ( ( rule__ExternalSpace__WidthAssignment_6 ) )
             {
-            // InternalHouseBuilderV2.g:7490:1: ( ( rule__ExternalSpace__WidthAssignment_6 ) )
-            // InternalHouseBuilderV2.g:7491:2: ( rule__ExternalSpace__WidthAssignment_6 )
+            // InternalHouseBuilderV2.g:7058:1: ( ( rule__ExternalSpace__WidthAssignment_6 ) )
+            // InternalHouseBuilderV2.g:7059:2: ( rule__ExternalSpace__WidthAssignment_6 )
             {
              before(grammarAccess.getExternalSpaceAccess().getWidthAssignment_6()); 
-            // InternalHouseBuilderV2.g:7492:2: ( rule__ExternalSpace__WidthAssignment_6 )
-            // InternalHouseBuilderV2.g:7492:3: rule__ExternalSpace__WidthAssignment_6
+            // InternalHouseBuilderV2.g:7060:2: ( rule__ExternalSpace__WidthAssignment_6 )
+            // InternalHouseBuilderV2.g:7060:3: rule__ExternalSpace__WidthAssignment_6
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__WidthAssignment_6();
@@ -23019,14 +21699,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__7"
-    // InternalHouseBuilderV2.g:7500:1: rule__ExternalSpace__Group__7 : rule__ExternalSpace__Group__7__Impl rule__ExternalSpace__Group__8 ;
+    // InternalHouseBuilderV2.g:7068:1: rule__ExternalSpace__Group__7 : rule__ExternalSpace__Group__7__Impl rule__ExternalSpace__Group__8 ;
     public final void rule__ExternalSpace__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7504:1: ( rule__ExternalSpace__Group__7__Impl rule__ExternalSpace__Group__8 )
-            // InternalHouseBuilderV2.g:7505:2: rule__ExternalSpace__Group__7__Impl rule__ExternalSpace__Group__8
+            // InternalHouseBuilderV2.g:7072:1: ( rule__ExternalSpace__Group__7__Impl rule__ExternalSpace__Group__8 )
+            // InternalHouseBuilderV2.g:7073:2: rule__ExternalSpace__Group__7__Impl rule__ExternalSpace__Group__8
             {
             pushFollow(FOLLOW_49);
             rule__ExternalSpace__Group__7__Impl();
@@ -23057,29 +21737,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__7__Impl"
-    // InternalHouseBuilderV2.g:7512:1: rule__ExternalSpace__Group__7__Impl : ( ( rule__ExternalSpace__Group_7__0 )? ) ;
+    // InternalHouseBuilderV2.g:7080:1: rule__ExternalSpace__Group__7__Impl : ( ( rule__ExternalSpace__Group_7__0 )? ) ;
     public final void rule__ExternalSpace__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7516:1: ( ( ( rule__ExternalSpace__Group_7__0 )? ) )
-            // InternalHouseBuilderV2.g:7517:1: ( ( rule__ExternalSpace__Group_7__0 )? )
+            // InternalHouseBuilderV2.g:7084:1: ( ( ( rule__ExternalSpace__Group_7__0 )? ) )
+            // InternalHouseBuilderV2.g:7085:1: ( ( rule__ExternalSpace__Group_7__0 )? )
             {
-            // InternalHouseBuilderV2.g:7517:1: ( ( rule__ExternalSpace__Group_7__0 )? )
-            // InternalHouseBuilderV2.g:7518:2: ( rule__ExternalSpace__Group_7__0 )?
+            // InternalHouseBuilderV2.g:7085:1: ( ( rule__ExternalSpace__Group_7__0 )? )
+            // InternalHouseBuilderV2.g:7086:2: ( rule__ExternalSpace__Group_7__0 )?
             {
              before(grammarAccess.getExternalSpaceAccess().getGroup_7()); 
-            // InternalHouseBuilderV2.g:7519:2: ( rule__ExternalSpace__Group_7__0 )?
-            int alt54=2;
-            int LA54_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:7087:2: ( rule__ExternalSpace__Group_7__0 )?
+            int alt50=2;
+            int LA50_0 = input.LA(1);
 
-            if ( (LA54_0==94) ) {
-                alt54=1;
+            if ( (LA50_0==94) ) {
+                alt50=1;
             }
-            switch (alt54) {
+            switch (alt50) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:7519:3: rule__ExternalSpace__Group_7__0
+                    // InternalHouseBuilderV2.g:7087:3: rule__ExternalSpace__Group_7__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__ExternalSpace__Group_7__0();
@@ -23115,14 +21795,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__8"
-    // InternalHouseBuilderV2.g:7527:1: rule__ExternalSpace__Group__8 : rule__ExternalSpace__Group__8__Impl rule__ExternalSpace__Group__9 ;
+    // InternalHouseBuilderV2.g:7095:1: rule__ExternalSpace__Group__8 : rule__ExternalSpace__Group__8__Impl rule__ExternalSpace__Group__9 ;
     public final void rule__ExternalSpace__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7531:1: ( rule__ExternalSpace__Group__8__Impl rule__ExternalSpace__Group__9 )
-            // InternalHouseBuilderV2.g:7532:2: rule__ExternalSpace__Group__8__Impl rule__ExternalSpace__Group__9
+            // InternalHouseBuilderV2.g:7099:1: ( rule__ExternalSpace__Group__8__Impl rule__ExternalSpace__Group__9 )
+            // InternalHouseBuilderV2.g:7100:2: rule__ExternalSpace__Group__8__Impl rule__ExternalSpace__Group__9
             {
             pushFollow(FOLLOW_49);
             rule__ExternalSpace__Group__8__Impl();
@@ -23153,29 +21833,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__8__Impl"
-    // InternalHouseBuilderV2.g:7539:1: rule__ExternalSpace__Group__8__Impl : ( ( rule__ExternalSpace__Group_8__0 )? ) ;
+    // InternalHouseBuilderV2.g:7107:1: rule__ExternalSpace__Group__8__Impl : ( ( rule__ExternalSpace__Group_8__0 )? ) ;
     public final void rule__ExternalSpace__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7543:1: ( ( ( rule__ExternalSpace__Group_8__0 )? ) )
-            // InternalHouseBuilderV2.g:7544:1: ( ( rule__ExternalSpace__Group_8__0 )? )
+            // InternalHouseBuilderV2.g:7111:1: ( ( ( rule__ExternalSpace__Group_8__0 )? ) )
+            // InternalHouseBuilderV2.g:7112:1: ( ( rule__ExternalSpace__Group_8__0 )? )
             {
-            // InternalHouseBuilderV2.g:7544:1: ( ( rule__ExternalSpace__Group_8__0 )? )
-            // InternalHouseBuilderV2.g:7545:2: ( rule__ExternalSpace__Group_8__0 )?
+            // InternalHouseBuilderV2.g:7112:1: ( ( rule__ExternalSpace__Group_8__0 )? )
+            // InternalHouseBuilderV2.g:7113:2: ( rule__ExternalSpace__Group_8__0 )?
             {
              before(grammarAccess.getExternalSpaceAccess().getGroup_8()); 
-            // InternalHouseBuilderV2.g:7546:2: ( rule__ExternalSpace__Group_8__0 )?
-            int alt55=2;
-            int LA55_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:7114:2: ( rule__ExternalSpace__Group_8__0 )?
+            int alt51=2;
+            int LA51_0 = input.LA(1);
 
-            if ( (LA55_0==107) ) {
-                alt55=1;
+            if ( (LA51_0==105) ) {
+                alt51=1;
             }
-            switch (alt55) {
+            switch (alt51) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:7546:3: rule__ExternalSpace__Group_8__0
+                    // InternalHouseBuilderV2.g:7114:3: rule__ExternalSpace__Group_8__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__ExternalSpace__Group_8__0();
@@ -23211,14 +21891,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__9"
-    // InternalHouseBuilderV2.g:7554:1: rule__ExternalSpace__Group__9 : rule__ExternalSpace__Group__9__Impl rule__ExternalSpace__Group__10 ;
+    // InternalHouseBuilderV2.g:7122:1: rule__ExternalSpace__Group__9 : rule__ExternalSpace__Group__9__Impl rule__ExternalSpace__Group__10 ;
     public final void rule__ExternalSpace__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7558:1: ( rule__ExternalSpace__Group__9__Impl rule__ExternalSpace__Group__10 )
-            // InternalHouseBuilderV2.g:7559:2: rule__ExternalSpace__Group__9__Impl rule__ExternalSpace__Group__10
+            // InternalHouseBuilderV2.g:7126:1: ( rule__ExternalSpace__Group__9__Impl rule__ExternalSpace__Group__10 )
+            // InternalHouseBuilderV2.g:7127:2: rule__ExternalSpace__Group__9__Impl rule__ExternalSpace__Group__10
             {
             pushFollow(FOLLOW_49);
             rule__ExternalSpace__Group__9__Impl();
@@ -23249,29 +21929,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__9__Impl"
-    // InternalHouseBuilderV2.g:7566:1: rule__ExternalSpace__Group__9__Impl : ( ( rule__ExternalSpace__Group_9__0 )? ) ;
+    // InternalHouseBuilderV2.g:7134:1: rule__ExternalSpace__Group__9__Impl : ( ( rule__ExternalSpace__Group_9__0 )? ) ;
     public final void rule__ExternalSpace__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7570:1: ( ( ( rule__ExternalSpace__Group_9__0 )? ) )
-            // InternalHouseBuilderV2.g:7571:1: ( ( rule__ExternalSpace__Group_9__0 )? )
+            // InternalHouseBuilderV2.g:7138:1: ( ( ( rule__ExternalSpace__Group_9__0 )? ) )
+            // InternalHouseBuilderV2.g:7139:1: ( ( rule__ExternalSpace__Group_9__0 )? )
             {
-            // InternalHouseBuilderV2.g:7571:1: ( ( rule__ExternalSpace__Group_9__0 )? )
-            // InternalHouseBuilderV2.g:7572:2: ( rule__ExternalSpace__Group_9__0 )?
+            // InternalHouseBuilderV2.g:7139:1: ( ( rule__ExternalSpace__Group_9__0 )? )
+            // InternalHouseBuilderV2.g:7140:2: ( rule__ExternalSpace__Group_9__0 )?
             {
              before(grammarAccess.getExternalSpaceAccess().getGroup_9()); 
-            // InternalHouseBuilderV2.g:7573:2: ( rule__ExternalSpace__Group_9__0 )?
-            int alt56=2;
-            int LA56_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:7141:2: ( rule__ExternalSpace__Group_9__0 )?
+            int alt52=2;
+            int LA52_0 = input.LA(1);
 
-            if ( (LA56_0==86) ) {
-                alt56=1;
+            if ( (LA52_0==86) ) {
+                alt52=1;
             }
-            switch (alt56) {
+            switch (alt52) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:7573:3: rule__ExternalSpace__Group_9__0
+                    // InternalHouseBuilderV2.g:7141:3: rule__ExternalSpace__Group_9__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__ExternalSpace__Group_9__0();
@@ -23307,14 +21987,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__10"
-    // InternalHouseBuilderV2.g:7581:1: rule__ExternalSpace__Group__10 : rule__ExternalSpace__Group__10__Impl rule__ExternalSpace__Group__11 ;
+    // InternalHouseBuilderV2.g:7149:1: rule__ExternalSpace__Group__10 : rule__ExternalSpace__Group__10__Impl rule__ExternalSpace__Group__11 ;
     public final void rule__ExternalSpace__Group__10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7585:1: ( rule__ExternalSpace__Group__10__Impl rule__ExternalSpace__Group__11 )
-            // InternalHouseBuilderV2.g:7586:2: rule__ExternalSpace__Group__10__Impl rule__ExternalSpace__Group__11
+            // InternalHouseBuilderV2.g:7153:1: ( rule__ExternalSpace__Group__10__Impl rule__ExternalSpace__Group__11 )
+            // InternalHouseBuilderV2.g:7154:2: rule__ExternalSpace__Group__10__Impl rule__ExternalSpace__Group__11
             {
             pushFollow(FOLLOW_49);
             rule__ExternalSpace__Group__10__Impl();
@@ -23345,29 +22025,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__10__Impl"
-    // InternalHouseBuilderV2.g:7593:1: rule__ExternalSpace__Group__10__Impl : ( ( rule__ExternalSpace__Group_10__0 )? ) ;
+    // InternalHouseBuilderV2.g:7161:1: rule__ExternalSpace__Group__10__Impl : ( ( rule__ExternalSpace__Group_10__0 )? ) ;
     public final void rule__ExternalSpace__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7597:1: ( ( ( rule__ExternalSpace__Group_10__0 )? ) )
-            // InternalHouseBuilderV2.g:7598:1: ( ( rule__ExternalSpace__Group_10__0 )? )
+            // InternalHouseBuilderV2.g:7165:1: ( ( ( rule__ExternalSpace__Group_10__0 )? ) )
+            // InternalHouseBuilderV2.g:7166:1: ( ( rule__ExternalSpace__Group_10__0 )? )
             {
-            // InternalHouseBuilderV2.g:7598:1: ( ( rule__ExternalSpace__Group_10__0 )? )
-            // InternalHouseBuilderV2.g:7599:2: ( rule__ExternalSpace__Group_10__0 )?
+            // InternalHouseBuilderV2.g:7166:1: ( ( rule__ExternalSpace__Group_10__0 )? )
+            // InternalHouseBuilderV2.g:7167:2: ( rule__ExternalSpace__Group_10__0 )?
             {
              before(grammarAccess.getExternalSpaceAccess().getGroup_10()); 
-            // InternalHouseBuilderV2.g:7600:2: ( rule__ExternalSpace__Group_10__0 )?
-            int alt57=2;
-            int LA57_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:7168:2: ( rule__ExternalSpace__Group_10__0 )?
+            int alt53=2;
+            int LA53_0 = input.LA(1);
 
-            if ( (LA57_0==103) ) {
-                alt57=1;
+            if ( (LA53_0==62) ) {
+                alt53=1;
             }
-            switch (alt57) {
+            switch (alt53) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:7600:3: rule__ExternalSpace__Group_10__0
+                    // InternalHouseBuilderV2.g:7168:3: rule__ExternalSpace__Group_10__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__ExternalSpace__Group_10__0();
@@ -23403,14 +22083,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__11"
-    // InternalHouseBuilderV2.g:7608:1: rule__ExternalSpace__Group__11 : rule__ExternalSpace__Group__11__Impl rule__ExternalSpace__Group__12 ;
+    // InternalHouseBuilderV2.g:7176:1: rule__ExternalSpace__Group__11 : rule__ExternalSpace__Group__11__Impl rule__ExternalSpace__Group__12 ;
     public final void rule__ExternalSpace__Group__11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7612:1: ( rule__ExternalSpace__Group__11__Impl rule__ExternalSpace__Group__12 )
-            // InternalHouseBuilderV2.g:7613:2: rule__ExternalSpace__Group__11__Impl rule__ExternalSpace__Group__12
+            // InternalHouseBuilderV2.g:7180:1: ( rule__ExternalSpace__Group__11__Impl rule__ExternalSpace__Group__12 )
+            // InternalHouseBuilderV2.g:7181:2: rule__ExternalSpace__Group__11__Impl rule__ExternalSpace__Group__12
             {
             pushFollow(FOLLOW_49);
             rule__ExternalSpace__Group__11__Impl();
@@ -23441,29 +22121,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__11__Impl"
-    // InternalHouseBuilderV2.g:7620:1: rule__ExternalSpace__Group__11__Impl : ( ( rule__ExternalSpace__Group_11__0 )? ) ;
+    // InternalHouseBuilderV2.g:7188:1: rule__ExternalSpace__Group__11__Impl : ( ( rule__ExternalSpace__Group_11__0 )? ) ;
     public final void rule__ExternalSpace__Group__11__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7624:1: ( ( ( rule__ExternalSpace__Group_11__0 )? ) )
-            // InternalHouseBuilderV2.g:7625:1: ( ( rule__ExternalSpace__Group_11__0 )? )
+            // InternalHouseBuilderV2.g:7192:1: ( ( ( rule__ExternalSpace__Group_11__0 )? ) )
+            // InternalHouseBuilderV2.g:7193:1: ( ( rule__ExternalSpace__Group_11__0 )? )
             {
-            // InternalHouseBuilderV2.g:7625:1: ( ( rule__ExternalSpace__Group_11__0 )? )
-            // InternalHouseBuilderV2.g:7626:2: ( rule__ExternalSpace__Group_11__0 )?
+            // InternalHouseBuilderV2.g:7193:1: ( ( rule__ExternalSpace__Group_11__0 )? )
+            // InternalHouseBuilderV2.g:7194:2: ( rule__ExternalSpace__Group_11__0 )?
             {
              before(grammarAccess.getExternalSpaceAccess().getGroup_11()); 
-            // InternalHouseBuilderV2.g:7627:2: ( rule__ExternalSpace__Group_11__0 )?
-            int alt58=2;
-            int LA58_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:7195:2: ( rule__ExternalSpace__Group_11__0 )?
+            int alt54=2;
+            int LA54_0 = input.LA(1);
 
-            if ( (LA58_0==104) ) {
-                alt58=1;
+            if ( (LA54_0==82) ) {
+                alt54=1;
             }
-            switch (alt58) {
+            switch (alt54) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:7627:3: rule__ExternalSpace__Group_11__0
+                    // InternalHouseBuilderV2.g:7195:3: rule__ExternalSpace__Group_11__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__ExternalSpace__Group_11__0();
@@ -23499,22 +22179,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__12"
-    // InternalHouseBuilderV2.g:7635:1: rule__ExternalSpace__Group__12 : rule__ExternalSpace__Group__12__Impl rule__ExternalSpace__Group__13 ;
+    // InternalHouseBuilderV2.g:7203:1: rule__ExternalSpace__Group__12 : rule__ExternalSpace__Group__12__Impl ;
     public final void rule__ExternalSpace__Group__12() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7639:1: ( rule__ExternalSpace__Group__12__Impl rule__ExternalSpace__Group__13 )
-            // InternalHouseBuilderV2.g:7640:2: rule__ExternalSpace__Group__12__Impl rule__ExternalSpace__Group__13
+            // InternalHouseBuilderV2.g:7207:1: ( rule__ExternalSpace__Group__12__Impl )
+            // InternalHouseBuilderV2.g:7208:2: rule__ExternalSpace__Group__12__Impl
             {
-            pushFollow(FOLLOW_49);
-            rule__ExternalSpace__Group__12__Impl();
-
-            state._fsp--;
-
             pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group__13();
+            rule__ExternalSpace__Group__12__Impl();
 
             state._fsp--;
 
@@ -23537,42 +22212,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group__12__Impl"
-    // InternalHouseBuilderV2.g:7647:1: rule__ExternalSpace__Group__12__Impl : ( ( rule__ExternalSpace__Group_12__0 )? ) ;
+    // InternalHouseBuilderV2.g:7214:1: rule__ExternalSpace__Group__12__Impl : ( '}' ) ;
     public final void rule__ExternalSpace__Group__12__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7651:1: ( ( ( rule__ExternalSpace__Group_12__0 )? ) )
-            // InternalHouseBuilderV2.g:7652:1: ( ( rule__ExternalSpace__Group_12__0 )? )
+            // InternalHouseBuilderV2.g:7218:1: ( ( '}' ) )
+            // InternalHouseBuilderV2.g:7219:1: ( '}' )
             {
-            // InternalHouseBuilderV2.g:7652:1: ( ( rule__ExternalSpace__Group_12__0 )? )
-            // InternalHouseBuilderV2.g:7653:2: ( rule__ExternalSpace__Group_12__0 )?
+            // InternalHouseBuilderV2.g:7219:1: ( '}' )
+            // InternalHouseBuilderV2.g:7220:2: '}'
             {
-             before(grammarAccess.getExternalSpaceAccess().getGroup_12()); 
-            // InternalHouseBuilderV2.g:7654:2: ( rule__ExternalSpace__Group_12__0 )?
-            int alt59=2;
-            int LA59_0 = input.LA(1);
-
-            if ( (LA59_0==62) ) {
-                alt59=1;
-            }
-            switch (alt59) {
-                case 1 :
-                    // InternalHouseBuilderV2.g:7654:3: rule__ExternalSpace__Group_12__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__ExternalSpace__Group_12__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getExternalSpaceAccess().getGroup_12()); 
+             before(grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_12()); 
+            match(input,61,FOLLOW_2); 
+             after(grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_12()); 
 
             }
 
@@ -23594,181 +22248,15 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__ExternalSpace__Group__12__Impl"
 
 
-    // $ANTLR start "rule__ExternalSpace__Group__13"
-    // InternalHouseBuilderV2.g:7662:1: rule__ExternalSpace__Group__13 : rule__ExternalSpace__Group__13__Impl rule__ExternalSpace__Group__14 ;
-    public final void rule__ExternalSpace__Group__13() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7666:1: ( rule__ExternalSpace__Group__13__Impl rule__ExternalSpace__Group__14 )
-            // InternalHouseBuilderV2.g:7667:2: rule__ExternalSpace__Group__13__Impl rule__ExternalSpace__Group__14
-            {
-            pushFollow(FOLLOW_49);
-            rule__ExternalSpace__Group__13__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group__14();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group__13"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group__13__Impl"
-    // InternalHouseBuilderV2.g:7674:1: rule__ExternalSpace__Group__13__Impl : ( ( rule__ExternalSpace__Group_13__0 )? ) ;
-    public final void rule__ExternalSpace__Group__13__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7678:1: ( ( ( rule__ExternalSpace__Group_13__0 )? ) )
-            // InternalHouseBuilderV2.g:7679:1: ( ( rule__ExternalSpace__Group_13__0 )? )
-            {
-            // InternalHouseBuilderV2.g:7679:1: ( ( rule__ExternalSpace__Group_13__0 )? )
-            // InternalHouseBuilderV2.g:7680:2: ( rule__ExternalSpace__Group_13__0 )?
-            {
-             before(grammarAccess.getExternalSpaceAccess().getGroup_13()); 
-            // InternalHouseBuilderV2.g:7681:2: ( rule__ExternalSpace__Group_13__0 )?
-            int alt60=2;
-            int LA60_0 = input.LA(1);
-
-            if ( (LA60_0==82) ) {
-                alt60=1;
-            }
-            switch (alt60) {
-                case 1 :
-                    // InternalHouseBuilderV2.g:7681:3: rule__ExternalSpace__Group_13__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__ExternalSpace__Group_13__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getExternalSpaceAccess().getGroup_13()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group__13__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group__14"
-    // InternalHouseBuilderV2.g:7689:1: rule__ExternalSpace__Group__14 : rule__ExternalSpace__Group__14__Impl ;
-    public final void rule__ExternalSpace__Group__14() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7693:1: ( rule__ExternalSpace__Group__14__Impl )
-            // InternalHouseBuilderV2.g:7694:2: rule__ExternalSpace__Group__14__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group__14__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group__14"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group__14__Impl"
-    // InternalHouseBuilderV2.g:7700:1: rule__ExternalSpace__Group__14__Impl : ( '}' ) ;
-    public final void rule__ExternalSpace__Group__14__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:7704:1: ( ( '}' ) )
-            // InternalHouseBuilderV2.g:7705:1: ( '}' )
-            {
-            // InternalHouseBuilderV2.g:7705:1: ( '}' )
-            // InternalHouseBuilderV2.g:7706:2: '}'
-            {
-             before(grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_14()); 
-            match(input,61,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_14()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group__14__Impl"
-
-
     // $ANTLR start "rule__ExternalSpace__Group_7__0"
-    // InternalHouseBuilderV2.g:7716:1: rule__ExternalSpace__Group_7__0 : rule__ExternalSpace__Group_7__0__Impl rule__ExternalSpace__Group_7__1 ;
+    // InternalHouseBuilderV2.g:7230:1: rule__ExternalSpace__Group_7__0 : rule__ExternalSpace__Group_7__0__Impl rule__ExternalSpace__Group_7__1 ;
     public final void rule__ExternalSpace__Group_7__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7720:1: ( rule__ExternalSpace__Group_7__0__Impl rule__ExternalSpace__Group_7__1 )
-            // InternalHouseBuilderV2.g:7721:2: rule__ExternalSpace__Group_7__0__Impl rule__ExternalSpace__Group_7__1
+            // InternalHouseBuilderV2.g:7234:1: ( rule__ExternalSpace__Group_7__0__Impl rule__ExternalSpace__Group_7__1 )
+            // InternalHouseBuilderV2.g:7235:2: rule__ExternalSpace__Group_7__0__Impl rule__ExternalSpace__Group_7__1
             {
             pushFollow(FOLLOW_50);
             rule__ExternalSpace__Group_7__0__Impl();
@@ -23799,17 +22287,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_7__0__Impl"
-    // InternalHouseBuilderV2.g:7728:1: rule__ExternalSpace__Group_7__0__Impl : ( 'type' ) ;
+    // InternalHouseBuilderV2.g:7242:1: rule__ExternalSpace__Group_7__0__Impl : ( 'type' ) ;
     public final void rule__ExternalSpace__Group_7__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7732:1: ( ( 'type' ) )
-            // InternalHouseBuilderV2.g:7733:1: ( 'type' )
+            // InternalHouseBuilderV2.g:7246:1: ( ( 'type' ) )
+            // InternalHouseBuilderV2.g:7247:1: ( 'type' )
             {
-            // InternalHouseBuilderV2.g:7733:1: ( 'type' )
-            // InternalHouseBuilderV2.g:7734:2: 'type'
+            // InternalHouseBuilderV2.g:7247:1: ( 'type' )
+            // InternalHouseBuilderV2.g:7248:2: 'type'
             {
              before(grammarAccess.getExternalSpaceAccess().getTypeKeyword_7_0()); 
             match(input,94,FOLLOW_2); 
@@ -23836,14 +22324,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_7__1"
-    // InternalHouseBuilderV2.g:7743:1: rule__ExternalSpace__Group_7__1 : rule__ExternalSpace__Group_7__1__Impl ;
+    // InternalHouseBuilderV2.g:7257:1: rule__ExternalSpace__Group_7__1 : rule__ExternalSpace__Group_7__1__Impl ;
     public final void rule__ExternalSpace__Group_7__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7747:1: ( rule__ExternalSpace__Group_7__1__Impl )
-            // InternalHouseBuilderV2.g:7748:2: rule__ExternalSpace__Group_7__1__Impl
+            // InternalHouseBuilderV2.g:7261:1: ( rule__ExternalSpace__Group_7__1__Impl )
+            // InternalHouseBuilderV2.g:7262:2: rule__ExternalSpace__Group_7__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__Group_7__1__Impl();
@@ -23869,21 +22357,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_7__1__Impl"
-    // InternalHouseBuilderV2.g:7754:1: rule__ExternalSpace__Group_7__1__Impl : ( ( rule__ExternalSpace__TypeAssignment_7_1 ) ) ;
+    // InternalHouseBuilderV2.g:7268:1: rule__ExternalSpace__Group_7__1__Impl : ( ( rule__ExternalSpace__TypeAssignment_7_1 ) ) ;
     public final void rule__ExternalSpace__Group_7__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7758:1: ( ( ( rule__ExternalSpace__TypeAssignment_7_1 ) ) )
-            // InternalHouseBuilderV2.g:7759:1: ( ( rule__ExternalSpace__TypeAssignment_7_1 ) )
+            // InternalHouseBuilderV2.g:7272:1: ( ( ( rule__ExternalSpace__TypeAssignment_7_1 ) ) )
+            // InternalHouseBuilderV2.g:7273:1: ( ( rule__ExternalSpace__TypeAssignment_7_1 ) )
             {
-            // InternalHouseBuilderV2.g:7759:1: ( ( rule__ExternalSpace__TypeAssignment_7_1 ) )
-            // InternalHouseBuilderV2.g:7760:2: ( rule__ExternalSpace__TypeAssignment_7_1 )
+            // InternalHouseBuilderV2.g:7273:1: ( ( rule__ExternalSpace__TypeAssignment_7_1 ) )
+            // InternalHouseBuilderV2.g:7274:2: ( rule__ExternalSpace__TypeAssignment_7_1 )
             {
              before(grammarAccess.getExternalSpaceAccess().getTypeAssignment_7_1()); 
-            // InternalHouseBuilderV2.g:7761:2: ( rule__ExternalSpace__TypeAssignment_7_1 )
-            // InternalHouseBuilderV2.g:7761:3: rule__ExternalSpace__TypeAssignment_7_1
+            // InternalHouseBuilderV2.g:7275:2: ( rule__ExternalSpace__TypeAssignment_7_1 )
+            // InternalHouseBuilderV2.g:7275:3: rule__ExternalSpace__TypeAssignment_7_1
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__TypeAssignment_7_1();
@@ -23916,14 +22404,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_8__0"
-    // InternalHouseBuilderV2.g:7770:1: rule__ExternalSpace__Group_8__0 : rule__ExternalSpace__Group_8__0__Impl rule__ExternalSpace__Group_8__1 ;
+    // InternalHouseBuilderV2.g:7284:1: rule__ExternalSpace__Group_8__0 : rule__ExternalSpace__Group_8__0__Impl rule__ExternalSpace__Group_8__1 ;
     public final void rule__ExternalSpace__Group_8__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7774:1: ( rule__ExternalSpace__Group_8__0__Impl rule__ExternalSpace__Group_8__1 )
-            // InternalHouseBuilderV2.g:7775:2: rule__ExternalSpace__Group_8__0__Impl rule__ExternalSpace__Group_8__1
+            // InternalHouseBuilderV2.g:7288:1: ( rule__ExternalSpace__Group_8__0__Impl rule__ExternalSpace__Group_8__1 )
+            // InternalHouseBuilderV2.g:7289:2: rule__ExternalSpace__Group_8__0__Impl rule__ExternalSpace__Group_8__1
             {
             pushFollow(FOLLOW_51);
             rule__ExternalSpace__Group_8__0__Impl();
@@ -23954,20 +22442,20 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_8__0__Impl"
-    // InternalHouseBuilderV2.g:7782:1: rule__ExternalSpace__Group_8__0__Impl : ( 'ground' ) ;
+    // InternalHouseBuilderV2.g:7296:1: rule__ExternalSpace__Group_8__0__Impl : ( 'ground' ) ;
     public final void rule__ExternalSpace__Group_8__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7786:1: ( ( 'ground' ) )
-            // InternalHouseBuilderV2.g:7787:1: ( 'ground' )
+            // InternalHouseBuilderV2.g:7300:1: ( ( 'ground' ) )
+            // InternalHouseBuilderV2.g:7301:1: ( 'ground' )
             {
-            // InternalHouseBuilderV2.g:7787:1: ( 'ground' )
-            // InternalHouseBuilderV2.g:7788:2: 'ground'
+            // InternalHouseBuilderV2.g:7301:1: ( 'ground' )
+            // InternalHouseBuilderV2.g:7302:2: 'ground'
             {
              before(grammarAccess.getExternalSpaceAccess().getGroundKeyword_8_0()); 
-            match(input,107,FOLLOW_2); 
+            match(input,105,FOLLOW_2); 
              after(grammarAccess.getExternalSpaceAccess().getGroundKeyword_8_0()); 
 
             }
@@ -23991,14 +22479,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_8__1"
-    // InternalHouseBuilderV2.g:7797:1: rule__ExternalSpace__Group_8__1 : rule__ExternalSpace__Group_8__1__Impl ;
+    // InternalHouseBuilderV2.g:7311:1: rule__ExternalSpace__Group_8__1 : rule__ExternalSpace__Group_8__1__Impl ;
     public final void rule__ExternalSpace__Group_8__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7801:1: ( rule__ExternalSpace__Group_8__1__Impl )
-            // InternalHouseBuilderV2.g:7802:2: rule__ExternalSpace__Group_8__1__Impl
+            // InternalHouseBuilderV2.g:7315:1: ( rule__ExternalSpace__Group_8__1__Impl )
+            // InternalHouseBuilderV2.g:7316:2: rule__ExternalSpace__Group_8__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__Group_8__1__Impl();
@@ -24024,21 +22512,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_8__1__Impl"
-    // InternalHouseBuilderV2.g:7808:1: rule__ExternalSpace__Group_8__1__Impl : ( ( rule__ExternalSpace__GroundAssignment_8_1 ) ) ;
+    // InternalHouseBuilderV2.g:7322:1: rule__ExternalSpace__Group_8__1__Impl : ( ( rule__ExternalSpace__GroundAssignment_8_1 ) ) ;
     public final void rule__ExternalSpace__Group_8__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7812:1: ( ( ( rule__ExternalSpace__GroundAssignment_8_1 ) ) )
-            // InternalHouseBuilderV2.g:7813:1: ( ( rule__ExternalSpace__GroundAssignment_8_1 ) )
+            // InternalHouseBuilderV2.g:7326:1: ( ( ( rule__ExternalSpace__GroundAssignment_8_1 ) ) )
+            // InternalHouseBuilderV2.g:7327:1: ( ( rule__ExternalSpace__GroundAssignment_8_1 ) )
             {
-            // InternalHouseBuilderV2.g:7813:1: ( ( rule__ExternalSpace__GroundAssignment_8_1 ) )
-            // InternalHouseBuilderV2.g:7814:2: ( rule__ExternalSpace__GroundAssignment_8_1 )
+            // InternalHouseBuilderV2.g:7327:1: ( ( rule__ExternalSpace__GroundAssignment_8_1 ) )
+            // InternalHouseBuilderV2.g:7328:2: ( rule__ExternalSpace__GroundAssignment_8_1 )
             {
              before(grammarAccess.getExternalSpaceAccess().getGroundAssignment_8_1()); 
-            // InternalHouseBuilderV2.g:7815:2: ( rule__ExternalSpace__GroundAssignment_8_1 )
-            // InternalHouseBuilderV2.g:7815:3: rule__ExternalSpace__GroundAssignment_8_1
+            // InternalHouseBuilderV2.g:7329:2: ( rule__ExternalSpace__GroundAssignment_8_1 )
+            // InternalHouseBuilderV2.g:7329:3: rule__ExternalSpace__GroundAssignment_8_1
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__GroundAssignment_8_1();
@@ -24071,14 +22559,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9__0"
-    // InternalHouseBuilderV2.g:7824:1: rule__ExternalSpace__Group_9__0 : rule__ExternalSpace__Group_9__0__Impl rule__ExternalSpace__Group_9__1 ;
+    // InternalHouseBuilderV2.g:7338:1: rule__ExternalSpace__Group_9__0 : rule__ExternalSpace__Group_9__0__Impl rule__ExternalSpace__Group_9__1 ;
     public final void rule__ExternalSpace__Group_9__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7828:1: ( rule__ExternalSpace__Group_9__0__Impl rule__ExternalSpace__Group_9__1 )
-            // InternalHouseBuilderV2.g:7829:2: rule__ExternalSpace__Group_9__0__Impl rule__ExternalSpace__Group_9__1
+            // InternalHouseBuilderV2.g:7342:1: ( rule__ExternalSpace__Group_9__0__Impl rule__ExternalSpace__Group_9__1 )
+            // InternalHouseBuilderV2.g:7343:2: rule__ExternalSpace__Group_9__0__Impl rule__ExternalSpace__Group_9__1
             {
             pushFollow(FOLLOW_46);
             rule__ExternalSpace__Group_9__0__Impl();
@@ -24109,17 +22597,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9__0__Impl"
-    // InternalHouseBuilderV2.g:7836:1: rule__ExternalSpace__Group_9__0__Impl : ( 'sensors' ) ;
+    // InternalHouseBuilderV2.g:7350:1: rule__ExternalSpace__Group_9__0__Impl : ( 'sensors' ) ;
     public final void rule__ExternalSpace__Group_9__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7840:1: ( ( 'sensors' ) )
-            // InternalHouseBuilderV2.g:7841:1: ( 'sensors' )
+            // InternalHouseBuilderV2.g:7354:1: ( ( 'sensors' ) )
+            // InternalHouseBuilderV2.g:7355:1: ( 'sensors' )
             {
-            // InternalHouseBuilderV2.g:7841:1: ( 'sensors' )
-            // InternalHouseBuilderV2.g:7842:2: 'sensors'
+            // InternalHouseBuilderV2.g:7355:1: ( 'sensors' )
+            // InternalHouseBuilderV2.g:7356:2: 'sensors'
             {
              before(grammarAccess.getExternalSpaceAccess().getSensorsKeyword_9_0()); 
             match(input,86,FOLLOW_2); 
@@ -24146,14 +22634,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9__1"
-    // InternalHouseBuilderV2.g:7851:1: rule__ExternalSpace__Group_9__1 : rule__ExternalSpace__Group_9__1__Impl rule__ExternalSpace__Group_9__2 ;
+    // InternalHouseBuilderV2.g:7365:1: rule__ExternalSpace__Group_9__1 : rule__ExternalSpace__Group_9__1__Impl rule__ExternalSpace__Group_9__2 ;
     public final void rule__ExternalSpace__Group_9__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7855:1: ( rule__ExternalSpace__Group_9__1__Impl rule__ExternalSpace__Group_9__2 )
-            // InternalHouseBuilderV2.g:7856:2: rule__ExternalSpace__Group_9__1__Impl rule__ExternalSpace__Group_9__2
+            // InternalHouseBuilderV2.g:7369:1: ( rule__ExternalSpace__Group_9__1__Impl rule__ExternalSpace__Group_9__2 )
+            // InternalHouseBuilderV2.g:7370:2: rule__ExternalSpace__Group_9__1__Impl rule__ExternalSpace__Group_9__2
             {
             pushFollow(FOLLOW_3);
             rule__ExternalSpace__Group_9__1__Impl();
@@ -24184,17 +22672,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9__1__Impl"
-    // InternalHouseBuilderV2.g:7863:1: rule__ExternalSpace__Group_9__1__Impl : ( '(' ) ;
+    // InternalHouseBuilderV2.g:7377:1: rule__ExternalSpace__Group_9__1__Impl : ( '(' ) ;
     public final void rule__ExternalSpace__Group_9__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7867:1: ( ( '(' ) )
-            // InternalHouseBuilderV2.g:7868:1: ( '(' )
+            // InternalHouseBuilderV2.g:7381:1: ( ( '(' ) )
+            // InternalHouseBuilderV2.g:7382:1: ( '(' )
             {
-            // InternalHouseBuilderV2.g:7868:1: ( '(' )
-            // InternalHouseBuilderV2.g:7869:2: '('
+            // InternalHouseBuilderV2.g:7382:1: ( '(' )
+            // InternalHouseBuilderV2.g:7383:2: '('
             {
              before(grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_9_1()); 
             match(input,101,FOLLOW_2); 
@@ -24221,14 +22709,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9__2"
-    // InternalHouseBuilderV2.g:7878:1: rule__ExternalSpace__Group_9__2 : rule__ExternalSpace__Group_9__2__Impl rule__ExternalSpace__Group_9__3 ;
+    // InternalHouseBuilderV2.g:7392:1: rule__ExternalSpace__Group_9__2 : rule__ExternalSpace__Group_9__2__Impl rule__ExternalSpace__Group_9__3 ;
     public final void rule__ExternalSpace__Group_9__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7882:1: ( rule__ExternalSpace__Group_9__2__Impl rule__ExternalSpace__Group_9__3 )
-            // InternalHouseBuilderV2.g:7883:2: rule__ExternalSpace__Group_9__2__Impl rule__ExternalSpace__Group_9__3
+            // InternalHouseBuilderV2.g:7396:1: ( rule__ExternalSpace__Group_9__2__Impl rule__ExternalSpace__Group_9__3 )
+            // InternalHouseBuilderV2.g:7397:2: rule__ExternalSpace__Group_9__2__Impl rule__ExternalSpace__Group_9__3
             {
             pushFollow(FOLLOW_47);
             rule__ExternalSpace__Group_9__2__Impl();
@@ -24259,21 +22747,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9__2__Impl"
-    // InternalHouseBuilderV2.g:7890:1: rule__ExternalSpace__Group_9__2__Impl : ( ( rule__ExternalSpace__SensorsAssignment_9_2 ) ) ;
+    // InternalHouseBuilderV2.g:7404:1: rule__ExternalSpace__Group_9__2__Impl : ( ( rule__ExternalSpace__SensorsAssignment_9_2 ) ) ;
     public final void rule__ExternalSpace__Group_9__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7894:1: ( ( ( rule__ExternalSpace__SensorsAssignment_9_2 ) ) )
-            // InternalHouseBuilderV2.g:7895:1: ( ( rule__ExternalSpace__SensorsAssignment_9_2 ) )
+            // InternalHouseBuilderV2.g:7408:1: ( ( ( rule__ExternalSpace__SensorsAssignment_9_2 ) ) )
+            // InternalHouseBuilderV2.g:7409:1: ( ( rule__ExternalSpace__SensorsAssignment_9_2 ) )
             {
-            // InternalHouseBuilderV2.g:7895:1: ( ( rule__ExternalSpace__SensorsAssignment_9_2 ) )
-            // InternalHouseBuilderV2.g:7896:2: ( rule__ExternalSpace__SensorsAssignment_9_2 )
+            // InternalHouseBuilderV2.g:7409:1: ( ( rule__ExternalSpace__SensorsAssignment_9_2 ) )
+            // InternalHouseBuilderV2.g:7410:2: ( rule__ExternalSpace__SensorsAssignment_9_2 )
             {
              before(grammarAccess.getExternalSpaceAccess().getSensorsAssignment_9_2()); 
-            // InternalHouseBuilderV2.g:7897:2: ( rule__ExternalSpace__SensorsAssignment_9_2 )
-            // InternalHouseBuilderV2.g:7897:3: rule__ExternalSpace__SensorsAssignment_9_2
+            // InternalHouseBuilderV2.g:7411:2: ( rule__ExternalSpace__SensorsAssignment_9_2 )
+            // InternalHouseBuilderV2.g:7411:3: rule__ExternalSpace__SensorsAssignment_9_2
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__SensorsAssignment_9_2();
@@ -24306,14 +22794,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9__3"
-    // InternalHouseBuilderV2.g:7905:1: rule__ExternalSpace__Group_9__3 : rule__ExternalSpace__Group_9__3__Impl rule__ExternalSpace__Group_9__4 ;
+    // InternalHouseBuilderV2.g:7419:1: rule__ExternalSpace__Group_9__3 : rule__ExternalSpace__Group_9__3__Impl rule__ExternalSpace__Group_9__4 ;
     public final void rule__ExternalSpace__Group_9__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7909:1: ( rule__ExternalSpace__Group_9__3__Impl rule__ExternalSpace__Group_9__4 )
-            // InternalHouseBuilderV2.g:7910:2: rule__ExternalSpace__Group_9__3__Impl rule__ExternalSpace__Group_9__4
+            // InternalHouseBuilderV2.g:7423:1: ( rule__ExternalSpace__Group_9__3__Impl rule__ExternalSpace__Group_9__4 )
+            // InternalHouseBuilderV2.g:7424:2: rule__ExternalSpace__Group_9__3__Impl rule__ExternalSpace__Group_9__4
             {
             pushFollow(FOLLOW_47);
             rule__ExternalSpace__Group_9__3__Impl();
@@ -24344,33 +22832,33 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9__3__Impl"
-    // InternalHouseBuilderV2.g:7917:1: rule__ExternalSpace__Group_9__3__Impl : ( ( rule__ExternalSpace__Group_9_3__0 )* ) ;
+    // InternalHouseBuilderV2.g:7431:1: rule__ExternalSpace__Group_9__3__Impl : ( ( rule__ExternalSpace__Group_9_3__0 )* ) ;
     public final void rule__ExternalSpace__Group_9__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7921:1: ( ( ( rule__ExternalSpace__Group_9_3__0 )* ) )
-            // InternalHouseBuilderV2.g:7922:1: ( ( rule__ExternalSpace__Group_9_3__0 )* )
+            // InternalHouseBuilderV2.g:7435:1: ( ( ( rule__ExternalSpace__Group_9_3__0 )* ) )
+            // InternalHouseBuilderV2.g:7436:1: ( ( rule__ExternalSpace__Group_9_3__0 )* )
             {
-            // InternalHouseBuilderV2.g:7922:1: ( ( rule__ExternalSpace__Group_9_3__0 )* )
-            // InternalHouseBuilderV2.g:7923:2: ( rule__ExternalSpace__Group_9_3__0 )*
+            // InternalHouseBuilderV2.g:7436:1: ( ( rule__ExternalSpace__Group_9_3__0 )* )
+            // InternalHouseBuilderV2.g:7437:2: ( rule__ExternalSpace__Group_9_3__0 )*
             {
              before(grammarAccess.getExternalSpaceAccess().getGroup_9_3()); 
-            // InternalHouseBuilderV2.g:7924:2: ( rule__ExternalSpace__Group_9_3__0 )*
-            loop61:
+            // InternalHouseBuilderV2.g:7438:2: ( rule__ExternalSpace__Group_9_3__0 )*
+            loop55:
             do {
-                int alt61=2;
-                int LA61_0 = input.LA(1);
+                int alt55=2;
+                int LA55_0 = input.LA(1);
 
-                if ( (LA61_0==69) ) {
-                    alt61=1;
+                if ( (LA55_0==69) ) {
+                    alt55=1;
                 }
 
 
-                switch (alt61) {
+                switch (alt55) {
             	case 1 :
-            	    // InternalHouseBuilderV2.g:7924:3: rule__ExternalSpace__Group_9_3__0
+            	    // InternalHouseBuilderV2.g:7438:3: rule__ExternalSpace__Group_9_3__0
             	    {
             	    pushFollow(FOLLOW_8);
             	    rule__ExternalSpace__Group_9_3__0();
@@ -24382,7 +22870,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop61;
+            	    break loop55;
                 }
             } while (true);
 
@@ -24409,14 +22897,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9__4"
-    // InternalHouseBuilderV2.g:7932:1: rule__ExternalSpace__Group_9__4 : rule__ExternalSpace__Group_9__4__Impl ;
+    // InternalHouseBuilderV2.g:7446:1: rule__ExternalSpace__Group_9__4 : rule__ExternalSpace__Group_9__4__Impl ;
     public final void rule__ExternalSpace__Group_9__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7936:1: ( rule__ExternalSpace__Group_9__4__Impl )
-            // InternalHouseBuilderV2.g:7937:2: rule__ExternalSpace__Group_9__4__Impl
+            // InternalHouseBuilderV2.g:7450:1: ( rule__ExternalSpace__Group_9__4__Impl )
+            // InternalHouseBuilderV2.g:7451:2: rule__ExternalSpace__Group_9__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__Group_9__4__Impl();
@@ -24442,17 +22930,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9__4__Impl"
-    // InternalHouseBuilderV2.g:7943:1: rule__ExternalSpace__Group_9__4__Impl : ( ')' ) ;
+    // InternalHouseBuilderV2.g:7457:1: rule__ExternalSpace__Group_9__4__Impl : ( ')' ) ;
     public final void rule__ExternalSpace__Group_9__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7947:1: ( ( ')' ) )
-            // InternalHouseBuilderV2.g:7948:1: ( ')' )
+            // InternalHouseBuilderV2.g:7461:1: ( ( ')' ) )
+            // InternalHouseBuilderV2.g:7462:1: ( ')' )
             {
-            // InternalHouseBuilderV2.g:7948:1: ( ')' )
-            // InternalHouseBuilderV2.g:7949:2: ')'
+            // InternalHouseBuilderV2.g:7462:1: ( ')' )
+            // InternalHouseBuilderV2.g:7463:2: ')'
             {
              before(grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_9_4()); 
             match(input,102,FOLLOW_2); 
@@ -24479,14 +22967,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9_3__0"
-    // InternalHouseBuilderV2.g:7959:1: rule__ExternalSpace__Group_9_3__0 : rule__ExternalSpace__Group_9_3__0__Impl rule__ExternalSpace__Group_9_3__1 ;
+    // InternalHouseBuilderV2.g:7473:1: rule__ExternalSpace__Group_9_3__0 : rule__ExternalSpace__Group_9_3__0__Impl rule__ExternalSpace__Group_9_3__1 ;
     public final void rule__ExternalSpace__Group_9_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7963:1: ( rule__ExternalSpace__Group_9_3__0__Impl rule__ExternalSpace__Group_9_3__1 )
-            // InternalHouseBuilderV2.g:7964:2: rule__ExternalSpace__Group_9_3__0__Impl rule__ExternalSpace__Group_9_3__1
+            // InternalHouseBuilderV2.g:7477:1: ( rule__ExternalSpace__Group_9_3__0__Impl rule__ExternalSpace__Group_9_3__1 )
+            // InternalHouseBuilderV2.g:7478:2: rule__ExternalSpace__Group_9_3__0__Impl rule__ExternalSpace__Group_9_3__1
             {
             pushFollow(FOLLOW_3);
             rule__ExternalSpace__Group_9_3__0__Impl();
@@ -24517,17 +23005,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9_3__0__Impl"
-    // InternalHouseBuilderV2.g:7971:1: rule__ExternalSpace__Group_9_3__0__Impl : ( ',' ) ;
+    // InternalHouseBuilderV2.g:7485:1: rule__ExternalSpace__Group_9_3__0__Impl : ( ',' ) ;
     public final void rule__ExternalSpace__Group_9_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7975:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:7976:1: ( ',' )
+            // InternalHouseBuilderV2.g:7489:1: ( ( ',' ) )
+            // InternalHouseBuilderV2.g:7490:1: ( ',' )
             {
-            // InternalHouseBuilderV2.g:7976:1: ( ',' )
-            // InternalHouseBuilderV2.g:7977:2: ','
+            // InternalHouseBuilderV2.g:7490:1: ( ',' )
+            // InternalHouseBuilderV2.g:7491:2: ','
             {
              before(grammarAccess.getExternalSpaceAccess().getCommaKeyword_9_3_0()); 
             match(input,69,FOLLOW_2); 
@@ -24554,14 +23042,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9_3__1"
-    // InternalHouseBuilderV2.g:7986:1: rule__ExternalSpace__Group_9_3__1 : rule__ExternalSpace__Group_9_3__1__Impl ;
+    // InternalHouseBuilderV2.g:7500:1: rule__ExternalSpace__Group_9_3__1 : rule__ExternalSpace__Group_9_3__1__Impl ;
     public final void rule__ExternalSpace__Group_9_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:7990:1: ( rule__ExternalSpace__Group_9_3__1__Impl )
-            // InternalHouseBuilderV2.g:7991:2: rule__ExternalSpace__Group_9_3__1__Impl
+            // InternalHouseBuilderV2.g:7504:1: ( rule__ExternalSpace__Group_9_3__1__Impl )
+            // InternalHouseBuilderV2.g:7505:2: rule__ExternalSpace__Group_9_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__Group_9_3__1__Impl();
@@ -24587,21 +23075,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_9_3__1__Impl"
-    // InternalHouseBuilderV2.g:7997:1: rule__ExternalSpace__Group_9_3__1__Impl : ( ( rule__ExternalSpace__SensorsAssignment_9_3_1 ) ) ;
+    // InternalHouseBuilderV2.g:7511:1: rule__ExternalSpace__Group_9_3__1__Impl : ( ( rule__ExternalSpace__SensorsAssignment_9_3_1 ) ) ;
     public final void rule__ExternalSpace__Group_9_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8001:1: ( ( ( rule__ExternalSpace__SensorsAssignment_9_3_1 ) ) )
-            // InternalHouseBuilderV2.g:8002:1: ( ( rule__ExternalSpace__SensorsAssignment_9_3_1 ) )
+            // InternalHouseBuilderV2.g:7515:1: ( ( ( rule__ExternalSpace__SensorsAssignment_9_3_1 ) ) )
+            // InternalHouseBuilderV2.g:7516:1: ( ( rule__ExternalSpace__SensorsAssignment_9_3_1 ) )
             {
-            // InternalHouseBuilderV2.g:8002:1: ( ( rule__ExternalSpace__SensorsAssignment_9_3_1 ) )
-            // InternalHouseBuilderV2.g:8003:2: ( rule__ExternalSpace__SensorsAssignment_9_3_1 )
+            // InternalHouseBuilderV2.g:7516:1: ( ( rule__ExternalSpace__SensorsAssignment_9_3_1 ) )
+            // InternalHouseBuilderV2.g:7517:2: ( rule__ExternalSpace__SensorsAssignment_9_3_1 )
             {
              before(grammarAccess.getExternalSpaceAccess().getSensorsAssignment_9_3_1()); 
-            // InternalHouseBuilderV2.g:8004:2: ( rule__ExternalSpace__SensorsAssignment_9_3_1 )
-            // InternalHouseBuilderV2.g:8004:3: rule__ExternalSpace__SensorsAssignment_9_3_1
+            // InternalHouseBuilderV2.g:7518:2: ( rule__ExternalSpace__SensorsAssignment_9_3_1 )
+            // InternalHouseBuilderV2.g:7518:3: rule__ExternalSpace__SensorsAssignment_9_3_1
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__SensorsAssignment_9_3_1();
@@ -24634,14 +23122,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10__0"
-    // InternalHouseBuilderV2.g:8013:1: rule__ExternalSpace__Group_10__0 : rule__ExternalSpace__Group_10__0__Impl rule__ExternalSpace__Group_10__1 ;
+    // InternalHouseBuilderV2.g:7527:1: rule__ExternalSpace__Group_10__0 : rule__ExternalSpace__Group_10__0__Impl rule__ExternalSpace__Group_10__1 ;
     public final void rule__ExternalSpace__Group_10__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8017:1: ( rule__ExternalSpace__Group_10__0__Impl rule__ExternalSpace__Group_10__1 )
-            // InternalHouseBuilderV2.g:8018:2: rule__ExternalSpace__Group_10__0__Impl rule__ExternalSpace__Group_10__1
+            // InternalHouseBuilderV2.g:7531:1: ( rule__ExternalSpace__Group_10__0__Impl rule__ExternalSpace__Group_10__1 )
+            // InternalHouseBuilderV2.g:7532:2: rule__ExternalSpace__Group_10__0__Impl rule__ExternalSpace__Group_10__1
             {
             pushFollow(FOLLOW_46);
             rule__ExternalSpace__Group_10__0__Impl();
@@ -24672,21 +23160,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10__0__Impl"
-    // InternalHouseBuilderV2.g:8025:1: rule__ExternalSpace__Group_10__0__Impl : ( 'passagesA' ) ;
+    // InternalHouseBuilderV2.g:7539:1: rule__ExternalSpace__Group_10__0__Impl : ( 'entrances' ) ;
     public final void rule__ExternalSpace__Group_10__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8029:1: ( ( 'passagesA' ) )
-            // InternalHouseBuilderV2.g:8030:1: ( 'passagesA' )
+            // InternalHouseBuilderV2.g:7543:1: ( ( 'entrances' ) )
+            // InternalHouseBuilderV2.g:7544:1: ( 'entrances' )
             {
-            // InternalHouseBuilderV2.g:8030:1: ( 'passagesA' )
-            // InternalHouseBuilderV2.g:8031:2: 'passagesA'
+            // InternalHouseBuilderV2.g:7544:1: ( 'entrances' )
+            // InternalHouseBuilderV2.g:7545:2: 'entrances'
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesAKeyword_10_0()); 
-            match(input,103,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getPassagesAKeyword_10_0()); 
+             before(grammarAccess.getExternalSpaceAccess().getEntrancesKeyword_10_0()); 
+            match(input,62,FOLLOW_2); 
+             after(grammarAccess.getExternalSpaceAccess().getEntrancesKeyword_10_0()); 
 
             }
 
@@ -24709,14 +23197,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10__1"
-    // InternalHouseBuilderV2.g:8040:1: rule__ExternalSpace__Group_10__1 : rule__ExternalSpace__Group_10__1__Impl rule__ExternalSpace__Group_10__2 ;
+    // InternalHouseBuilderV2.g:7554:1: rule__ExternalSpace__Group_10__1 : rule__ExternalSpace__Group_10__1__Impl rule__ExternalSpace__Group_10__2 ;
     public final void rule__ExternalSpace__Group_10__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8044:1: ( rule__ExternalSpace__Group_10__1__Impl rule__ExternalSpace__Group_10__2 )
-            // InternalHouseBuilderV2.g:8045:2: rule__ExternalSpace__Group_10__1__Impl rule__ExternalSpace__Group_10__2
+            // InternalHouseBuilderV2.g:7558:1: ( rule__ExternalSpace__Group_10__1__Impl rule__ExternalSpace__Group_10__2 )
+            // InternalHouseBuilderV2.g:7559:2: rule__ExternalSpace__Group_10__1__Impl rule__ExternalSpace__Group_10__2
             {
             pushFollow(FOLLOW_3);
             rule__ExternalSpace__Group_10__1__Impl();
@@ -24747,17 +23235,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10__1__Impl"
-    // InternalHouseBuilderV2.g:8052:1: rule__ExternalSpace__Group_10__1__Impl : ( '(' ) ;
+    // InternalHouseBuilderV2.g:7566:1: rule__ExternalSpace__Group_10__1__Impl : ( '(' ) ;
     public final void rule__ExternalSpace__Group_10__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8056:1: ( ( '(' ) )
-            // InternalHouseBuilderV2.g:8057:1: ( '(' )
+            // InternalHouseBuilderV2.g:7570:1: ( ( '(' ) )
+            // InternalHouseBuilderV2.g:7571:1: ( '(' )
             {
-            // InternalHouseBuilderV2.g:8057:1: ( '(' )
-            // InternalHouseBuilderV2.g:8058:2: '('
+            // InternalHouseBuilderV2.g:7571:1: ( '(' )
+            // InternalHouseBuilderV2.g:7572:2: '('
             {
              before(grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_10_1()); 
             match(input,101,FOLLOW_2); 
@@ -24784,14 +23272,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10__2"
-    // InternalHouseBuilderV2.g:8067:1: rule__ExternalSpace__Group_10__2 : rule__ExternalSpace__Group_10__2__Impl rule__ExternalSpace__Group_10__3 ;
+    // InternalHouseBuilderV2.g:7581:1: rule__ExternalSpace__Group_10__2 : rule__ExternalSpace__Group_10__2__Impl rule__ExternalSpace__Group_10__3 ;
     public final void rule__ExternalSpace__Group_10__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8071:1: ( rule__ExternalSpace__Group_10__2__Impl rule__ExternalSpace__Group_10__3 )
-            // InternalHouseBuilderV2.g:8072:2: rule__ExternalSpace__Group_10__2__Impl rule__ExternalSpace__Group_10__3
+            // InternalHouseBuilderV2.g:7585:1: ( rule__ExternalSpace__Group_10__2__Impl rule__ExternalSpace__Group_10__3 )
+            // InternalHouseBuilderV2.g:7586:2: rule__ExternalSpace__Group_10__2__Impl rule__ExternalSpace__Group_10__3
             {
             pushFollow(FOLLOW_47);
             rule__ExternalSpace__Group_10__2__Impl();
@@ -24822,31 +23310,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10__2__Impl"
-    // InternalHouseBuilderV2.g:8079:1: rule__ExternalSpace__Group_10__2__Impl : ( ( rule__ExternalSpace__PassagesAAssignment_10_2 ) ) ;
+    // InternalHouseBuilderV2.g:7593:1: rule__ExternalSpace__Group_10__2__Impl : ( ( rule__ExternalSpace__EntrancesAssignment_10_2 ) ) ;
     public final void rule__ExternalSpace__Group_10__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8083:1: ( ( ( rule__ExternalSpace__PassagesAAssignment_10_2 ) ) )
-            // InternalHouseBuilderV2.g:8084:1: ( ( rule__ExternalSpace__PassagesAAssignment_10_2 ) )
+            // InternalHouseBuilderV2.g:7597:1: ( ( ( rule__ExternalSpace__EntrancesAssignment_10_2 ) ) )
+            // InternalHouseBuilderV2.g:7598:1: ( ( rule__ExternalSpace__EntrancesAssignment_10_2 ) )
             {
-            // InternalHouseBuilderV2.g:8084:1: ( ( rule__ExternalSpace__PassagesAAssignment_10_2 ) )
-            // InternalHouseBuilderV2.g:8085:2: ( rule__ExternalSpace__PassagesAAssignment_10_2 )
+            // InternalHouseBuilderV2.g:7598:1: ( ( rule__ExternalSpace__EntrancesAssignment_10_2 ) )
+            // InternalHouseBuilderV2.g:7599:2: ( rule__ExternalSpace__EntrancesAssignment_10_2 )
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesAAssignment_10_2()); 
-            // InternalHouseBuilderV2.g:8086:2: ( rule__ExternalSpace__PassagesAAssignment_10_2 )
-            // InternalHouseBuilderV2.g:8086:3: rule__ExternalSpace__PassagesAAssignment_10_2
+             before(grammarAccess.getExternalSpaceAccess().getEntrancesAssignment_10_2()); 
+            // InternalHouseBuilderV2.g:7600:2: ( rule__ExternalSpace__EntrancesAssignment_10_2 )
+            // InternalHouseBuilderV2.g:7600:3: rule__ExternalSpace__EntrancesAssignment_10_2
             {
             pushFollow(FOLLOW_2);
-            rule__ExternalSpace__PassagesAAssignment_10_2();
+            rule__ExternalSpace__EntrancesAssignment_10_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getExternalSpaceAccess().getPassagesAAssignment_10_2()); 
+             after(grammarAccess.getExternalSpaceAccess().getEntrancesAssignment_10_2()); 
 
             }
 
@@ -24869,14 +23357,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10__3"
-    // InternalHouseBuilderV2.g:8094:1: rule__ExternalSpace__Group_10__3 : rule__ExternalSpace__Group_10__3__Impl rule__ExternalSpace__Group_10__4 ;
+    // InternalHouseBuilderV2.g:7608:1: rule__ExternalSpace__Group_10__3 : rule__ExternalSpace__Group_10__3__Impl rule__ExternalSpace__Group_10__4 ;
     public final void rule__ExternalSpace__Group_10__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8098:1: ( rule__ExternalSpace__Group_10__3__Impl rule__ExternalSpace__Group_10__4 )
-            // InternalHouseBuilderV2.g:8099:2: rule__ExternalSpace__Group_10__3__Impl rule__ExternalSpace__Group_10__4
+            // InternalHouseBuilderV2.g:7612:1: ( rule__ExternalSpace__Group_10__3__Impl rule__ExternalSpace__Group_10__4 )
+            // InternalHouseBuilderV2.g:7613:2: rule__ExternalSpace__Group_10__3__Impl rule__ExternalSpace__Group_10__4
             {
             pushFollow(FOLLOW_47);
             rule__ExternalSpace__Group_10__3__Impl();
@@ -24907,33 +23395,33 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10__3__Impl"
-    // InternalHouseBuilderV2.g:8106:1: rule__ExternalSpace__Group_10__3__Impl : ( ( rule__ExternalSpace__Group_10_3__0 )* ) ;
+    // InternalHouseBuilderV2.g:7620:1: rule__ExternalSpace__Group_10__3__Impl : ( ( rule__ExternalSpace__Group_10_3__0 )* ) ;
     public final void rule__ExternalSpace__Group_10__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8110:1: ( ( ( rule__ExternalSpace__Group_10_3__0 )* ) )
-            // InternalHouseBuilderV2.g:8111:1: ( ( rule__ExternalSpace__Group_10_3__0 )* )
+            // InternalHouseBuilderV2.g:7624:1: ( ( ( rule__ExternalSpace__Group_10_3__0 )* ) )
+            // InternalHouseBuilderV2.g:7625:1: ( ( rule__ExternalSpace__Group_10_3__0 )* )
             {
-            // InternalHouseBuilderV2.g:8111:1: ( ( rule__ExternalSpace__Group_10_3__0 )* )
-            // InternalHouseBuilderV2.g:8112:2: ( rule__ExternalSpace__Group_10_3__0 )*
+            // InternalHouseBuilderV2.g:7625:1: ( ( rule__ExternalSpace__Group_10_3__0 )* )
+            // InternalHouseBuilderV2.g:7626:2: ( rule__ExternalSpace__Group_10_3__0 )*
             {
              before(grammarAccess.getExternalSpaceAccess().getGroup_10_3()); 
-            // InternalHouseBuilderV2.g:8113:2: ( rule__ExternalSpace__Group_10_3__0 )*
-            loop62:
+            // InternalHouseBuilderV2.g:7627:2: ( rule__ExternalSpace__Group_10_3__0 )*
+            loop56:
             do {
-                int alt62=2;
-                int LA62_0 = input.LA(1);
+                int alt56=2;
+                int LA56_0 = input.LA(1);
 
-                if ( (LA62_0==69) ) {
-                    alt62=1;
+                if ( (LA56_0==69) ) {
+                    alt56=1;
                 }
 
 
-                switch (alt62) {
+                switch (alt56) {
             	case 1 :
-            	    // InternalHouseBuilderV2.g:8113:3: rule__ExternalSpace__Group_10_3__0
+            	    // InternalHouseBuilderV2.g:7627:3: rule__ExternalSpace__Group_10_3__0
             	    {
             	    pushFollow(FOLLOW_8);
             	    rule__ExternalSpace__Group_10_3__0();
@@ -24945,7 +23433,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop62;
+            	    break loop56;
                 }
             } while (true);
 
@@ -24972,14 +23460,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10__4"
-    // InternalHouseBuilderV2.g:8121:1: rule__ExternalSpace__Group_10__4 : rule__ExternalSpace__Group_10__4__Impl ;
+    // InternalHouseBuilderV2.g:7635:1: rule__ExternalSpace__Group_10__4 : rule__ExternalSpace__Group_10__4__Impl ;
     public final void rule__ExternalSpace__Group_10__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8125:1: ( rule__ExternalSpace__Group_10__4__Impl )
-            // InternalHouseBuilderV2.g:8126:2: rule__ExternalSpace__Group_10__4__Impl
+            // InternalHouseBuilderV2.g:7639:1: ( rule__ExternalSpace__Group_10__4__Impl )
+            // InternalHouseBuilderV2.g:7640:2: rule__ExternalSpace__Group_10__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__Group_10__4__Impl();
@@ -25005,17 +23493,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10__4__Impl"
-    // InternalHouseBuilderV2.g:8132:1: rule__ExternalSpace__Group_10__4__Impl : ( ')' ) ;
+    // InternalHouseBuilderV2.g:7646:1: rule__ExternalSpace__Group_10__4__Impl : ( ')' ) ;
     public final void rule__ExternalSpace__Group_10__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8136:1: ( ( ')' ) )
-            // InternalHouseBuilderV2.g:8137:1: ( ')' )
+            // InternalHouseBuilderV2.g:7650:1: ( ( ')' ) )
+            // InternalHouseBuilderV2.g:7651:1: ( ')' )
             {
-            // InternalHouseBuilderV2.g:8137:1: ( ')' )
-            // InternalHouseBuilderV2.g:8138:2: ')'
+            // InternalHouseBuilderV2.g:7651:1: ( ')' )
+            // InternalHouseBuilderV2.g:7652:2: ')'
             {
              before(grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_10_4()); 
             match(input,102,FOLLOW_2); 
@@ -25042,14 +23530,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10_3__0"
-    // InternalHouseBuilderV2.g:8148:1: rule__ExternalSpace__Group_10_3__0 : rule__ExternalSpace__Group_10_3__0__Impl rule__ExternalSpace__Group_10_3__1 ;
+    // InternalHouseBuilderV2.g:7662:1: rule__ExternalSpace__Group_10_3__0 : rule__ExternalSpace__Group_10_3__0__Impl rule__ExternalSpace__Group_10_3__1 ;
     public final void rule__ExternalSpace__Group_10_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8152:1: ( rule__ExternalSpace__Group_10_3__0__Impl rule__ExternalSpace__Group_10_3__1 )
-            // InternalHouseBuilderV2.g:8153:2: rule__ExternalSpace__Group_10_3__0__Impl rule__ExternalSpace__Group_10_3__1
+            // InternalHouseBuilderV2.g:7666:1: ( rule__ExternalSpace__Group_10_3__0__Impl rule__ExternalSpace__Group_10_3__1 )
+            // InternalHouseBuilderV2.g:7667:2: rule__ExternalSpace__Group_10_3__0__Impl rule__ExternalSpace__Group_10_3__1
             {
             pushFollow(FOLLOW_3);
             rule__ExternalSpace__Group_10_3__0__Impl();
@@ -25080,17 +23568,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10_3__0__Impl"
-    // InternalHouseBuilderV2.g:8160:1: rule__ExternalSpace__Group_10_3__0__Impl : ( ',' ) ;
+    // InternalHouseBuilderV2.g:7674:1: rule__ExternalSpace__Group_10_3__0__Impl : ( ',' ) ;
     public final void rule__ExternalSpace__Group_10_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8164:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:8165:1: ( ',' )
+            // InternalHouseBuilderV2.g:7678:1: ( ( ',' ) )
+            // InternalHouseBuilderV2.g:7679:1: ( ',' )
             {
-            // InternalHouseBuilderV2.g:8165:1: ( ',' )
-            // InternalHouseBuilderV2.g:8166:2: ','
+            // InternalHouseBuilderV2.g:7679:1: ( ',' )
+            // InternalHouseBuilderV2.g:7680:2: ','
             {
              before(grammarAccess.getExternalSpaceAccess().getCommaKeyword_10_3_0()); 
             match(input,69,FOLLOW_2); 
@@ -25117,14 +23605,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10_3__1"
-    // InternalHouseBuilderV2.g:8175:1: rule__ExternalSpace__Group_10_3__1 : rule__ExternalSpace__Group_10_3__1__Impl ;
+    // InternalHouseBuilderV2.g:7689:1: rule__ExternalSpace__Group_10_3__1 : rule__ExternalSpace__Group_10_3__1__Impl ;
     public final void rule__ExternalSpace__Group_10_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8179:1: ( rule__ExternalSpace__Group_10_3__1__Impl )
-            // InternalHouseBuilderV2.g:8180:2: rule__ExternalSpace__Group_10_3__1__Impl
+            // InternalHouseBuilderV2.g:7693:1: ( rule__ExternalSpace__Group_10_3__1__Impl )
+            // InternalHouseBuilderV2.g:7694:2: rule__ExternalSpace__Group_10_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__Group_10_3__1__Impl();
@@ -25150,31 +23638,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_10_3__1__Impl"
-    // InternalHouseBuilderV2.g:8186:1: rule__ExternalSpace__Group_10_3__1__Impl : ( ( rule__ExternalSpace__PassagesAAssignment_10_3_1 ) ) ;
+    // InternalHouseBuilderV2.g:7700:1: rule__ExternalSpace__Group_10_3__1__Impl : ( ( rule__ExternalSpace__EntrancesAssignment_10_3_1 ) ) ;
     public final void rule__ExternalSpace__Group_10_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8190:1: ( ( ( rule__ExternalSpace__PassagesAAssignment_10_3_1 ) ) )
-            // InternalHouseBuilderV2.g:8191:1: ( ( rule__ExternalSpace__PassagesAAssignment_10_3_1 ) )
+            // InternalHouseBuilderV2.g:7704:1: ( ( ( rule__ExternalSpace__EntrancesAssignment_10_3_1 ) ) )
+            // InternalHouseBuilderV2.g:7705:1: ( ( rule__ExternalSpace__EntrancesAssignment_10_3_1 ) )
             {
-            // InternalHouseBuilderV2.g:8191:1: ( ( rule__ExternalSpace__PassagesAAssignment_10_3_1 ) )
-            // InternalHouseBuilderV2.g:8192:2: ( rule__ExternalSpace__PassagesAAssignment_10_3_1 )
+            // InternalHouseBuilderV2.g:7705:1: ( ( rule__ExternalSpace__EntrancesAssignment_10_3_1 ) )
+            // InternalHouseBuilderV2.g:7706:2: ( rule__ExternalSpace__EntrancesAssignment_10_3_1 )
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesAAssignment_10_3_1()); 
-            // InternalHouseBuilderV2.g:8193:2: ( rule__ExternalSpace__PassagesAAssignment_10_3_1 )
-            // InternalHouseBuilderV2.g:8193:3: rule__ExternalSpace__PassagesAAssignment_10_3_1
+             before(grammarAccess.getExternalSpaceAccess().getEntrancesAssignment_10_3_1()); 
+            // InternalHouseBuilderV2.g:7707:2: ( rule__ExternalSpace__EntrancesAssignment_10_3_1 )
+            // InternalHouseBuilderV2.g:7707:3: rule__ExternalSpace__EntrancesAssignment_10_3_1
             {
             pushFollow(FOLLOW_2);
-            rule__ExternalSpace__PassagesAAssignment_10_3_1();
+            rule__ExternalSpace__EntrancesAssignment_10_3_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getExternalSpaceAccess().getPassagesAAssignment_10_3_1()); 
+             after(grammarAccess.getExternalSpaceAccess().getEntrancesAssignment_10_3_1()); 
 
             }
 
@@ -25197,16 +23685,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11__0"
-    // InternalHouseBuilderV2.g:8202:1: rule__ExternalSpace__Group_11__0 : rule__ExternalSpace__Group_11__0__Impl rule__ExternalSpace__Group_11__1 ;
+    // InternalHouseBuilderV2.g:7716:1: rule__ExternalSpace__Group_11__0 : rule__ExternalSpace__Group_11__0__Impl rule__ExternalSpace__Group_11__1 ;
     public final void rule__ExternalSpace__Group_11__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8206:1: ( rule__ExternalSpace__Group_11__0__Impl rule__ExternalSpace__Group_11__1 )
-            // InternalHouseBuilderV2.g:8207:2: rule__ExternalSpace__Group_11__0__Impl rule__ExternalSpace__Group_11__1
+            // InternalHouseBuilderV2.g:7720:1: ( rule__ExternalSpace__Group_11__0__Impl rule__ExternalSpace__Group_11__1 )
+            // InternalHouseBuilderV2.g:7721:2: rule__ExternalSpace__Group_11__0__Impl rule__ExternalSpace__Group_11__1
             {
-            pushFollow(FOLLOW_46);
+            pushFollow(FOLLOW_4);
             rule__ExternalSpace__Group_11__0__Impl();
 
             state._fsp--;
@@ -25235,21 +23723,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11__0__Impl"
-    // InternalHouseBuilderV2.g:8214:1: rule__ExternalSpace__Group_11__0__Impl : ( 'passagesB' ) ;
+    // InternalHouseBuilderV2.g:7728:1: rule__ExternalSpace__Group_11__0__Impl : ( 'devices' ) ;
     public final void rule__ExternalSpace__Group_11__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8218:1: ( ( 'passagesB' ) )
-            // InternalHouseBuilderV2.g:8219:1: ( 'passagesB' )
+            // InternalHouseBuilderV2.g:7732:1: ( ( 'devices' ) )
+            // InternalHouseBuilderV2.g:7733:1: ( 'devices' )
             {
-            // InternalHouseBuilderV2.g:8219:1: ( 'passagesB' )
-            // InternalHouseBuilderV2.g:8220:2: 'passagesB'
+            // InternalHouseBuilderV2.g:7733:1: ( 'devices' )
+            // InternalHouseBuilderV2.g:7734:2: 'devices'
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesBKeyword_11_0()); 
-            match(input,104,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getPassagesBKeyword_11_0()); 
+             before(grammarAccess.getExternalSpaceAccess().getDevicesKeyword_11_0()); 
+            match(input,82,FOLLOW_2); 
+             after(grammarAccess.getExternalSpaceAccess().getDevicesKeyword_11_0()); 
 
             }
 
@@ -25272,16 +23760,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11__1"
-    // InternalHouseBuilderV2.g:8229:1: rule__ExternalSpace__Group_11__1 : rule__ExternalSpace__Group_11__1__Impl rule__ExternalSpace__Group_11__2 ;
+    // InternalHouseBuilderV2.g:7743:1: rule__ExternalSpace__Group_11__1 : rule__ExternalSpace__Group_11__1__Impl rule__ExternalSpace__Group_11__2 ;
     public final void rule__ExternalSpace__Group_11__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8233:1: ( rule__ExternalSpace__Group_11__1__Impl rule__ExternalSpace__Group_11__2 )
-            // InternalHouseBuilderV2.g:8234:2: rule__ExternalSpace__Group_11__1__Impl rule__ExternalSpace__Group_11__2
+            // InternalHouseBuilderV2.g:7747:1: ( rule__ExternalSpace__Group_11__1__Impl rule__ExternalSpace__Group_11__2 )
+            // InternalHouseBuilderV2.g:7748:2: rule__ExternalSpace__Group_11__1__Impl rule__ExternalSpace__Group_11__2
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_28);
             rule__ExternalSpace__Group_11__1__Impl();
 
             state._fsp--;
@@ -25310,21 +23798,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11__1__Impl"
-    // InternalHouseBuilderV2.g:8241:1: rule__ExternalSpace__Group_11__1__Impl : ( '(' ) ;
+    // InternalHouseBuilderV2.g:7755:1: rule__ExternalSpace__Group_11__1__Impl : ( '{' ) ;
     public final void rule__ExternalSpace__Group_11__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8245:1: ( ( '(' ) )
-            // InternalHouseBuilderV2.g:8246:1: ( '(' )
+            // InternalHouseBuilderV2.g:7759:1: ( ( '{' ) )
+            // InternalHouseBuilderV2.g:7760:1: ( '{' )
             {
-            // InternalHouseBuilderV2.g:8246:1: ( '(' )
-            // InternalHouseBuilderV2.g:8247:2: '('
+            // InternalHouseBuilderV2.g:7760:1: ( '{' )
+            // InternalHouseBuilderV2.g:7761:2: '{'
             {
-             before(grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_11_1()); 
-            match(input,101,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_11_1()); 
+             before(grammarAccess.getExternalSpaceAccess().getLeftCurlyBracketKeyword_11_1()); 
+            match(input,59,FOLLOW_2); 
+             after(grammarAccess.getExternalSpaceAccess().getLeftCurlyBracketKeyword_11_1()); 
 
             }
 
@@ -25347,16 +23835,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11__2"
-    // InternalHouseBuilderV2.g:8256:1: rule__ExternalSpace__Group_11__2 : rule__ExternalSpace__Group_11__2__Impl rule__ExternalSpace__Group_11__3 ;
+    // InternalHouseBuilderV2.g:7770:1: rule__ExternalSpace__Group_11__2 : rule__ExternalSpace__Group_11__2__Impl rule__ExternalSpace__Group_11__3 ;
     public final void rule__ExternalSpace__Group_11__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8260:1: ( rule__ExternalSpace__Group_11__2__Impl rule__ExternalSpace__Group_11__3 )
-            // InternalHouseBuilderV2.g:8261:2: rule__ExternalSpace__Group_11__2__Impl rule__ExternalSpace__Group_11__3
+            // InternalHouseBuilderV2.g:7774:1: ( rule__ExternalSpace__Group_11__2__Impl rule__ExternalSpace__Group_11__3 )
+            // InternalHouseBuilderV2.g:7775:2: rule__ExternalSpace__Group_11__2__Impl rule__ExternalSpace__Group_11__3
             {
-            pushFollow(FOLLOW_47);
+            pushFollow(FOLLOW_7);
             rule__ExternalSpace__Group_11__2__Impl();
 
             state._fsp--;
@@ -25385,31 +23873,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11__2__Impl"
-    // InternalHouseBuilderV2.g:8268:1: rule__ExternalSpace__Group_11__2__Impl : ( ( rule__ExternalSpace__PassagesBAssignment_11_2 ) ) ;
+    // InternalHouseBuilderV2.g:7782:1: rule__ExternalSpace__Group_11__2__Impl : ( ( rule__ExternalSpace__DevicesAssignment_11_2 ) ) ;
     public final void rule__ExternalSpace__Group_11__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8272:1: ( ( ( rule__ExternalSpace__PassagesBAssignment_11_2 ) ) )
-            // InternalHouseBuilderV2.g:8273:1: ( ( rule__ExternalSpace__PassagesBAssignment_11_2 ) )
+            // InternalHouseBuilderV2.g:7786:1: ( ( ( rule__ExternalSpace__DevicesAssignment_11_2 ) ) )
+            // InternalHouseBuilderV2.g:7787:1: ( ( rule__ExternalSpace__DevicesAssignment_11_2 ) )
             {
-            // InternalHouseBuilderV2.g:8273:1: ( ( rule__ExternalSpace__PassagesBAssignment_11_2 ) )
-            // InternalHouseBuilderV2.g:8274:2: ( rule__ExternalSpace__PassagesBAssignment_11_2 )
+            // InternalHouseBuilderV2.g:7787:1: ( ( rule__ExternalSpace__DevicesAssignment_11_2 ) )
+            // InternalHouseBuilderV2.g:7788:2: ( rule__ExternalSpace__DevicesAssignment_11_2 )
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesBAssignment_11_2()); 
-            // InternalHouseBuilderV2.g:8275:2: ( rule__ExternalSpace__PassagesBAssignment_11_2 )
-            // InternalHouseBuilderV2.g:8275:3: rule__ExternalSpace__PassagesBAssignment_11_2
+             before(grammarAccess.getExternalSpaceAccess().getDevicesAssignment_11_2()); 
+            // InternalHouseBuilderV2.g:7789:2: ( rule__ExternalSpace__DevicesAssignment_11_2 )
+            // InternalHouseBuilderV2.g:7789:3: rule__ExternalSpace__DevicesAssignment_11_2
             {
             pushFollow(FOLLOW_2);
-            rule__ExternalSpace__PassagesBAssignment_11_2();
+            rule__ExternalSpace__DevicesAssignment_11_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getExternalSpaceAccess().getPassagesBAssignment_11_2()); 
+             after(grammarAccess.getExternalSpaceAccess().getDevicesAssignment_11_2()); 
 
             }
 
@@ -25432,16 +23920,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11__3"
-    // InternalHouseBuilderV2.g:8283:1: rule__ExternalSpace__Group_11__3 : rule__ExternalSpace__Group_11__3__Impl rule__ExternalSpace__Group_11__4 ;
+    // InternalHouseBuilderV2.g:7797:1: rule__ExternalSpace__Group_11__3 : rule__ExternalSpace__Group_11__3__Impl rule__ExternalSpace__Group_11__4 ;
     public final void rule__ExternalSpace__Group_11__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8287:1: ( rule__ExternalSpace__Group_11__3__Impl rule__ExternalSpace__Group_11__4 )
-            // InternalHouseBuilderV2.g:8288:2: rule__ExternalSpace__Group_11__3__Impl rule__ExternalSpace__Group_11__4
+            // InternalHouseBuilderV2.g:7801:1: ( rule__ExternalSpace__Group_11__3__Impl rule__ExternalSpace__Group_11__4 )
+            // InternalHouseBuilderV2.g:7802:2: rule__ExternalSpace__Group_11__3__Impl rule__ExternalSpace__Group_11__4
             {
-            pushFollow(FOLLOW_47);
+            pushFollow(FOLLOW_7);
             rule__ExternalSpace__Group_11__3__Impl();
 
             state._fsp--;
@@ -25470,33 +23958,33 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11__3__Impl"
-    // InternalHouseBuilderV2.g:8295:1: rule__ExternalSpace__Group_11__3__Impl : ( ( rule__ExternalSpace__Group_11_3__0 )* ) ;
+    // InternalHouseBuilderV2.g:7809:1: rule__ExternalSpace__Group_11__3__Impl : ( ( rule__ExternalSpace__Group_11_3__0 )* ) ;
     public final void rule__ExternalSpace__Group_11__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8299:1: ( ( ( rule__ExternalSpace__Group_11_3__0 )* ) )
-            // InternalHouseBuilderV2.g:8300:1: ( ( rule__ExternalSpace__Group_11_3__0 )* )
+            // InternalHouseBuilderV2.g:7813:1: ( ( ( rule__ExternalSpace__Group_11_3__0 )* ) )
+            // InternalHouseBuilderV2.g:7814:1: ( ( rule__ExternalSpace__Group_11_3__0 )* )
             {
-            // InternalHouseBuilderV2.g:8300:1: ( ( rule__ExternalSpace__Group_11_3__0 )* )
-            // InternalHouseBuilderV2.g:8301:2: ( rule__ExternalSpace__Group_11_3__0 )*
+            // InternalHouseBuilderV2.g:7814:1: ( ( rule__ExternalSpace__Group_11_3__0 )* )
+            // InternalHouseBuilderV2.g:7815:2: ( rule__ExternalSpace__Group_11_3__0 )*
             {
              before(grammarAccess.getExternalSpaceAccess().getGroup_11_3()); 
-            // InternalHouseBuilderV2.g:8302:2: ( rule__ExternalSpace__Group_11_3__0 )*
-            loop63:
+            // InternalHouseBuilderV2.g:7816:2: ( rule__ExternalSpace__Group_11_3__0 )*
+            loop57:
             do {
-                int alt63=2;
-                int LA63_0 = input.LA(1);
+                int alt57=2;
+                int LA57_0 = input.LA(1);
 
-                if ( (LA63_0==69) ) {
-                    alt63=1;
+                if ( (LA57_0==69) ) {
+                    alt57=1;
                 }
 
 
-                switch (alt63) {
+                switch (alt57) {
             	case 1 :
-            	    // InternalHouseBuilderV2.g:8302:3: rule__ExternalSpace__Group_11_3__0
+            	    // InternalHouseBuilderV2.g:7816:3: rule__ExternalSpace__Group_11_3__0
             	    {
             	    pushFollow(FOLLOW_8);
             	    rule__ExternalSpace__Group_11_3__0();
@@ -25508,7 +23996,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop63;
+            	    break loop57;
                 }
             } while (true);
 
@@ -25535,14 +24023,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11__4"
-    // InternalHouseBuilderV2.g:8310:1: rule__ExternalSpace__Group_11__4 : rule__ExternalSpace__Group_11__4__Impl ;
+    // InternalHouseBuilderV2.g:7824:1: rule__ExternalSpace__Group_11__4 : rule__ExternalSpace__Group_11__4__Impl ;
     public final void rule__ExternalSpace__Group_11__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8314:1: ( rule__ExternalSpace__Group_11__4__Impl )
-            // InternalHouseBuilderV2.g:8315:2: rule__ExternalSpace__Group_11__4__Impl
+            // InternalHouseBuilderV2.g:7828:1: ( rule__ExternalSpace__Group_11__4__Impl )
+            // InternalHouseBuilderV2.g:7829:2: rule__ExternalSpace__Group_11__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__Group_11__4__Impl();
@@ -25568,21 +24056,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11__4__Impl"
-    // InternalHouseBuilderV2.g:8321:1: rule__ExternalSpace__Group_11__4__Impl : ( ')' ) ;
+    // InternalHouseBuilderV2.g:7835:1: rule__ExternalSpace__Group_11__4__Impl : ( '}' ) ;
     public final void rule__ExternalSpace__Group_11__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8325:1: ( ( ')' ) )
-            // InternalHouseBuilderV2.g:8326:1: ( ')' )
+            // InternalHouseBuilderV2.g:7839:1: ( ( '}' ) )
+            // InternalHouseBuilderV2.g:7840:1: ( '}' )
             {
-            // InternalHouseBuilderV2.g:8326:1: ( ')' )
-            // InternalHouseBuilderV2.g:8327:2: ')'
+            // InternalHouseBuilderV2.g:7840:1: ( '}' )
+            // InternalHouseBuilderV2.g:7841:2: '}'
             {
-             before(grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_11_4()); 
-            match(input,102,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_11_4()); 
+             before(grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_11_4()); 
+            match(input,61,FOLLOW_2); 
+             after(grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_11_4()); 
 
             }
 
@@ -25605,16 +24093,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11_3__0"
-    // InternalHouseBuilderV2.g:8337:1: rule__ExternalSpace__Group_11_3__0 : rule__ExternalSpace__Group_11_3__0__Impl rule__ExternalSpace__Group_11_3__1 ;
+    // InternalHouseBuilderV2.g:7851:1: rule__ExternalSpace__Group_11_3__0 : rule__ExternalSpace__Group_11_3__0__Impl rule__ExternalSpace__Group_11_3__1 ;
     public final void rule__ExternalSpace__Group_11_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8341:1: ( rule__ExternalSpace__Group_11_3__0__Impl rule__ExternalSpace__Group_11_3__1 )
-            // InternalHouseBuilderV2.g:8342:2: rule__ExternalSpace__Group_11_3__0__Impl rule__ExternalSpace__Group_11_3__1
+            // InternalHouseBuilderV2.g:7855:1: ( rule__ExternalSpace__Group_11_3__0__Impl rule__ExternalSpace__Group_11_3__1 )
+            // InternalHouseBuilderV2.g:7856:2: rule__ExternalSpace__Group_11_3__0__Impl rule__ExternalSpace__Group_11_3__1
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_28);
             rule__ExternalSpace__Group_11_3__0__Impl();
 
             state._fsp--;
@@ -25643,17 +24131,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11_3__0__Impl"
-    // InternalHouseBuilderV2.g:8349:1: rule__ExternalSpace__Group_11_3__0__Impl : ( ',' ) ;
+    // InternalHouseBuilderV2.g:7863:1: rule__ExternalSpace__Group_11_3__0__Impl : ( ',' ) ;
     public final void rule__ExternalSpace__Group_11_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8353:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:8354:1: ( ',' )
+            // InternalHouseBuilderV2.g:7867:1: ( ( ',' ) )
+            // InternalHouseBuilderV2.g:7868:1: ( ',' )
             {
-            // InternalHouseBuilderV2.g:8354:1: ( ',' )
-            // InternalHouseBuilderV2.g:8355:2: ','
+            // InternalHouseBuilderV2.g:7868:1: ( ',' )
+            // InternalHouseBuilderV2.g:7869:2: ','
             {
              before(grammarAccess.getExternalSpaceAccess().getCommaKeyword_11_3_0()); 
             match(input,69,FOLLOW_2); 
@@ -25680,14 +24168,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11_3__1"
-    // InternalHouseBuilderV2.g:8364:1: rule__ExternalSpace__Group_11_3__1 : rule__ExternalSpace__Group_11_3__1__Impl ;
+    // InternalHouseBuilderV2.g:7878:1: rule__ExternalSpace__Group_11_3__1 : rule__ExternalSpace__Group_11_3__1__Impl ;
     public final void rule__ExternalSpace__Group_11_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8368:1: ( rule__ExternalSpace__Group_11_3__1__Impl )
-            // InternalHouseBuilderV2.g:8369:2: rule__ExternalSpace__Group_11_3__1__Impl
+            // InternalHouseBuilderV2.g:7882:1: ( rule__ExternalSpace__Group_11_3__1__Impl )
+            // InternalHouseBuilderV2.g:7883:2: rule__ExternalSpace__Group_11_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ExternalSpace__Group_11_3__1__Impl();
@@ -25713,31 +24201,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__Group_11_3__1__Impl"
-    // InternalHouseBuilderV2.g:8375:1: rule__ExternalSpace__Group_11_3__1__Impl : ( ( rule__ExternalSpace__PassagesBAssignment_11_3_1 ) ) ;
+    // InternalHouseBuilderV2.g:7889:1: rule__ExternalSpace__Group_11_3__1__Impl : ( ( rule__ExternalSpace__DevicesAssignment_11_3_1 ) ) ;
     public final void rule__ExternalSpace__Group_11_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8379:1: ( ( ( rule__ExternalSpace__PassagesBAssignment_11_3_1 ) ) )
-            // InternalHouseBuilderV2.g:8380:1: ( ( rule__ExternalSpace__PassagesBAssignment_11_3_1 ) )
+            // InternalHouseBuilderV2.g:7893:1: ( ( ( rule__ExternalSpace__DevicesAssignment_11_3_1 ) ) )
+            // InternalHouseBuilderV2.g:7894:1: ( ( rule__ExternalSpace__DevicesAssignment_11_3_1 ) )
             {
-            // InternalHouseBuilderV2.g:8380:1: ( ( rule__ExternalSpace__PassagesBAssignment_11_3_1 ) )
-            // InternalHouseBuilderV2.g:8381:2: ( rule__ExternalSpace__PassagesBAssignment_11_3_1 )
+            // InternalHouseBuilderV2.g:7894:1: ( ( rule__ExternalSpace__DevicesAssignment_11_3_1 ) )
+            // InternalHouseBuilderV2.g:7895:2: ( rule__ExternalSpace__DevicesAssignment_11_3_1 )
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesBAssignment_11_3_1()); 
-            // InternalHouseBuilderV2.g:8382:2: ( rule__ExternalSpace__PassagesBAssignment_11_3_1 )
-            // InternalHouseBuilderV2.g:8382:3: rule__ExternalSpace__PassagesBAssignment_11_3_1
+             before(grammarAccess.getExternalSpaceAccess().getDevicesAssignment_11_3_1()); 
+            // InternalHouseBuilderV2.g:7896:2: ( rule__ExternalSpace__DevicesAssignment_11_3_1 )
+            // InternalHouseBuilderV2.g:7896:3: rule__ExternalSpace__DevicesAssignment_11_3_1
             {
             pushFollow(FOLLOW_2);
-            rule__ExternalSpace__PassagesBAssignment_11_3_1();
+            rule__ExternalSpace__DevicesAssignment_11_3_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getExternalSpaceAccess().getPassagesBAssignment_11_3_1()); 
+             after(grammarAccess.getExternalSpaceAccess().getDevicesAssignment_11_3_1()); 
 
             }
 
@@ -25759,1141 +24247,15 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__ExternalSpace__Group_11_3__1__Impl"
 
 
-    // $ANTLR start "rule__ExternalSpace__Group_12__0"
-    // InternalHouseBuilderV2.g:8391:1: rule__ExternalSpace__Group_12__0 : rule__ExternalSpace__Group_12__0__Impl rule__ExternalSpace__Group_12__1 ;
-    public final void rule__ExternalSpace__Group_12__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8395:1: ( rule__ExternalSpace__Group_12__0__Impl rule__ExternalSpace__Group_12__1 )
-            // InternalHouseBuilderV2.g:8396:2: rule__ExternalSpace__Group_12__0__Impl rule__ExternalSpace__Group_12__1
-            {
-            pushFollow(FOLLOW_46);
-            rule__ExternalSpace__Group_12__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_12__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12__0"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12__0__Impl"
-    // InternalHouseBuilderV2.g:8403:1: rule__ExternalSpace__Group_12__0__Impl : ( 'entrances' ) ;
-    public final void rule__ExternalSpace__Group_12__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8407:1: ( ( 'entrances' ) )
-            // InternalHouseBuilderV2.g:8408:1: ( 'entrances' )
-            {
-            // InternalHouseBuilderV2.g:8408:1: ( 'entrances' )
-            // InternalHouseBuilderV2.g:8409:2: 'entrances'
-            {
-             before(grammarAccess.getExternalSpaceAccess().getEntrancesKeyword_12_0()); 
-            match(input,62,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getEntrancesKeyword_12_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12__0__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12__1"
-    // InternalHouseBuilderV2.g:8418:1: rule__ExternalSpace__Group_12__1 : rule__ExternalSpace__Group_12__1__Impl rule__ExternalSpace__Group_12__2 ;
-    public final void rule__ExternalSpace__Group_12__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8422:1: ( rule__ExternalSpace__Group_12__1__Impl rule__ExternalSpace__Group_12__2 )
-            // InternalHouseBuilderV2.g:8423:2: rule__ExternalSpace__Group_12__1__Impl rule__ExternalSpace__Group_12__2
-            {
-            pushFollow(FOLLOW_3);
-            rule__ExternalSpace__Group_12__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_12__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12__1"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12__1__Impl"
-    // InternalHouseBuilderV2.g:8430:1: rule__ExternalSpace__Group_12__1__Impl : ( '(' ) ;
-    public final void rule__ExternalSpace__Group_12__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8434:1: ( ( '(' ) )
-            // InternalHouseBuilderV2.g:8435:1: ( '(' )
-            {
-            // InternalHouseBuilderV2.g:8435:1: ( '(' )
-            // InternalHouseBuilderV2.g:8436:2: '('
-            {
-             before(grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_12_1()); 
-            match(input,101,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_12_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12__1__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12__2"
-    // InternalHouseBuilderV2.g:8445:1: rule__ExternalSpace__Group_12__2 : rule__ExternalSpace__Group_12__2__Impl rule__ExternalSpace__Group_12__3 ;
-    public final void rule__ExternalSpace__Group_12__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8449:1: ( rule__ExternalSpace__Group_12__2__Impl rule__ExternalSpace__Group_12__3 )
-            // InternalHouseBuilderV2.g:8450:2: rule__ExternalSpace__Group_12__2__Impl rule__ExternalSpace__Group_12__3
-            {
-            pushFollow(FOLLOW_47);
-            rule__ExternalSpace__Group_12__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_12__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12__2"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12__2__Impl"
-    // InternalHouseBuilderV2.g:8457:1: rule__ExternalSpace__Group_12__2__Impl : ( ( rule__ExternalSpace__EntrancesAssignment_12_2 ) ) ;
-    public final void rule__ExternalSpace__Group_12__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8461:1: ( ( ( rule__ExternalSpace__EntrancesAssignment_12_2 ) ) )
-            // InternalHouseBuilderV2.g:8462:1: ( ( rule__ExternalSpace__EntrancesAssignment_12_2 ) )
-            {
-            // InternalHouseBuilderV2.g:8462:1: ( ( rule__ExternalSpace__EntrancesAssignment_12_2 ) )
-            // InternalHouseBuilderV2.g:8463:2: ( rule__ExternalSpace__EntrancesAssignment_12_2 )
-            {
-             before(grammarAccess.getExternalSpaceAccess().getEntrancesAssignment_12_2()); 
-            // InternalHouseBuilderV2.g:8464:2: ( rule__ExternalSpace__EntrancesAssignment_12_2 )
-            // InternalHouseBuilderV2.g:8464:3: rule__ExternalSpace__EntrancesAssignment_12_2
-            {
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__EntrancesAssignment_12_2();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getExternalSpaceAccess().getEntrancesAssignment_12_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12__2__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12__3"
-    // InternalHouseBuilderV2.g:8472:1: rule__ExternalSpace__Group_12__3 : rule__ExternalSpace__Group_12__3__Impl rule__ExternalSpace__Group_12__4 ;
-    public final void rule__ExternalSpace__Group_12__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8476:1: ( rule__ExternalSpace__Group_12__3__Impl rule__ExternalSpace__Group_12__4 )
-            // InternalHouseBuilderV2.g:8477:2: rule__ExternalSpace__Group_12__3__Impl rule__ExternalSpace__Group_12__4
-            {
-            pushFollow(FOLLOW_47);
-            rule__ExternalSpace__Group_12__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_12__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12__3"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12__3__Impl"
-    // InternalHouseBuilderV2.g:8484:1: rule__ExternalSpace__Group_12__3__Impl : ( ( rule__ExternalSpace__Group_12_3__0 )* ) ;
-    public final void rule__ExternalSpace__Group_12__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8488:1: ( ( ( rule__ExternalSpace__Group_12_3__0 )* ) )
-            // InternalHouseBuilderV2.g:8489:1: ( ( rule__ExternalSpace__Group_12_3__0 )* )
-            {
-            // InternalHouseBuilderV2.g:8489:1: ( ( rule__ExternalSpace__Group_12_3__0 )* )
-            // InternalHouseBuilderV2.g:8490:2: ( rule__ExternalSpace__Group_12_3__0 )*
-            {
-             before(grammarAccess.getExternalSpaceAccess().getGroup_12_3()); 
-            // InternalHouseBuilderV2.g:8491:2: ( rule__ExternalSpace__Group_12_3__0 )*
-            loop64:
-            do {
-                int alt64=2;
-                int LA64_0 = input.LA(1);
-
-                if ( (LA64_0==69) ) {
-                    alt64=1;
-                }
-
-
-                switch (alt64) {
-            	case 1 :
-            	    // InternalHouseBuilderV2.g:8491:3: rule__ExternalSpace__Group_12_3__0
-            	    {
-            	    pushFollow(FOLLOW_8);
-            	    rule__ExternalSpace__Group_12_3__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop64;
-                }
-            } while (true);
-
-             after(grammarAccess.getExternalSpaceAccess().getGroup_12_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12__3__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12__4"
-    // InternalHouseBuilderV2.g:8499:1: rule__ExternalSpace__Group_12__4 : rule__ExternalSpace__Group_12__4__Impl ;
-    public final void rule__ExternalSpace__Group_12__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8503:1: ( rule__ExternalSpace__Group_12__4__Impl )
-            // InternalHouseBuilderV2.g:8504:2: rule__ExternalSpace__Group_12__4__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_12__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12__4"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12__4__Impl"
-    // InternalHouseBuilderV2.g:8510:1: rule__ExternalSpace__Group_12__4__Impl : ( ')' ) ;
-    public final void rule__ExternalSpace__Group_12__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8514:1: ( ( ')' ) )
-            // InternalHouseBuilderV2.g:8515:1: ( ')' )
-            {
-            // InternalHouseBuilderV2.g:8515:1: ( ')' )
-            // InternalHouseBuilderV2.g:8516:2: ')'
-            {
-             before(grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_12_4()); 
-            match(input,102,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_12_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12__4__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12_3__0"
-    // InternalHouseBuilderV2.g:8526:1: rule__ExternalSpace__Group_12_3__0 : rule__ExternalSpace__Group_12_3__0__Impl rule__ExternalSpace__Group_12_3__1 ;
-    public final void rule__ExternalSpace__Group_12_3__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8530:1: ( rule__ExternalSpace__Group_12_3__0__Impl rule__ExternalSpace__Group_12_3__1 )
-            // InternalHouseBuilderV2.g:8531:2: rule__ExternalSpace__Group_12_3__0__Impl rule__ExternalSpace__Group_12_3__1
-            {
-            pushFollow(FOLLOW_3);
-            rule__ExternalSpace__Group_12_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_12_3__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12_3__0"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12_3__0__Impl"
-    // InternalHouseBuilderV2.g:8538:1: rule__ExternalSpace__Group_12_3__0__Impl : ( ',' ) ;
-    public final void rule__ExternalSpace__Group_12_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8542:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:8543:1: ( ',' )
-            {
-            // InternalHouseBuilderV2.g:8543:1: ( ',' )
-            // InternalHouseBuilderV2.g:8544:2: ','
-            {
-             before(grammarAccess.getExternalSpaceAccess().getCommaKeyword_12_3_0()); 
-            match(input,69,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getCommaKeyword_12_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12_3__0__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12_3__1"
-    // InternalHouseBuilderV2.g:8553:1: rule__ExternalSpace__Group_12_3__1 : rule__ExternalSpace__Group_12_3__1__Impl ;
-    public final void rule__ExternalSpace__Group_12_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8557:1: ( rule__ExternalSpace__Group_12_3__1__Impl )
-            // InternalHouseBuilderV2.g:8558:2: rule__ExternalSpace__Group_12_3__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_12_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12_3__1"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_12_3__1__Impl"
-    // InternalHouseBuilderV2.g:8564:1: rule__ExternalSpace__Group_12_3__1__Impl : ( ( rule__ExternalSpace__EntrancesAssignment_12_3_1 ) ) ;
-    public final void rule__ExternalSpace__Group_12_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8568:1: ( ( ( rule__ExternalSpace__EntrancesAssignment_12_3_1 ) ) )
-            // InternalHouseBuilderV2.g:8569:1: ( ( rule__ExternalSpace__EntrancesAssignment_12_3_1 ) )
-            {
-            // InternalHouseBuilderV2.g:8569:1: ( ( rule__ExternalSpace__EntrancesAssignment_12_3_1 ) )
-            // InternalHouseBuilderV2.g:8570:2: ( rule__ExternalSpace__EntrancesAssignment_12_3_1 )
-            {
-             before(grammarAccess.getExternalSpaceAccess().getEntrancesAssignment_12_3_1()); 
-            // InternalHouseBuilderV2.g:8571:2: ( rule__ExternalSpace__EntrancesAssignment_12_3_1 )
-            // InternalHouseBuilderV2.g:8571:3: rule__ExternalSpace__EntrancesAssignment_12_3_1
-            {
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__EntrancesAssignment_12_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getExternalSpaceAccess().getEntrancesAssignment_12_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_12_3__1__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13__0"
-    // InternalHouseBuilderV2.g:8580:1: rule__ExternalSpace__Group_13__0 : rule__ExternalSpace__Group_13__0__Impl rule__ExternalSpace__Group_13__1 ;
-    public final void rule__ExternalSpace__Group_13__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8584:1: ( rule__ExternalSpace__Group_13__0__Impl rule__ExternalSpace__Group_13__1 )
-            // InternalHouseBuilderV2.g:8585:2: rule__ExternalSpace__Group_13__0__Impl rule__ExternalSpace__Group_13__1
-            {
-            pushFollow(FOLLOW_4);
-            rule__ExternalSpace__Group_13__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_13__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13__0"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13__0__Impl"
-    // InternalHouseBuilderV2.g:8592:1: rule__ExternalSpace__Group_13__0__Impl : ( 'devices' ) ;
-    public final void rule__ExternalSpace__Group_13__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8596:1: ( ( 'devices' ) )
-            // InternalHouseBuilderV2.g:8597:1: ( 'devices' )
-            {
-            // InternalHouseBuilderV2.g:8597:1: ( 'devices' )
-            // InternalHouseBuilderV2.g:8598:2: 'devices'
-            {
-             before(grammarAccess.getExternalSpaceAccess().getDevicesKeyword_13_0()); 
-            match(input,82,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getDevicesKeyword_13_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13__0__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13__1"
-    // InternalHouseBuilderV2.g:8607:1: rule__ExternalSpace__Group_13__1 : rule__ExternalSpace__Group_13__1__Impl rule__ExternalSpace__Group_13__2 ;
-    public final void rule__ExternalSpace__Group_13__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8611:1: ( rule__ExternalSpace__Group_13__1__Impl rule__ExternalSpace__Group_13__2 )
-            // InternalHouseBuilderV2.g:8612:2: rule__ExternalSpace__Group_13__1__Impl rule__ExternalSpace__Group_13__2
-            {
-            pushFollow(FOLLOW_28);
-            rule__ExternalSpace__Group_13__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_13__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13__1"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13__1__Impl"
-    // InternalHouseBuilderV2.g:8619:1: rule__ExternalSpace__Group_13__1__Impl : ( '{' ) ;
-    public final void rule__ExternalSpace__Group_13__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8623:1: ( ( '{' ) )
-            // InternalHouseBuilderV2.g:8624:1: ( '{' )
-            {
-            // InternalHouseBuilderV2.g:8624:1: ( '{' )
-            // InternalHouseBuilderV2.g:8625:2: '{'
-            {
-             before(grammarAccess.getExternalSpaceAccess().getLeftCurlyBracketKeyword_13_1()); 
-            match(input,59,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getLeftCurlyBracketKeyword_13_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13__1__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13__2"
-    // InternalHouseBuilderV2.g:8634:1: rule__ExternalSpace__Group_13__2 : rule__ExternalSpace__Group_13__2__Impl rule__ExternalSpace__Group_13__3 ;
-    public final void rule__ExternalSpace__Group_13__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8638:1: ( rule__ExternalSpace__Group_13__2__Impl rule__ExternalSpace__Group_13__3 )
-            // InternalHouseBuilderV2.g:8639:2: rule__ExternalSpace__Group_13__2__Impl rule__ExternalSpace__Group_13__3
-            {
-            pushFollow(FOLLOW_7);
-            rule__ExternalSpace__Group_13__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_13__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13__2"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13__2__Impl"
-    // InternalHouseBuilderV2.g:8646:1: rule__ExternalSpace__Group_13__2__Impl : ( ( rule__ExternalSpace__DevicesAssignment_13_2 ) ) ;
-    public final void rule__ExternalSpace__Group_13__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8650:1: ( ( ( rule__ExternalSpace__DevicesAssignment_13_2 ) ) )
-            // InternalHouseBuilderV2.g:8651:1: ( ( rule__ExternalSpace__DevicesAssignment_13_2 ) )
-            {
-            // InternalHouseBuilderV2.g:8651:1: ( ( rule__ExternalSpace__DevicesAssignment_13_2 ) )
-            // InternalHouseBuilderV2.g:8652:2: ( rule__ExternalSpace__DevicesAssignment_13_2 )
-            {
-             before(grammarAccess.getExternalSpaceAccess().getDevicesAssignment_13_2()); 
-            // InternalHouseBuilderV2.g:8653:2: ( rule__ExternalSpace__DevicesAssignment_13_2 )
-            // InternalHouseBuilderV2.g:8653:3: rule__ExternalSpace__DevicesAssignment_13_2
-            {
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__DevicesAssignment_13_2();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getExternalSpaceAccess().getDevicesAssignment_13_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13__2__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13__3"
-    // InternalHouseBuilderV2.g:8661:1: rule__ExternalSpace__Group_13__3 : rule__ExternalSpace__Group_13__3__Impl rule__ExternalSpace__Group_13__4 ;
-    public final void rule__ExternalSpace__Group_13__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8665:1: ( rule__ExternalSpace__Group_13__3__Impl rule__ExternalSpace__Group_13__4 )
-            // InternalHouseBuilderV2.g:8666:2: rule__ExternalSpace__Group_13__3__Impl rule__ExternalSpace__Group_13__4
-            {
-            pushFollow(FOLLOW_7);
-            rule__ExternalSpace__Group_13__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_13__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13__3"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13__3__Impl"
-    // InternalHouseBuilderV2.g:8673:1: rule__ExternalSpace__Group_13__3__Impl : ( ( rule__ExternalSpace__Group_13_3__0 )* ) ;
-    public final void rule__ExternalSpace__Group_13__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8677:1: ( ( ( rule__ExternalSpace__Group_13_3__0 )* ) )
-            // InternalHouseBuilderV2.g:8678:1: ( ( rule__ExternalSpace__Group_13_3__0 )* )
-            {
-            // InternalHouseBuilderV2.g:8678:1: ( ( rule__ExternalSpace__Group_13_3__0 )* )
-            // InternalHouseBuilderV2.g:8679:2: ( rule__ExternalSpace__Group_13_3__0 )*
-            {
-             before(grammarAccess.getExternalSpaceAccess().getGroup_13_3()); 
-            // InternalHouseBuilderV2.g:8680:2: ( rule__ExternalSpace__Group_13_3__0 )*
-            loop65:
-            do {
-                int alt65=2;
-                int LA65_0 = input.LA(1);
-
-                if ( (LA65_0==69) ) {
-                    alt65=1;
-                }
-
-
-                switch (alt65) {
-            	case 1 :
-            	    // InternalHouseBuilderV2.g:8680:3: rule__ExternalSpace__Group_13_3__0
-            	    {
-            	    pushFollow(FOLLOW_8);
-            	    rule__ExternalSpace__Group_13_3__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop65;
-                }
-            } while (true);
-
-             after(grammarAccess.getExternalSpaceAccess().getGroup_13_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13__3__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13__4"
-    // InternalHouseBuilderV2.g:8688:1: rule__ExternalSpace__Group_13__4 : rule__ExternalSpace__Group_13__4__Impl ;
-    public final void rule__ExternalSpace__Group_13__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8692:1: ( rule__ExternalSpace__Group_13__4__Impl )
-            // InternalHouseBuilderV2.g:8693:2: rule__ExternalSpace__Group_13__4__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_13__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13__4"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13__4__Impl"
-    // InternalHouseBuilderV2.g:8699:1: rule__ExternalSpace__Group_13__4__Impl : ( '}' ) ;
-    public final void rule__ExternalSpace__Group_13__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8703:1: ( ( '}' ) )
-            // InternalHouseBuilderV2.g:8704:1: ( '}' )
-            {
-            // InternalHouseBuilderV2.g:8704:1: ( '}' )
-            // InternalHouseBuilderV2.g:8705:2: '}'
-            {
-             before(grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_13_4()); 
-            match(input,61,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_13_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13__4__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13_3__0"
-    // InternalHouseBuilderV2.g:8715:1: rule__ExternalSpace__Group_13_3__0 : rule__ExternalSpace__Group_13_3__0__Impl rule__ExternalSpace__Group_13_3__1 ;
-    public final void rule__ExternalSpace__Group_13_3__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8719:1: ( rule__ExternalSpace__Group_13_3__0__Impl rule__ExternalSpace__Group_13_3__1 )
-            // InternalHouseBuilderV2.g:8720:2: rule__ExternalSpace__Group_13_3__0__Impl rule__ExternalSpace__Group_13_3__1
-            {
-            pushFollow(FOLLOW_28);
-            rule__ExternalSpace__Group_13_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_13_3__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13_3__0"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13_3__0__Impl"
-    // InternalHouseBuilderV2.g:8727:1: rule__ExternalSpace__Group_13_3__0__Impl : ( ',' ) ;
-    public final void rule__ExternalSpace__Group_13_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8731:1: ( ( ',' ) )
-            // InternalHouseBuilderV2.g:8732:1: ( ',' )
-            {
-            // InternalHouseBuilderV2.g:8732:1: ( ',' )
-            // InternalHouseBuilderV2.g:8733:2: ','
-            {
-             before(grammarAccess.getExternalSpaceAccess().getCommaKeyword_13_3_0()); 
-            match(input,69,FOLLOW_2); 
-             after(grammarAccess.getExternalSpaceAccess().getCommaKeyword_13_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13_3__0__Impl"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13_3__1"
-    // InternalHouseBuilderV2.g:8742:1: rule__ExternalSpace__Group_13_3__1 : rule__ExternalSpace__Group_13_3__1__Impl ;
-    public final void rule__ExternalSpace__Group_13_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8746:1: ( rule__ExternalSpace__Group_13_3__1__Impl )
-            // InternalHouseBuilderV2.g:8747:2: rule__ExternalSpace__Group_13_3__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__Group_13_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13_3__1"
-
-
-    // $ANTLR start "rule__ExternalSpace__Group_13_3__1__Impl"
-    // InternalHouseBuilderV2.g:8753:1: rule__ExternalSpace__Group_13_3__1__Impl : ( ( rule__ExternalSpace__DevicesAssignment_13_3_1 ) ) ;
-    public final void rule__ExternalSpace__Group_13_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:8757:1: ( ( ( rule__ExternalSpace__DevicesAssignment_13_3_1 ) ) )
-            // InternalHouseBuilderV2.g:8758:1: ( ( rule__ExternalSpace__DevicesAssignment_13_3_1 ) )
-            {
-            // InternalHouseBuilderV2.g:8758:1: ( ( rule__ExternalSpace__DevicesAssignment_13_3_1 ) )
-            // InternalHouseBuilderV2.g:8759:2: ( rule__ExternalSpace__DevicesAssignment_13_3_1 )
-            {
-             before(grammarAccess.getExternalSpaceAccess().getDevicesAssignment_13_3_1()); 
-            // InternalHouseBuilderV2.g:8760:2: ( rule__ExternalSpace__DevicesAssignment_13_3_1 )
-            // InternalHouseBuilderV2.g:8760:3: rule__ExternalSpace__DevicesAssignment_13_3_1
-            {
-            pushFollow(FOLLOW_2);
-            rule__ExternalSpace__DevicesAssignment_13_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getExternalSpaceAccess().getDevicesAssignment_13_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__Group_13_3__1__Impl"
-
-
     // $ANTLR start "rule__Actuator__Group__0"
-    // InternalHouseBuilderV2.g:8769:1: rule__Actuator__Group__0 : rule__Actuator__Group__0__Impl rule__Actuator__Group__1 ;
+    // InternalHouseBuilderV2.g:7905:1: rule__Actuator__Group__0 : rule__Actuator__Group__0__Impl rule__Actuator__Group__1 ;
     public final void rule__Actuator__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8773:1: ( rule__Actuator__Group__0__Impl rule__Actuator__Group__1 )
-            // InternalHouseBuilderV2.g:8774:2: rule__Actuator__Group__0__Impl rule__Actuator__Group__1
+            // InternalHouseBuilderV2.g:7909:1: ( rule__Actuator__Group__0__Impl rule__Actuator__Group__1 )
+            // InternalHouseBuilderV2.g:7910:2: rule__Actuator__Group__0__Impl rule__Actuator__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Actuator__Group__0__Impl();
@@ -26924,20 +24286,20 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__0__Impl"
-    // InternalHouseBuilderV2.g:8781:1: rule__Actuator__Group__0__Impl : ( 'Actuator' ) ;
+    // InternalHouseBuilderV2.g:7917:1: rule__Actuator__Group__0__Impl : ( 'Actuator' ) ;
     public final void rule__Actuator__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8785:1: ( ( 'Actuator' ) )
-            // InternalHouseBuilderV2.g:8786:1: ( 'Actuator' )
+            // InternalHouseBuilderV2.g:7921:1: ( ( 'Actuator' ) )
+            // InternalHouseBuilderV2.g:7922:1: ( 'Actuator' )
             {
-            // InternalHouseBuilderV2.g:8786:1: ( 'Actuator' )
-            // InternalHouseBuilderV2.g:8787:2: 'Actuator'
+            // InternalHouseBuilderV2.g:7922:1: ( 'Actuator' )
+            // InternalHouseBuilderV2.g:7923:2: 'Actuator'
             {
              before(grammarAccess.getActuatorAccess().getActuatorKeyword_0()); 
-            match(input,108,FOLLOW_2); 
+            match(input,106,FOLLOW_2); 
              after(grammarAccess.getActuatorAccess().getActuatorKeyword_0()); 
 
             }
@@ -26961,14 +24323,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__1"
-    // InternalHouseBuilderV2.g:8796:1: rule__Actuator__Group__1 : rule__Actuator__Group__1__Impl rule__Actuator__Group__2 ;
+    // InternalHouseBuilderV2.g:7932:1: rule__Actuator__Group__1 : rule__Actuator__Group__1__Impl rule__Actuator__Group__2 ;
     public final void rule__Actuator__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8800:1: ( rule__Actuator__Group__1__Impl rule__Actuator__Group__2 )
-            // InternalHouseBuilderV2.g:8801:2: rule__Actuator__Group__1__Impl rule__Actuator__Group__2
+            // InternalHouseBuilderV2.g:7936:1: ( rule__Actuator__Group__1__Impl rule__Actuator__Group__2 )
+            // InternalHouseBuilderV2.g:7937:2: rule__Actuator__Group__1__Impl rule__Actuator__Group__2
             {
             pushFollow(FOLLOW_4);
             rule__Actuator__Group__1__Impl();
@@ -26999,21 +24361,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__1__Impl"
-    // InternalHouseBuilderV2.g:8808:1: rule__Actuator__Group__1__Impl : ( ( rule__Actuator__NameAssignment_1 ) ) ;
+    // InternalHouseBuilderV2.g:7944:1: rule__Actuator__Group__1__Impl : ( ( rule__Actuator__NameAssignment_1 ) ) ;
     public final void rule__Actuator__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8812:1: ( ( ( rule__Actuator__NameAssignment_1 ) ) )
-            // InternalHouseBuilderV2.g:8813:1: ( ( rule__Actuator__NameAssignment_1 ) )
+            // InternalHouseBuilderV2.g:7948:1: ( ( ( rule__Actuator__NameAssignment_1 ) ) )
+            // InternalHouseBuilderV2.g:7949:1: ( ( rule__Actuator__NameAssignment_1 ) )
             {
-            // InternalHouseBuilderV2.g:8813:1: ( ( rule__Actuator__NameAssignment_1 ) )
-            // InternalHouseBuilderV2.g:8814:2: ( rule__Actuator__NameAssignment_1 )
+            // InternalHouseBuilderV2.g:7949:1: ( ( rule__Actuator__NameAssignment_1 ) )
+            // InternalHouseBuilderV2.g:7950:2: ( rule__Actuator__NameAssignment_1 )
             {
              before(grammarAccess.getActuatorAccess().getNameAssignment_1()); 
-            // InternalHouseBuilderV2.g:8815:2: ( rule__Actuator__NameAssignment_1 )
-            // InternalHouseBuilderV2.g:8815:3: rule__Actuator__NameAssignment_1
+            // InternalHouseBuilderV2.g:7951:2: ( rule__Actuator__NameAssignment_1 )
+            // InternalHouseBuilderV2.g:7951:3: rule__Actuator__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Actuator__NameAssignment_1();
@@ -27046,14 +24408,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__2"
-    // InternalHouseBuilderV2.g:8823:1: rule__Actuator__Group__2 : rule__Actuator__Group__2__Impl rule__Actuator__Group__3 ;
+    // InternalHouseBuilderV2.g:7959:1: rule__Actuator__Group__2 : rule__Actuator__Group__2__Impl rule__Actuator__Group__3 ;
     public final void rule__Actuator__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8827:1: ( rule__Actuator__Group__2__Impl rule__Actuator__Group__3 )
-            // InternalHouseBuilderV2.g:8828:2: rule__Actuator__Group__2__Impl rule__Actuator__Group__3
+            // InternalHouseBuilderV2.g:7963:1: ( rule__Actuator__Group__2__Impl rule__Actuator__Group__3 )
+            // InternalHouseBuilderV2.g:7964:2: rule__Actuator__Group__2__Impl rule__Actuator__Group__3
             {
             pushFollow(FOLLOW_39);
             rule__Actuator__Group__2__Impl();
@@ -27084,17 +24446,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__2__Impl"
-    // InternalHouseBuilderV2.g:8835:1: rule__Actuator__Group__2__Impl : ( '{' ) ;
+    // InternalHouseBuilderV2.g:7971:1: rule__Actuator__Group__2__Impl : ( '{' ) ;
     public final void rule__Actuator__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8839:1: ( ( '{' ) )
-            // InternalHouseBuilderV2.g:8840:1: ( '{' )
+            // InternalHouseBuilderV2.g:7975:1: ( ( '{' ) )
+            // InternalHouseBuilderV2.g:7976:1: ( '{' )
             {
-            // InternalHouseBuilderV2.g:8840:1: ( '{' )
-            // InternalHouseBuilderV2.g:8841:2: '{'
+            // InternalHouseBuilderV2.g:7976:1: ( '{' )
+            // InternalHouseBuilderV2.g:7977:2: '{'
             {
              before(grammarAccess.getActuatorAccess().getLeftCurlyBracketKeyword_2()); 
             match(input,59,FOLLOW_2); 
@@ -27121,14 +24483,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__3"
-    // InternalHouseBuilderV2.g:8850:1: rule__Actuator__Group__3 : rule__Actuator__Group__3__Impl rule__Actuator__Group__4 ;
+    // InternalHouseBuilderV2.g:7986:1: rule__Actuator__Group__3 : rule__Actuator__Group__3__Impl rule__Actuator__Group__4 ;
     public final void rule__Actuator__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8854:1: ( rule__Actuator__Group__3__Impl rule__Actuator__Group__4 )
-            // InternalHouseBuilderV2.g:8855:2: rule__Actuator__Group__3__Impl rule__Actuator__Group__4
+            // InternalHouseBuilderV2.g:7990:1: ( rule__Actuator__Group__3__Impl rule__Actuator__Group__4 )
+            // InternalHouseBuilderV2.g:7991:2: rule__Actuator__Group__3__Impl rule__Actuator__Group__4
             {
             pushFollow(FOLLOW_52);
             rule__Actuator__Group__3__Impl();
@@ -27159,17 +24521,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__3__Impl"
-    // InternalHouseBuilderV2.g:8862:1: rule__Actuator__Group__3__Impl : ( 'type' ) ;
+    // InternalHouseBuilderV2.g:7998:1: rule__Actuator__Group__3__Impl : ( 'type' ) ;
     public final void rule__Actuator__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8866:1: ( ( 'type' ) )
-            // InternalHouseBuilderV2.g:8867:1: ( 'type' )
+            // InternalHouseBuilderV2.g:8002:1: ( ( 'type' ) )
+            // InternalHouseBuilderV2.g:8003:1: ( 'type' )
             {
-            // InternalHouseBuilderV2.g:8867:1: ( 'type' )
-            // InternalHouseBuilderV2.g:8868:2: 'type'
+            // InternalHouseBuilderV2.g:8003:1: ( 'type' )
+            // InternalHouseBuilderV2.g:8004:2: 'type'
             {
              before(grammarAccess.getActuatorAccess().getTypeKeyword_3()); 
             match(input,94,FOLLOW_2); 
@@ -27196,14 +24558,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__4"
-    // InternalHouseBuilderV2.g:8877:1: rule__Actuator__Group__4 : rule__Actuator__Group__4__Impl rule__Actuator__Group__5 ;
+    // InternalHouseBuilderV2.g:8013:1: rule__Actuator__Group__4 : rule__Actuator__Group__4__Impl rule__Actuator__Group__5 ;
     public final void rule__Actuator__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8881:1: ( rule__Actuator__Group__4__Impl rule__Actuator__Group__5 )
-            // InternalHouseBuilderV2.g:8882:2: rule__Actuator__Group__4__Impl rule__Actuator__Group__5
+            // InternalHouseBuilderV2.g:8017:1: ( rule__Actuator__Group__4__Impl rule__Actuator__Group__5 )
+            // InternalHouseBuilderV2.g:8018:2: rule__Actuator__Group__4__Impl rule__Actuator__Group__5
             {
             pushFollow(FOLLOW_53);
             rule__Actuator__Group__4__Impl();
@@ -27234,21 +24596,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__4__Impl"
-    // InternalHouseBuilderV2.g:8889:1: rule__Actuator__Group__4__Impl : ( ( rule__Actuator__TypeAssignment_4 ) ) ;
+    // InternalHouseBuilderV2.g:8025:1: rule__Actuator__Group__4__Impl : ( ( rule__Actuator__TypeAssignment_4 ) ) ;
     public final void rule__Actuator__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8893:1: ( ( ( rule__Actuator__TypeAssignment_4 ) ) )
-            // InternalHouseBuilderV2.g:8894:1: ( ( rule__Actuator__TypeAssignment_4 ) )
+            // InternalHouseBuilderV2.g:8029:1: ( ( ( rule__Actuator__TypeAssignment_4 ) ) )
+            // InternalHouseBuilderV2.g:8030:1: ( ( rule__Actuator__TypeAssignment_4 ) )
             {
-            // InternalHouseBuilderV2.g:8894:1: ( ( rule__Actuator__TypeAssignment_4 ) )
-            // InternalHouseBuilderV2.g:8895:2: ( rule__Actuator__TypeAssignment_4 )
+            // InternalHouseBuilderV2.g:8030:1: ( ( rule__Actuator__TypeAssignment_4 ) )
+            // InternalHouseBuilderV2.g:8031:2: ( rule__Actuator__TypeAssignment_4 )
             {
              before(grammarAccess.getActuatorAccess().getTypeAssignment_4()); 
-            // InternalHouseBuilderV2.g:8896:2: ( rule__Actuator__TypeAssignment_4 )
-            // InternalHouseBuilderV2.g:8896:3: rule__Actuator__TypeAssignment_4
+            // InternalHouseBuilderV2.g:8032:2: ( rule__Actuator__TypeAssignment_4 )
+            // InternalHouseBuilderV2.g:8032:3: rule__Actuator__TypeAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__Actuator__TypeAssignment_4();
@@ -27281,14 +24643,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__5"
-    // InternalHouseBuilderV2.g:8904:1: rule__Actuator__Group__5 : rule__Actuator__Group__5__Impl rule__Actuator__Group__6 ;
+    // InternalHouseBuilderV2.g:8040:1: rule__Actuator__Group__5 : rule__Actuator__Group__5__Impl rule__Actuator__Group__6 ;
     public final void rule__Actuator__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8908:1: ( rule__Actuator__Group__5__Impl rule__Actuator__Group__6 )
-            // InternalHouseBuilderV2.g:8909:2: rule__Actuator__Group__5__Impl rule__Actuator__Group__6
+            // InternalHouseBuilderV2.g:8044:1: ( rule__Actuator__Group__5__Impl rule__Actuator__Group__6 )
+            // InternalHouseBuilderV2.g:8045:2: rule__Actuator__Group__5__Impl rule__Actuator__Group__6
             {
             pushFollow(FOLLOW_53);
             rule__Actuator__Group__5__Impl();
@@ -27319,29 +24681,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__5__Impl"
-    // InternalHouseBuilderV2.g:8916:1: rule__Actuator__Group__5__Impl : ( ( rule__Actuator__Group_5__0 )? ) ;
+    // InternalHouseBuilderV2.g:8052:1: rule__Actuator__Group__5__Impl : ( ( rule__Actuator__Group_5__0 )? ) ;
     public final void rule__Actuator__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8920:1: ( ( ( rule__Actuator__Group_5__0 )? ) )
-            // InternalHouseBuilderV2.g:8921:1: ( ( rule__Actuator__Group_5__0 )? )
+            // InternalHouseBuilderV2.g:8056:1: ( ( ( rule__Actuator__Group_5__0 )? ) )
+            // InternalHouseBuilderV2.g:8057:1: ( ( rule__Actuator__Group_5__0 )? )
             {
-            // InternalHouseBuilderV2.g:8921:1: ( ( rule__Actuator__Group_5__0 )? )
-            // InternalHouseBuilderV2.g:8922:2: ( rule__Actuator__Group_5__0 )?
+            // InternalHouseBuilderV2.g:8057:1: ( ( rule__Actuator__Group_5__0 )? )
+            // InternalHouseBuilderV2.g:8058:2: ( rule__Actuator__Group_5__0 )?
             {
              before(grammarAccess.getActuatorAccess().getGroup_5()); 
-            // InternalHouseBuilderV2.g:8923:2: ( rule__Actuator__Group_5__0 )?
-            int alt66=2;
-            int LA66_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:8059:2: ( rule__Actuator__Group_5__0 )?
+            int alt58=2;
+            int LA58_0 = input.LA(1);
 
-            if ( (LA66_0==84) ) {
-                alt66=1;
+            if ( (LA58_0==84) ) {
+                alt58=1;
             }
-            switch (alt66) {
+            switch (alt58) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:8923:3: rule__Actuator__Group_5__0
+                    // InternalHouseBuilderV2.g:8059:3: rule__Actuator__Group_5__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Actuator__Group_5__0();
@@ -27377,14 +24739,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__6"
-    // InternalHouseBuilderV2.g:8931:1: rule__Actuator__Group__6 : rule__Actuator__Group__6__Impl rule__Actuator__Group__7 ;
+    // InternalHouseBuilderV2.g:8067:1: rule__Actuator__Group__6 : rule__Actuator__Group__6__Impl rule__Actuator__Group__7 ;
     public final void rule__Actuator__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8935:1: ( rule__Actuator__Group__6__Impl rule__Actuator__Group__7 )
-            // InternalHouseBuilderV2.g:8936:2: rule__Actuator__Group__6__Impl rule__Actuator__Group__7
+            // InternalHouseBuilderV2.g:8071:1: ( rule__Actuator__Group__6__Impl rule__Actuator__Group__7 )
+            // InternalHouseBuilderV2.g:8072:2: rule__Actuator__Group__6__Impl rule__Actuator__Group__7
             {
             pushFollow(FOLLOW_3);
             rule__Actuator__Group__6__Impl();
@@ -27415,20 +24777,20 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__6__Impl"
-    // InternalHouseBuilderV2.g:8943:1: rule__Actuator__Group__6__Impl : ( 'device' ) ;
+    // InternalHouseBuilderV2.g:8079:1: rule__Actuator__Group__6__Impl : ( 'device' ) ;
     public final void rule__Actuator__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8947:1: ( ( 'device' ) )
-            // InternalHouseBuilderV2.g:8948:1: ( 'device' )
+            // InternalHouseBuilderV2.g:8083:1: ( ( 'device' ) )
+            // InternalHouseBuilderV2.g:8084:1: ( 'device' )
             {
-            // InternalHouseBuilderV2.g:8948:1: ( 'device' )
-            // InternalHouseBuilderV2.g:8949:2: 'device'
+            // InternalHouseBuilderV2.g:8084:1: ( 'device' )
+            // InternalHouseBuilderV2.g:8085:2: 'device'
             {
              before(grammarAccess.getActuatorAccess().getDeviceKeyword_6()); 
-            match(input,109,FOLLOW_2); 
+            match(input,107,FOLLOW_2); 
              after(grammarAccess.getActuatorAccess().getDeviceKeyword_6()); 
 
             }
@@ -27452,14 +24814,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__7"
-    // InternalHouseBuilderV2.g:8958:1: rule__Actuator__Group__7 : rule__Actuator__Group__7__Impl rule__Actuator__Group__8 ;
+    // InternalHouseBuilderV2.g:8094:1: rule__Actuator__Group__7 : rule__Actuator__Group__7__Impl rule__Actuator__Group__8 ;
     public final void rule__Actuator__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8962:1: ( rule__Actuator__Group__7__Impl rule__Actuator__Group__8 )
-            // InternalHouseBuilderV2.g:8963:2: rule__Actuator__Group__7__Impl rule__Actuator__Group__8
+            // InternalHouseBuilderV2.g:8098:1: ( rule__Actuator__Group__7__Impl rule__Actuator__Group__8 )
+            // InternalHouseBuilderV2.g:8099:2: rule__Actuator__Group__7__Impl rule__Actuator__Group__8
             {
             pushFollow(FOLLOW_11);
             rule__Actuator__Group__7__Impl();
@@ -27490,21 +24852,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__7__Impl"
-    // InternalHouseBuilderV2.g:8970:1: rule__Actuator__Group__7__Impl : ( ( rule__Actuator__DeviceAssignment_7 ) ) ;
+    // InternalHouseBuilderV2.g:8106:1: rule__Actuator__Group__7__Impl : ( ( rule__Actuator__DeviceAssignment_7 ) ) ;
     public final void rule__Actuator__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8974:1: ( ( ( rule__Actuator__DeviceAssignment_7 ) ) )
-            // InternalHouseBuilderV2.g:8975:1: ( ( rule__Actuator__DeviceAssignment_7 ) )
+            // InternalHouseBuilderV2.g:8110:1: ( ( ( rule__Actuator__DeviceAssignment_7 ) ) )
+            // InternalHouseBuilderV2.g:8111:1: ( ( rule__Actuator__DeviceAssignment_7 ) )
             {
-            // InternalHouseBuilderV2.g:8975:1: ( ( rule__Actuator__DeviceAssignment_7 ) )
-            // InternalHouseBuilderV2.g:8976:2: ( rule__Actuator__DeviceAssignment_7 )
+            // InternalHouseBuilderV2.g:8111:1: ( ( rule__Actuator__DeviceAssignment_7 ) )
+            // InternalHouseBuilderV2.g:8112:2: ( rule__Actuator__DeviceAssignment_7 )
             {
              before(grammarAccess.getActuatorAccess().getDeviceAssignment_7()); 
-            // InternalHouseBuilderV2.g:8977:2: ( rule__Actuator__DeviceAssignment_7 )
-            // InternalHouseBuilderV2.g:8977:3: rule__Actuator__DeviceAssignment_7
+            // InternalHouseBuilderV2.g:8113:2: ( rule__Actuator__DeviceAssignment_7 )
+            // InternalHouseBuilderV2.g:8113:3: rule__Actuator__DeviceAssignment_7
             {
             pushFollow(FOLLOW_2);
             rule__Actuator__DeviceAssignment_7();
@@ -27537,14 +24899,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__8"
-    // InternalHouseBuilderV2.g:8985:1: rule__Actuator__Group__8 : rule__Actuator__Group__8__Impl ;
+    // InternalHouseBuilderV2.g:8121:1: rule__Actuator__Group__8 : rule__Actuator__Group__8__Impl ;
     public final void rule__Actuator__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:8989:1: ( rule__Actuator__Group__8__Impl )
-            // InternalHouseBuilderV2.g:8990:2: rule__Actuator__Group__8__Impl
+            // InternalHouseBuilderV2.g:8125:1: ( rule__Actuator__Group__8__Impl )
+            // InternalHouseBuilderV2.g:8126:2: rule__Actuator__Group__8__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Actuator__Group__8__Impl();
@@ -27570,17 +24932,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group__8__Impl"
-    // InternalHouseBuilderV2.g:8996:1: rule__Actuator__Group__8__Impl : ( '}' ) ;
+    // InternalHouseBuilderV2.g:8132:1: rule__Actuator__Group__8__Impl : ( '}' ) ;
     public final void rule__Actuator__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9000:1: ( ( '}' ) )
-            // InternalHouseBuilderV2.g:9001:1: ( '}' )
+            // InternalHouseBuilderV2.g:8136:1: ( ( '}' ) )
+            // InternalHouseBuilderV2.g:8137:1: ( '}' )
             {
-            // InternalHouseBuilderV2.g:9001:1: ( '}' )
-            // InternalHouseBuilderV2.g:9002:2: '}'
+            // InternalHouseBuilderV2.g:8137:1: ( '}' )
+            // InternalHouseBuilderV2.g:8138:2: '}'
             {
              before(grammarAccess.getActuatorAccess().getRightCurlyBracketKeyword_8()); 
             match(input,61,FOLLOW_2); 
@@ -27607,14 +24969,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group_5__0"
-    // InternalHouseBuilderV2.g:9012:1: rule__Actuator__Group_5__0 : rule__Actuator__Group_5__0__Impl rule__Actuator__Group_5__1 ;
+    // InternalHouseBuilderV2.g:8148:1: rule__Actuator__Group_5__0 : rule__Actuator__Group_5__0__Impl rule__Actuator__Group_5__1 ;
     public final void rule__Actuator__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9016:1: ( rule__Actuator__Group_5__0__Impl rule__Actuator__Group_5__1 )
-            // InternalHouseBuilderV2.g:9017:2: rule__Actuator__Group_5__0__Impl rule__Actuator__Group_5__1
+            // InternalHouseBuilderV2.g:8152:1: ( rule__Actuator__Group_5__0__Impl rule__Actuator__Group_5__1 )
+            // InternalHouseBuilderV2.g:8153:2: rule__Actuator__Group_5__0__Impl rule__Actuator__Group_5__1
             {
             pushFollow(FOLLOW_3);
             rule__Actuator__Group_5__0__Impl();
@@ -27645,17 +25007,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group_5__0__Impl"
-    // InternalHouseBuilderV2.g:9024:1: rule__Actuator__Group_5__0__Impl : ( 'model' ) ;
+    // InternalHouseBuilderV2.g:8160:1: rule__Actuator__Group_5__0__Impl : ( 'model' ) ;
     public final void rule__Actuator__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9028:1: ( ( 'model' ) )
-            // InternalHouseBuilderV2.g:9029:1: ( 'model' )
+            // InternalHouseBuilderV2.g:8164:1: ( ( 'model' ) )
+            // InternalHouseBuilderV2.g:8165:1: ( 'model' )
             {
-            // InternalHouseBuilderV2.g:9029:1: ( 'model' )
-            // InternalHouseBuilderV2.g:9030:2: 'model'
+            // InternalHouseBuilderV2.g:8165:1: ( 'model' )
+            // InternalHouseBuilderV2.g:8166:2: 'model'
             {
              before(grammarAccess.getActuatorAccess().getModelKeyword_5_0()); 
             match(input,84,FOLLOW_2); 
@@ -27682,14 +25044,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group_5__1"
-    // InternalHouseBuilderV2.g:9039:1: rule__Actuator__Group_5__1 : rule__Actuator__Group_5__1__Impl ;
+    // InternalHouseBuilderV2.g:8175:1: rule__Actuator__Group_5__1 : rule__Actuator__Group_5__1__Impl ;
     public final void rule__Actuator__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9043:1: ( rule__Actuator__Group_5__1__Impl )
-            // InternalHouseBuilderV2.g:9044:2: rule__Actuator__Group_5__1__Impl
+            // InternalHouseBuilderV2.g:8179:1: ( rule__Actuator__Group_5__1__Impl )
+            // InternalHouseBuilderV2.g:8180:2: rule__Actuator__Group_5__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Actuator__Group_5__1__Impl();
@@ -27715,21 +25077,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__Group_5__1__Impl"
-    // InternalHouseBuilderV2.g:9050:1: rule__Actuator__Group_5__1__Impl : ( ( rule__Actuator__ModelAssignment_5_1 ) ) ;
+    // InternalHouseBuilderV2.g:8186:1: rule__Actuator__Group_5__1__Impl : ( ( rule__Actuator__ModelAssignment_5_1 ) ) ;
     public final void rule__Actuator__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9054:1: ( ( ( rule__Actuator__ModelAssignment_5_1 ) ) )
-            // InternalHouseBuilderV2.g:9055:1: ( ( rule__Actuator__ModelAssignment_5_1 ) )
+            // InternalHouseBuilderV2.g:8190:1: ( ( ( rule__Actuator__ModelAssignment_5_1 ) ) )
+            // InternalHouseBuilderV2.g:8191:1: ( ( rule__Actuator__ModelAssignment_5_1 ) )
             {
-            // InternalHouseBuilderV2.g:9055:1: ( ( rule__Actuator__ModelAssignment_5_1 ) )
-            // InternalHouseBuilderV2.g:9056:2: ( rule__Actuator__ModelAssignment_5_1 )
+            // InternalHouseBuilderV2.g:8191:1: ( ( rule__Actuator__ModelAssignment_5_1 ) )
+            // InternalHouseBuilderV2.g:8192:2: ( rule__Actuator__ModelAssignment_5_1 )
             {
              before(grammarAccess.getActuatorAccess().getModelAssignment_5_1()); 
-            // InternalHouseBuilderV2.g:9057:2: ( rule__Actuator__ModelAssignment_5_1 )
-            // InternalHouseBuilderV2.g:9057:3: rule__Actuator__ModelAssignment_5_1
+            // InternalHouseBuilderV2.g:8193:2: ( rule__Actuator__ModelAssignment_5_1 )
+            // InternalHouseBuilderV2.g:8193:3: rule__Actuator__ModelAssignment_5_1
             {
             pushFollow(FOLLOW_2);
             rule__Actuator__ModelAssignment_5_1();
@@ -27762,14 +25124,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__0"
-    // InternalHouseBuilderV2.g:9066:1: rule__Window__Group__0 : rule__Window__Group__0__Impl rule__Window__Group__1 ;
+    // InternalHouseBuilderV2.g:8202:1: rule__Window__Group__0 : rule__Window__Group__0__Impl rule__Window__Group__1 ;
     public final void rule__Window__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9070:1: ( rule__Window__Group__0__Impl rule__Window__Group__1 )
-            // InternalHouseBuilderV2.g:9071:2: rule__Window__Group__0__Impl rule__Window__Group__1
+            // InternalHouseBuilderV2.g:8206:1: ( rule__Window__Group__0__Impl rule__Window__Group__1 )
+            // InternalHouseBuilderV2.g:8207:2: rule__Window__Group__0__Impl rule__Window__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Window__Group__0__Impl();
@@ -27800,20 +25162,20 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__0__Impl"
-    // InternalHouseBuilderV2.g:9078:1: rule__Window__Group__0__Impl : ( 'Window' ) ;
+    // InternalHouseBuilderV2.g:8214:1: rule__Window__Group__0__Impl : ( 'Window' ) ;
     public final void rule__Window__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9082:1: ( ( 'Window' ) )
-            // InternalHouseBuilderV2.g:9083:1: ( 'Window' )
+            // InternalHouseBuilderV2.g:8218:1: ( ( 'Window' ) )
+            // InternalHouseBuilderV2.g:8219:1: ( 'Window' )
             {
-            // InternalHouseBuilderV2.g:9083:1: ( 'Window' )
-            // InternalHouseBuilderV2.g:9084:2: 'Window'
+            // InternalHouseBuilderV2.g:8219:1: ( 'Window' )
+            // InternalHouseBuilderV2.g:8220:2: 'Window'
             {
              before(grammarAccess.getWindowAccess().getWindowKeyword_0()); 
-            match(input,110,FOLLOW_2); 
+            match(input,108,FOLLOW_2); 
              after(grammarAccess.getWindowAccess().getWindowKeyword_0()); 
 
             }
@@ -27837,14 +25199,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__1"
-    // InternalHouseBuilderV2.g:9093:1: rule__Window__Group__1 : rule__Window__Group__1__Impl rule__Window__Group__2 ;
+    // InternalHouseBuilderV2.g:8229:1: rule__Window__Group__1 : rule__Window__Group__1__Impl rule__Window__Group__2 ;
     public final void rule__Window__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9097:1: ( rule__Window__Group__1__Impl rule__Window__Group__2 )
-            // InternalHouseBuilderV2.g:9098:2: rule__Window__Group__1__Impl rule__Window__Group__2
+            // InternalHouseBuilderV2.g:8233:1: ( rule__Window__Group__1__Impl rule__Window__Group__2 )
+            // InternalHouseBuilderV2.g:8234:2: rule__Window__Group__1__Impl rule__Window__Group__2
             {
             pushFollow(FOLLOW_4);
             rule__Window__Group__1__Impl();
@@ -27875,21 +25237,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__1__Impl"
-    // InternalHouseBuilderV2.g:9105:1: rule__Window__Group__1__Impl : ( ( rule__Window__NameAssignment_1 ) ) ;
+    // InternalHouseBuilderV2.g:8241:1: rule__Window__Group__1__Impl : ( ( rule__Window__NameAssignment_1 ) ) ;
     public final void rule__Window__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9109:1: ( ( ( rule__Window__NameAssignment_1 ) ) )
-            // InternalHouseBuilderV2.g:9110:1: ( ( rule__Window__NameAssignment_1 ) )
+            // InternalHouseBuilderV2.g:8245:1: ( ( ( rule__Window__NameAssignment_1 ) ) )
+            // InternalHouseBuilderV2.g:8246:1: ( ( rule__Window__NameAssignment_1 ) )
             {
-            // InternalHouseBuilderV2.g:9110:1: ( ( rule__Window__NameAssignment_1 ) )
-            // InternalHouseBuilderV2.g:9111:2: ( rule__Window__NameAssignment_1 )
+            // InternalHouseBuilderV2.g:8246:1: ( ( rule__Window__NameAssignment_1 ) )
+            // InternalHouseBuilderV2.g:8247:2: ( rule__Window__NameAssignment_1 )
             {
              before(grammarAccess.getWindowAccess().getNameAssignment_1()); 
-            // InternalHouseBuilderV2.g:9112:2: ( rule__Window__NameAssignment_1 )
-            // InternalHouseBuilderV2.g:9112:3: rule__Window__NameAssignment_1
+            // InternalHouseBuilderV2.g:8248:2: ( rule__Window__NameAssignment_1 )
+            // InternalHouseBuilderV2.g:8248:3: rule__Window__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Window__NameAssignment_1();
@@ -27922,14 +25284,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__2"
-    // InternalHouseBuilderV2.g:9120:1: rule__Window__Group__2 : rule__Window__Group__2__Impl rule__Window__Group__3 ;
+    // InternalHouseBuilderV2.g:8256:1: rule__Window__Group__2 : rule__Window__Group__2__Impl rule__Window__Group__3 ;
     public final void rule__Window__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9124:1: ( rule__Window__Group__2__Impl rule__Window__Group__3 )
-            // InternalHouseBuilderV2.g:9125:2: rule__Window__Group__2__Impl rule__Window__Group__3
+            // InternalHouseBuilderV2.g:8260:1: ( rule__Window__Group__2__Impl rule__Window__Group__3 )
+            // InternalHouseBuilderV2.g:8261:2: rule__Window__Group__2__Impl rule__Window__Group__3
             {
             pushFollow(FOLLOW_21);
             rule__Window__Group__2__Impl();
@@ -27960,17 +25322,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__2__Impl"
-    // InternalHouseBuilderV2.g:9132:1: rule__Window__Group__2__Impl : ( '{' ) ;
+    // InternalHouseBuilderV2.g:8268:1: rule__Window__Group__2__Impl : ( '{' ) ;
     public final void rule__Window__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9136:1: ( ( '{' ) )
-            // InternalHouseBuilderV2.g:9137:1: ( '{' )
+            // InternalHouseBuilderV2.g:8272:1: ( ( '{' ) )
+            // InternalHouseBuilderV2.g:8273:1: ( '{' )
             {
-            // InternalHouseBuilderV2.g:9137:1: ( '{' )
-            // InternalHouseBuilderV2.g:9138:2: '{'
+            // InternalHouseBuilderV2.g:8273:1: ( '{' )
+            // InternalHouseBuilderV2.g:8274:2: '{'
             {
              before(grammarAccess.getWindowAccess().getLeftCurlyBracketKeyword_2()); 
             match(input,59,FOLLOW_2); 
@@ -27997,14 +25359,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__3"
-    // InternalHouseBuilderV2.g:9147:1: rule__Window__Group__3 : rule__Window__Group__3__Impl rule__Window__Group__4 ;
+    // InternalHouseBuilderV2.g:8283:1: rule__Window__Group__3 : rule__Window__Group__3__Impl rule__Window__Group__4 ;
     public final void rule__Window__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9151:1: ( rule__Window__Group__3__Impl rule__Window__Group__4 )
-            // InternalHouseBuilderV2.g:9152:2: rule__Window__Group__3__Impl rule__Window__Group__4
+            // InternalHouseBuilderV2.g:8287:1: ( rule__Window__Group__3__Impl rule__Window__Group__4 )
+            // InternalHouseBuilderV2.g:8288:2: rule__Window__Group__3__Impl rule__Window__Group__4
             {
             pushFollow(FOLLOW_16);
             rule__Window__Group__3__Impl();
@@ -28035,17 +25397,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__3__Impl"
-    // InternalHouseBuilderV2.g:9159:1: rule__Window__Group__3__Impl : ( 'doorsNumber' ) ;
+    // InternalHouseBuilderV2.g:8295:1: rule__Window__Group__3__Impl : ( 'doorsNumber' ) ;
     public final void rule__Window__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9163:1: ( ( 'doorsNumber' ) )
-            // InternalHouseBuilderV2.g:9164:1: ( 'doorsNumber' )
+            // InternalHouseBuilderV2.g:8299:1: ( ( 'doorsNumber' ) )
+            // InternalHouseBuilderV2.g:8300:1: ( 'doorsNumber' )
             {
-            // InternalHouseBuilderV2.g:9164:1: ( 'doorsNumber' )
-            // InternalHouseBuilderV2.g:9165:2: 'doorsNumber'
+            // InternalHouseBuilderV2.g:8300:1: ( 'doorsNumber' )
+            // InternalHouseBuilderV2.g:8301:2: 'doorsNumber'
             {
              before(grammarAccess.getWindowAccess().getDoorsNumberKeyword_3()); 
             match(input,77,FOLLOW_2); 
@@ -28072,14 +25434,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__4"
-    // InternalHouseBuilderV2.g:9174:1: rule__Window__Group__4 : rule__Window__Group__4__Impl rule__Window__Group__5 ;
+    // InternalHouseBuilderV2.g:8310:1: rule__Window__Group__4 : rule__Window__Group__4__Impl rule__Window__Group__5 ;
     public final void rule__Window__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9178:1: ( rule__Window__Group__4__Impl rule__Window__Group__5 )
-            // InternalHouseBuilderV2.g:9179:2: rule__Window__Group__4__Impl rule__Window__Group__5
+            // InternalHouseBuilderV2.g:8314:1: ( rule__Window__Group__4__Impl rule__Window__Group__5 )
+            // InternalHouseBuilderV2.g:8315:2: rule__Window__Group__4__Impl rule__Window__Group__5
             {
             pushFollow(FOLLOW_22);
             rule__Window__Group__4__Impl();
@@ -28110,21 +25472,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__4__Impl"
-    // InternalHouseBuilderV2.g:9186:1: rule__Window__Group__4__Impl : ( ( rule__Window__DoorsNumberAssignment_4 ) ) ;
+    // InternalHouseBuilderV2.g:8322:1: rule__Window__Group__4__Impl : ( ( rule__Window__DoorsNumberAssignment_4 ) ) ;
     public final void rule__Window__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9190:1: ( ( ( rule__Window__DoorsNumberAssignment_4 ) ) )
-            // InternalHouseBuilderV2.g:9191:1: ( ( rule__Window__DoorsNumberAssignment_4 ) )
+            // InternalHouseBuilderV2.g:8326:1: ( ( ( rule__Window__DoorsNumberAssignment_4 ) ) )
+            // InternalHouseBuilderV2.g:8327:1: ( ( rule__Window__DoorsNumberAssignment_4 ) )
             {
-            // InternalHouseBuilderV2.g:9191:1: ( ( rule__Window__DoorsNumberAssignment_4 ) )
-            // InternalHouseBuilderV2.g:9192:2: ( rule__Window__DoorsNumberAssignment_4 )
+            // InternalHouseBuilderV2.g:8327:1: ( ( rule__Window__DoorsNumberAssignment_4 ) )
+            // InternalHouseBuilderV2.g:8328:2: ( rule__Window__DoorsNumberAssignment_4 )
             {
              before(grammarAccess.getWindowAccess().getDoorsNumberAssignment_4()); 
-            // InternalHouseBuilderV2.g:9193:2: ( rule__Window__DoorsNumberAssignment_4 )
-            // InternalHouseBuilderV2.g:9193:3: rule__Window__DoorsNumberAssignment_4
+            // InternalHouseBuilderV2.g:8329:2: ( rule__Window__DoorsNumberAssignment_4 )
+            // InternalHouseBuilderV2.g:8329:3: rule__Window__DoorsNumberAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__Window__DoorsNumberAssignment_4();
@@ -28157,14 +25519,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__5"
-    // InternalHouseBuilderV2.g:9201:1: rule__Window__Group__5 : rule__Window__Group__5__Impl rule__Window__Group__6 ;
+    // InternalHouseBuilderV2.g:8337:1: rule__Window__Group__5 : rule__Window__Group__5__Impl rule__Window__Group__6 ;
     public final void rule__Window__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9205:1: ( rule__Window__Group__5__Impl rule__Window__Group__6 )
-            // InternalHouseBuilderV2.g:9206:2: rule__Window__Group__5__Impl rule__Window__Group__6
+            // InternalHouseBuilderV2.g:8341:1: ( rule__Window__Group__5__Impl rule__Window__Group__6 )
+            // InternalHouseBuilderV2.g:8342:2: rule__Window__Group__5__Impl rule__Window__Group__6
             {
             pushFollow(FOLLOW_23);
             rule__Window__Group__5__Impl();
@@ -28195,17 +25557,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__5__Impl"
-    // InternalHouseBuilderV2.g:9213:1: rule__Window__Group__5__Impl : ( 'width' ) ;
+    // InternalHouseBuilderV2.g:8349:1: rule__Window__Group__5__Impl : ( 'width' ) ;
     public final void rule__Window__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9217:1: ( ( 'width' ) )
-            // InternalHouseBuilderV2.g:9218:1: ( 'width' )
+            // InternalHouseBuilderV2.g:8353:1: ( ( 'width' ) )
+            // InternalHouseBuilderV2.g:8354:1: ( 'width' )
             {
-            // InternalHouseBuilderV2.g:9218:1: ( 'width' )
-            // InternalHouseBuilderV2.g:9219:2: 'width'
+            // InternalHouseBuilderV2.g:8354:1: ( 'width' )
+            // InternalHouseBuilderV2.g:8355:2: 'width'
             {
              before(grammarAccess.getWindowAccess().getWidthKeyword_5()); 
             match(input,78,FOLLOW_2); 
@@ -28232,14 +25594,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__6"
-    // InternalHouseBuilderV2.g:9228:1: rule__Window__Group__6 : rule__Window__Group__6__Impl rule__Window__Group__7 ;
+    // InternalHouseBuilderV2.g:8364:1: rule__Window__Group__6 : rule__Window__Group__6__Impl rule__Window__Group__7 ;
     public final void rule__Window__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9232:1: ( rule__Window__Group__6__Impl rule__Window__Group__7 )
-            // InternalHouseBuilderV2.g:9233:2: rule__Window__Group__6__Impl rule__Window__Group__7
+            // InternalHouseBuilderV2.g:8368:1: ( rule__Window__Group__6__Impl rule__Window__Group__7 )
+            // InternalHouseBuilderV2.g:8369:2: rule__Window__Group__6__Impl rule__Window__Group__7
             {
             pushFollow(FOLLOW_24);
             rule__Window__Group__6__Impl();
@@ -28270,21 +25632,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__6__Impl"
-    // InternalHouseBuilderV2.g:9240:1: rule__Window__Group__6__Impl : ( ( rule__Window__WidthAssignment_6 ) ) ;
+    // InternalHouseBuilderV2.g:8376:1: rule__Window__Group__6__Impl : ( ( rule__Window__WidthAssignment_6 ) ) ;
     public final void rule__Window__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9244:1: ( ( ( rule__Window__WidthAssignment_6 ) ) )
-            // InternalHouseBuilderV2.g:9245:1: ( ( rule__Window__WidthAssignment_6 ) )
+            // InternalHouseBuilderV2.g:8380:1: ( ( ( rule__Window__WidthAssignment_6 ) ) )
+            // InternalHouseBuilderV2.g:8381:1: ( ( rule__Window__WidthAssignment_6 ) )
             {
-            // InternalHouseBuilderV2.g:9245:1: ( ( rule__Window__WidthAssignment_6 ) )
-            // InternalHouseBuilderV2.g:9246:2: ( rule__Window__WidthAssignment_6 )
+            // InternalHouseBuilderV2.g:8381:1: ( ( rule__Window__WidthAssignment_6 ) )
+            // InternalHouseBuilderV2.g:8382:2: ( rule__Window__WidthAssignment_6 )
             {
              before(grammarAccess.getWindowAccess().getWidthAssignment_6()); 
-            // InternalHouseBuilderV2.g:9247:2: ( rule__Window__WidthAssignment_6 )
-            // InternalHouseBuilderV2.g:9247:3: rule__Window__WidthAssignment_6
+            // InternalHouseBuilderV2.g:8383:2: ( rule__Window__WidthAssignment_6 )
+            // InternalHouseBuilderV2.g:8383:3: rule__Window__WidthAssignment_6
             {
             pushFollow(FOLLOW_2);
             rule__Window__WidthAssignment_6();
@@ -28317,14 +25679,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__7"
-    // InternalHouseBuilderV2.g:9255:1: rule__Window__Group__7 : rule__Window__Group__7__Impl rule__Window__Group__8 ;
+    // InternalHouseBuilderV2.g:8391:1: rule__Window__Group__7 : rule__Window__Group__7__Impl rule__Window__Group__8 ;
     public final void rule__Window__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9259:1: ( rule__Window__Group__7__Impl rule__Window__Group__8 )
-            // InternalHouseBuilderV2.g:9260:2: rule__Window__Group__7__Impl rule__Window__Group__8
+            // InternalHouseBuilderV2.g:8395:1: ( rule__Window__Group__7__Impl rule__Window__Group__8 )
+            // InternalHouseBuilderV2.g:8396:2: rule__Window__Group__7__Impl rule__Window__Group__8
             {
             pushFollow(FOLLOW_23);
             rule__Window__Group__7__Impl();
@@ -28355,17 +25717,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__7__Impl"
-    // InternalHouseBuilderV2.g:9267:1: rule__Window__Group__7__Impl : ( 'height' ) ;
+    // InternalHouseBuilderV2.g:8403:1: rule__Window__Group__7__Impl : ( 'height' ) ;
     public final void rule__Window__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9271:1: ( ( 'height' ) )
-            // InternalHouseBuilderV2.g:9272:1: ( 'height' )
+            // InternalHouseBuilderV2.g:8407:1: ( ( 'height' ) )
+            // InternalHouseBuilderV2.g:8408:1: ( 'height' )
             {
-            // InternalHouseBuilderV2.g:9272:1: ( 'height' )
-            // InternalHouseBuilderV2.g:9273:2: 'height'
+            // InternalHouseBuilderV2.g:8408:1: ( 'height' )
+            // InternalHouseBuilderV2.g:8409:2: 'height'
             {
              before(grammarAccess.getWindowAccess().getHeightKeyword_7()); 
             match(input,79,FOLLOW_2); 
@@ -28392,14 +25754,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__8"
-    // InternalHouseBuilderV2.g:9282:1: rule__Window__Group__8 : rule__Window__Group__8__Impl rule__Window__Group__9 ;
+    // InternalHouseBuilderV2.g:8418:1: rule__Window__Group__8 : rule__Window__Group__8__Impl rule__Window__Group__9 ;
     public final void rule__Window__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9286:1: ( rule__Window__Group__8__Impl rule__Window__Group__9 )
-            // InternalHouseBuilderV2.g:9287:2: rule__Window__Group__8__Impl rule__Window__Group__9
+            // InternalHouseBuilderV2.g:8422:1: ( rule__Window__Group__8__Impl rule__Window__Group__9 )
+            // InternalHouseBuilderV2.g:8423:2: rule__Window__Group__8__Impl rule__Window__Group__9
             {
             pushFollow(FOLLOW_11);
             rule__Window__Group__8__Impl();
@@ -28430,21 +25792,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__8__Impl"
-    // InternalHouseBuilderV2.g:9294:1: rule__Window__Group__8__Impl : ( ( rule__Window__HeightAssignment_8 ) ) ;
+    // InternalHouseBuilderV2.g:8430:1: rule__Window__Group__8__Impl : ( ( rule__Window__HeightAssignment_8 ) ) ;
     public final void rule__Window__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9298:1: ( ( ( rule__Window__HeightAssignment_8 ) ) )
-            // InternalHouseBuilderV2.g:9299:1: ( ( rule__Window__HeightAssignment_8 ) )
+            // InternalHouseBuilderV2.g:8434:1: ( ( ( rule__Window__HeightAssignment_8 ) ) )
+            // InternalHouseBuilderV2.g:8435:1: ( ( rule__Window__HeightAssignment_8 ) )
             {
-            // InternalHouseBuilderV2.g:9299:1: ( ( rule__Window__HeightAssignment_8 ) )
-            // InternalHouseBuilderV2.g:9300:2: ( rule__Window__HeightAssignment_8 )
+            // InternalHouseBuilderV2.g:8435:1: ( ( rule__Window__HeightAssignment_8 ) )
+            // InternalHouseBuilderV2.g:8436:2: ( rule__Window__HeightAssignment_8 )
             {
              before(grammarAccess.getWindowAccess().getHeightAssignment_8()); 
-            // InternalHouseBuilderV2.g:9301:2: ( rule__Window__HeightAssignment_8 )
-            // InternalHouseBuilderV2.g:9301:3: rule__Window__HeightAssignment_8
+            // InternalHouseBuilderV2.g:8437:2: ( rule__Window__HeightAssignment_8 )
+            // InternalHouseBuilderV2.g:8437:3: rule__Window__HeightAssignment_8
             {
             pushFollow(FOLLOW_2);
             rule__Window__HeightAssignment_8();
@@ -28477,14 +25839,14 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__9"
-    // InternalHouseBuilderV2.g:9309:1: rule__Window__Group__9 : rule__Window__Group__9__Impl ;
+    // InternalHouseBuilderV2.g:8445:1: rule__Window__Group__9 : rule__Window__Group__9__Impl ;
     public final void rule__Window__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9313:1: ( rule__Window__Group__9__Impl )
-            // InternalHouseBuilderV2.g:9314:2: rule__Window__Group__9__Impl
+            // InternalHouseBuilderV2.g:8449:1: ( rule__Window__Group__9__Impl )
+            // InternalHouseBuilderV2.g:8450:2: rule__Window__Group__9__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Window__Group__9__Impl();
@@ -28510,17 +25872,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__Group__9__Impl"
-    // InternalHouseBuilderV2.g:9320:1: rule__Window__Group__9__Impl : ( '}' ) ;
+    // InternalHouseBuilderV2.g:8456:1: rule__Window__Group__9__Impl : ( '}' ) ;
     public final void rule__Window__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9324:1: ( ( '}' ) )
-            // InternalHouseBuilderV2.g:9325:1: ( '}' )
+            // InternalHouseBuilderV2.g:8460:1: ( ( '}' ) )
+            // InternalHouseBuilderV2.g:8461:1: ( '}' )
             {
-            // InternalHouseBuilderV2.g:9325:1: ( '}' )
-            // InternalHouseBuilderV2.g:9326:2: '}'
+            // InternalHouseBuilderV2.g:8461:1: ( '}' )
+            // InternalHouseBuilderV2.g:8462:2: '}'
             {
              before(grammarAccess.getWindowAccess().getRightCurlyBracketKeyword_9()); 
             match(input,61,FOLLOW_2); 
@@ -28547,17 +25909,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__NameAssignment_1"
-    // InternalHouseBuilderV2.g:9336:1: rule__House__NameAssignment_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8472:1: rule__House__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__House__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9340:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9341:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8476:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8477:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9341:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9342:3: ruleEString
+            // InternalHouseBuilderV2.g:8477:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8478:3: ruleEString
             {
              before(grammarAccess.getHouseAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28588,17 +25950,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__StateAssignment_3_1"
-    // InternalHouseBuilderV2.g:9351:1: rule__House__StateAssignment_3_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8487:1: rule__House__StateAssignment_3_1 : ( ruleEString ) ;
     public final void rule__House__StateAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9355:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9356:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8491:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8492:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9356:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9357:3: ruleEString
+            // InternalHouseBuilderV2.g:8492:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8493:3: ruleEString
             {
              before(grammarAccess.getHouseAccess().getStateEStringParserRuleCall_3_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28629,17 +25991,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__ProvinceAssignment_4_1"
-    // InternalHouseBuilderV2.g:9366:1: rule__House__ProvinceAssignment_4_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8502:1: rule__House__ProvinceAssignment_4_1 : ( ruleEString ) ;
     public final void rule__House__ProvinceAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9370:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9371:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8506:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8507:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9371:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9372:3: ruleEString
+            // InternalHouseBuilderV2.g:8507:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8508:3: ruleEString
             {
              before(grammarAccess.getHouseAccess().getProvinceEStringParserRuleCall_4_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28670,17 +26032,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__CityAssignment_5_1"
-    // InternalHouseBuilderV2.g:9381:1: rule__House__CityAssignment_5_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8517:1: rule__House__CityAssignment_5_1 : ( ruleEString ) ;
     public final void rule__House__CityAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9385:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9386:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8521:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8522:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9386:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9387:3: ruleEString
+            // InternalHouseBuilderV2.g:8522:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8523:3: ruleEString
             {
              before(grammarAccess.getHouseAccess().getCityEStringParserRuleCall_5_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28711,17 +26073,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__PostalCodeAssignment_6_1"
-    // InternalHouseBuilderV2.g:9396:1: rule__House__PostalCodeAssignment_6_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8532:1: rule__House__PostalCodeAssignment_6_1 : ( ruleEString ) ;
     public final void rule__House__PostalCodeAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9400:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9401:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8536:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8537:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9401:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9402:3: ruleEString
+            // InternalHouseBuilderV2.g:8537:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8538:3: ruleEString
             {
              before(grammarAccess.getHouseAccess().getPostalCodeEStringParserRuleCall_6_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28752,17 +26114,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__AddressAssignment_7_1"
-    // InternalHouseBuilderV2.g:9411:1: rule__House__AddressAssignment_7_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8547:1: rule__House__AddressAssignment_7_1 : ( ruleEString ) ;
     public final void rule__House__AddressAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9415:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9416:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8551:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8552:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9416:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9417:3: ruleEString
+            // InternalHouseBuilderV2.g:8552:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8553:3: ruleEString
             {
              before(grammarAccess.getHouseAccess().getAddressEStringParserRuleCall_7_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28793,17 +26155,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__BuildingDateAssignment_8_1"
-    // InternalHouseBuilderV2.g:9426:1: rule__House__BuildingDateAssignment_8_1 : ( ruleEDate ) ;
+    // InternalHouseBuilderV2.g:8562:1: rule__House__BuildingDateAssignment_8_1 : ( ruleEDate ) ;
     public final void rule__House__BuildingDateAssignment_8_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9430:1: ( ( ruleEDate ) )
-            // InternalHouseBuilderV2.g:9431:2: ( ruleEDate )
+            // InternalHouseBuilderV2.g:8566:1: ( ( ruleEDate ) )
+            // InternalHouseBuilderV2.g:8567:2: ( ruleEDate )
             {
-            // InternalHouseBuilderV2.g:9431:2: ( ruleEDate )
-            // InternalHouseBuilderV2.g:9432:3: ruleEDate
+            // InternalHouseBuilderV2.g:8567:2: ( ruleEDate )
+            // InternalHouseBuilderV2.g:8568:3: ruleEDate
             {
              before(grammarAccess.getHouseAccess().getBuildingDateEDateParserRuleCall_8_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28834,17 +26196,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__FloorsAssignment_11"
-    // InternalHouseBuilderV2.g:9441:1: rule__House__FloorsAssignment_11 : ( ruleFloor ) ;
+    // InternalHouseBuilderV2.g:8577:1: rule__House__FloorsAssignment_11 : ( ruleFloor ) ;
     public final void rule__House__FloorsAssignment_11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9445:1: ( ( ruleFloor ) )
-            // InternalHouseBuilderV2.g:9446:2: ( ruleFloor )
+            // InternalHouseBuilderV2.g:8581:1: ( ( ruleFloor ) )
+            // InternalHouseBuilderV2.g:8582:2: ( ruleFloor )
             {
-            // InternalHouseBuilderV2.g:9446:2: ( ruleFloor )
-            // InternalHouseBuilderV2.g:9447:3: ruleFloor
+            // InternalHouseBuilderV2.g:8582:2: ( ruleFloor )
+            // InternalHouseBuilderV2.g:8583:3: ruleFloor
             {
              before(grammarAccess.getHouseAccess().getFloorsFloorParserRuleCall_11_0()); 
             pushFollow(FOLLOW_2);
@@ -28875,17 +26237,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__FloorsAssignment_12_1"
-    // InternalHouseBuilderV2.g:9456:1: rule__House__FloorsAssignment_12_1 : ( ruleFloor ) ;
+    // InternalHouseBuilderV2.g:8592:1: rule__House__FloorsAssignment_12_1 : ( ruleFloor ) ;
     public final void rule__House__FloorsAssignment_12_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9460:1: ( ( ruleFloor ) )
-            // InternalHouseBuilderV2.g:9461:2: ( ruleFloor )
+            // InternalHouseBuilderV2.g:8596:1: ( ( ruleFloor ) )
+            // InternalHouseBuilderV2.g:8597:2: ( ruleFloor )
             {
-            // InternalHouseBuilderV2.g:9461:2: ( ruleFloor )
-            // InternalHouseBuilderV2.g:9462:3: ruleFloor
+            // InternalHouseBuilderV2.g:8597:2: ( ruleFloor )
+            // InternalHouseBuilderV2.g:8598:3: ruleFloor
             {
              before(grammarAccess.getHouseAccess().getFloorsFloorParserRuleCall_12_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28916,17 +26278,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__PassagesAssignment_14_2"
-    // InternalHouseBuilderV2.g:9471:1: rule__House__PassagesAssignment_14_2 : ( rulePassage ) ;
+    // InternalHouseBuilderV2.g:8607:1: rule__House__PassagesAssignment_14_2 : ( rulePassage ) ;
     public final void rule__House__PassagesAssignment_14_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9475:1: ( ( rulePassage ) )
-            // InternalHouseBuilderV2.g:9476:2: ( rulePassage )
+            // InternalHouseBuilderV2.g:8611:1: ( ( rulePassage ) )
+            // InternalHouseBuilderV2.g:8612:2: ( rulePassage )
             {
-            // InternalHouseBuilderV2.g:9476:2: ( rulePassage )
-            // InternalHouseBuilderV2.g:9477:3: rulePassage
+            // InternalHouseBuilderV2.g:8612:2: ( rulePassage )
+            // InternalHouseBuilderV2.g:8613:3: rulePassage
             {
              before(grammarAccess.getHouseAccess().getPassagesPassageParserRuleCall_14_2_0()); 
             pushFollow(FOLLOW_2);
@@ -28957,17 +26319,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__PassagesAssignment_14_3_1"
-    // InternalHouseBuilderV2.g:9486:1: rule__House__PassagesAssignment_14_3_1 : ( rulePassage ) ;
+    // InternalHouseBuilderV2.g:8622:1: rule__House__PassagesAssignment_14_3_1 : ( rulePassage ) ;
     public final void rule__House__PassagesAssignment_14_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9490:1: ( ( rulePassage ) )
-            // InternalHouseBuilderV2.g:9491:2: ( rulePassage )
+            // InternalHouseBuilderV2.g:8626:1: ( ( rulePassage ) )
+            // InternalHouseBuilderV2.g:8627:2: ( rulePassage )
             {
-            // InternalHouseBuilderV2.g:9491:2: ( rulePassage )
-            // InternalHouseBuilderV2.g:9492:3: rulePassage
+            // InternalHouseBuilderV2.g:8627:2: ( rulePassage )
+            // InternalHouseBuilderV2.g:8628:3: rulePassage
             {
              before(grammarAccess.getHouseAccess().getPassagesPassageParserRuleCall_14_3_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28998,17 +26360,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__ControllersAssignment_15_2"
-    // InternalHouseBuilderV2.g:9501:1: rule__House__ControllersAssignment_15_2 : ( ruleController ) ;
+    // InternalHouseBuilderV2.g:8637:1: rule__House__ControllersAssignment_15_2 : ( ruleController ) ;
     public final void rule__House__ControllersAssignment_15_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9505:1: ( ( ruleController ) )
-            // InternalHouseBuilderV2.g:9506:2: ( ruleController )
+            // InternalHouseBuilderV2.g:8641:1: ( ( ruleController ) )
+            // InternalHouseBuilderV2.g:8642:2: ( ruleController )
             {
-            // InternalHouseBuilderV2.g:9506:2: ( ruleController )
-            // InternalHouseBuilderV2.g:9507:3: ruleController
+            // InternalHouseBuilderV2.g:8642:2: ( ruleController )
+            // InternalHouseBuilderV2.g:8643:3: ruleController
             {
              before(grammarAccess.getHouseAccess().getControllersControllerParserRuleCall_15_2_0()); 
             pushFollow(FOLLOW_2);
@@ -29039,17 +26401,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__ControllersAssignment_15_3_1"
-    // InternalHouseBuilderV2.g:9516:1: rule__House__ControllersAssignment_15_3_1 : ( ruleController ) ;
+    // InternalHouseBuilderV2.g:8652:1: rule__House__ControllersAssignment_15_3_1 : ( ruleController ) ;
     public final void rule__House__ControllersAssignment_15_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9520:1: ( ( ruleController ) )
-            // InternalHouseBuilderV2.g:9521:2: ( ruleController )
+            // InternalHouseBuilderV2.g:8656:1: ( ( ruleController ) )
+            // InternalHouseBuilderV2.g:8657:2: ( ruleController )
             {
-            // InternalHouseBuilderV2.g:9521:2: ( ruleController )
-            // InternalHouseBuilderV2.g:9522:3: ruleController
+            // InternalHouseBuilderV2.g:8657:2: ( ruleController )
+            // InternalHouseBuilderV2.g:8658:3: ruleController
             {
              before(grammarAccess.getHouseAccess().getControllersControllerParserRuleCall_15_3_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29080,17 +26442,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__EntrancesAssignment_18"
-    // InternalHouseBuilderV2.g:9531:1: rule__House__EntrancesAssignment_18 : ( ruleEntrance ) ;
+    // InternalHouseBuilderV2.g:8667:1: rule__House__EntrancesAssignment_18 : ( ruleEntrance ) ;
     public final void rule__House__EntrancesAssignment_18() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9535:1: ( ( ruleEntrance ) )
-            // InternalHouseBuilderV2.g:9536:2: ( ruleEntrance )
+            // InternalHouseBuilderV2.g:8671:1: ( ( ruleEntrance ) )
+            // InternalHouseBuilderV2.g:8672:2: ( ruleEntrance )
             {
-            // InternalHouseBuilderV2.g:9536:2: ( ruleEntrance )
-            // InternalHouseBuilderV2.g:9537:3: ruleEntrance
+            // InternalHouseBuilderV2.g:8672:2: ( ruleEntrance )
+            // InternalHouseBuilderV2.g:8673:3: ruleEntrance
             {
              before(grammarAccess.getHouseAccess().getEntrancesEntranceParserRuleCall_18_0()); 
             pushFollow(FOLLOW_2);
@@ -29121,17 +26483,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__House__EntrancesAssignment_19_1"
-    // InternalHouseBuilderV2.g:9546:1: rule__House__EntrancesAssignment_19_1 : ( ruleEntrance ) ;
+    // InternalHouseBuilderV2.g:8682:1: rule__House__EntrancesAssignment_19_1 : ( ruleEntrance ) ;
     public final void rule__House__EntrancesAssignment_19_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9550:1: ( ( ruleEntrance ) )
-            // InternalHouseBuilderV2.g:9551:2: ( ruleEntrance )
+            // InternalHouseBuilderV2.g:8686:1: ( ( ruleEntrance ) )
+            // InternalHouseBuilderV2.g:8687:2: ( ruleEntrance )
             {
-            // InternalHouseBuilderV2.g:9551:2: ( ruleEntrance )
-            // InternalHouseBuilderV2.g:9552:3: ruleEntrance
+            // InternalHouseBuilderV2.g:8687:2: ( ruleEntrance )
+            // InternalHouseBuilderV2.g:8688:3: ruleEntrance
             {
              before(grammarAccess.getHouseAccess().getEntrancesEntranceParserRuleCall_19_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29162,17 +26524,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Floor__NameAssignment_1"
-    // InternalHouseBuilderV2.g:9561:1: rule__Floor__NameAssignment_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8697:1: rule__Floor__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Floor__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9565:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9566:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8701:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8702:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9566:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9567:3: ruleEString
+            // InternalHouseBuilderV2.g:8702:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8703:3: ruleEString
             {
              before(grammarAccess.getFloorAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29203,17 +26565,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Floor__LevelAssignment_4"
-    // InternalHouseBuilderV2.g:9576:1: rule__Floor__LevelAssignment_4 : ( ruleEInt ) ;
+    // InternalHouseBuilderV2.g:8712:1: rule__Floor__LevelAssignment_4 : ( ruleEInt ) ;
     public final void rule__Floor__LevelAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9580:1: ( ( ruleEInt ) )
-            // InternalHouseBuilderV2.g:9581:2: ( ruleEInt )
+            // InternalHouseBuilderV2.g:8716:1: ( ( ruleEInt ) )
+            // InternalHouseBuilderV2.g:8717:2: ( ruleEInt )
             {
-            // InternalHouseBuilderV2.g:9581:2: ( ruleEInt )
-            // InternalHouseBuilderV2.g:9582:3: ruleEInt
+            // InternalHouseBuilderV2.g:8717:2: ( ruleEInt )
+            // InternalHouseBuilderV2.g:8718:3: ruleEInt
             {
              before(grammarAccess.getFloorAccess().getLevelEIntParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -29244,17 +26606,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Floor__SpacesAssignment_7"
-    // InternalHouseBuilderV2.g:9591:1: rule__Floor__SpacesAssignment_7 : ( ruleSpace ) ;
+    // InternalHouseBuilderV2.g:8727:1: rule__Floor__SpacesAssignment_7 : ( ruleSpace ) ;
     public final void rule__Floor__SpacesAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9595:1: ( ( ruleSpace ) )
-            // InternalHouseBuilderV2.g:9596:2: ( ruleSpace )
+            // InternalHouseBuilderV2.g:8731:1: ( ( ruleSpace ) )
+            // InternalHouseBuilderV2.g:8732:2: ( ruleSpace )
             {
-            // InternalHouseBuilderV2.g:9596:2: ( ruleSpace )
-            // InternalHouseBuilderV2.g:9597:3: ruleSpace
+            // InternalHouseBuilderV2.g:8732:2: ( ruleSpace )
+            // InternalHouseBuilderV2.g:8733:3: ruleSpace
             {
              before(grammarAccess.getFloorAccess().getSpacesSpaceParserRuleCall_7_0()); 
             pushFollow(FOLLOW_2);
@@ -29285,17 +26647,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Floor__SpacesAssignment_8_1"
-    // InternalHouseBuilderV2.g:9606:1: rule__Floor__SpacesAssignment_8_1 : ( ruleSpace ) ;
+    // InternalHouseBuilderV2.g:8742:1: rule__Floor__SpacesAssignment_8_1 : ( ruleSpace ) ;
     public final void rule__Floor__SpacesAssignment_8_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9610:1: ( ( ruleSpace ) )
-            // InternalHouseBuilderV2.g:9611:2: ( ruleSpace )
+            // InternalHouseBuilderV2.g:8746:1: ( ( ruleSpace ) )
+            // InternalHouseBuilderV2.g:8747:2: ( ruleSpace )
             {
-            // InternalHouseBuilderV2.g:9611:2: ( ruleSpace )
-            // InternalHouseBuilderV2.g:9612:3: ruleSpace
+            // InternalHouseBuilderV2.g:8747:2: ( ruleSpace )
+            // InternalHouseBuilderV2.g:8748:3: ruleSpace
             {
              before(grammarAccess.getFloorAccess().getSpacesSpaceParserRuleCall_8_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29326,17 +26688,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Passage__NameAssignment_1"
-    // InternalHouseBuilderV2.g:9621:1: rule__Passage__NameAssignment_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8757:1: rule__Passage__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Passage__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9625:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9626:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8761:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8762:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9626:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9627:3: ruleEString
+            // InternalHouseBuilderV2.g:8762:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8763:3: ruleEString
             {
              before(grammarAccess.getPassageAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29367,17 +26729,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Passage__DoorTypeAssignment_4"
-    // InternalHouseBuilderV2.g:9636:1: rule__Passage__DoorTypeAssignment_4 : ( ruleDoorType ) ;
+    // InternalHouseBuilderV2.g:8772:1: rule__Passage__DoorTypeAssignment_4 : ( ruleDoorType ) ;
     public final void rule__Passage__DoorTypeAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9640:1: ( ( ruleDoorType ) )
-            // InternalHouseBuilderV2.g:9641:2: ( ruleDoorType )
+            // InternalHouseBuilderV2.g:8776:1: ( ( ruleDoorType ) )
+            // InternalHouseBuilderV2.g:8777:2: ( ruleDoorType )
             {
-            // InternalHouseBuilderV2.g:9641:2: ( ruleDoorType )
-            // InternalHouseBuilderV2.g:9642:3: ruleDoorType
+            // InternalHouseBuilderV2.g:8777:2: ( ruleDoorType )
+            // InternalHouseBuilderV2.g:8778:3: ruleDoorType
             {
              before(grammarAccess.getPassageAccess().getDoorTypeDoorTypeEnumRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -29408,17 +26770,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Passage__DoorsNumberAssignment_6"
-    // InternalHouseBuilderV2.g:9651:1: rule__Passage__DoorsNumberAssignment_6 : ( ruleEInt ) ;
+    // InternalHouseBuilderV2.g:8787:1: rule__Passage__DoorsNumberAssignment_6 : ( ruleEInt ) ;
     public final void rule__Passage__DoorsNumberAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9655:1: ( ( ruleEInt ) )
-            // InternalHouseBuilderV2.g:9656:2: ( ruleEInt )
+            // InternalHouseBuilderV2.g:8791:1: ( ( ruleEInt ) )
+            // InternalHouseBuilderV2.g:8792:2: ( ruleEInt )
             {
-            // InternalHouseBuilderV2.g:9656:2: ( ruleEInt )
-            // InternalHouseBuilderV2.g:9657:3: ruleEInt
+            // InternalHouseBuilderV2.g:8792:2: ( ruleEInt )
+            // InternalHouseBuilderV2.g:8793:3: ruleEInt
             {
              before(grammarAccess.getPassageAccess().getDoorsNumberEIntParserRuleCall_6_0()); 
             pushFollow(FOLLOW_2);
@@ -29449,17 +26811,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Passage__WidthAssignment_8"
-    // InternalHouseBuilderV2.g:9666:1: rule__Passage__WidthAssignment_8 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:8802:1: rule__Passage__WidthAssignment_8 : ( ruleEFloat ) ;
     public final void rule__Passage__WidthAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9670:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:9671:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:8806:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:8807:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:9671:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:9672:3: ruleEFloat
+            // InternalHouseBuilderV2.g:8807:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:8808:3: ruleEFloat
             {
              before(grammarAccess.getPassageAccess().getWidthEFloatParserRuleCall_8_0()); 
             pushFollow(FOLLOW_2);
@@ -29490,17 +26852,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Passage__HeightAssignment_10"
-    // InternalHouseBuilderV2.g:9681:1: rule__Passage__HeightAssignment_10 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:8817:1: rule__Passage__HeightAssignment_10 : ( ruleEFloat ) ;
     public final void rule__Passage__HeightAssignment_10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9685:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:9686:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:8821:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:8822:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:9686:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:9687:3: ruleEFloat
+            // InternalHouseBuilderV2.g:8822:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:8823:3: ruleEFloat
             {
              before(grammarAccess.getPassageAccess().getHeightEFloatParserRuleCall_10_0()); 
             pushFollow(FOLLOW_2);
@@ -29531,21 +26893,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Passage__SpaceAAssignment_12"
-    // InternalHouseBuilderV2.g:9696:1: rule__Passage__SpaceAAssignment_12 : ( ( ruleEString ) ) ;
+    // InternalHouseBuilderV2.g:8832:1: rule__Passage__SpaceAAssignment_12 : ( ( ruleEString ) ) ;
     public final void rule__Passage__SpaceAAssignment_12() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9700:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:9701:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8836:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:8837:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:9701:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9702:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:8837:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8838:3: ( ruleEString )
             {
              before(grammarAccess.getPassageAccess().getSpaceASpaceCrossReference_12_0()); 
-            // InternalHouseBuilderV2.g:9703:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:9704:4: ruleEString
+            // InternalHouseBuilderV2.g:8839:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:8840:4: ruleEString
             {
              before(grammarAccess.getPassageAccess().getSpaceASpaceEStringParserRuleCall_12_0_1()); 
             pushFollow(FOLLOW_2);
@@ -29580,21 +26942,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Passage__SpaceBAssignment_14"
-    // InternalHouseBuilderV2.g:9715:1: rule__Passage__SpaceBAssignment_14 : ( ( ruleEString ) ) ;
+    // InternalHouseBuilderV2.g:8851:1: rule__Passage__SpaceBAssignment_14 : ( ( ruleEString ) ) ;
     public final void rule__Passage__SpaceBAssignment_14() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9719:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:9720:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8855:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:8856:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:9720:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9721:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:8856:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8857:3: ( ruleEString )
             {
              before(grammarAccess.getPassageAccess().getSpaceBSpaceCrossReference_14_0()); 
-            // InternalHouseBuilderV2.g:9722:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:9723:4: ruleEString
+            // InternalHouseBuilderV2.g:8858:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:8859:4: ruleEString
             {
              before(grammarAccess.getPassageAccess().getSpaceBSpaceEStringParserRuleCall_14_0_1()); 
             pushFollow(FOLLOW_2);
@@ -29629,17 +26991,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Passage__DevicesAssignment_15_2"
-    // InternalHouseBuilderV2.g:9734:1: rule__Passage__DevicesAssignment_15_2 : ( ruleDevice ) ;
+    // InternalHouseBuilderV2.g:8870:1: rule__Passage__DevicesAssignment_15_2 : ( ruleDevice ) ;
     public final void rule__Passage__DevicesAssignment_15_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9738:1: ( ( ruleDevice ) )
-            // InternalHouseBuilderV2.g:9739:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:8874:1: ( ( ruleDevice ) )
+            // InternalHouseBuilderV2.g:8875:2: ( ruleDevice )
             {
-            // InternalHouseBuilderV2.g:9739:2: ( ruleDevice )
-            // InternalHouseBuilderV2.g:9740:3: ruleDevice
+            // InternalHouseBuilderV2.g:8875:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:8876:3: ruleDevice
             {
              before(grammarAccess.getPassageAccess().getDevicesDeviceParserRuleCall_15_2_0()); 
             pushFollow(FOLLOW_2);
@@ -29670,17 +27032,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Passage__DevicesAssignment_15_3_1"
-    // InternalHouseBuilderV2.g:9749:1: rule__Passage__DevicesAssignment_15_3_1 : ( ruleDevice ) ;
+    // InternalHouseBuilderV2.g:8885:1: rule__Passage__DevicesAssignment_15_3_1 : ( ruleDevice ) ;
     public final void rule__Passage__DevicesAssignment_15_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9753:1: ( ( ruleDevice ) )
-            // InternalHouseBuilderV2.g:9754:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:8889:1: ( ( ruleDevice ) )
+            // InternalHouseBuilderV2.g:8890:2: ( ruleDevice )
             {
-            // InternalHouseBuilderV2.g:9754:2: ( ruleDevice )
-            // InternalHouseBuilderV2.g:9755:3: ruleDevice
+            // InternalHouseBuilderV2.g:8890:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:8891:3: ruleDevice
             {
              before(grammarAccess.getPassageAccess().getDevicesDeviceParserRuleCall_15_3_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29711,17 +27073,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Controller__NameAssignment_1"
-    // InternalHouseBuilderV2.g:9764:1: rule__Controller__NameAssignment_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8900:1: rule__Controller__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Controller__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9768:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9769:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8904:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8905:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9769:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9770:3: ruleEString
+            // InternalHouseBuilderV2.g:8905:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8906:3: ruleEString
             {
              before(grammarAccess.getControllerAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29752,17 +27114,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Controller__ModelAssignment_4"
-    // InternalHouseBuilderV2.g:9779:1: rule__Controller__ModelAssignment_4 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8915:1: rule__Controller__ModelAssignment_4 : ( ruleEString ) ;
     public final void rule__Controller__ModelAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9783:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9784:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8919:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8920:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9784:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9785:3: ruleEString
+            // InternalHouseBuilderV2.g:8920:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8921:3: ruleEString
             {
              before(grammarAccess.getControllerAccess().getModelEStringParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -29793,17 +27155,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Controller__OsAssignment_5_1"
-    // InternalHouseBuilderV2.g:9794:1: rule__Controller__OsAssignment_5_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8930:1: rule__Controller__OsAssignment_5_1 : ( ruleEString ) ;
     public final void rule__Controller__OsAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9798:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9799:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8934:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8935:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9799:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9800:3: ruleEString
+            // InternalHouseBuilderV2.g:8935:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8936:3: ruleEString
             {
              before(grammarAccess.getControllerAccess().getOsEStringParserRuleCall_5_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29834,17 +27196,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Controller__OsVersionAssignment_6_1"
-    // InternalHouseBuilderV2.g:9809:1: rule__Controller__OsVersionAssignment_6_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:8945:1: rule__Controller__OsVersionAssignment_6_1 : ( ruleEString ) ;
     public final void rule__Controller__OsVersionAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9813:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9814:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8949:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:8950:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9814:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9815:3: ruleEString
+            // InternalHouseBuilderV2.g:8950:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:8951:3: ruleEString
             {
              before(grammarAccess.getControllerAccess().getOsVersionEStringParserRuleCall_6_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29875,17 +27237,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Controller__ActuatorsAssignment_9"
-    // InternalHouseBuilderV2.g:9824:1: rule__Controller__ActuatorsAssignment_9 : ( ruleActuator ) ;
+    // InternalHouseBuilderV2.g:8960:1: rule__Controller__ActuatorsAssignment_9 : ( ruleActuator ) ;
     public final void rule__Controller__ActuatorsAssignment_9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9828:1: ( ( ruleActuator ) )
-            // InternalHouseBuilderV2.g:9829:2: ( ruleActuator )
+            // InternalHouseBuilderV2.g:8964:1: ( ( ruleActuator ) )
+            // InternalHouseBuilderV2.g:8965:2: ( ruleActuator )
             {
-            // InternalHouseBuilderV2.g:9829:2: ( ruleActuator )
-            // InternalHouseBuilderV2.g:9830:3: ruleActuator
+            // InternalHouseBuilderV2.g:8965:2: ( ruleActuator )
+            // InternalHouseBuilderV2.g:8966:3: ruleActuator
             {
              before(grammarAccess.getControllerAccess().getActuatorsActuatorParserRuleCall_9_0()); 
             pushFollow(FOLLOW_2);
@@ -29916,17 +27278,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Controller__ActuatorsAssignment_10_1"
-    // InternalHouseBuilderV2.g:9839:1: rule__Controller__ActuatorsAssignment_10_1 : ( ruleActuator ) ;
+    // InternalHouseBuilderV2.g:8975:1: rule__Controller__ActuatorsAssignment_10_1 : ( ruleActuator ) ;
     public final void rule__Controller__ActuatorsAssignment_10_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9843:1: ( ( ruleActuator ) )
-            // InternalHouseBuilderV2.g:9844:2: ( ruleActuator )
+            // InternalHouseBuilderV2.g:8979:1: ( ( ruleActuator ) )
+            // InternalHouseBuilderV2.g:8980:2: ( ruleActuator )
             {
-            // InternalHouseBuilderV2.g:9844:2: ( ruleActuator )
-            // InternalHouseBuilderV2.g:9845:3: ruleActuator
+            // InternalHouseBuilderV2.g:8980:2: ( ruleActuator )
+            // InternalHouseBuilderV2.g:8981:3: ruleActuator
             {
              before(grammarAccess.getControllerAccess().getActuatorsActuatorParserRuleCall_10_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29957,17 +27319,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Controller__SensorsAssignment_14"
-    // InternalHouseBuilderV2.g:9854:1: rule__Controller__SensorsAssignment_14 : ( ruleSensor ) ;
+    // InternalHouseBuilderV2.g:8990:1: rule__Controller__SensorsAssignment_14 : ( ruleSensor ) ;
     public final void rule__Controller__SensorsAssignment_14() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9858:1: ( ( ruleSensor ) )
-            // InternalHouseBuilderV2.g:9859:2: ( ruleSensor )
+            // InternalHouseBuilderV2.g:8994:1: ( ( ruleSensor ) )
+            // InternalHouseBuilderV2.g:8995:2: ( ruleSensor )
             {
-            // InternalHouseBuilderV2.g:9859:2: ( ruleSensor )
-            // InternalHouseBuilderV2.g:9860:3: ruleSensor
+            // InternalHouseBuilderV2.g:8995:2: ( ruleSensor )
+            // InternalHouseBuilderV2.g:8996:3: ruleSensor
             {
              before(grammarAccess.getControllerAccess().getSensorsSensorParserRuleCall_14_0()); 
             pushFollow(FOLLOW_2);
@@ -29998,17 +27360,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Controller__SensorsAssignment_15_1"
-    // InternalHouseBuilderV2.g:9869:1: rule__Controller__SensorsAssignment_15_1 : ( ruleSensor ) ;
+    // InternalHouseBuilderV2.g:9005:1: rule__Controller__SensorsAssignment_15_1 : ( ruleSensor ) ;
     public final void rule__Controller__SensorsAssignment_15_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9873:1: ( ( ruleSensor ) )
-            // InternalHouseBuilderV2.g:9874:2: ( ruleSensor )
+            // InternalHouseBuilderV2.g:9009:1: ( ( ruleSensor ) )
+            // InternalHouseBuilderV2.g:9010:2: ( ruleSensor )
             {
-            // InternalHouseBuilderV2.g:9874:2: ( ruleSensor )
-            // InternalHouseBuilderV2.g:9875:3: ruleSensor
+            // InternalHouseBuilderV2.g:9010:2: ( ruleSensor )
+            // InternalHouseBuilderV2.g:9011:3: ruleSensor
             {
              before(grammarAccess.getControllerAccess().getSensorsSensorParserRuleCall_15_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30039,17 +27401,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Entrance__NameAssignment_1"
-    // InternalHouseBuilderV2.g:9884:1: rule__Entrance__NameAssignment_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:9020:1: rule__Entrance__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Entrance__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9888:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9889:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9024:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9025:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:9889:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:9890:3: ruleEString
+            // InternalHouseBuilderV2.g:9025:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9026:3: ruleEString
             {
              before(grammarAccess.getEntranceAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30080,17 +27442,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Entrance__DoorTypeAssignment_4"
-    // InternalHouseBuilderV2.g:9899:1: rule__Entrance__DoorTypeAssignment_4 : ( ruleDoorType ) ;
+    // InternalHouseBuilderV2.g:9035:1: rule__Entrance__DoorTypeAssignment_4 : ( ruleDoorType ) ;
     public final void rule__Entrance__DoorTypeAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9903:1: ( ( ruleDoorType ) )
-            // InternalHouseBuilderV2.g:9904:2: ( ruleDoorType )
+            // InternalHouseBuilderV2.g:9039:1: ( ( ruleDoorType ) )
+            // InternalHouseBuilderV2.g:9040:2: ( ruleDoorType )
             {
-            // InternalHouseBuilderV2.g:9904:2: ( ruleDoorType )
-            // InternalHouseBuilderV2.g:9905:3: ruleDoorType
+            // InternalHouseBuilderV2.g:9040:2: ( ruleDoorType )
+            // InternalHouseBuilderV2.g:9041:3: ruleDoorType
             {
              before(grammarAccess.getEntranceAccess().getDoorTypeDoorTypeEnumRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -30121,17 +27483,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Entrance__DoorsNumberAssignment_6"
-    // InternalHouseBuilderV2.g:9914:1: rule__Entrance__DoorsNumberAssignment_6 : ( ruleEInt ) ;
+    // InternalHouseBuilderV2.g:9050:1: rule__Entrance__DoorsNumberAssignment_6 : ( ruleEInt ) ;
     public final void rule__Entrance__DoorsNumberAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9918:1: ( ( ruleEInt ) )
-            // InternalHouseBuilderV2.g:9919:2: ( ruleEInt )
+            // InternalHouseBuilderV2.g:9054:1: ( ( ruleEInt ) )
+            // InternalHouseBuilderV2.g:9055:2: ( ruleEInt )
             {
-            // InternalHouseBuilderV2.g:9919:2: ( ruleEInt )
-            // InternalHouseBuilderV2.g:9920:3: ruleEInt
+            // InternalHouseBuilderV2.g:9055:2: ( ruleEInt )
+            // InternalHouseBuilderV2.g:9056:3: ruleEInt
             {
              before(grammarAccess.getEntranceAccess().getDoorsNumberEIntParserRuleCall_6_0()); 
             pushFollow(FOLLOW_2);
@@ -30162,17 +27524,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Entrance__WidthAssignment_8"
-    // InternalHouseBuilderV2.g:9929:1: rule__Entrance__WidthAssignment_8 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:9065:1: rule__Entrance__WidthAssignment_8 : ( ruleEFloat ) ;
     public final void rule__Entrance__WidthAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9933:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:9934:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9069:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:9070:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:9934:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:9935:3: ruleEFloat
+            // InternalHouseBuilderV2.g:9070:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9071:3: ruleEFloat
             {
              before(grammarAccess.getEntranceAccess().getWidthEFloatParserRuleCall_8_0()); 
             pushFollow(FOLLOW_2);
@@ -30203,17 +27565,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Entrance__HeightAssignment_10"
-    // InternalHouseBuilderV2.g:9944:1: rule__Entrance__HeightAssignment_10 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:9080:1: rule__Entrance__HeightAssignment_10 : ( ruleEFloat ) ;
     public final void rule__Entrance__HeightAssignment_10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9948:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:9949:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9084:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:9085:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:9949:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:9950:3: ruleEFloat
+            // InternalHouseBuilderV2.g:9085:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9086:3: ruleEFloat
             {
              before(grammarAccess.getEntranceAccess().getHeightEFloatParserRuleCall_10_0()); 
             pushFollow(FOLLOW_2);
@@ -30244,21 +27606,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Entrance__SpaceAssignment_12"
-    // InternalHouseBuilderV2.g:9959:1: rule__Entrance__SpaceAssignment_12 : ( ( ruleEString ) ) ;
+    // InternalHouseBuilderV2.g:9095:1: rule__Entrance__SpaceAssignment_12 : ( ( ruleEString ) ) ;
     public final void rule__Entrance__SpaceAssignment_12() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9963:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:9964:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9099:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9100:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:9964:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:9965:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9100:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9101:3: ( ruleEString )
             {
              before(grammarAccess.getEntranceAccess().getSpaceSpaceCrossReference_12_0()); 
-            // InternalHouseBuilderV2.g:9966:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:9967:4: ruleEString
+            // InternalHouseBuilderV2.g:9102:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9103:4: ruleEString
             {
              before(grammarAccess.getEntranceAccess().getSpaceSpaceEStringParserRuleCall_12_0_1()); 
             pushFollow(FOLLOW_2);
@@ -30293,17 +27655,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Entrance__DevicesAssignment_13_2"
-    // InternalHouseBuilderV2.g:9978:1: rule__Entrance__DevicesAssignment_13_2 : ( ruleDevice ) ;
+    // InternalHouseBuilderV2.g:9114:1: rule__Entrance__DevicesAssignment_13_2 : ( ruleDevice ) ;
     public final void rule__Entrance__DevicesAssignment_13_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9982:1: ( ( ruleDevice ) )
-            // InternalHouseBuilderV2.g:9983:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:9118:1: ( ( ruleDevice ) )
+            // InternalHouseBuilderV2.g:9119:2: ( ruleDevice )
             {
-            // InternalHouseBuilderV2.g:9983:2: ( ruleDevice )
-            // InternalHouseBuilderV2.g:9984:3: ruleDevice
+            // InternalHouseBuilderV2.g:9119:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:9120:3: ruleDevice
             {
              before(grammarAccess.getEntranceAccess().getDevicesDeviceParserRuleCall_13_2_0()); 
             pushFollow(FOLLOW_2);
@@ -30334,17 +27696,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Entrance__DevicesAssignment_13_3_1"
-    // InternalHouseBuilderV2.g:9993:1: rule__Entrance__DevicesAssignment_13_3_1 : ( ruleDevice ) ;
+    // InternalHouseBuilderV2.g:9129:1: rule__Entrance__DevicesAssignment_13_3_1 : ( ruleDevice ) ;
     public final void rule__Entrance__DevicesAssignment_13_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:9997:1: ( ( ruleDevice ) )
-            // InternalHouseBuilderV2.g:9998:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:9133:1: ( ( ruleDevice ) )
+            // InternalHouseBuilderV2.g:9134:2: ( ruleDevice )
             {
-            // InternalHouseBuilderV2.g:9998:2: ( ruleDevice )
-            // InternalHouseBuilderV2.g:9999:3: ruleDevice
+            // InternalHouseBuilderV2.g:9134:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:9135:3: ruleDevice
             {
              before(grammarAccess.getEntranceAccess().getDevicesDeviceParserRuleCall_13_3_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30375,17 +27737,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Device__NameAssignment_2"
-    // InternalHouseBuilderV2.g:10008:1: rule__Device__NameAssignment_2 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:9144:1: rule__Device__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Device__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10012:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10013:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9148:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9149:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:10013:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:10014:3: ruleEString
+            // InternalHouseBuilderV2.g:9149:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9150:3: ruleEString
             {
              before(grammarAccess.getDeviceAccess().getNameEStringParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -30416,17 +27778,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Device__TypeAssignment_4_1"
-    // InternalHouseBuilderV2.g:10023:1: rule__Device__TypeAssignment_4_1 : ( ruleDeviceType ) ;
+    // InternalHouseBuilderV2.g:9159:1: rule__Device__TypeAssignment_4_1 : ( ruleDeviceType ) ;
     public final void rule__Device__TypeAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10027:1: ( ( ruleDeviceType ) )
-            // InternalHouseBuilderV2.g:10028:2: ( ruleDeviceType )
+            // InternalHouseBuilderV2.g:9163:1: ( ( ruleDeviceType ) )
+            // InternalHouseBuilderV2.g:9164:2: ( ruleDeviceType )
             {
-            // InternalHouseBuilderV2.g:10028:2: ( ruleDeviceType )
-            // InternalHouseBuilderV2.g:10029:3: ruleDeviceType
+            // InternalHouseBuilderV2.g:9164:2: ( ruleDeviceType )
+            // InternalHouseBuilderV2.g:9165:3: ruleDeviceType
             {
              before(grammarAccess.getDeviceAccess().getTypeDeviceTypeEnumRuleCall_4_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30457,17 +27819,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Device__ModelAssignment_5_1"
-    // InternalHouseBuilderV2.g:10038:1: rule__Device__ModelAssignment_5_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:9174:1: rule__Device__ModelAssignment_5_1 : ( ruleEString ) ;
     public final void rule__Device__ModelAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10042:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10043:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9178:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9179:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:10043:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:10044:3: ruleEString
+            // InternalHouseBuilderV2.g:9179:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9180:3: ruleEString
             {
              before(grammarAccess.getDeviceAccess().getModelEStringParserRuleCall_5_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30498,21 +27860,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Device__ActuatorAssignment_6_1"
-    // InternalHouseBuilderV2.g:10053:1: rule__Device__ActuatorAssignment_6_1 : ( ( ruleEString ) ) ;
+    // InternalHouseBuilderV2.g:9189:1: rule__Device__ActuatorAssignment_6_1 : ( ( ruleEString ) ) ;
     public final void rule__Device__ActuatorAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10057:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10058:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9193:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9194:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10058:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10059:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9194:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9195:3: ( ruleEString )
             {
              before(grammarAccess.getDeviceAccess().getActuatorActuatorCrossReference_6_1_0()); 
-            // InternalHouseBuilderV2.g:10060:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10061:4: ruleEString
+            // InternalHouseBuilderV2.g:9196:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9197:4: ruleEString
             {
              before(grammarAccess.getDeviceAccess().getActuatorActuatorEStringParserRuleCall_6_1_0_1()); 
             pushFollow(FOLLOW_2);
@@ -30547,17 +27909,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Sensor__NameAssignment_1"
-    // InternalHouseBuilderV2.g:10072:1: rule__Sensor__NameAssignment_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:9208:1: rule__Sensor__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Sensor__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10076:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10077:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9212:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9213:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:10077:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:10078:3: ruleEString
+            // InternalHouseBuilderV2.g:9213:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9214:3: ruleEString
             {
              before(grammarAccess.getSensorAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30588,17 +27950,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Sensor__TypeAssignment_4"
-    // InternalHouseBuilderV2.g:10087:1: rule__Sensor__TypeAssignment_4 : ( ruleSensorType ) ;
+    // InternalHouseBuilderV2.g:9223:1: rule__Sensor__TypeAssignment_4 : ( ruleSensorType ) ;
     public final void rule__Sensor__TypeAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10091:1: ( ( ruleSensorType ) )
-            // InternalHouseBuilderV2.g:10092:2: ( ruleSensorType )
+            // InternalHouseBuilderV2.g:9227:1: ( ( ruleSensorType ) )
+            // InternalHouseBuilderV2.g:9228:2: ( ruleSensorType )
             {
-            // InternalHouseBuilderV2.g:10092:2: ( ruleSensorType )
-            // InternalHouseBuilderV2.g:10093:3: ruleSensorType
+            // InternalHouseBuilderV2.g:9228:2: ( ruleSensorType )
+            // InternalHouseBuilderV2.g:9229:3: ruleSensorType
             {
              before(grammarAccess.getSensorAccess().getTypeSensorTypeEnumRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -30629,17 +27991,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Sensor__ValueAssignment_6"
-    // InternalHouseBuilderV2.g:10102:1: rule__Sensor__ValueAssignment_6 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:9238:1: rule__Sensor__ValueAssignment_6 : ( ruleEFloat ) ;
     public final void rule__Sensor__ValueAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10106:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:10107:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9242:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:9243:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:10107:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:10108:3: ruleEFloat
+            // InternalHouseBuilderV2.g:9243:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9244:3: ruleEFloat
             {
              before(grammarAccess.getSensorAccess().getValueEFloatParserRuleCall_6_0()); 
             pushFollow(FOLLOW_2);
@@ -30670,17 +28032,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Sensor__ModelAssignment_7_1"
-    // InternalHouseBuilderV2.g:10117:1: rule__Sensor__ModelAssignment_7_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:9253:1: rule__Sensor__ModelAssignment_7_1 : ( ruleEString ) ;
     public final void rule__Sensor__ModelAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10121:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10122:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9257:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9258:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:10122:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:10123:3: ruleEString
+            // InternalHouseBuilderV2.g:9258:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9259:3: ruleEString
             {
              before(grammarAccess.getSensorAccess().getModelEStringParserRuleCall_7_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30711,21 +28073,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Sensor__SpaceAssignment_9"
-    // InternalHouseBuilderV2.g:10132:1: rule__Sensor__SpaceAssignment_9 : ( ( ruleEString ) ) ;
+    // InternalHouseBuilderV2.g:9268:1: rule__Sensor__SpaceAssignment_9 : ( ( ruleEString ) ) ;
     public final void rule__Sensor__SpaceAssignment_9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10136:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10137:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9272:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9273:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10137:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10138:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9273:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9274:3: ( ruleEString )
             {
              before(grammarAccess.getSensorAccess().getSpaceSpaceCrossReference_9_0()); 
-            // InternalHouseBuilderV2.g:10139:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10140:4: ruleEString
+            // InternalHouseBuilderV2.g:9275:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9276:4: ruleEString
             {
              before(grammarAccess.getSensorAccess().getSpaceSpaceEStringParserRuleCall_9_0_1()); 
             pushFollow(FOLLOW_2);
@@ -30760,17 +28122,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__NameAssignment_1"
-    // InternalHouseBuilderV2.g:10151:1: rule__Room__NameAssignment_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:9287:1: rule__Room__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Room__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10155:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10156:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9291:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9292:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:10156:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:10157:3: ruleEString
+            // InternalHouseBuilderV2.g:9292:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9293:3: ruleEString
             {
              before(grammarAccess.getRoomAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30801,17 +28163,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__LengthAssignment_4"
-    // InternalHouseBuilderV2.g:10166:1: rule__Room__LengthAssignment_4 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:9302:1: rule__Room__LengthAssignment_4 : ( ruleEFloat ) ;
     public final void rule__Room__LengthAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10170:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:10171:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9306:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:9307:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:10171:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:10172:3: ruleEFloat
+            // InternalHouseBuilderV2.g:9307:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9308:3: ruleEFloat
             {
              before(grammarAccess.getRoomAccess().getLengthEFloatParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -30842,17 +28204,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__WidthAssignment_6"
-    // InternalHouseBuilderV2.g:10181:1: rule__Room__WidthAssignment_6 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:9317:1: rule__Room__WidthAssignment_6 : ( ruleEFloat ) ;
     public final void rule__Room__WidthAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10185:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:10186:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9321:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:9322:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:10186:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:10187:3: ruleEFloat
+            // InternalHouseBuilderV2.g:9322:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9323:3: ruleEFloat
             {
              before(grammarAccess.getRoomAccess().getWidthEFloatParserRuleCall_6_0()); 
             pushFollow(FOLLOW_2);
@@ -30883,17 +28245,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__HeightAssignment_8"
-    // InternalHouseBuilderV2.g:10196:1: rule__Room__HeightAssignment_8 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:9332:1: rule__Room__HeightAssignment_8 : ( ruleEFloat ) ;
     public final void rule__Room__HeightAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10200:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:10201:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9336:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:9337:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:10201:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:10202:3: ruleEFloat
+            // InternalHouseBuilderV2.g:9337:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9338:3: ruleEFloat
             {
              before(grammarAccess.getRoomAccess().getHeightEFloatParserRuleCall_8_0()); 
             pushFollow(FOLLOW_2);
@@ -30924,17 +28286,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__RoomTypeAssignment_9_1"
-    // InternalHouseBuilderV2.g:10211:1: rule__Room__RoomTypeAssignment_9_1 : ( ruleRoomType ) ;
+    // InternalHouseBuilderV2.g:9347:1: rule__Room__RoomTypeAssignment_9_1 : ( ruleRoomType ) ;
     public final void rule__Room__RoomTypeAssignment_9_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10215:1: ( ( ruleRoomType ) )
-            // InternalHouseBuilderV2.g:10216:2: ( ruleRoomType )
+            // InternalHouseBuilderV2.g:9351:1: ( ( ruleRoomType ) )
+            // InternalHouseBuilderV2.g:9352:2: ( ruleRoomType )
             {
-            // InternalHouseBuilderV2.g:10216:2: ( ruleRoomType )
-            // InternalHouseBuilderV2.g:10217:3: ruleRoomType
+            // InternalHouseBuilderV2.g:9352:2: ( ruleRoomType )
+            // InternalHouseBuilderV2.g:9353:3: ruleRoomType
             {
              before(grammarAccess.getRoomAccess().getRoomTypeRoomTypeEnumRuleCall_9_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30965,21 +28327,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__SensorsAssignment_10_2"
-    // InternalHouseBuilderV2.g:10226:1: rule__Room__SensorsAssignment_10_2 : ( ( ruleEString ) ) ;
+    // InternalHouseBuilderV2.g:9362:1: rule__Room__SensorsAssignment_10_2 : ( ( ruleEString ) ) ;
     public final void rule__Room__SensorsAssignment_10_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10230:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10231:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9366:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9367:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10231:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10232:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9367:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9368:3: ( ruleEString )
             {
              before(grammarAccess.getRoomAccess().getSensorsSensorCrossReference_10_2_0()); 
-            // InternalHouseBuilderV2.g:10233:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10234:4: ruleEString
+            // InternalHouseBuilderV2.g:9369:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9370:4: ruleEString
             {
              before(grammarAccess.getRoomAccess().getSensorsSensorEStringParserRuleCall_10_2_0_1()); 
             pushFollow(FOLLOW_2);
@@ -31014,21 +28376,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Room__SensorsAssignment_10_3_1"
-    // InternalHouseBuilderV2.g:10245:1: rule__Room__SensorsAssignment_10_3_1 : ( ( ruleEString ) ) ;
+    // InternalHouseBuilderV2.g:9381:1: rule__Room__SensorsAssignment_10_3_1 : ( ( ruleEString ) ) ;
     public final void rule__Room__SensorsAssignment_10_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10249:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10250:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9385:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9386:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10250:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10251:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9386:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9387:3: ( ruleEString )
             {
              before(grammarAccess.getRoomAccess().getSensorsSensorCrossReference_10_3_1_0()); 
-            // InternalHouseBuilderV2.g:10252:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10253:4: ruleEString
+            // InternalHouseBuilderV2.g:9388:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9389:4: ruleEString
             {
              before(grammarAccess.getRoomAccess().getSensorsSensorEStringParserRuleCall_10_3_1_0_1()); 
             pushFollow(FOLLOW_2);
@@ -31062,34 +28424,34 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__Room__SensorsAssignment_10_3_1"
 
 
-    // $ANTLR start "rule__Room__PassagesAAssignment_11_2"
-    // InternalHouseBuilderV2.g:10264:1: rule__Room__PassagesAAssignment_11_2 : ( ( ruleEString ) ) ;
-    public final void rule__Room__PassagesAAssignment_11_2() throws RecognitionException {
+    // $ANTLR start "rule__Room__EntrancesAssignment_11_2"
+    // InternalHouseBuilderV2.g:9400:1: rule__Room__EntrancesAssignment_11_2 : ( ( ruleEString ) ) ;
+    public final void rule__Room__EntrancesAssignment_11_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10268:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10269:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9404:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9405:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10269:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10270:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9405:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9406:3: ( ruleEString )
             {
-             before(grammarAccess.getRoomAccess().getPassagesAPassageCrossReference_11_2_0()); 
-            // InternalHouseBuilderV2.g:10271:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10272:4: ruleEString
+             before(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_11_2_0()); 
+            // InternalHouseBuilderV2.g:9407:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9408:4: ruleEString
             {
-             before(grammarAccess.getRoomAccess().getPassagesAPassageEStringParserRuleCall_11_2_0_1()); 
+             before(grammarAccess.getRoomAccess().getEntrancesEntranceEStringParserRuleCall_11_2_0_1()); 
             pushFollow(FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getRoomAccess().getPassagesAPassageEStringParserRuleCall_11_2_0_1()); 
+             after(grammarAccess.getRoomAccess().getEntrancesEntranceEStringParserRuleCall_11_2_0_1()); 
 
             }
 
-             after(grammarAccess.getRoomAccess().getPassagesAPassageCrossReference_11_2_0()); 
+             after(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_11_2_0()); 
 
             }
 
@@ -31108,37 +28470,37 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__Room__PassagesAAssignment_11_2"
+    // $ANTLR end "rule__Room__EntrancesAssignment_11_2"
 
 
-    // $ANTLR start "rule__Room__PassagesAAssignment_11_3_1"
-    // InternalHouseBuilderV2.g:10283:1: rule__Room__PassagesAAssignment_11_3_1 : ( ( ruleEString ) ) ;
-    public final void rule__Room__PassagesAAssignment_11_3_1() throws RecognitionException {
+    // $ANTLR start "rule__Room__EntrancesAssignment_11_3_1"
+    // InternalHouseBuilderV2.g:9419:1: rule__Room__EntrancesAssignment_11_3_1 : ( ( ruleEString ) ) ;
+    public final void rule__Room__EntrancesAssignment_11_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10287:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10288:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9423:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9424:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10288:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10289:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9424:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9425:3: ( ruleEString )
             {
-             before(grammarAccess.getRoomAccess().getPassagesAPassageCrossReference_11_3_1_0()); 
-            // InternalHouseBuilderV2.g:10290:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10291:4: ruleEString
+             before(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_11_3_1_0()); 
+            // InternalHouseBuilderV2.g:9426:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9427:4: ruleEString
             {
-             before(grammarAccess.getRoomAccess().getPassagesAPassageEStringParserRuleCall_11_3_1_0_1()); 
+             before(grammarAccess.getRoomAccess().getEntrancesEntranceEStringParserRuleCall_11_3_1_0_1()); 
             pushFollow(FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getRoomAccess().getPassagesAPassageEStringParserRuleCall_11_3_1_0_1()); 
+             after(grammarAccess.getRoomAccess().getEntrancesEntranceEStringParserRuleCall_11_3_1_0_1()); 
 
             }
 
-             after(grammarAccess.getRoomAccess().getPassagesAPassageCrossReference_11_3_1_0()); 
+             after(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_11_3_1_0()); 
 
             }
 
@@ -31157,225 +28519,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__Room__PassagesAAssignment_11_3_1"
+    // $ANTLR end "rule__Room__EntrancesAssignment_11_3_1"
 
 
-    // $ANTLR start "rule__Room__PassagesBAssignment_12_2"
-    // InternalHouseBuilderV2.g:10302:1: rule__Room__PassagesBAssignment_12_2 : ( ( ruleEString ) ) ;
-    public final void rule__Room__PassagesBAssignment_12_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:10306:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10307:2: ( ( ruleEString ) )
-            {
-            // InternalHouseBuilderV2.g:10307:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10308:3: ( ruleEString )
-            {
-             before(grammarAccess.getRoomAccess().getPassagesBPassageCrossReference_12_2_0()); 
-            // InternalHouseBuilderV2.g:10309:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10310:4: ruleEString
-            {
-             before(grammarAccess.getRoomAccess().getPassagesBPassageEStringParserRuleCall_12_2_0_1()); 
-            pushFollow(FOLLOW_2);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getRoomAccess().getPassagesBPassageEStringParserRuleCall_12_2_0_1()); 
-
-            }
-
-             after(grammarAccess.getRoomAccess().getPassagesBPassageCrossReference_12_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__PassagesBAssignment_12_2"
-
-
-    // $ANTLR start "rule__Room__PassagesBAssignment_12_3_1"
-    // InternalHouseBuilderV2.g:10321:1: rule__Room__PassagesBAssignment_12_3_1 : ( ( ruleEString ) ) ;
-    public final void rule__Room__PassagesBAssignment_12_3_1() throws RecognitionException {
+    // $ANTLR start "rule__Room__DevicesAssignment_12_2"
+    // InternalHouseBuilderV2.g:9438:1: rule__Room__DevicesAssignment_12_2 : ( ruleDevice ) ;
+    public final void rule__Room__DevicesAssignment_12_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10325:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10326:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9442:1: ( ( ruleDevice ) )
+            // InternalHouseBuilderV2.g:9443:2: ( ruleDevice )
             {
-            // InternalHouseBuilderV2.g:10326:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10327:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9443:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:9444:3: ruleDevice
             {
-             before(grammarAccess.getRoomAccess().getPassagesBPassageCrossReference_12_3_1_0()); 
-            // InternalHouseBuilderV2.g:10328:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10329:4: ruleEString
-            {
-             before(grammarAccess.getRoomAccess().getPassagesBPassageEStringParserRuleCall_12_3_1_0_1()); 
-            pushFollow(FOLLOW_2);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getRoomAccess().getPassagesBPassageEStringParserRuleCall_12_3_1_0_1()); 
-
-            }
-
-             after(grammarAccess.getRoomAccess().getPassagesBPassageCrossReference_12_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__PassagesBAssignment_12_3_1"
-
-
-    // $ANTLR start "rule__Room__EntrancesAssignment_13_2"
-    // InternalHouseBuilderV2.g:10340:1: rule__Room__EntrancesAssignment_13_2 : ( ( ruleEString ) ) ;
-    public final void rule__Room__EntrancesAssignment_13_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:10344:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10345:2: ( ( ruleEString ) )
-            {
-            // InternalHouseBuilderV2.g:10345:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10346:3: ( ruleEString )
-            {
-             before(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_13_2_0()); 
-            // InternalHouseBuilderV2.g:10347:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10348:4: ruleEString
-            {
-             before(grammarAccess.getRoomAccess().getEntrancesEntranceEStringParserRuleCall_13_2_0_1()); 
-            pushFollow(FOLLOW_2);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getRoomAccess().getEntrancesEntranceEStringParserRuleCall_13_2_0_1()); 
-
-            }
-
-             after(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_13_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__EntrancesAssignment_13_2"
-
-
-    // $ANTLR start "rule__Room__EntrancesAssignment_13_3_1"
-    // InternalHouseBuilderV2.g:10359:1: rule__Room__EntrancesAssignment_13_3_1 : ( ( ruleEString ) ) ;
-    public final void rule__Room__EntrancesAssignment_13_3_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:10363:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10364:2: ( ( ruleEString ) )
-            {
-            // InternalHouseBuilderV2.g:10364:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10365:3: ( ruleEString )
-            {
-             before(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_13_3_1_0()); 
-            // InternalHouseBuilderV2.g:10366:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10367:4: ruleEString
-            {
-             before(grammarAccess.getRoomAccess().getEntrancesEntranceEStringParserRuleCall_13_3_1_0_1()); 
-            pushFollow(FOLLOW_2);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getRoomAccess().getEntrancesEntranceEStringParserRuleCall_13_3_1_0_1()); 
-
-            }
-
-             after(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_13_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Room__EntrancesAssignment_13_3_1"
-
-
-    // $ANTLR start "rule__Room__DevicesAssignment_14_2"
-    // InternalHouseBuilderV2.g:10378:1: rule__Room__DevicesAssignment_14_2 : ( ruleDevice ) ;
-    public final void rule__Room__DevicesAssignment_14_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:10382:1: ( ( ruleDevice ) )
-            // InternalHouseBuilderV2.g:10383:2: ( ruleDevice )
-            {
-            // InternalHouseBuilderV2.g:10383:2: ( ruleDevice )
-            // InternalHouseBuilderV2.g:10384:3: ruleDevice
-            {
-             before(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_14_2_0()); 
+             before(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_12_2_0()); 
             pushFollow(FOLLOW_2);
             ruleDevice();
 
             state._fsp--;
 
-             after(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_14_2_0()); 
+             after(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_12_2_0()); 
 
             }
 
@@ -31394,29 +28560,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__Room__DevicesAssignment_14_2"
+    // $ANTLR end "rule__Room__DevicesAssignment_12_2"
 
 
-    // $ANTLR start "rule__Room__DevicesAssignment_14_3_1"
-    // InternalHouseBuilderV2.g:10393:1: rule__Room__DevicesAssignment_14_3_1 : ( ruleDevice ) ;
-    public final void rule__Room__DevicesAssignment_14_3_1() throws RecognitionException {
+    // $ANTLR start "rule__Room__DevicesAssignment_12_3_1"
+    // InternalHouseBuilderV2.g:9453:1: rule__Room__DevicesAssignment_12_3_1 : ( ruleDevice ) ;
+    public final void rule__Room__DevicesAssignment_12_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10397:1: ( ( ruleDevice ) )
-            // InternalHouseBuilderV2.g:10398:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:9457:1: ( ( ruleDevice ) )
+            // InternalHouseBuilderV2.g:9458:2: ( ruleDevice )
             {
-            // InternalHouseBuilderV2.g:10398:2: ( ruleDevice )
-            // InternalHouseBuilderV2.g:10399:3: ruleDevice
+            // InternalHouseBuilderV2.g:9458:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:9459:3: ruleDevice
             {
-             before(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_14_3_1_0()); 
+             before(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_12_3_1_0()); 
             pushFollow(FOLLOW_2);
             ruleDevice();
 
             state._fsp--;
 
-             after(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_14_3_1_0()); 
+             after(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_12_3_1_0()); 
 
             }
 
@@ -31435,29 +28601,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__Room__DevicesAssignment_14_3_1"
+    // $ANTLR end "rule__Room__DevicesAssignment_12_3_1"
 
 
-    // $ANTLR start "rule__Room__WindowsAssignment_15_2"
-    // InternalHouseBuilderV2.g:10408:1: rule__Room__WindowsAssignment_15_2 : ( ruleWindow ) ;
-    public final void rule__Room__WindowsAssignment_15_2() throws RecognitionException {
+    // $ANTLR start "rule__Room__WindowsAssignment_13_2"
+    // InternalHouseBuilderV2.g:9468:1: rule__Room__WindowsAssignment_13_2 : ( ruleWindow ) ;
+    public final void rule__Room__WindowsAssignment_13_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10412:1: ( ( ruleWindow ) )
-            // InternalHouseBuilderV2.g:10413:2: ( ruleWindow )
+            // InternalHouseBuilderV2.g:9472:1: ( ( ruleWindow ) )
+            // InternalHouseBuilderV2.g:9473:2: ( ruleWindow )
             {
-            // InternalHouseBuilderV2.g:10413:2: ( ruleWindow )
-            // InternalHouseBuilderV2.g:10414:3: ruleWindow
+            // InternalHouseBuilderV2.g:9473:2: ( ruleWindow )
+            // InternalHouseBuilderV2.g:9474:3: ruleWindow
             {
-             before(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_15_2_0()); 
+             before(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_13_2_0()); 
             pushFollow(FOLLOW_2);
             ruleWindow();
 
             state._fsp--;
 
-             after(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_15_2_0()); 
+             after(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_13_2_0()); 
 
             }
 
@@ -31476,29 +28642,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__Room__WindowsAssignment_15_2"
+    // $ANTLR end "rule__Room__WindowsAssignment_13_2"
 
 
-    // $ANTLR start "rule__Room__WindowsAssignment_15_3_1"
-    // InternalHouseBuilderV2.g:10423:1: rule__Room__WindowsAssignment_15_3_1 : ( ruleWindow ) ;
-    public final void rule__Room__WindowsAssignment_15_3_1() throws RecognitionException {
+    // $ANTLR start "rule__Room__WindowsAssignment_13_3_1"
+    // InternalHouseBuilderV2.g:9483:1: rule__Room__WindowsAssignment_13_3_1 : ( ruleWindow ) ;
+    public final void rule__Room__WindowsAssignment_13_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10427:1: ( ( ruleWindow ) )
-            // InternalHouseBuilderV2.g:10428:2: ( ruleWindow )
+            // InternalHouseBuilderV2.g:9487:1: ( ( ruleWindow ) )
+            // InternalHouseBuilderV2.g:9488:2: ( ruleWindow )
             {
-            // InternalHouseBuilderV2.g:10428:2: ( ruleWindow )
-            // InternalHouseBuilderV2.g:10429:3: ruleWindow
+            // InternalHouseBuilderV2.g:9488:2: ( ruleWindow )
+            // InternalHouseBuilderV2.g:9489:3: ruleWindow
             {
-             before(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_15_3_1_0()); 
+             before(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_13_3_1_0()); 
             pushFollow(FOLLOW_2);
             ruleWindow();
 
             state._fsp--;
 
-             after(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_15_3_1_0()); 
+             after(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_13_3_1_0()); 
 
             }
 
@@ -31517,21 +28683,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__Room__WindowsAssignment_15_3_1"
+    // $ANTLR end "rule__Room__WindowsAssignment_13_3_1"
 
 
     // $ANTLR start "rule__ExternalSpace__NameAssignment_1"
-    // InternalHouseBuilderV2.g:10438:1: rule__ExternalSpace__NameAssignment_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:9498:1: rule__ExternalSpace__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__ExternalSpace__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10442:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10443:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9502:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9503:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:10443:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:10444:3: ruleEString
+            // InternalHouseBuilderV2.g:9503:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9504:3: ruleEString
             {
              before(grammarAccess.getExternalSpaceAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31562,17 +28728,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__LengthAssignment_4"
-    // InternalHouseBuilderV2.g:10453:1: rule__ExternalSpace__LengthAssignment_4 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:9513:1: rule__ExternalSpace__LengthAssignment_4 : ( ruleEFloat ) ;
     public final void rule__ExternalSpace__LengthAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10457:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:10458:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9517:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:9518:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:10458:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:10459:3: ruleEFloat
+            // InternalHouseBuilderV2.g:9518:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9519:3: ruleEFloat
             {
              before(grammarAccess.getExternalSpaceAccess().getLengthEFloatParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -31603,17 +28769,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__WidthAssignment_6"
-    // InternalHouseBuilderV2.g:10468:1: rule__ExternalSpace__WidthAssignment_6 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:9528:1: rule__ExternalSpace__WidthAssignment_6 : ( ruleEFloat ) ;
     public final void rule__ExternalSpace__WidthAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10472:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:10473:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9532:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:9533:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:10473:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:10474:3: ruleEFloat
+            // InternalHouseBuilderV2.g:9533:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9534:3: ruleEFloat
             {
              before(grammarAccess.getExternalSpaceAccess().getWidthEFloatParserRuleCall_6_0()); 
             pushFollow(FOLLOW_2);
@@ -31644,17 +28810,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__TypeAssignment_7_1"
-    // InternalHouseBuilderV2.g:10483:1: rule__ExternalSpace__TypeAssignment_7_1 : ( ruleOuterSpaceType ) ;
+    // InternalHouseBuilderV2.g:9543:1: rule__ExternalSpace__TypeAssignment_7_1 : ( ruleOuterSpaceType ) ;
     public final void rule__ExternalSpace__TypeAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10487:1: ( ( ruleOuterSpaceType ) )
-            // InternalHouseBuilderV2.g:10488:2: ( ruleOuterSpaceType )
+            // InternalHouseBuilderV2.g:9547:1: ( ( ruleOuterSpaceType ) )
+            // InternalHouseBuilderV2.g:9548:2: ( ruleOuterSpaceType )
             {
-            // InternalHouseBuilderV2.g:10488:2: ( ruleOuterSpaceType )
-            // InternalHouseBuilderV2.g:10489:3: ruleOuterSpaceType
+            // InternalHouseBuilderV2.g:9548:2: ( ruleOuterSpaceType )
+            // InternalHouseBuilderV2.g:9549:3: ruleOuterSpaceType
             {
              before(grammarAccess.getExternalSpaceAccess().getTypeOuterSpaceTypeEnumRuleCall_7_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31685,17 +28851,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__GroundAssignment_8_1"
-    // InternalHouseBuilderV2.g:10498:1: rule__ExternalSpace__GroundAssignment_8_1 : ( ruleGroundType ) ;
+    // InternalHouseBuilderV2.g:9558:1: rule__ExternalSpace__GroundAssignment_8_1 : ( ruleGroundType ) ;
     public final void rule__ExternalSpace__GroundAssignment_8_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10502:1: ( ( ruleGroundType ) )
-            // InternalHouseBuilderV2.g:10503:2: ( ruleGroundType )
+            // InternalHouseBuilderV2.g:9562:1: ( ( ruleGroundType ) )
+            // InternalHouseBuilderV2.g:9563:2: ( ruleGroundType )
             {
-            // InternalHouseBuilderV2.g:10503:2: ( ruleGroundType )
-            // InternalHouseBuilderV2.g:10504:3: ruleGroundType
+            // InternalHouseBuilderV2.g:9563:2: ( ruleGroundType )
+            // InternalHouseBuilderV2.g:9564:3: ruleGroundType
             {
              before(grammarAccess.getExternalSpaceAccess().getGroundGroundTypeEnumRuleCall_8_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31726,21 +28892,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__SensorsAssignment_9_2"
-    // InternalHouseBuilderV2.g:10513:1: rule__ExternalSpace__SensorsAssignment_9_2 : ( ( ruleEString ) ) ;
+    // InternalHouseBuilderV2.g:9573:1: rule__ExternalSpace__SensorsAssignment_9_2 : ( ( ruleEString ) ) ;
     public final void rule__ExternalSpace__SensorsAssignment_9_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10517:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10518:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9577:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9578:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10518:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10519:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9578:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9579:3: ( ruleEString )
             {
              before(grammarAccess.getExternalSpaceAccess().getSensorsSensorCrossReference_9_2_0()); 
-            // InternalHouseBuilderV2.g:10520:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10521:4: ruleEString
+            // InternalHouseBuilderV2.g:9580:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9581:4: ruleEString
             {
              before(grammarAccess.getExternalSpaceAccess().getSensorsSensorEStringParserRuleCall_9_2_0_1()); 
             pushFollow(FOLLOW_2);
@@ -31775,21 +28941,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ExternalSpace__SensorsAssignment_9_3_1"
-    // InternalHouseBuilderV2.g:10532:1: rule__ExternalSpace__SensorsAssignment_9_3_1 : ( ( ruleEString ) ) ;
+    // InternalHouseBuilderV2.g:9592:1: rule__ExternalSpace__SensorsAssignment_9_3_1 : ( ( ruleEString ) ) ;
     public final void rule__ExternalSpace__SensorsAssignment_9_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10536:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10537:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9596:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9597:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10537:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10538:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9597:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9598:3: ( ruleEString )
             {
              before(grammarAccess.getExternalSpaceAccess().getSensorsSensorCrossReference_9_3_1_0()); 
-            // InternalHouseBuilderV2.g:10539:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10540:4: ruleEString
+            // InternalHouseBuilderV2.g:9599:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9600:4: ruleEString
             {
              before(grammarAccess.getExternalSpaceAccess().getSensorsSensorEStringParserRuleCall_9_3_1_0_1()); 
             pushFollow(FOLLOW_2);
@@ -31823,34 +28989,34 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__ExternalSpace__SensorsAssignment_9_3_1"
 
 
-    // $ANTLR start "rule__ExternalSpace__PassagesAAssignment_10_2"
-    // InternalHouseBuilderV2.g:10551:1: rule__ExternalSpace__PassagesAAssignment_10_2 : ( ( ruleEString ) ) ;
-    public final void rule__ExternalSpace__PassagesAAssignment_10_2() throws RecognitionException {
+    // $ANTLR start "rule__ExternalSpace__EntrancesAssignment_10_2"
+    // InternalHouseBuilderV2.g:9611:1: rule__ExternalSpace__EntrancesAssignment_10_2 : ( ( ruleEString ) ) ;
+    public final void rule__ExternalSpace__EntrancesAssignment_10_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10555:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10556:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9615:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9616:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10556:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10557:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9616:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9617:3: ( ruleEString )
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesAPassageCrossReference_10_2_0()); 
-            // InternalHouseBuilderV2.g:10558:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10559:4: ruleEString
+             before(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_10_2_0()); 
+            // InternalHouseBuilderV2.g:9618:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9619:4: ruleEString
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesAPassageEStringParserRuleCall_10_2_0_1()); 
+             before(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceEStringParserRuleCall_10_2_0_1()); 
             pushFollow(FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getExternalSpaceAccess().getPassagesAPassageEStringParserRuleCall_10_2_0_1()); 
+             after(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceEStringParserRuleCall_10_2_0_1()); 
 
             }
 
-             after(grammarAccess.getExternalSpaceAccess().getPassagesAPassageCrossReference_10_2_0()); 
+             after(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_10_2_0()); 
 
             }
 
@@ -31869,37 +29035,37 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__ExternalSpace__PassagesAAssignment_10_2"
+    // $ANTLR end "rule__ExternalSpace__EntrancesAssignment_10_2"
 
 
-    // $ANTLR start "rule__ExternalSpace__PassagesAAssignment_10_3_1"
-    // InternalHouseBuilderV2.g:10570:1: rule__ExternalSpace__PassagesAAssignment_10_3_1 : ( ( ruleEString ) ) ;
-    public final void rule__ExternalSpace__PassagesAAssignment_10_3_1() throws RecognitionException {
+    // $ANTLR start "rule__ExternalSpace__EntrancesAssignment_10_3_1"
+    // InternalHouseBuilderV2.g:9630:1: rule__ExternalSpace__EntrancesAssignment_10_3_1 : ( ( ruleEString ) ) ;
+    public final void rule__ExternalSpace__EntrancesAssignment_10_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10574:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10575:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9634:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9635:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10575:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10576:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9635:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9636:3: ( ruleEString )
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesAPassageCrossReference_10_3_1_0()); 
-            // InternalHouseBuilderV2.g:10577:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10578:4: ruleEString
+             before(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_10_3_1_0()); 
+            // InternalHouseBuilderV2.g:9637:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9638:4: ruleEString
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesAPassageEStringParserRuleCall_10_3_1_0_1()); 
+             before(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceEStringParserRuleCall_10_3_1_0_1()); 
             pushFollow(FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getExternalSpaceAccess().getPassagesAPassageEStringParserRuleCall_10_3_1_0_1()); 
+             after(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceEStringParserRuleCall_10_3_1_0_1()); 
 
             }
 
-             after(grammarAccess.getExternalSpaceAccess().getPassagesAPassageCrossReference_10_3_1_0()); 
+             after(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_10_3_1_0()); 
 
             }
 
@@ -31918,225 +29084,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__ExternalSpace__PassagesAAssignment_10_3_1"
+    // $ANTLR end "rule__ExternalSpace__EntrancesAssignment_10_3_1"
 
 
-    // $ANTLR start "rule__ExternalSpace__PassagesBAssignment_11_2"
-    // InternalHouseBuilderV2.g:10589:1: rule__ExternalSpace__PassagesBAssignment_11_2 : ( ( ruleEString ) ) ;
-    public final void rule__ExternalSpace__PassagesBAssignment_11_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:10593:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10594:2: ( ( ruleEString ) )
-            {
-            // InternalHouseBuilderV2.g:10594:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10595:3: ( ruleEString )
-            {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesBPassageCrossReference_11_2_0()); 
-            // InternalHouseBuilderV2.g:10596:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10597:4: ruleEString
-            {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesBPassageEStringParserRuleCall_11_2_0_1()); 
-            pushFollow(FOLLOW_2);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getExternalSpaceAccess().getPassagesBPassageEStringParserRuleCall_11_2_0_1()); 
-
-            }
-
-             after(grammarAccess.getExternalSpaceAccess().getPassagesBPassageCrossReference_11_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__PassagesBAssignment_11_2"
-
-
-    // $ANTLR start "rule__ExternalSpace__PassagesBAssignment_11_3_1"
-    // InternalHouseBuilderV2.g:10608:1: rule__ExternalSpace__PassagesBAssignment_11_3_1 : ( ( ruleEString ) ) ;
-    public final void rule__ExternalSpace__PassagesBAssignment_11_3_1() throws RecognitionException {
+    // $ANTLR start "rule__ExternalSpace__DevicesAssignment_11_2"
+    // InternalHouseBuilderV2.g:9649:1: rule__ExternalSpace__DevicesAssignment_11_2 : ( ruleDevice ) ;
+    public final void rule__ExternalSpace__DevicesAssignment_11_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10612:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10613:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9653:1: ( ( ruleDevice ) )
+            // InternalHouseBuilderV2.g:9654:2: ( ruleDevice )
             {
-            // InternalHouseBuilderV2.g:10613:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10614:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9654:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:9655:3: ruleDevice
             {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesBPassageCrossReference_11_3_1_0()); 
-            // InternalHouseBuilderV2.g:10615:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10616:4: ruleEString
-            {
-             before(grammarAccess.getExternalSpaceAccess().getPassagesBPassageEStringParserRuleCall_11_3_1_0_1()); 
-            pushFollow(FOLLOW_2);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getExternalSpaceAccess().getPassagesBPassageEStringParserRuleCall_11_3_1_0_1()); 
-
-            }
-
-             after(grammarAccess.getExternalSpaceAccess().getPassagesBPassageCrossReference_11_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__PassagesBAssignment_11_3_1"
-
-
-    // $ANTLR start "rule__ExternalSpace__EntrancesAssignment_12_2"
-    // InternalHouseBuilderV2.g:10627:1: rule__ExternalSpace__EntrancesAssignment_12_2 : ( ( ruleEString ) ) ;
-    public final void rule__ExternalSpace__EntrancesAssignment_12_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:10631:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10632:2: ( ( ruleEString ) )
-            {
-            // InternalHouseBuilderV2.g:10632:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10633:3: ( ruleEString )
-            {
-             before(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_12_2_0()); 
-            // InternalHouseBuilderV2.g:10634:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10635:4: ruleEString
-            {
-             before(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceEStringParserRuleCall_12_2_0_1()); 
-            pushFollow(FOLLOW_2);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceEStringParserRuleCall_12_2_0_1()); 
-
-            }
-
-             after(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_12_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__EntrancesAssignment_12_2"
-
-
-    // $ANTLR start "rule__ExternalSpace__EntrancesAssignment_12_3_1"
-    // InternalHouseBuilderV2.g:10646:1: rule__ExternalSpace__EntrancesAssignment_12_3_1 : ( ( ruleEString ) ) ;
-    public final void rule__ExternalSpace__EntrancesAssignment_12_3_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:10650:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10651:2: ( ( ruleEString ) )
-            {
-            // InternalHouseBuilderV2.g:10651:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10652:3: ( ruleEString )
-            {
-             before(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_12_3_1_0()); 
-            // InternalHouseBuilderV2.g:10653:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10654:4: ruleEString
-            {
-             before(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceEStringParserRuleCall_12_3_1_0_1()); 
-            pushFollow(FOLLOW_2);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceEStringParserRuleCall_12_3_1_0_1()); 
-
-            }
-
-             after(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_12_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ExternalSpace__EntrancesAssignment_12_3_1"
-
-
-    // $ANTLR start "rule__ExternalSpace__DevicesAssignment_13_2"
-    // InternalHouseBuilderV2.g:10665:1: rule__ExternalSpace__DevicesAssignment_13_2 : ( ruleDevice ) ;
-    public final void rule__ExternalSpace__DevicesAssignment_13_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalHouseBuilderV2.g:10669:1: ( ( ruleDevice ) )
-            // InternalHouseBuilderV2.g:10670:2: ( ruleDevice )
-            {
-            // InternalHouseBuilderV2.g:10670:2: ( ruleDevice )
-            // InternalHouseBuilderV2.g:10671:3: ruleDevice
-            {
-             before(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_13_2_0()); 
+             before(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_11_2_0()); 
             pushFollow(FOLLOW_2);
             ruleDevice();
 
             state._fsp--;
 
-             after(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_13_2_0()); 
+             after(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_11_2_0()); 
 
             }
 
@@ -32155,29 +29125,29 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__ExternalSpace__DevicesAssignment_13_2"
+    // $ANTLR end "rule__ExternalSpace__DevicesAssignment_11_2"
 
 
-    // $ANTLR start "rule__ExternalSpace__DevicesAssignment_13_3_1"
-    // InternalHouseBuilderV2.g:10680:1: rule__ExternalSpace__DevicesAssignment_13_3_1 : ( ruleDevice ) ;
-    public final void rule__ExternalSpace__DevicesAssignment_13_3_1() throws RecognitionException {
+    // $ANTLR start "rule__ExternalSpace__DevicesAssignment_11_3_1"
+    // InternalHouseBuilderV2.g:9664:1: rule__ExternalSpace__DevicesAssignment_11_3_1 : ( ruleDevice ) ;
+    public final void rule__ExternalSpace__DevicesAssignment_11_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10684:1: ( ( ruleDevice ) )
-            // InternalHouseBuilderV2.g:10685:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:9668:1: ( ( ruleDevice ) )
+            // InternalHouseBuilderV2.g:9669:2: ( ruleDevice )
             {
-            // InternalHouseBuilderV2.g:10685:2: ( ruleDevice )
-            // InternalHouseBuilderV2.g:10686:3: ruleDevice
+            // InternalHouseBuilderV2.g:9669:2: ( ruleDevice )
+            // InternalHouseBuilderV2.g:9670:3: ruleDevice
             {
-             before(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_13_3_1_0()); 
+             before(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_11_3_1_0()); 
             pushFollow(FOLLOW_2);
             ruleDevice();
 
             state._fsp--;
 
-             after(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_13_3_1_0()); 
+             after(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_11_3_1_0()); 
 
             }
 
@@ -32196,21 +29166,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__ExternalSpace__DevicesAssignment_13_3_1"
+    // $ANTLR end "rule__ExternalSpace__DevicesAssignment_11_3_1"
 
 
     // $ANTLR start "rule__Actuator__NameAssignment_1"
-    // InternalHouseBuilderV2.g:10695:1: rule__Actuator__NameAssignment_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:9679:1: rule__Actuator__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Actuator__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10699:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10700:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9683:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9684:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:10700:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:10701:3: ruleEString
+            // InternalHouseBuilderV2.g:9684:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9685:3: ruleEString
             {
              before(grammarAccess.getActuatorAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32241,17 +29211,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__TypeAssignment_4"
-    // InternalHouseBuilderV2.g:10710:1: rule__Actuator__TypeAssignment_4 : ( ruleActuatorType ) ;
+    // InternalHouseBuilderV2.g:9694:1: rule__Actuator__TypeAssignment_4 : ( ruleActuatorType ) ;
     public final void rule__Actuator__TypeAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10714:1: ( ( ruleActuatorType ) )
-            // InternalHouseBuilderV2.g:10715:2: ( ruleActuatorType )
+            // InternalHouseBuilderV2.g:9698:1: ( ( ruleActuatorType ) )
+            // InternalHouseBuilderV2.g:9699:2: ( ruleActuatorType )
             {
-            // InternalHouseBuilderV2.g:10715:2: ( ruleActuatorType )
-            // InternalHouseBuilderV2.g:10716:3: ruleActuatorType
+            // InternalHouseBuilderV2.g:9699:2: ( ruleActuatorType )
+            // InternalHouseBuilderV2.g:9700:3: ruleActuatorType
             {
              before(grammarAccess.getActuatorAccess().getTypeActuatorTypeEnumRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -32282,17 +29252,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__ModelAssignment_5_1"
-    // InternalHouseBuilderV2.g:10725:1: rule__Actuator__ModelAssignment_5_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:9709:1: rule__Actuator__ModelAssignment_5_1 : ( ruleEString ) ;
     public final void rule__Actuator__ModelAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10729:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10730:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9713:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9714:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:10730:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:10731:3: ruleEString
+            // InternalHouseBuilderV2.g:9714:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9715:3: ruleEString
             {
              before(grammarAccess.getActuatorAccess().getModelEStringParserRuleCall_5_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32323,21 +29293,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Actuator__DeviceAssignment_7"
-    // InternalHouseBuilderV2.g:10740:1: rule__Actuator__DeviceAssignment_7 : ( ( ruleEString ) ) ;
+    // InternalHouseBuilderV2.g:9724:1: rule__Actuator__DeviceAssignment_7 : ( ( ruleEString ) ) ;
     public final void rule__Actuator__DeviceAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10744:1: ( ( ( ruleEString ) ) )
-            // InternalHouseBuilderV2.g:10745:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9728:1: ( ( ( ruleEString ) ) )
+            // InternalHouseBuilderV2.g:9729:2: ( ( ruleEString ) )
             {
-            // InternalHouseBuilderV2.g:10745:2: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10746:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9729:2: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9730:3: ( ruleEString )
             {
              before(grammarAccess.getActuatorAccess().getDeviceDeviceCrossReference_7_0()); 
-            // InternalHouseBuilderV2.g:10747:3: ( ruleEString )
-            // InternalHouseBuilderV2.g:10748:4: ruleEString
+            // InternalHouseBuilderV2.g:9731:3: ( ruleEString )
+            // InternalHouseBuilderV2.g:9732:4: ruleEString
             {
              before(grammarAccess.getActuatorAccess().getDeviceDeviceEStringParserRuleCall_7_0_1()); 
             pushFollow(FOLLOW_2);
@@ -32372,17 +29342,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__NameAssignment_1"
-    // InternalHouseBuilderV2.g:10759:1: rule__Window__NameAssignment_1 : ( ruleEString ) ;
+    // InternalHouseBuilderV2.g:9743:1: rule__Window__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Window__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10763:1: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:10764:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9747:1: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:9748:2: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:10764:2: ( ruleEString )
-            // InternalHouseBuilderV2.g:10765:3: ruleEString
+            // InternalHouseBuilderV2.g:9748:2: ( ruleEString )
+            // InternalHouseBuilderV2.g:9749:3: ruleEString
             {
              before(grammarAccess.getWindowAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32413,17 +29383,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__DoorsNumberAssignment_4"
-    // InternalHouseBuilderV2.g:10774:1: rule__Window__DoorsNumberAssignment_4 : ( ruleEInt ) ;
+    // InternalHouseBuilderV2.g:9758:1: rule__Window__DoorsNumberAssignment_4 : ( ruleEInt ) ;
     public final void rule__Window__DoorsNumberAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10778:1: ( ( ruleEInt ) )
-            // InternalHouseBuilderV2.g:10779:2: ( ruleEInt )
+            // InternalHouseBuilderV2.g:9762:1: ( ( ruleEInt ) )
+            // InternalHouseBuilderV2.g:9763:2: ( ruleEInt )
             {
-            // InternalHouseBuilderV2.g:10779:2: ( ruleEInt )
-            // InternalHouseBuilderV2.g:10780:3: ruleEInt
+            // InternalHouseBuilderV2.g:9763:2: ( ruleEInt )
+            // InternalHouseBuilderV2.g:9764:3: ruleEInt
             {
              before(grammarAccess.getWindowAccess().getDoorsNumberEIntParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -32454,17 +29424,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__WidthAssignment_6"
-    // InternalHouseBuilderV2.g:10789:1: rule__Window__WidthAssignment_6 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:9773:1: rule__Window__WidthAssignment_6 : ( ruleEFloat ) ;
     public final void rule__Window__WidthAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10793:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:10794:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9777:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:9778:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:10794:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:10795:3: ruleEFloat
+            // InternalHouseBuilderV2.g:9778:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9779:3: ruleEFloat
             {
              before(grammarAccess.getWindowAccess().getWidthEFloatParserRuleCall_6_0()); 
             pushFollow(FOLLOW_2);
@@ -32495,17 +29465,17 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Window__HeightAssignment_8"
-    // InternalHouseBuilderV2.g:10804:1: rule__Window__HeightAssignment_8 : ( ruleEFloat ) ;
+    // InternalHouseBuilderV2.g:9788:1: rule__Window__HeightAssignment_8 : ( ruleEFloat ) ;
     public final void rule__Window__HeightAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalHouseBuilderV2.g:10808:1: ( ( ruleEFloat ) )
-            // InternalHouseBuilderV2.g:10809:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9792:1: ( ( ruleEFloat ) )
+            // InternalHouseBuilderV2.g:9793:2: ( ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:10809:2: ( ruleEFloat )
-            // InternalHouseBuilderV2.g:10810:3: ruleEFloat
+            // InternalHouseBuilderV2.g:9793:2: ( ruleEFloat )
+            // InternalHouseBuilderV2.g:9794:3: ruleEFloat
             {
              before(grammarAccess.getWindowAccess().getHeightEFloatParserRuleCall_8_0()); 
             pushFollow(FOLLOW_2);
@@ -32556,7 +29526,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000200L});
     public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000000000040L,0x0000000008000000L});
     public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
-    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000000000000L,0x0000040400000000L});
+    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000000000000L,0x0000010400000000L});
     public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000000000000L,0x0000000000001000L});
     public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x03E0000080040000L});
     public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000000000000L,0x0000000000002000L});
@@ -32569,7 +29539,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000000000000L,0x0000000020000000L});
     public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
     public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0000000000000000L,0x0000000001A00000L});
-    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0000000000000000L,0x0000040000000000L});
     public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000000000000000L,0x0000000000400000L});
     public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000000000000L,0x0000000100000000L});
     public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0000000000000000L,0x0000000004000000L});
@@ -32582,15 +29552,15 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalContentAssistP
     public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x0000000000000000L,0x0000000200000000L});
     public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x0000000000000000L,0x0000000004100000L});
     public static final BitSet FOLLOW_43 = new BitSet(new long[]{0x0000000000000000L,0x0000000800000000L});
-    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x6000000000000000L,0x0000039000440000L});
+    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x6000000000000000L,0x0000009000440000L});
     public static final BitSet FOLLOW_45 = new BitSet(new long[]{0x00007FFF80000000L});
     public static final BitSet FOLLOW_46 = new BitSet(new long[]{0x0000000000000000L,0x0000002000000000L});
     public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x0000000000000000L,0x0000004000000020L});
-    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x0000000000000000L,0x0000400000000000L});
-    public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x6000000000000000L,0x0000098040440000L});
+    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x6000000000000000L,0x0000020040440000L});
     public static final BitSet FOLLOW_50 = new BitSet(new long[]{0x0003800000000000L});
     public static final BitSet FOLLOW_51 = new BitSet(new long[]{0x001C000000000000L});
     public static final BitSet FOLLOW_52 = new BitSet(new long[]{0x0000000000F80000L});
-    public static final BitSet FOLLOW_53 = new BitSet(new long[]{0x0000000000000000L,0x0000200000100000L});
+    public static final BitSet FOLLOW_53 = new BitSet(new long[]{0x0000000000000000L,0x0000080000100000L});
 
 }

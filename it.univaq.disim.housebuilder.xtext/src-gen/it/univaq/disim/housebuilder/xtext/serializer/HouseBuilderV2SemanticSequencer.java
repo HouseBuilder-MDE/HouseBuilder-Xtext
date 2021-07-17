@@ -158,8 +158,6 @@ public class HouseBuilderV2SemanticSequencer extends AbstractDelegatingSemanticS
 	 *         type=OuterSpaceType? 
 	 *         ground=GroundType? 
 	 *         (sensors+=[Sensor|EString] sensors+=[Sensor|EString]*)? 
-	 *         (passagesA+=[Passage|EString] passagesA+=[Passage|EString]*)? 
-	 *         (passagesB+=[Passage|EString] passagesB+=[Passage|EString]*)? 
 	 *         (entrances+=[Entrance|EString] entrances+=[Entrance|EString]*)? 
 	 *         (devices+=Device devices+=Device*)?
 	 *     )
@@ -241,8 +239,6 @@ public class HouseBuilderV2SemanticSequencer extends AbstractDelegatingSemanticS
 	 *         height=EFloat 
 	 *         roomType=RoomType? 
 	 *         (sensors+=[Sensor|EString] sensors+=[Sensor|EString]*)? 
-	 *         (passagesA+=[Passage|EString] passagesA+=[Passage|EString]*)? 
-	 *         (passagesB+=[Passage|EString] passagesB+=[Passage|EString]*)? 
 	 *         (entrances+=[Entrance|EString] entrances+=[Entrance|EString]*)? 
 	 *         (devices+=Device devices+=Device*)? 
 	 *         (windows+=Window windows+=Window*)?

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/sirius.hb/src-gen" creationIcons="false" editDirectory="/sirius.hb.edit/src-gen"
+    editorDirectory="/sirius.hb.editor/src-gen" modelPluginID="sirius.hb" modelName="Hb"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>hb.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Hb" basePackage="sirius" disposableProviderFactory="true" ecorePackage="hb.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hb.ecore#//RoomType">
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/SIMPLE"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/BATHROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/LIVING_ROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/BEDROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/HALLWAY"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/STUDY"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/ENTRANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/STORAGE_ROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/GARAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/LAUNDRY_ROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/HOBBY_ROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/CELLAR"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/LUNCHROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/RUMPUS_ROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/STAIRS"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//RoomType/KITCHEN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hb.ecore#//DoorType">
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DoorType/SIMPLE"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DoorType/DOOR_WINDOW"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DoorType/PANIC_DOOR"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DoorType/ENTRANCE_DOOR"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DoorType/SLIDING_DOOR"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DoorType/GATE"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DoorType/EMPTY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hb.ecore#//ActuatorType">
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//ActuatorType/IDRAULIC"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//ActuatorType/PNEUMATIC"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//ActuatorType/ELECTRICAL"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//ActuatorType/THERMAL"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//ActuatorType/MECHANICAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hb.ecore#//SensorType">
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//SensorType/TEMPERATURE"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//SensorType/PRESSURE"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//SensorType/PROXIMITY"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//SensorType/ACCELEROMETER"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//SensorType/GAS"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//SensorType/SMOKE"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//SensorType/VIDEO_SURVAILLANCE_CAMERA"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hb.ecore#//OuterSpaceType">
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//OuterSpaceType/BALCONY"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//OuterSpaceType/GARDEN"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//OuterSpaceType/TERRACE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hb.ecore#//GroundType">
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//GroundType/ASPALTH"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//GroundType/TERRAIN"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//GroundType/PAVING"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hb.ecore#//DeviceType">
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DeviceType/THERMOSTAT"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DeviceType/APPLIANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DeviceType/SOCKET"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DeviceType/ROLLER_SHUTTERS"/>
+      <genEnumLiterals ecoreEnumLiteral="hb.ecore#//DeviceType/GATE"/>
+    </genEnums>
+    <genClasses ecoreClass="hb.ecore#//House">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//House/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//House/province"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//House/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//House/postalCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//House/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//House/buildingDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hb.ecore#//House/floors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hb.ecore#//House/passages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hb.ecore#//House/controllers"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//House/internalFootage"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//House/outerFootage"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//House/footage"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//House/roomsNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hb.ecore#//House/entrances"/>
+      <genOperations ecoreOperation="hb.ecore#//House/hasOuterSpace"/>
+      <genOperations ecoreOperation="hb.ecore#//House/isSmart"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hb.ecore#//Named">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Named/name"/>
+    </genClasses>
+    <genClasses ecoreClass="hb.ecore#//Floor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Floor/level"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hb.ecore#//Floor/spaces"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Floor/house"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Floor/internalFootage"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Floor/outerFootage"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Floor/footage"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Floor/roomsNumber"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hb.ecore#//Space">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Space/length"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Space/width"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hb.ecore#//Space/devices"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Space/floor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hb.ecore#//Space/sensors"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hb.ecore#//Space/passagesA"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hb.ecore#//Space/passagesB"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Space/passages"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Space/footage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hb.ecore#//Space/entrances"/>
+    </genClasses>
+    <genClasses ecoreClass="hb.ecore#//Room">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Room/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Room/roomType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hb.ecore#//Room/windows"/>
+    </genClasses>
+    <genClasses ecoreClass="hb.ecore#//Passage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hb.ecore#//Passage/spaceA"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hb.ecore#//Passage/spaceB"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Passage/house"/>
+    </genClasses>
+    <genClasses ecoreClass="hb.ecore#//Controller">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Controller/model"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Controller/os"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Controller/osVersion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hb.ecore#//Controller/actuators"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hb.ecore#//Controller/sensors"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Controller/house"/>
+    </genClasses>
+    <genClasses ecoreClass="hb.ecore#//Actuator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Actuator/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Actuator/model"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hb.ecore#//Actuator/device"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Actuator/controller"/>
+    </genClasses>
+    <genClasses ecoreClass="hb.ecore#//Sensor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Sensor/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Sensor/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Sensor/model"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hb.ecore#//Sensor/space"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Sensor/controller"/>
+    </genClasses>
+    <genClasses ecoreClass="hb.ecore#//Device">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Device/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Device/model"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hb.ecore#//Device/actuator"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Device/space"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Device/door"/>
+    </genClasses>
+    <genClasses ecoreClass="hb.ecore#//Window">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Window/doorsNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Window/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Window/height"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Window/room"/>
+    </genClasses>
+    <genClasses ecoreClass="hb.ecore#//ExternalSpace">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//ExternalSpace/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//ExternalSpace/ground"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hb.ecore#//Door">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Door/doorType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Door/doorsNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Door/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hb.ecore#//Door/height"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hb.ecore#//Door/devices"/>
+    </genClasses>
+    <genClasses ecoreClass="hb.ecore#//Entrance">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hb.ecore#//Entrance/house"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hb.ecore#//Entrance/space"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

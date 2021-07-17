@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'House'", "'{'", "'state'", "'province'", "'city'", "'postalCode'", "'address'", "'buildingDate'", "'floors'", "','", "'}'", "'passages'", "'controllers'", "'entrances'", "'EDate'", "'Floor'", "'level'", "'spaces'", "'Passage'", "'doorType'", "'doorsNumber'", "'width'", "'height'", "'spaceA'", "'spaceB'", "'devices'", "'Controller'", "'model'", "'os'", "'osVersion'", "'actuators'", "'sensors'", "'Entrance'", "'space'", "'-'", "'.'", "'E'", "'e'", "'Device'", "'type'", "'actuator'", "'Sensor'", "'value'", "'Room'", "'length'", "'roomType'", "'('", "')'", "'passagesA'", "'passagesB'", "'windows'", "'ExternalSpace'", "'ground'", "'Actuator'", "'device'", "'Window'", "'THERMOSTAT'", "'APPLIANCE'", "'SOCKET'", "'ROLLER_SHUTTERS'", "'GATE'", "'IDRAULIC'", "'PNEUMATIC'", "'ELECTRICAL'", "'THERMAL'", "'MECHANICAL'", "'TEMPERATURE'", "'PRESSURE'", "'PROXIMITY'", "'ACCELEROMETER'", "'GAS'", "'SMOKE'", "'VIDEO_SURVAILLANCE_CAMERA'", "'SIMPLE'", "'BATHROOM'", "'LIVING_ROOM'", "'BEDROOM'", "'HALLWAY'", "'STUDY'", "'ENTRANCE'", "'STORAGE_ROOM'", "'GARAGE'", "'LAUNDRY_ROOM'", "'HOBBY_ROOM'", "'CELLAR'", "'LUNCHROOM'", "'RUMPUS_ROOM'", "'STAIRS'", "'KITCHEN'", "'BALCONY'", "'GARDEN'", "'TERRACE'", "'ASPALTH'", "'TERRAIN'", "'PAVING'", "'DOOR_WINDOW'", "'PANIC_DOOR'", "'ENTRANCE_DOOR'", "'SLIDING_DOOR'", "'EMPTY'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'House'", "'{'", "'state'", "'province'", "'city'", "'postalCode'", "'address'", "'buildingDate'", "'floors'", "','", "'}'", "'passages'", "'controllers'", "'entrances'", "'EDate'", "'Floor'", "'level'", "'spaces'", "'Passage'", "'doorType'", "'doorsNumber'", "'width'", "'height'", "'spaceA'", "'spaceB'", "'devices'", "'Controller'", "'model'", "'os'", "'osVersion'", "'actuators'", "'sensors'", "'Entrance'", "'space'", "'-'", "'.'", "'E'", "'e'", "'Device'", "'type'", "'actuator'", "'Sensor'", "'value'", "'Room'", "'length'", "'roomType'", "'('", "')'", "'windows'", "'ExternalSpace'", "'ground'", "'Actuator'", "'device'", "'Window'", "'THERMOSTAT'", "'APPLIANCE'", "'SOCKET'", "'ROLLER_SHUTTERS'", "'GATE'", "'IDRAULIC'", "'PNEUMATIC'", "'ELECTRICAL'", "'THERMAL'", "'MECHANICAL'", "'TEMPERATURE'", "'PRESSURE'", "'PROXIMITY'", "'ACCELEROMETER'", "'GAS'", "'SMOKE'", "'VIDEO_SURVAILLANCE_CAMERA'", "'SIMPLE'", "'BATHROOM'", "'LIVING_ROOM'", "'BEDROOM'", "'HALLWAY'", "'STUDY'", "'ENTRANCE'", "'STORAGE_ROOM'", "'GARAGE'", "'LAUNDRY_ROOM'", "'HOBBY_ROOM'", "'CELLAR'", "'LUNCHROOM'", "'RUMPUS_ROOM'", "'STAIRS'", "'KITCHEN'", "'BALCONY'", "'GARDEN'", "'TERRACE'", "'ASPALTH'", "'TERRAIN'", "'PAVING'", "'DOOR_WINDOW'", "'PANIC_DOOR'", "'ENTRANCE_DOOR'", "'SLIDING_DOOR'", "'EMPTY'"
     };
     public static final int T__50=50;
     public static final int T__59=59;
@@ -114,7 +114,6 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
     public static final int T__76=76;
     public static final int T__80=80;
     public static final int T__81=81;
-    public static final int T__110=110;
     public static final int T__82=82;
     public static final int T__83=83;
     public static final int RULE_WS=9;
@@ -123,7 +122,6 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
     public static final int T__108=108;
     public static final int T__89=89;
     public static final int T__107=107;
-    public static final int T__109=109;
     public static final int T__84=84;
     public static final int T__104=104;
     public static final int T__85=85;
@@ -1158,7 +1156,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
             if ( (LA13_0==54) ) {
                 alt13=1;
             }
-            else if ( (LA13_0==62) ) {
+            else if ( (LA13_0==60) ) {
                 alt13=2;
             }
             else {
@@ -4022,7 +4020,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRoom"
-    // InternalHouseBuilderV2.g:1795:1: ruleRoom returns [EObject current=null] : (otherlv_0= 'Room' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) (otherlv_9= 'roomType' ( (lv_roomType_10_0= ruleRoomType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )? (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )? (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )? (otherlv_41= 'windows' otherlv_42= '{' ( (lv_windows_43_0= ruleWindow ) ) (otherlv_44= ',' ( (lv_windows_45_0= ruleWindow ) ) )* otherlv_46= '}' )? otherlv_47= '}' ) ;
+    // InternalHouseBuilderV2.g:1795:1: ruleRoom returns [EObject current=null] : (otherlv_0= 'Room' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) (otherlv_9= 'roomType' ( (lv_roomType_10_0= ruleRoomType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )? (otherlv_29= 'windows' otherlv_30= '{' ( (lv_windows_31_0= ruleWindow ) ) (otherlv_32= ',' ( (lv_windows_33_0= ruleWindow ) ) )* otherlv_34= '}' )? otherlv_35= '}' ) ;
     public final EObject ruleRoom() throws RecognitionException {
         EObject current = null;
 
@@ -4049,14 +4047,6 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         Token otherlv_32=null;
         Token otherlv_34=null;
         Token otherlv_35=null;
-        Token otherlv_36=null;
-        Token otherlv_38=null;
-        Token otherlv_40=null;
-        Token otherlv_41=null;
-        Token otherlv_42=null;
-        Token otherlv_44=null;
-        Token otherlv_46=null;
-        Token otherlv_47=null;
         AntlrDatatypeRuleToken lv_name_1_0 = null;
 
         AntlrDatatypeRuleToken lv_length_4_0 = null;
@@ -4067,24 +4057,24 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
         Enumerator lv_roomType_10_0 = null;
 
-        EObject lv_devices_37_0 = null;
+        EObject lv_devices_25_0 = null;
 
-        EObject lv_devices_39_0 = null;
+        EObject lv_devices_27_0 = null;
 
-        EObject lv_windows_43_0 = null;
+        EObject lv_windows_31_0 = null;
 
-        EObject lv_windows_45_0 = null;
+        EObject lv_windows_33_0 = null;
 
 
 
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:1801:2: ( (otherlv_0= 'Room' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) (otherlv_9= 'roomType' ( (lv_roomType_10_0= ruleRoomType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )? (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )? (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )? (otherlv_41= 'windows' otherlv_42= '{' ( (lv_windows_43_0= ruleWindow ) ) (otherlv_44= ',' ( (lv_windows_45_0= ruleWindow ) ) )* otherlv_46= '}' )? otherlv_47= '}' ) )
-            // InternalHouseBuilderV2.g:1802:2: (otherlv_0= 'Room' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) (otherlv_9= 'roomType' ( (lv_roomType_10_0= ruleRoomType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )? (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )? (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )? (otherlv_41= 'windows' otherlv_42= '{' ( (lv_windows_43_0= ruleWindow ) ) (otherlv_44= ',' ( (lv_windows_45_0= ruleWindow ) ) )* otherlv_46= '}' )? otherlv_47= '}' )
+            // InternalHouseBuilderV2.g:1801:2: ( (otherlv_0= 'Room' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) (otherlv_9= 'roomType' ( (lv_roomType_10_0= ruleRoomType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )? (otherlv_29= 'windows' otherlv_30= '{' ( (lv_windows_31_0= ruleWindow ) ) (otherlv_32= ',' ( (lv_windows_33_0= ruleWindow ) ) )* otherlv_34= '}' )? otherlv_35= '}' ) )
+            // InternalHouseBuilderV2.g:1802:2: (otherlv_0= 'Room' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) (otherlv_9= 'roomType' ( (lv_roomType_10_0= ruleRoomType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )? (otherlv_29= 'windows' otherlv_30= '{' ( (lv_windows_31_0= ruleWindow ) ) (otherlv_32= ',' ( (lv_windows_33_0= ruleWindow ) ) )* otherlv_34= '}' )? otherlv_35= '}' )
             {
-            // InternalHouseBuilderV2.g:1802:2: (otherlv_0= 'Room' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) (otherlv_9= 'roomType' ( (lv_roomType_10_0= ruleRoomType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )? (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )? (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )? (otherlv_41= 'windows' otherlv_42= '{' ( (lv_windows_43_0= ruleWindow ) ) (otherlv_44= ',' ( (lv_windows_45_0= ruleWindow ) ) )* otherlv_46= '}' )? otherlv_47= '}' )
-            // InternalHouseBuilderV2.g:1803:3: otherlv_0= 'Room' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) (otherlv_9= 'roomType' ( (lv_roomType_10_0= ruleRoomType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )? (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )? (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )? (otherlv_41= 'windows' otherlv_42= '{' ( (lv_windows_43_0= ruleWindow ) ) (otherlv_44= ',' ( (lv_windows_45_0= ruleWindow ) ) )* otherlv_46= '}' )? otherlv_47= '}'
+            // InternalHouseBuilderV2.g:1802:2: (otherlv_0= 'Room' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) (otherlv_9= 'roomType' ( (lv_roomType_10_0= ruleRoomType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )? (otherlv_29= 'windows' otherlv_30= '{' ( (lv_windows_31_0= ruleWindow ) ) (otherlv_32= ',' ( (lv_windows_33_0= ruleWindow ) ) )* otherlv_34= '}' )? otherlv_35= '}' )
+            // InternalHouseBuilderV2.g:1803:3: otherlv_0= 'Room' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) (otherlv_9= 'roomType' ( (lv_roomType_10_0= ruleRoomType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )? (otherlv_29= 'windows' otherlv_30= '{' ( (lv_windows_31_0= ruleWindow ) ) (otherlv_32= ',' ( (lv_windows_33_0= ruleWindow ) ) )* otherlv_34= '}' )? otherlv_35= '}'
             {
             otherlv_0=(Token)match(input,54,FOLLOW_3); 
 
@@ -4395,20 +4385,20 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalHouseBuilderV2.g:1976:3: (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )?
+            // InternalHouseBuilderV2.g:1976:3: (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )?
             int alt38=2;
             int LA38_0 = input.LA(1);
 
-            if ( (LA38_0==59) ) {
+            if ( (LA38_0==24) ) {
                 alt38=1;
             }
             switch (alt38) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:1977:4: otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')'
+                    // InternalHouseBuilderV2.g:1977:4: otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')'
                     {
-                    otherlv_17=(Token)match(input,59,FOLLOW_60); 
+                    otherlv_17=(Token)match(input,24,FOLLOW_60); 
 
-                    				newLeafNode(otherlv_17, grammarAccess.getRoomAccess().getPassagesAKeyword_11_0());
+                    				newLeafNode(otherlv_17, grammarAccess.getRoomAccess().getEntrancesKeyword_11_0());
                     			
                     otherlv_18=(Token)match(input,57,FOLLOW_3); 
 
@@ -4426,7 +4416,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     						}
                     					
 
-                    						newCompositeNode(grammarAccess.getRoomAccess().getPassagesAPassageCrossReference_11_2_0());
+                    						newCompositeNode(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_11_2_0());
                     					
                     pushFollow(FOLLOW_61);
                     ruleEString();
@@ -4473,7 +4463,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     	    							}
                     	    						
 
-                    	    							newCompositeNode(grammarAccess.getRoomAccess().getPassagesAPassageCrossReference_11_3_1_0());
+                    	    							newCompositeNode(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_11_3_1_0());
                     	    						
                     	    pushFollow(FOLLOW_61);
                     	    ruleEString();
@@ -4508,45 +4498,48 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalHouseBuilderV2.g:2028:3: (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )?
+            // InternalHouseBuilderV2.g:2028:3: (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )?
             int alt40=2;
             int LA40_0 = input.LA(1);
 
-            if ( (LA40_0==60) ) {
+            if ( (LA40_0==36) ) {
                 alt40=1;
             }
             switch (alt40) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:2029:4: otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')'
+                    // InternalHouseBuilderV2.g:2029:4: otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}'
                     {
-                    otherlv_23=(Token)match(input,60,FOLLOW_60); 
+                    otherlv_23=(Token)match(input,36,FOLLOW_4); 
 
-                    				newLeafNode(otherlv_23, grammarAccess.getRoomAccess().getPassagesBKeyword_12_0());
+                    				newLeafNode(otherlv_23, grammarAccess.getRoomAccess().getDevicesKeyword_12_0());
                     			
-                    otherlv_24=(Token)match(input,57,FOLLOW_3); 
+                    otherlv_24=(Token)match(input,12,FOLLOW_35); 
 
-                    				newLeafNode(otherlv_24, grammarAccess.getRoomAccess().getLeftParenthesisKeyword_12_1());
+                    				newLeafNode(otherlv_24, grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_12_1());
                     			
-                    // InternalHouseBuilderV2.g:2037:4: ( ( ruleEString ) )
-                    // InternalHouseBuilderV2.g:2038:5: ( ruleEString )
+                    // InternalHouseBuilderV2.g:2037:4: ( (lv_devices_25_0= ruleDevice ) )
+                    // InternalHouseBuilderV2.g:2038:5: (lv_devices_25_0= ruleDevice )
                     {
-                    // InternalHouseBuilderV2.g:2038:5: ( ruleEString )
-                    // InternalHouseBuilderV2.g:2039:6: ruleEString
+                    // InternalHouseBuilderV2.g:2038:5: (lv_devices_25_0= ruleDevice )
+                    // InternalHouseBuilderV2.g:2039:6: lv_devices_25_0= ruleDevice
                     {
 
-                    						if (current==null) {
-                    							current = createModelElement(grammarAccess.getRoomRule());
-                    						}
+                    						newCompositeNode(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_12_2_0());
                     					
-
-                    						newCompositeNode(grammarAccess.getRoomAccess().getPassagesBPassageCrossReference_12_2_0());
-                    					
-                    pushFollow(FOLLOW_61);
-                    ruleEString();
+                    pushFollow(FOLLOW_14);
+                    lv_devices_25_0=ruleDevice();
 
                     state._fsp--;
 
 
+                    						if (current==null) {
+                    							current = createModelElementForParent(grammarAccess.getRoomRule());
+                    						}
+                    						add(
+                    							current,
+                    							"devices",
+                    							lv_devices_25_0,
+                    							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
                     						afterParserOrEnumRuleCall();
                     					
 
@@ -4555,7 +4548,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalHouseBuilderV2.g:2053:4: (otherlv_26= ',' ( ( ruleEString ) ) )*
+                    // InternalHouseBuilderV2.g:2056:4: (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )*
                     loop39:
                     do {
                         int alt39=2;
@@ -4568,32 +4561,35 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
                         switch (alt39) {
                     	case 1 :
-                    	    // InternalHouseBuilderV2.g:2054:5: otherlv_26= ',' ( ( ruleEString ) )
+                    	    // InternalHouseBuilderV2.g:2057:5: otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) )
                     	    {
-                    	    otherlv_26=(Token)match(input,20,FOLLOW_3); 
+                    	    otherlv_26=(Token)match(input,20,FOLLOW_35); 
 
                     	    					newLeafNode(otherlv_26, grammarAccess.getRoomAccess().getCommaKeyword_12_3_0());
                     	    				
-                    	    // InternalHouseBuilderV2.g:2058:5: ( ( ruleEString ) )
-                    	    // InternalHouseBuilderV2.g:2059:6: ( ruleEString )
+                    	    // InternalHouseBuilderV2.g:2061:5: ( (lv_devices_27_0= ruleDevice ) )
+                    	    // InternalHouseBuilderV2.g:2062:6: (lv_devices_27_0= ruleDevice )
                     	    {
-                    	    // InternalHouseBuilderV2.g:2059:6: ( ruleEString )
-                    	    // InternalHouseBuilderV2.g:2060:7: ruleEString
+                    	    // InternalHouseBuilderV2.g:2062:6: (lv_devices_27_0= ruleDevice )
+                    	    // InternalHouseBuilderV2.g:2063:7: lv_devices_27_0= ruleDevice
                     	    {
 
-                    	    							if (current==null) {
-                    	    								current = createModelElement(grammarAccess.getRoomRule());
-                    	    							}
+                    	    							newCompositeNode(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_12_3_1_0());
                     	    						
-
-                    	    							newCompositeNode(grammarAccess.getRoomAccess().getPassagesBPassageCrossReference_12_3_1_0());
-                    	    						
-                    	    pushFollow(FOLLOW_61);
-                    	    ruleEString();
+                    	    pushFollow(FOLLOW_14);
+                    	    lv_devices_27_0=ruleDevice();
 
                     	    state._fsp--;
 
 
+                    	    							if (current==null) {
+                    	    								current = createModelElementForParent(grammarAccess.getRoomRule());
+                    	    							}
+                    	    							add(
+                    	    								current,
+                    	    								"devices",
+                    	    								lv_devices_27_0,
+                    	    								"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
                     	    							afterParserOrEnumRuleCall();
                     	    						
 
@@ -4611,9 +4607,9 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_28=(Token)match(input,58,FOLLOW_64); 
+                    otherlv_28=(Token)match(input,21,FOLLOW_64); 
 
-                    				newLeafNode(otherlv_28, grammarAccess.getRoomAccess().getRightParenthesisKeyword_12_4());
+                    				newLeafNode(otherlv_28, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_12_4());
                     			
 
                     }
@@ -4621,45 +4617,48 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalHouseBuilderV2.g:2080:3: (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )?
+            // InternalHouseBuilderV2.g:2086:3: (otherlv_29= 'windows' otherlv_30= '{' ( (lv_windows_31_0= ruleWindow ) ) (otherlv_32= ',' ( (lv_windows_33_0= ruleWindow ) ) )* otherlv_34= '}' )?
             int alt42=2;
             int LA42_0 = input.LA(1);
 
-            if ( (LA42_0==24) ) {
+            if ( (LA42_0==59) ) {
                 alt42=1;
             }
             switch (alt42) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:2081:4: otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')'
+                    // InternalHouseBuilderV2.g:2087:4: otherlv_29= 'windows' otherlv_30= '{' ( (lv_windows_31_0= ruleWindow ) ) (otherlv_32= ',' ( (lv_windows_33_0= ruleWindow ) ) )* otherlv_34= '}'
                     {
-                    otherlv_29=(Token)match(input,24,FOLLOW_60); 
+                    otherlv_29=(Token)match(input,59,FOLLOW_4); 
 
-                    				newLeafNode(otherlv_29, grammarAccess.getRoomAccess().getEntrancesKeyword_13_0());
+                    				newLeafNode(otherlv_29, grammarAccess.getRoomAccess().getWindowsKeyword_13_0());
                     			
-                    otherlv_30=(Token)match(input,57,FOLLOW_3); 
+                    otherlv_30=(Token)match(input,12,FOLLOW_65); 
 
-                    				newLeafNode(otherlv_30, grammarAccess.getRoomAccess().getLeftParenthesisKeyword_13_1());
+                    				newLeafNode(otherlv_30, grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_13_1());
                     			
-                    // InternalHouseBuilderV2.g:2089:4: ( ( ruleEString ) )
-                    // InternalHouseBuilderV2.g:2090:5: ( ruleEString )
+                    // InternalHouseBuilderV2.g:2095:4: ( (lv_windows_31_0= ruleWindow ) )
+                    // InternalHouseBuilderV2.g:2096:5: (lv_windows_31_0= ruleWindow )
                     {
-                    // InternalHouseBuilderV2.g:2090:5: ( ruleEString )
-                    // InternalHouseBuilderV2.g:2091:6: ruleEString
+                    // InternalHouseBuilderV2.g:2096:5: (lv_windows_31_0= ruleWindow )
+                    // InternalHouseBuilderV2.g:2097:6: lv_windows_31_0= ruleWindow
                     {
 
-                    						if (current==null) {
-                    							current = createModelElement(grammarAccess.getRoomRule());
-                    						}
+                    						newCompositeNode(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_13_2_0());
                     					
-
-                    						newCompositeNode(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_13_2_0());
-                    					
-                    pushFollow(FOLLOW_61);
-                    ruleEString();
+                    pushFollow(FOLLOW_14);
+                    lv_windows_31_0=ruleWindow();
 
                     state._fsp--;
 
 
+                    						if (current==null) {
+                    							current = createModelElementForParent(grammarAccess.getRoomRule());
+                    						}
+                    						add(
+                    							current,
+                    							"windows",
+                    							lv_windows_31_0,
+                    							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Window");
                     						afterParserOrEnumRuleCall();
                     					
 
@@ -4668,7 +4667,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalHouseBuilderV2.g:2105:4: (otherlv_32= ',' ( ( ruleEString ) ) )*
+                    // InternalHouseBuilderV2.g:2114:4: (otherlv_32= ',' ( (lv_windows_33_0= ruleWindow ) ) )*
                     loop41:
                     do {
                         int alt41=2;
@@ -4681,32 +4680,35 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
                         switch (alt41) {
                     	case 1 :
-                    	    // InternalHouseBuilderV2.g:2106:5: otherlv_32= ',' ( ( ruleEString ) )
+                    	    // InternalHouseBuilderV2.g:2115:5: otherlv_32= ',' ( (lv_windows_33_0= ruleWindow ) )
                     	    {
-                    	    otherlv_32=(Token)match(input,20,FOLLOW_3); 
+                    	    otherlv_32=(Token)match(input,20,FOLLOW_65); 
 
                     	    					newLeafNode(otherlv_32, grammarAccess.getRoomAccess().getCommaKeyword_13_3_0());
                     	    				
-                    	    // InternalHouseBuilderV2.g:2110:5: ( ( ruleEString ) )
-                    	    // InternalHouseBuilderV2.g:2111:6: ( ruleEString )
+                    	    // InternalHouseBuilderV2.g:2119:5: ( (lv_windows_33_0= ruleWindow ) )
+                    	    // InternalHouseBuilderV2.g:2120:6: (lv_windows_33_0= ruleWindow )
                     	    {
-                    	    // InternalHouseBuilderV2.g:2111:6: ( ruleEString )
-                    	    // InternalHouseBuilderV2.g:2112:7: ruleEString
+                    	    // InternalHouseBuilderV2.g:2120:6: (lv_windows_33_0= ruleWindow )
+                    	    // InternalHouseBuilderV2.g:2121:7: lv_windows_33_0= ruleWindow
                     	    {
 
-                    	    							if (current==null) {
-                    	    								current = createModelElement(grammarAccess.getRoomRule());
-                    	    							}
+                    	    							newCompositeNode(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_13_3_1_0());
                     	    						
-
-                    	    							newCompositeNode(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_13_3_1_0());
-                    	    						
-                    	    pushFollow(FOLLOW_61);
-                    	    ruleEString();
+                    	    pushFollow(FOLLOW_14);
+                    	    lv_windows_33_0=ruleWindow();
 
                     	    state._fsp--;
 
 
+                    	    							if (current==null) {
+                    	    								current = createModelElementForParent(grammarAccess.getRoomRule());
+                    	    							}
+                    	    							add(
+                    	    								current,
+                    	    								"windows",
+                    	    								lv_windows_33_0,
+                    	    								"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Window");
                     	    							afterParserOrEnumRuleCall();
                     	    						
 
@@ -4724,9 +4726,9 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_34=(Token)match(input,58,FOLLOW_65); 
+                    otherlv_34=(Token)match(input,21,FOLLOW_21); 
 
-                    				newLeafNode(otherlv_34, grammarAccess.getRoomAccess().getRightParenthesisKeyword_13_4());
+                    				newLeafNode(otherlv_34, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_13_4());
                     			
 
                     }
@@ -4734,247 +4736,9 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalHouseBuilderV2.g:2132:3: (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )?
-            int alt44=2;
-            int LA44_0 = input.LA(1);
+            otherlv_35=(Token)match(input,21,FOLLOW_2); 
 
-            if ( (LA44_0==36) ) {
-                alt44=1;
-            }
-            switch (alt44) {
-                case 1 :
-                    // InternalHouseBuilderV2.g:2133:4: otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}'
-                    {
-                    otherlv_35=(Token)match(input,36,FOLLOW_4); 
-
-                    				newLeafNode(otherlv_35, grammarAccess.getRoomAccess().getDevicesKeyword_14_0());
-                    			
-                    otherlv_36=(Token)match(input,12,FOLLOW_35); 
-
-                    				newLeafNode(otherlv_36, grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_14_1());
-                    			
-                    // InternalHouseBuilderV2.g:2141:4: ( (lv_devices_37_0= ruleDevice ) )
-                    // InternalHouseBuilderV2.g:2142:5: (lv_devices_37_0= ruleDevice )
-                    {
-                    // InternalHouseBuilderV2.g:2142:5: (lv_devices_37_0= ruleDevice )
-                    // InternalHouseBuilderV2.g:2143:6: lv_devices_37_0= ruleDevice
-                    {
-
-                    						newCompositeNode(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_14_2_0());
-                    					
-                    pushFollow(FOLLOW_14);
-                    lv_devices_37_0=ruleDevice();
-
-                    state._fsp--;
-
-
-                    						if (current==null) {
-                    							current = createModelElementForParent(grammarAccess.getRoomRule());
-                    						}
-                    						add(
-                    							current,
-                    							"devices",
-                    							lv_devices_37_0,
-                    							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
-                    						afterParserOrEnumRuleCall();
-                    					
-
-                    }
-
-
-                    }
-
-                    // InternalHouseBuilderV2.g:2160:4: (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )*
-                    loop43:
-                    do {
-                        int alt43=2;
-                        int LA43_0 = input.LA(1);
-
-                        if ( (LA43_0==20) ) {
-                            alt43=1;
-                        }
-
-
-                        switch (alt43) {
-                    	case 1 :
-                    	    // InternalHouseBuilderV2.g:2161:5: otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) )
-                    	    {
-                    	    otherlv_38=(Token)match(input,20,FOLLOW_35); 
-
-                    	    					newLeafNode(otherlv_38, grammarAccess.getRoomAccess().getCommaKeyword_14_3_0());
-                    	    				
-                    	    // InternalHouseBuilderV2.g:2165:5: ( (lv_devices_39_0= ruleDevice ) )
-                    	    // InternalHouseBuilderV2.g:2166:6: (lv_devices_39_0= ruleDevice )
-                    	    {
-                    	    // InternalHouseBuilderV2.g:2166:6: (lv_devices_39_0= ruleDevice )
-                    	    // InternalHouseBuilderV2.g:2167:7: lv_devices_39_0= ruleDevice
-                    	    {
-
-                    	    							newCompositeNode(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_14_3_1_0());
-                    	    						
-                    	    pushFollow(FOLLOW_14);
-                    	    lv_devices_39_0=ruleDevice();
-
-                    	    state._fsp--;
-
-
-                    	    							if (current==null) {
-                    	    								current = createModelElementForParent(grammarAccess.getRoomRule());
-                    	    							}
-                    	    							add(
-                    	    								current,
-                    	    								"devices",
-                    	    								lv_devices_39_0,
-                    	    								"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
-                    	    							afterParserOrEnumRuleCall();
-                    	    						
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop43;
-                        }
-                    } while (true);
-
-                    otherlv_40=(Token)match(input,21,FOLLOW_66); 
-
-                    				newLeafNode(otherlv_40, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_14_4());
-                    			
-
-                    }
-                    break;
-
-            }
-
-            // InternalHouseBuilderV2.g:2190:3: (otherlv_41= 'windows' otherlv_42= '{' ( (lv_windows_43_0= ruleWindow ) ) (otherlv_44= ',' ( (lv_windows_45_0= ruleWindow ) ) )* otherlv_46= '}' )?
-            int alt46=2;
-            int LA46_0 = input.LA(1);
-
-            if ( (LA46_0==61) ) {
-                alt46=1;
-            }
-            switch (alt46) {
-                case 1 :
-                    // InternalHouseBuilderV2.g:2191:4: otherlv_41= 'windows' otherlv_42= '{' ( (lv_windows_43_0= ruleWindow ) ) (otherlv_44= ',' ( (lv_windows_45_0= ruleWindow ) ) )* otherlv_46= '}'
-                    {
-                    otherlv_41=(Token)match(input,61,FOLLOW_4); 
-
-                    				newLeafNode(otherlv_41, grammarAccess.getRoomAccess().getWindowsKeyword_15_0());
-                    			
-                    otherlv_42=(Token)match(input,12,FOLLOW_67); 
-
-                    				newLeafNode(otherlv_42, grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_15_1());
-                    			
-                    // InternalHouseBuilderV2.g:2199:4: ( (lv_windows_43_0= ruleWindow ) )
-                    // InternalHouseBuilderV2.g:2200:5: (lv_windows_43_0= ruleWindow )
-                    {
-                    // InternalHouseBuilderV2.g:2200:5: (lv_windows_43_0= ruleWindow )
-                    // InternalHouseBuilderV2.g:2201:6: lv_windows_43_0= ruleWindow
-                    {
-
-                    						newCompositeNode(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_15_2_0());
-                    					
-                    pushFollow(FOLLOW_14);
-                    lv_windows_43_0=ruleWindow();
-
-                    state._fsp--;
-
-
-                    						if (current==null) {
-                    							current = createModelElementForParent(grammarAccess.getRoomRule());
-                    						}
-                    						add(
-                    							current,
-                    							"windows",
-                    							lv_windows_43_0,
-                    							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Window");
-                    						afterParserOrEnumRuleCall();
-                    					
-
-                    }
-
-
-                    }
-
-                    // InternalHouseBuilderV2.g:2218:4: (otherlv_44= ',' ( (lv_windows_45_0= ruleWindow ) ) )*
-                    loop45:
-                    do {
-                        int alt45=2;
-                        int LA45_0 = input.LA(1);
-
-                        if ( (LA45_0==20) ) {
-                            alt45=1;
-                        }
-
-
-                        switch (alt45) {
-                    	case 1 :
-                    	    // InternalHouseBuilderV2.g:2219:5: otherlv_44= ',' ( (lv_windows_45_0= ruleWindow ) )
-                    	    {
-                    	    otherlv_44=(Token)match(input,20,FOLLOW_67); 
-
-                    	    					newLeafNode(otherlv_44, grammarAccess.getRoomAccess().getCommaKeyword_15_3_0());
-                    	    				
-                    	    // InternalHouseBuilderV2.g:2223:5: ( (lv_windows_45_0= ruleWindow ) )
-                    	    // InternalHouseBuilderV2.g:2224:6: (lv_windows_45_0= ruleWindow )
-                    	    {
-                    	    // InternalHouseBuilderV2.g:2224:6: (lv_windows_45_0= ruleWindow )
-                    	    // InternalHouseBuilderV2.g:2225:7: lv_windows_45_0= ruleWindow
-                    	    {
-
-                    	    							newCompositeNode(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_15_3_1_0());
-                    	    						
-                    	    pushFollow(FOLLOW_14);
-                    	    lv_windows_45_0=ruleWindow();
-
-                    	    state._fsp--;
-
-
-                    	    							if (current==null) {
-                    	    								current = createModelElementForParent(grammarAccess.getRoomRule());
-                    	    							}
-                    	    							add(
-                    	    								current,
-                    	    								"windows",
-                    	    								lv_windows_45_0,
-                    	    								"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Window");
-                    	    							afterParserOrEnumRuleCall();
-                    	    						
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop45;
-                        }
-                    } while (true);
-
-                    otherlv_46=(Token)match(input,21,FOLLOW_21); 
-
-                    				newLeafNode(otherlv_46, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_15_4());
-                    			
-
-                    }
-                    break;
-
-            }
-
-            otherlv_47=(Token)match(input,21,FOLLOW_2); 
-
-            			newLeafNode(otherlv_47, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_16());
+            			newLeafNode(otherlv_35, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_14());
             		
 
             }
@@ -4999,7 +4763,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleExternalSpace"
-    // InternalHouseBuilderV2.g:2256:1: entryRuleExternalSpace returns [EObject current=null] : iv_ruleExternalSpace= ruleExternalSpace EOF ;
+    // InternalHouseBuilderV2.g:2152:1: entryRuleExternalSpace returns [EObject current=null] : iv_ruleExternalSpace= ruleExternalSpace EOF ;
     public final EObject entryRuleExternalSpace() throws RecognitionException {
         EObject current = null;
 
@@ -5007,8 +4771,8 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalHouseBuilderV2.g:2256:54: (iv_ruleExternalSpace= ruleExternalSpace EOF )
-            // InternalHouseBuilderV2.g:2257:2: iv_ruleExternalSpace= ruleExternalSpace EOF
+            // InternalHouseBuilderV2.g:2152:54: (iv_ruleExternalSpace= ruleExternalSpace EOF )
+            // InternalHouseBuilderV2.g:2153:2: iv_ruleExternalSpace= ruleExternalSpace EOF
             {
              newCompositeNode(grammarAccess.getExternalSpaceRule()); 
             pushFollow(FOLLOW_1);
@@ -5035,7 +4799,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleExternalSpace"
-    // InternalHouseBuilderV2.g:2263:1: ruleExternalSpace returns [EObject current=null] : (otherlv_0= 'ExternalSpace' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )? (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )? (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )? (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )? otherlv_41= '}' ) ;
+    // InternalHouseBuilderV2.g:2159:1: ruleExternalSpace returns [EObject current=null] : (otherlv_0= 'ExternalSpace' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )? (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )? otherlv_29= '}' ) ;
     public final EObject ruleExternalSpace() throws RecognitionException {
         EObject current = null;
 
@@ -5058,14 +4822,6 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         Token otherlv_26=null;
         Token otherlv_28=null;
         Token otherlv_29=null;
-        Token otherlv_30=null;
-        Token otherlv_32=null;
-        Token otherlv_34=null;
-        Token otherlv_35=null;
-        Token otherlv_36=null;
-        Token otherlv_38=null;
-        Token otherlv_40=null;
-        Token otherlv_41=null;
         AntlrDatatypeRuleToken lv_name_1_0 = null;
 
         AntlrDatatypeRuleToken lv_length_4_0 = null;
@@ -5076,30 +4832,30 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
         Enumerator lv_ground_10_0 = null;
 
-        EObject lv_devices_37_0 = null;
+        EObject lv_devices_25_0 = null;
 
-        EObject lv_devices_39_0 = null;
+        EObject lv_devices_27_0 = null;
 
 
 
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:2269:2: ( (otherlv_0= 'ExternalSpace' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )? (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )? (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )? (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )? otherlv_41= '}' ) )
-            // InternalHouseBuilderV2.g:2270:2: (otherlv_0= 'ExternalSpace' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )? (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )? (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )? (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )? otherlv_41= '}' )
+            // InternalHouseBuilderV2.g:2165:2: ( (otherlv_0= 'ExternalSpace' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )? (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )? otherlv_29= '}' ) )
+            // InternalHouseBuilderV2.g:2166:2: (otherlv_0= 'ExternalSpace' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )? (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )? otherlv_29= '}' )
             {
-            // InternalHouseBuilderV2.g:2270:2: (otherlv_0= 'ExternalSpace' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )? (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )? (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )? (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )? otherlv_41= '}' )
-            // InternalHouseBuilderV2.g:2271:3: otherlv_0= 'ExternalSpace' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )? (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )? (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )? (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )? otherlv_41= '}'
+            // InternalHouseBuilderV2.g:2166:2: (otherlv_0= 'ExternalSpace' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )? (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )? otherlv_29= '}' )
+            // InternalHouseBuilderV2.g:2167:3: otherlv_0= 'ExternalSpace' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'length' ( (lv_length_4_0= ruleEFloat ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )? (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )? (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )? (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )? (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )? otherlv_29= '}'
             {
-            otherlv_0=(Token)match(input,62,FOLLOW_3); 
+            otherlv_0=(Token)match(input,60,FOLLOW_3); 
 
             			newLeafNode(otherlv_0, grammarAccess.getExternalSpaceAccess().getExternalSpaceKeyword_0());
             		
-            // InternalHouseBuilderV2.g:2275:3: ( (lv_name_1_0= ruleEString ) )
-            // InternalHouseBuilderV2.g:2276:4: (lv_name_1_0= ruleEString )
+            // InternalHouseBuilderV2.g:2171:3: ( (lv_name_1_0= ruleEString ) )
+            // InternalHouseBuilderV2.g:2172:4: (lv_name_1_0= ruleEString )
             {
-            // InternalHouseBuilderV2.g:2276:4: (lv_name_1_0= ruleEString )
-            // InternalHouseBuilderV2.g:2277:5: lv_name_1_0= ruleEString
+            // InternalHouseBuilderV2.g:2172:4: (lv_name_1_0= ruleEString )
+            // InternalHouseBuilderV2.g:2173:5: lv_name_1_0= ruleEString
             {
 
             					newCompositeNode(grammarAccess.getExternalSpaceAccess().getNameEStringParserRuleCall_1_0());
@@ -5134,11 +4890,11 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_3, grammarAccess.getExternalSpaceAccess().getLengthKeyword_3());
             		
-            // InternalHouseBuilderV2.g:2302:3: ( (lv_length_4_0= ruleEFloat ) )
-            // InternalHouseBuilderV2.g:2303:4: (lv_length_4_0= ruleEFloat )
+            // InternalHouseBuilderV2.g:2198:3: ( (lv_length_4_0= ruleEFloat ) )
+            // InternalHouseBuilderV2.g:2199:4: (lv_length_4_0= ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:2303:4: (lv_length_4_0= ruleEFloat )
-            // InternalHouseBuilderV2.g:2304:5: lv_length_4_0= ruleEFloat
+            // InternalHouseBuilderV2.g:2199:4: (lv_length_4_0= ruleEFloat )
+            // InternalHouseBuilderV2.g:2200:5: lv_length_4_0= ruleEFloat
             {
 
             					newCompositeNode(grammarAccess.getExternalSpaceAccess().getLengthEFloatParserRuleCall_4_0());
@@ -5169,16 +4925,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_5, grammarAccess.getExternalSpaceAccess().getWidthKeyword_5());
             		
-            // InternalHouseBuilderV2.g:2325:3: ( (lv_width_6_0= ruleEFloat ) )
-            // InternalHouseBuilderV2.g:2326:4: (lv_width_6_0= ruleEFloat )
+            // InternalHouseBuilderV2.g:2221:3: ( (lv_width_6_0= ruleEFloat ) )
+            // InternalHouseBuilderV2.g:2222:4: (lv_width_6_0= ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:2326:4: (lv_width_6_0= ruleEFloat )
-            // InternalHouseBuilderV2.g:2327:5: lv_width_6_0= ruleEFloat
+            // InternalHouseBuilderV2.g:2222:4: (lv_width_6_0= ruleEFloat )
+            // InternalHouseBuilderV2.g:2223:5: lv_width_6_0= ruleEFloat
             {
 
             					newCompositeNode(grammarAccess.getExternalSpaceAccess().getWidthEFloatParserRuleCall_6_0());
             				
-            pushFollow(FOLLOW_68);
+            pushFollow(FOLLOW_66);
             lv_width_6_0=ruleEFloat();
 
             state._fsp--;
@@ -5200,31 +4956,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalHouseBuilderV2.g:2344:3: (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )?
-            int alt47=2;
-            int LA47_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:2240:3: (otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) ) )?
+            int alt43=2;
+            int LA43_0 = input.LA(1);
 
-            if ( (LA47_0==50) ) {
-                alt47=1;
+            if ( (LA43_0==50) ) {
+                alt43=1;
             }
-            switch (alt47) {
+            switch (alt43) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:2345:4: otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) )
+                    // InternalHouseBuilderV2.g:2241:4: otherlv_7= 'type' ( (lv_type_8_0= ruleOuterSpaceType ) )
                     {
-                    otherlv_7=(Token)match(input,50,FOLLOW_69); 
+                    otherlv_7=(Token)match(input,50,FOLLOW_67); 
 
                     				newLeafNode(otherlv_7, grammarAccess.getExternalSpaceAccess().getTypeKeyword_7_0());
                     			
-                    // InternalHouseBuilderV2.g:2349:4: ( (lv_type_8_0= ruleOuterSpaceType ) )
-                    // InternalHouseBuilderV2.g:2350:5: (lv_type_8_0= ruleOuterSpaceType )
+                    // InternalHouseBuilderV2.g:2245:4: ( (lv_type_8_0= ruleOuterSpaceType ) )
+                    // InternalHouseBuilderV2.g:2246:5: (lv_type_8_0= ruleOuterSpaceType )
                     {
-                    // InternalHouseBuilderV2.g:2350:5: (lv_type_8_0= ruleOuterSpaceType )
-                    // InternalHouseBuilderV2.g:2351:6: lv_type_8_0= ruleOuterSpaceType
+                    // InternalHouseBuilderV2.g:2246:5: (lv_type_8_0= ruleOuterSpaceType )
+                    // InternalHouseBuilderV2.g:2247:6: lv_type_8_0= ruleOuterSpaceType
                     {
 
                     						newCompositeNode(grammarAccess.getExternalSpaceAccess().getTypeOuterSpaceTypeEnumRuleCall_7_1_0());
                     					
-                    pushFollow(FOLLOW_70);
+                    pushFollow(FOLLOW_68);
                     lv_type_8_0=ruleOuterSpaceType();
 
                     state._fsp--;
@@ -5252,31 +5008,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalHouseBuilderV2.g:2369:3: (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )?
-            int alt48=2;
-            int LA48_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:2265:3: (otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) ) )?
+            int alt44=2;
+            int LA44_0 = input.LA(1);
 
-            if ( (LA48_0==63) ) {
-                alt48=1;
+            if ( (LA44_0==61) ) {
+                alt44=1;
             }
-            switch (alt48) {
+            switch (alt44) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:2370:4: otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) )
+                    // InternalHouseBuilderV2.g:2266:4: otherlv_9= 'ground' ( (lv_ground_10_0= ruleGroundType ) )
                     {
-                    otherlv_9=(Token)match(input,63,FOLLOW_71); 
+                    otherlv_9=(Token)match(input,61,FOLLOW_69); 
 
                     				newLeafNode(otherlv_9, grammarAccess.getExternalSpaceAccess().getGroundKeyword_8_0());
                     			
-                    // InternalHouseBuilderV2.g:2374:4: ( (lv_ground_10_0= ruleGroundType ) )
-                    // InternalHouseBuilderV2.g:2375:5: (lv_ground_10_0= ruleGroundType )
+                    // InternalHouseBuilderV2.g:2270:4: ( (lv_ground_10_0= ruleGroundType ) )
+                    // InternalHouseBuilderV2.g:2271:5: (lv_ground_10_0= ruleGroundType )
                     {
-                    // InternalHouseBuilderV2.g:2375:5: (lv_ground_10_0= ruleGroundType )
-                    // InternalHouseBuilderV2.g:2376:6: lv_ground_10_0= ruleGroundType
+                    // InternalHouseBuilderV2.g:2271:5: (lv_ground_10_0= ruleGroundType )
+                    // InternalHouseBuilderV2.g:2272:6: lv_ground_10_0= ruleGroundType
                     {
 
                     						newCompositeNode(grammarAccess.getExternalSpaceAccess().getGroundGroundTypeEnumRuleCall_8_1_0());
                     					
-                    pushFollow(FOLLOW_72);
+                    pushFollow(FOLLOW_70);
                     lv_ground_10_0=ruleGroundType();
 
                     state._fsp--;
@@ -5304,16 +5060,16 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalHouseBuilderV2.g:2394:3: (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )?
-            int alt50=2;
-            int LA50_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:2290:3: (otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')' )?
+            int alt46=2;
+            int LA46_0 = input.LA(1);
 
-            if ( (LA50_0==42) ) {
-                alt50=1;
+            if ( (LA46_0==42) ) {
+                alt46=1;
             }
-            switch (alt50) {
+            switch (alt46) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:2395:4: otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')'
+                    // InternalHouseBuilderV2.g:2291:4: otherlv_11= 'sensors' otherlv_12= '(' ( ( ruleEString ) ) (otherlv_14= ',' ( ( ruleEString ) ) )* otherlv_16= ')'
                     {
                     otherlv_11=(Token)match(input,42,FOLLOW_60); 
 
@@ -5323,11 +5079,11 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
                     				newLeafNode(otherlv_12, grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_9_1());
                     			
-                    // InternalHouseBuilderV2.g:2403:4: ( ( ruleEString ) )
-                    // InternalHouseBuilderV2.g:2404:5: ( ruleEString )
+                    // InternalHouseBuilderV2.g:2299:4: ( ( ruleEString ) )
+                    // InternalHouseBuilderV2.g:2300:5: ( ruleEString )
                     {
-                    // InternalHouseBuilderV2.g:2404:5: ( ruleEString )
-                    // InternalHouseBuilderV2.g:2405:6: ruleEString
+                    // InternalHouseBuilderV2.g:2300:5: ( ruleEString )
+                    // InternalHouseBuilderV2.g:2301:6: ruleEString
                     {
 
                     						if (current==null) {
@@ -5351,30 +5107,30 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalHouseBuilderV2.g:2419:4: (otherlv_14= ',' ( ( ruleEString ) ) )*
-                    loop49:
+                    // InternalHouseBuilderV2.g:2315:4: (otherlv_14= ',' ( ( ruleEString ) ) )*
+                    loop45:
                     do {
-                        int alt49=2;
-                        int LA49_0 = input.LA(1);
+                        int alt45=2;
+                        int LA45_0 = input.LA(1);
 
-                        if ( (LA49_0==20) ) {
-                            alt49=1;
+                        if ( (LA45_0==20) ) {
+                            alt45=1;
                         }
 
 
-                        switch (alt49) {
+                        switch (alt45) {
                     	case 1 :
-                    	    // InternalHouseBuilderV2.g:2420:5: otherlv_14= ',' ( ( ruleEString ) )
+                    	    // InternalHouseBuilderV2.g:2316:5: otherlv_14= ',' ( ( ruleEString ) )
                     	    {
                     	    otherlv_14=(Token)match(input,20,FOLLOW_3); 
 
                     	    					newLeafNode(otherlv_14, grammarAccess.getExternalSpaceAccess().getCommaKeyword_9_3_0());
                     	    				
-                    	    // InternalHouseBuilderV2.g:2424:5: ( ( ruleEString ) )
-                    	    // InternalHouseBuilderV2.g:2425:6: ( ruleEString )
+                    	    // InternalHouseBuilderV2.g:2320:5: ( ( ruleEString ) )
+                    	    // InternalHouseBuilderV2.g:2321:6: ( ruleEString )
                     	    {
-                    	    // InternalHouseBuilderV2.g:2425:6: ( ruleEString )
-                    	    // InternalHouseBuilderV2.g:2426:7: ruleEString
+                    	    // InternalHouseBuilderV2.g:2321:6: ( ruleEString )
+                    	    // InternalHouseBuilderV2.g:2322:7: ruleEString
                     	    {
 
                     	    							if (current==null) {
@@ -5403,11 +5159,11 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop49;
+                    	    break loop45;
                         }
                     } while (true);
 
-                    otherlv_16=(Token)match(input,58,FOLLOW_73); 
+                    otherlv_16=(Token)match(input,58,FOLLOW_71); 
 
                     				newLeafNode(otherlv_16, grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_9_4());
                     			
@@ -5417,30 +5173,30 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalHouseBuilderV2.g:2446:3: (otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )?
-            int alt52=2;
-            int LA52_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:2342:3: (otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')' )?
+            int alt48=2;
+            int LA48_0 = input.LA(1);
 
-            if ( (LA52_0==59) ) {
-                alt52=1;
+            if ( (LA48_0==24) ) {
+                alt48=1;
             }
-            switch (alt52) {
+            switch (alt48) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:2447:4: otherlv_17= 'passagesA' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')'
+                    // InternalHouseBuilderV2.g:2343:4: otherlv_17= 'entrances' otherlv_18= '(' ( ( ruleEString ) ) (otherlv_20= ',' ( ( ruleEString ) ) )* otherlv_22= ')'
                     {
-                    otherlv_17=(Token)match(input,59,FOLLOW_60); 
+                    otherlv_17=(Token)match(input,24,FOLLOW_60); 
 
-                    				newLeafNode(otherlv_17, grammarAccess.getExternalSpaceAccess().getPassagesAKeyword_10_0());
+                    				newLeafNode(otherlv_17, grammarAccess.getExternalSpaceAccess().getEntrancesKeyword_10_0());
                     			
                     otherlv_18=(Token)match(input,57,FOLLOW_3); 
 
                     				newLeafNode(otherlv_18, grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_10_1());
                     			
-                    // InternalHouseBuilderV2.g:2455:4: ( ( ruleEString ) )
-                    // InternalHouseBuilderV2.g:2456:5: ( ruleEString )
+                    // InternalHouseBuilderV2.g:2351:4: ( ( ruleEString ) )
+                    // InternalHouseBuilderV2.g:2352:5: ( ruleEString )
                     {
-                    // InternalHouseBuilderV2.g:2456:5: ( ruleEString )
-                    // InternalHouseBuilderV2.g:2457:6: ruleEString
+                    // InternalHouseBuilderV2.g:2352:5: ( ruleEString )
+                    // InternalHouseBuilderV2.g:2353:6: ruleEString
                     {
 
                     						if (current==null) {
@@ -5448,7 +5204,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     						}
                     					
 
-                    						newCompositeNode(grammarAccess.getExternalSpaceAccess().getPassagesAPassageCrossReference_10_2_0());
+                    						newCompositeNode(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_10_2_0());
                     					
                     pushFollow(FOLLOW_61);
                     ruleEString();
@@ -5464,30 +5220,30 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalHouseBuilderV2.g:2471:4: (otherlv_20= ',' ( ( ruleEString ) ) )*
-                    loop51:
+                    // InternalHouseBuilderV2.g:2367:4: (otherlv_20= ',' ( ( ruleEString ) ) )*
+                    loop47:
                     do {
-                        int alt51=2;
-                        int LA51_0 = input.LA(1);
+                        int alt47=2;
+                        int LA47_0 = input.LA(1);
 
-                        if ( (LA51_0==20) ) {
-                            alt51=1;
+                        if ( (LA47_0==20) ) {
+                            alt47=1;
                         }
 
 
-                        switch (alt51) {
+                        switch (alt47) {
                     	case 1 :
-                    	    // InternalHouseBuilderV2.g:2472:5: otherlv_20= ',' ( ( ruleEString ) )
+                    	    // InternalHouseBuilderV2.g:2368:5: otherlv_20= ',' ( ( ruleEString ) )
                     	    {
                     	    otherlv_20=(Token)match(input,20,FOLLOW_3); 
 
                     	    					newLeafNode(otherlv_20, grammarAccess.getExternalSpaceAccess().getCommaKeyword_10_3_0());
                     	    				
-                    	    // InternalHouseBuilderV2.g:2476:5: ( ( ruleEString ) )
-                    	    // InternalHouseBuilderV2.g:2477:6: ( ruleEString )
+                    	    // InternalHouseBuilderV2.g:2372:5: ( ( ruleEString ) )
+                    	    // InternalHouseBuilderV2.g:2373:6: ( ruleEString )
                     	    {
-                    	    // InternalHouseBuilderV2.g:2477:6: ( ruleEString )
-                    	    // InternalHouseBuilderV2.g:2478:7: ruleEString
+                    	    // InternalHouseBuilderV2.g:2373:6: ( ruleEString )
+                    	    // InternalHouseBuilderV2.g:2374:7: ruleEString
                     	    {
 
                     	    							if (current==null) {
@@ -5495,7 +5251,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     	    							}
                     	    						
 
-                    	    							newCompositeNode(grammarAccess.getExternalSpaceAccess().getPassagesAPassageCrossReference_10_3_1_0());
+                    	    							newCompositeNode(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_10_3_1_0());
                     	    						
                     	    pushFollow(FOLLOW_61);
                     	    ruleEString();
@@ -5516,11 +5272,11 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop51;
+                    	    break loop47;
                         }
                     } while (true);
 
-                    otherlv_22=(Token)match(input,58,FOLLOW_74); 
+                    otherlv_22=(Token)match(input,58,FOLLOW_34); 
 
                     				newLeafNode(otherlv_22, grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_10_4());
                     			
@@ -5530,262 +5286,36 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalHouseBuilderV2.g:2498:3: (otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')' )?
-            int alt54=2;
-            int LA54_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:2394:3: (otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}' )?
+            int alt50=2;
+            int LA50_0 = input.LA(1);
 
-            if ( (LA54_0==60) ) {
-                alt54=1;
+            if ( (LA50_0==36) ) {
+                alt50=1;
             }
-            switch (alt54) {
+            switch (alt50) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:2499:4: otherlv_23= 'passagesB' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ',' ( ( ruleEString ) ) )* otherlv_28= ')'
+                    // InternalHouseBuilderV2.g:2395:4: otherlv_23= 'devices' otherlv_24= '{' ( (lv_devices_25_0= ruleDevice ) ) (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )* otherlv_28= '}'
                     {
-                    otherlv_23=(Token)match(input,60,FOLLOW_60); 
+                    otherlv_23=(Token)match(input,36,FOLLOW_4); 
 
-                    				newLeafNode(otherlv_23, grammarAccess.getExternalSpaceAccess().getPassagesBKeyword_11_0());
+                    				newLeafNode(otherlv_23, grammarAccess.getExternalSpaceAccess().getDevicesKeyword_11_0());
                     			
-                    otherlv_24=(Token)match(input,57,FOLLOW_3); 
+                    otherlv_24=(Token)match(input,12,FOLLOW_35); 
 
-                    				newLeafNode(otherlv_24, grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_11_1());
+                    				newLeafNode(otherlv_24, grammarAccess.getExternalSpaceAccess().getLeftCurlyBracketKeyword_11_1());
                     			
-                    // InternalHouseBuilderV2.g:2507:4: ( ( ruleEString ) )
-                    // InternalHouseBuilderV2.g:2508:5: ( ruleEString )
+                    // InternalHouseBuilderV2.g:2403:4: ( (lv_devices_25_0= ruleDevice ) )
+                    // InternalHouseBuilderV2.g:2404:5: (lv_devices_25_0= ruleDevice )
                     {
-                    // InternalHouseBuilderV2.g:2508:5: ( ruleEString )
-                    // InternalHouseBuilderV2.g:2509:6: ruleEString
-                    {
-
-                    						if (current==null) {
-                    							current = createModelElement(grammarAccess.getExternalSpaceRule());
-                    						}
-                    					
-
-                    						newCompositeNode(grammarAccess.getExternalSpaceAccess().getPassagesBPassageCrossReference_11_2_0());
-                    					
-                    pushFollow(FOLLOW_61);
-                    ruleEString();
-
-                    state._fsp--;
-
-
-                    						afterParserOrEnumRuleCall();
-                    					
-
-                    }
-
-
-                    }
-
-                    // InternalHouseBuilderV2.g:2523:4: (otherlv_26= ',' ( ( ruleEString ) ) )*
-                    loop53:
-                    do {
-                        int alt53=2;
-                        int LA53_0 = input.LA(1);
-
-                        if ( (LA53_0==20) ) {
-                            alt53=1;
-                        }
-
-
-                        switch (alt53) {
-                    	case 1 :
-                    	    // InternalHouseBuilderV2.g:2524:5: otherlv_26= ',' ( ( ruleEString ) )
-                    	    {
-                    	    otherlv_26=(Token)match(input,20,FOLLOW_3); 
-
-                    	    					newLeafNode(otherlv_26, grammarAccess.getExternalSpaceAccess().getCommaKeyword_11_3_0());
-                    	    				
-                    	    // InternalHouseBuilderV2.g:2528:5: ( ( ruleEString ) )
-                    	    // InternalHouseBuilderV2.g:2529:6: ( ruleEString )
-                    	    {
-                    	    // InternalHouseBuilderV2.g:2529:6: ( ruleEString )
-                    	    // InternalHouseBuilderV2.g:2530:7: ruleEString
-                    	    {
-
-                    	    							if (current==null) {
-                    	    								current = createModelElement(grammarAccess.getExternalSpaceRule());
-                    	    							}
-                    	    						
-
-                    	    							newCompositeNode(grammarAccess.getExternalSpaceAccess().getPassagesBPassageCrossReference_11_3_1_0());
-                    	    						
-                    	    pushFollow(FOLLOW_61);
-                    	    ruleEString();
-
-                    	    state._fsp--;
-
-
-                    	    							afterParserOrEnumRuleCall();
-                    	    						
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop53;
-                        }
-                    } while (true);
-
-                    otherlv_28=(Token)match(input,58,FOLLOW_75); 
-
-                    				newLeafNode(otherlv_28, grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_11_4());
-                    			
-
-                    }
-                    break;
-
-            }
-
-            // InternalHouseBuilderV2.g:2550:3: (otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')' )?
-            int alt56=2;
-            int LA56_0 = input.LA(1);
-
-            if ( (LA56_0==24) ) {
-                alt56=1;
-            }
-            switch (alt56) {
-                case 1 :
-                    // InternalHouseBuilderV2.g:2551:4: otherlv_29= 'entrances' otherlv_30= '(' ( ( ruleEString ) ) (otherlv_32= ',' ( ( ruleEString ) ) )* otherlv_34= ')'
-                    {
-                    otherlv_29=(Token)match(input,24,FOLLOW_60); 
-
-                    				newLeafNode(otherlv_29, grammarAccess.getExternalSpaceAccess().getEntrancesKeyword_12_0());
-                    			
-                    otherlv_30=(Token)match(input,57,FOLLOW_3); 
-
-                    				newLeafNode(otherlv_30, grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_12_1());
-                    			
-                    // InternalHouseBuilderV2.g:2559:4: ( ( ruleEString ) )
-                    // InternalHouseBuilderV2.g:2560:5: ( ruleEString )
-                    {
-                    // InternalHouseBuilderV2.g:2560:5: ( ruleEString )
-                    // InternalHouseBuilderV2.g:2561:6: ruleEString
+                    // InternalHouseBuilderV2.g:2404:5: (lv_devices_25_0= ruleDevice )
+                    // InternalHouseBuilderV2.g:2405:6: lv_devices_25_0= ruleDevice
                     {
 
-                    						if (current==null) {
-                    							current = createModelElement(grammarAccess.getExternalSpaceRule());
-                    						}
-                    					
-
-                    						newCompositeNode(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_12_2_0());
-                    					
-                    pushFollow(FOLLOW_61);
-                    ruleEString();
-
-                    state._fsp--;
-
-
-                    						afterParserOrEnumRuleCall();
-                    					
-
-                    }
-
-
-                    }
-
-                    // InternalHouseBuilderV2.g:2575:4: (otherlv_32= ',' ( ( ruleEString ) ) )*
-                    loop55:
-                    do {
-                        int alt55=2;
-                        int LA55_0 = input.LA(1);
-
-                        if ( (LA55_0==20) ) {
-                            alt55=1;
-                        }
-
-
-                        switch (alt55) {
-                    	case 1 :
-                    	    // InternalHouseBuilderV2.g:2576:5: otherlv_32= ',' ( ( ruleEString ) )
-                    	    {
-                    	    otherlv_32=(Token)match(input,20,FOLLOW_3); 
-
-                    	    					newLeafNode(otherlv_32, grammarAccess.getExternalSpaceAccess().getCommaKeyword_12_3_0());
-                    	    				
-                    	    // InternalHouseBuilderV2.g:2580:5: ( ( ruleEString ) )
-                    	    // InternalHouseBuilderV2.g:2581:6: ( ruleEString )
-                    	    {
-                    	    // InternalHouseBuilderV2.g:2581:6: ( ruleEString )
-                    	    // InternalHouseBuilderV2.g:2582:7: ruleEString
-                    	    {
-
-                    	    							if (current==null) {
-                    	    								current = createModelElement(grammarAccess.getExternalSpaceRule());
-                    	    							}
-                    	    						
-
-                    	    							newCompositeNode(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_12_3_1_0());
-                    	    						
-                    	    pushFollow(FOLLOW_61);
-                    	    ruleEString();
-
-                    	    state._fsp--;
-
-
-                    	    							afterParserOrEnumRuleCall();
-                    	    						
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop55;
-                        }
-                    } while (true);
-
-                    otherlv_34=(Token)match(input,58,FOLLOW_34); 
-
-                    				newLeafNode(otherlv_34, grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_12_4());
-                    			
-
-                    }
-                    break;
-
-            }
-
-            // InternalHouseBuilderV2.g:2602:3: (otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}' )?
-            int alt58=2;
-            int LA58_0 = input.LA(1);
-
-            if ( (LA58_0==36) ) {
-                alt58=1;
-            }
-            switch (alt58) {
-                case 1 :
-                    // InternalHouseBuilderV2.g:2603:4: otherlv_35= 'devices' otherlv_36= '{' ( (lv_devices_37_0= ruleDevice ) ) (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )* otherlv_40= '}'
-                    {
-                    otherlv_35=(Token)match(input,36,FOLLOW_4); 
-
-                    				newLeafNode(otherlv_35, grammarAccess.getExternalSpaceAccess().getDevicesKeyword_13_0());
-                    			
-                    otherlv_36=(Token)match(input,12,FOLLOW_35); 
-
-                    				newLeafNode(otherlv_36, grammarAccess.getExternalSpaceAccess().getLeftCurlyBracketKeyword_13_1());
-                    			
-                    // InternalHouseBuilderV2.g:2611:4: ( (lv_devices_37_0= ruleDevice ) )
-                    // InternalHouseBuilderV2.g:2612:5: (lv_devices_37_0= ruleDevice )
-                    {
-                    // InternalHouseBuilderV2.g:2612:5: (lv_devices_37_0= ruleDevice )
-                    // InternalHouseBuilderV2.g:2613:6: lv_devices_37_0= ruleDevice
-                    {
-
-                    						newCompositeNode(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_13_2_0());
+                    						newCompositeNode(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_11_2_0());
                     					
                     pushFollow(FOLLOW_14);
-                    lv_devices_37_0=ruleDevice();
+                    lv_devices_25_0=ruleDevice();
 
                     state._fsp--;
 
@@ -5796,7 +5326,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     						add(
                     							current,
                     							"devices",
-                    							lv_devices_37_0,
+                    							lv_devices_25_0,
                     							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
                     						afterParserOrEnumRuleCall();
                     					
@@ -5806,36 +5336,36 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalHouseBuilderV2.g:2630:4: (otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) ) )*
-                    loop57:
+                    // InternalHouseBuilderV2.g:2422:4: (otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) ) )*
+                    loop49:
                     do {
-                        int alt57=2;
-                        int LA57_0 = input.LA(1);
+                        int alt49=2;
+                        int LA49_0 = input.LA(1);
 
-                        if ( (LA57_0==20) ) {
-                            alt57=1;
+                        if ( (LA49_0==20) ) {
+                            alt49=1;
                         }
 
 
-                        switch (alt57) {
+                        switch (alt49) {
                     	case 1 :
-                    	    // InternalHouseBuilderV2.g:2631:5: otherlv_38= ',' ( (lv_devices_39_0= ruleDevice ) )
+                    	    // InternalHouseBuilderV2.g:2423:5: otherlv_26= ',' ( (lv_devices_27_0= ruleDevice ) )
                     	    {
-                    	    otherlv_38=(Token)match(input,20,FOLLOW_35); 
+                    	    otherlv_26=(Token)match(input,20,FOLLOW_35); 
 
-                    	    					newLeafNode(otherlv_38, grammarAccess.getExternalSpaceAccess().getCommaKeyword_13_3_0());
+                    	    					newLeafNode(otherlv_26, grammarAccess.getExternalSpaceAccess().getCommaKeyword_11_3_0());
                     	    				
-                    	    // InternalHouseBuilderV2.g:2635:5: ( (lv_devices_39_0= ruleDevice ) )
-                    	    // InternalHouseBuilderV2.g:2636:6: (lv_devices_39_0= ruleDevice )
+                    	    // InternalHouseBuilderV2.g:2427:5: ( (lv_devices_27_0= ruleDevice ) )
+                    	    // InternalHouseBuilderV2.g:2428:6: (lv_devices_27_0= ruleDevice )
                     	    {
-                    	    // InternalHouseBuilderV2.g:2636:6: (lv_devices_39_0= ruleDevice )
-                    	    // InternalHouseBuilderV2.g:2637:7: lv_devices_39_0= ruleDevice
+                    	    // InternalHouseBuilderV2.g:2428:6: (lv_devices_27_0= ruleDevice )
+                    	    // InternalHouseBuilderV2.g:2429:7: lv_devices_27_0= ruleDevice
                     	    {
 
-                    	    							newCompositeNode(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_13_3_1_0());
+                    	    							newCompositeNode(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_11_3_1_0());
                     	    						
                     	    pushFollow(FOLLOW_14);
-                    	    lv_devices_39_0=ruleDevice();
+                    	    lv_devices_27_0=ruleDevice();
 
                     	    state._fsp--;
 
@@ -5846,7 +5376,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     	    							add(
                     	    								current,
                     	    								"devices",
-                    	    								lv_devices_39_0,
+                    	    								lv_devices_27_0,
                     	    								"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
                     	    							afterParserOrEnumRuleCall();
                     	    						
@@ -5861,13 +5391,13 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop57;
+                    	    break loop49;
                         }
                     } while (true);
 
-                    otherlv_40=(Token)match(input,21,FOLLOW_21); 
+                    otherlv_28=(Token)match(input,21,FOLLOW_21); 
 
-                    				newLeafNode(otherlv_40, grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_13_4());
+                    				newLeafNode(otherlv_28, grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_11_4());
                     			
 
                     }
@@ -5875,9 +5405,9 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_41=(Token)match(input,21,FOLLOW_2); 
+            otherlv_29=(Token)match(input,21,FOLLOW_2); 
 
-            			newLeafNode(otherlv_41, grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_14());
+            			newLeafNode(otherlv_29, grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_12());
             		
 
             }
@@ -5902,7 +5432,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleActuator"
-    // InternalHouseBuilderV2.g:2668:1: entryRuleActuator returns [EObject current=null] : iv_ruleActuator= ruleActuator EOF ;
+    // InternalHouseBuilderV2.g:2460:1: entryRuleActuator returns [EObject current=null] : iv_ruleActuator= ruleActuator EOF ;
     public final EObject entryRuleActuator() throws RecognitionException {
         EObject current = null;
 
@@ -5910,8 +5440,8 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalHouseBuilderV2.g:2668:49: (iv_ruleActuator= ruleActuator EOF )
-            // InternalHouseBuilderV2.g:2669:2: iv_ruleActuator= ruleActuator EOF
+            // InternalHouseBuilderV2.g:2460:49: (iv_ruleActuator= ruleActuator EOF )
+            // InternalHouseBuilderV2.g:2461:2: iv_ruleActuator= ruleActuator EOF
             {
              newCompositeNode(grammarAccess.getActuatorRule()); 
             pushFollow(FOLLOW_1);
@@ -5938,7 +5468,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleActuator"
-    // InternalHouseBuilderV2.g:2675:1: ruleActuator returns [EObject current=null] : (otherlv_0= 'Actuator' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'type' ( (lv_type_4_0= ruleActuatorType ) ) (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )? otherlv_7= 'device' ( ( ruleEString ) ) otherlv_9= '}' ) ;
+    // InternalHouseBuilderV2.g:2467:1: ruleActuator returns [EObject current=null] : (otherlv_0= 'Actuator' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'type' ( (lv_type_4_0= ruleActuatorType ) ) (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )? otherlv_7= 'device' ( ( ruleEString ) ) otherlv_9= '}' ) ;
     public final EObject ruleActuator() throws RecognitionException {
         EObject current = null;
 
@@ -5959,21 +5489,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:2681:2: ( (otherlv_0= 'Actuator' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'type' ( (lv_type_4_0= ruleActuatorType ) ) (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )? otherlv_7= 'device' ( ( ruleEString ) ) otherlv_9= '}' ) )
-            // InternalHouseBuilderV2.g:2682:2: (otherlv_0= 'Actuator' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'type' ( (lv_type_4_0= ruleActuatorType ) ) (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )? otherlv_7= 'device' ( ( ruleEString ) ) otherlv_9= '}' )
+            // InternalHouseBuilderV2.g:2473:2: ( (otherlv_0= 'Actuator' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'type' ( (lv_type_4_0= ruleActuatorType ) ) (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )? otherlv_7= 'device' ( ( ruleEString ) ) otherlv_9= '}' ) )
+            // InternalHouseBuilderV2.g:2474:2: (otherlv_0= 'Actuator' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'type' ( (lv_type_4_0= ruleActuatorType ) ) (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )? otherlv_7= 'device' ( ( ruleEString ) ) otherlv_9= '}' )
             {
-            // InternalHouseBuilderV2.g:2682:2: (otherlv_0= 'Actuator' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'type' ( (lv_type_4_0= ruleActuatorType ) ) (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )? otherlv_7= 'device' ( ( ruleEString ) ) otherlv_9= '}' )
-            // InternalHouseBuilderV2.g:2683:3: otherlv_0= 'Actuator' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'type' ( (lv_type_4_0= ruleActuatorType ) ) (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )? otherlv_7= 'device' ( ( ruleEString ) ) otherlv_9= '}'
+            // InternalHouseBuilderV2.g:2474:2: (otherlv_0= 'Actuator' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'type' ( (lv_type_4_0= ruleActuatorType ) ) (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )? otherlv_7= 'device' ( ( ruleEString ) ) otherlv_9= '}' )
+            // InternalHouseBuilderV2.g:2475:3: otherlv_0= 'Actuator' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'type' ( (lv_type_4_0= ruleActuatorType ) ) (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )? otherlv_7= 'device' ( ( ruleEString ) ) otherlv_9= '}'
             {
-            otherlv_0=(Token)match(input,64,FOLLOW_3); 
+            otherlv_0=(Token)match(input,62,FOLLOW_3); 
 
             			newLeafNode(otherlv_0, grammarAccess.getActuatorAccess().getActuatorKeyword_0());
             		
-            // InternalHouseBuilderV2.g:2687:3: ( (lv_name_1_0= ruleEString ) )
-            // InternalHouseBuilderV2.g:2688:4: (lv_name_1_0= ruleEString )
+            // InternalHouseBuilderV2.g:2479:3: ( (lv_name_1_0= ruleEString ) )
+            // InternalHouseBuilderV2.g:2480:4: (lv_name_1_0= ruleEString )
             {
-            // InternalHouseBuilderV2.g:2688:4: (lv_name_1_0= ruleEString )
-            // InternalHouseBuilderV2.g:2689:5: lv_name_1_0= ruleEString
+            // InternalHouseBuilderV2.g:2480:4: (lv_name_1_0= ruleEString )
+            // InternalHouseBuilderV2.g:2481:5: lv_name_1_0= ruleEString
             {
 
             					newCompositeNode(grammarAccess.getActuatorAccess().getNameEStringParserRuleCall_1_0());
@@ -6004,20 +5534,20 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_2, grammarAccess.getActuatorAccess().getLeftCurlyBracketKeyword_2());
             		
-            otherlv_3=(Token)match(input,50,FOLLOW_76); 
+            otherlv_3=(Token)match(input,50,FOLLOW_72); 
 
             			newLeafNode(otherlv_3, grammarAccess.getActuatorAccess().getTypeKeyword_3());
             		
-            // InternalHouseBuilderV2.g:2714:3: ( (lv_type_4_0= ruleActuatorType ) )
-            // InternalHouseBuilderV2.g:2715:4: (lv_type_4_0= ruleActuatorType )
+            // InternalHouseBuilderV2.g:2506:3: ( (lv_type_4_0= ruleActuatorType ) )
+            // InternalHouseBuilderV2.g:2507:4: (lv_type_4_0= ruleActuatorType )
             {
-            // InternalHouseBuilderV2.g:2715:4: (lv_type_4_0= ruleActuatorType )
-            // InternalHouseBuilderV2.g:2716:5: lv_type_4_0= ruleActuatorType
+            // InternalHouseBuilderV2.g:2507:4: (lv_type_4_0= ruleActuatorType )
+            // InternalHouseBuilderV2.g:2508:5: lv_type_4_0= ruleActuatorType
             {
 
             					newCompositeNode(grammarAccess.getActuatorAccess().getTypeActuatorTypeEnumRuleCall_4_0());
             				
-            pushFollow(FOLLOW_77);
+            pushFollow(FOLLOW_73);
             lv_type_4_0=ruleActuatorType();
 
             state._fsp--;
@@ -6039,31 +5569,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalHouseBuilderV2.g:2733:3: (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )?
-            int alt59=2;
-            int LA59_0 = input.LA(1);
+            // InternalHouseBuilderV2.g:2525:3: (otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) ) )?
+            int alt51=2;
+            int LA51_0 = input.LA(1);
 
-            if ( (LA59_0==38) ) {
-                alt59=1;
+            if ( (LA51_0==38) ) {
+                alt51=1;
             }
-            switch (alt59) {
+            switch (alt51) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:2734:4: otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) )
+                    // InternalHouseBuilderV2.g:2526:4: otherlv_5= 'model' ( (lv_model_6_0= ruleEString ) )
                     {
                     otherlv_5=(Token)match(input,38,FOLLOW_3); 
 
                     				newLeafNode(otherlv_5, grammarAccess.getActuatorAccess().getModelKeyword_5_0());
                     			
-                    // InternalHouseBuilderV2.g:2738:4: ( (lv_model_6_0= ruleEString ) )
-                    // InternalHouseBuilderV2.g:2739:5: (lv_model_6_0= ruleEString )
+                    // InternalHouseBuilderV2.g:2530:4: ( (lv_model_6_0= ruleEString ) )
+                    // InternalHouseBuilderV2.g:2531:5: (lv_model_6_0= ruleEString )
                     {
-                    // InternalHouseBuilderV2.g:2739:5: (lv_model_6_0= ruleEString )
-                    // InternalHouseBuilderV2.g:2740:6: lv_model_6_0= ruleEString
+                    // InternalHouseBuilderV2.g:2531:5: (lv_model_6_0= ruleEString )
+                    // InternalHouseBuilderV2.g:2532:6: lv_model_6_0= ruleEString
                     {
 
                     						newCompositeNode(grammarAccess.getActuatorAccess().getModelEStringParserRuleCall_5_1_0());
                     					
-                    pushFollow(FOLLOW_78);
+                    pushFollow(FOLLOW_74);
                     lv_model_6_0=ruleEString();
 
                     state._fsp--;
@@ -6091,15 +5621,15 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_7=(Token)match(input,65,FOLLOW_3); 
+            otherlv_7=(Token)match(input,63,FOLLOW_3); 
 
             			newLeafNode(otherlv_7, grammarAccess.getActuatorAccess().getDeviceKeyword_6());
             		
-            // InternalHouseBuilderV2.g:2762:3: ( ( ruleEString ) )
-            // InternalHouseBuilderV2.g:2763:4: ( ruleEString )
+            // InternalHouseBuilderV2.g:2554:3: ( ( ruleEString ) )
+            // InternalHouseBuilderV2.g:2555:4: ( ruleEString )
             {
-            // InternalHouseBuilderV2.g:2763:4: ( ruleEString )
-            // InternalHouseBuilderV2.g:2764:5: ruleEString
+            // InternalHouseBuilderV2.g:2555:4: ( ruleEString )
+            // InternalHouseBuilderV2.g:2556:5: ruleEString
             {
 
             					if (current==null) {
@@ -6150,7 +5680,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleWindow"
-    // InternalHouseBuilderV2.g:2786:1: entryRuleWindow returns [EObject current=null] : iv_ruleWindow= ruleWindow EOF ;
+    // InternalHouseBuilderV2.g:2578:1: entryRuleWindow returns [EObject current=null] : iv_ruleWindow= ruleWindow EOF ;
     public final EObject entryRuleWindow() throws RecognitionException {
         EObject current = null;
 
@@ -6158,8 +5688,8 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalHouseBuilderV2.g:2786:47: (iv_ruleWindow= ruleWindow EOF )
-            // InternalHouseBuilderV2.g:2787:2: iv_ruleWindow= ruleWindow EOF
+            // InternalHouseBuilderV2.g:2578:47: (iv_ruleWindow= ruleWindow EOF )
+            // InternalHouseBuilderV2.g:2579:2: iv_ruleWindow= ruleWindow EOF
             {
              newCompositeNode(grammarAccess.getWindowRule()); 
             pushFollow(FOLLOW_1);
@@ -6186,7 +5716,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleWindow"
-    // InternalHouseBuilderV2.g:2793:1: ruleWindow returns [EObject current=null] : (otherlv_0= 'Window' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'doorsNumber' ( (lv_doorsNumber_4_0= ruleEInt ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) otherlv_9= '}' ) ;
+    // InternalHouseBuilderV2.g:2585:1: ruleWindow returns [EObject current=null] : (otherlv_0= 'Window' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'doorsNumber' ( (lv_doorsNumber_4_0= ruleEInt ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) otherlv_9= '}' ) ;
     public final EObject ruleWindow() throws RecognitionException {
         EObject current = null;
 
@@ -6209,21 +5739,21 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:2799:2: ( (otherlv_0= 'Window' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'doorsNumber' ( (lv_doorsNumber_4_0= ruleEInt ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) otherlv_9= '}' ) )
-            // InternalHouseBuilderV2.g:2800:2: (otherlv_0= 'Window' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'doorsNumber' ( (lv_doorsNumber_4_0= ruleEInt ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) otherlv_9= '}' )
+            // InternalHouseBuilderV2.g:2591:2: ( (otherlv_0= 'Window' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'doorsNumber' ( (lv_doorsNumber_4_0= ruleEInt ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) otherlv_9= '}' ) )
+            // InternalHouseBuilderV2.g:2592:2: (otherlv_0= 'Window' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'doorsNumber' ( (lv_doorsNumber_4_0= ruleEInt ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) otherlv_9= '}' )
             {
-            // InternalHouseBuilderV2.g:2800:2: (otherlv_0= 'Window' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'doorsNumber' ( (lv_doorsNumber_4_0= ruleEInt ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) otherlv_9= '}' )
-            // InternalHouseBuilderV2.g:2801:3: otherlv_0= 'Window' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'doorsNumber' ( (lv_doorsNumber_4_0= ruleEInt ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) otherlv_9= '}'
+            // InternalHouseBuilderV2.g:2592:2: (otherlv_0= 'Window' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'doorsNumber' ( (lv_doorsNumber_4_0= ruleEInt ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) otherlv_9= '}' )
+            // InternalHouseBuilderV2.g:2593:3: otherlv_0= 'Window' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'doorsNumber' ( (lv_doorsNumber_4_0= ruleEInt ) ) otherlv_5= 'width' ( (lv_width_6_0= ruleEFloat ) ) otherlv_7= 'height' ( (lv_height_8_0= ruleEFloat ) ) otherlv_9= '}'
             {
-            otherlv_0=(Token)match(input,66,FOLLOW_3); 
+            otherlv_0=(Token)match(input,64,FOLLOW_3); 
 
             			newLeafNode(otherlv_0, grammarAccess.getWindowAccess().getWindowKeyword_0());
             		
-            // InternalHouseBuilderV2.g:2805:3: ( (lv_name_1_0= ruleEString ) )
-            // InternalHouseBuilderV2.g:2806:4: (lv_name_1_0= ruleEString )
+            // InternalHouseBuilderV2.g:2597:3: ( (lv_name_1_0= ruleEString ) )
+            // InternalHouseBuilderV2.g:2598:4: (lv_name_1_0= ruleEString )
             {
-            // InternalHouseBuilderV2.g:2806:4: (lv_name_1_0= ruleEString )
-            // InternalHouseBuilderV2.g:2807:5: lv_name_1_0= ruleEString
+            // InternalHouseBuilderV2.g:2598:4: (lv_name_1_0= ruleEString )
+            // InternalHouseBuilderV2.g:2599:5: lv_name_1_0= ruleEString
             {
 
             					newCompositeNode(grammarAccess.getWindowAccess().getNameEStringParserRuleCall_1_0());
@@ -6258,11 +5788,11 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_3, grammarAccess.getWindowAccess().getDoorsNumberKeyword_3());
             		
-            // InternalHouseBuilderV2.g:2832:3: ( (lv_doorsNumber_4_0= ruleEInt ) )
-            // InternalHouseBuilderV2.g:2833:4: (lv_doorsNumber_4_0= ruleEInt )
+            // InternalHouseBuilderV2.g:2624:3: ( (lv_doorsNumber_4_0= ruleEInt ) )
+            // InternalHouseBuilderV2.g:2625:4: (lv_doorsNumber_4_0= ruleEInt )
             {
-            // InternalHouseBuilderV2.g:2833:4: (lv_doorsNumber_4_0= ruleEInt )
-            // InternalHouseBuilderV2.g:2834:5: lv_doorsNumber_4_0= ruleEInt
+            // InternalHouseBuilderV2.g:2625:4: (lv_doorsNumber_4_0= ruleEInt )
+            // InternalHouseBuilderV2.g:2626:5: lv_doorsNumber_4_0= ruleEInt
             {
 
             					newCompositeNode(grammarAccess.getWindowAccess().getDoorsNumberEIntParserRuleCall_4_0());
@@ -6293,11 +5823,11 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_5, grammarAccess.getWindowAccess().getWidthKeyword_5());
             		
-            // InternalHouseBuilderV2.g:2855:3: ( (lv_width_6_0= ruleEFloat ) )
-            // InternalHouseBuilderV2.g:2856:4: (lv_width_6_0= ruleEFloat )
+            // InternalHouseBuilderV2.g:2647:3: ( (lv_width_6_0= ruleEFloat ) )
+            // InternalHouseBuilderV2.g:2648:4: (lv_width_6_0= ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:2856:4: (lv_width_6_0= ruleEFloat )
-            // InternalHouseBuilderV2.g:2857:5: lv_width_6_0= ruleEFloat
+            // InternalHouseBuilderV2.g:2648:4: (lv_width_6_0= ruleEFloat )
+            // InternalHouseBuilderV2.g:2649:5: lv_width_6_0= ruleEFloat
             {
 
             					newCompositeNode(grammarAccess.getWindowAccess().getWidthEFloatParserRuleCall_6_0());
@@ -6328,11 +5858,11 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_7, grammarAccess.getWindowAccess().getHeightKeyword_7());
             		
-            // InternalHouseBuilderV2.g:2878:3: ( (lv_height_8_0= ruleEFloat ) )
-            // InternalHouseBuilderV2.g:2879:4: (lv_height_8_0= ruleEFloat )
+            // InternalHouseBuilderV2.g:2670:3: ( (lv_height_8_0= ruleEFloat ) )
+            // InternalHouseBuilderV2.g:2671:4: (lv_height_8_0= ruleEFloat )
             {
-            // InternalHouseBuilderV2.g:2879:4: (lv_height_8_0= ruleEFloat )
-            // InternalHouseBuilderV2.g:2880:5: lv_height_8_0= ruleEFloat
+            // InternalHouseBuilderV2.g:2671:4: (lv_height_8_0= ruleEFloat )
+            // InternalHouseBuilderV2.g:2672:5: lv_height_8_0= ruleEFloat
             {
 
             					newCompositeNode(grammarAccess.getWindowAccess().getHeightEFloatParserRuleCall_8_0());
@@ -6386,7 +5916,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDeviceType"
-    // InternalHouseBuilderV2.g:2905:1: ruleDeviceType returns [Enumerator current=null] : ( (enumLiteral_0= 'THERMOSTAT' ) | (enumLiteral_1= 'APPLIANCE' ) | (enumLiteral_2= 'SOCKET' ) | (enumLiteral_3= 'ROLLER_SHUTTERS' ) | (enumLiteral_4= 'GATE' ) ) ;
+    // InternalHouseBuilderV2.g:2697:1: ruleDeviceType returns [Enumerator current=null] : ( (enumLiteral_0= 'THERMOSTAT' ) | (enumLiteral_1= 'APPLIANCE' ) | (enumLiteral_2= 'SOCKET' ) | (enumLiteral_3= 'ROLLER_SHUTTERS' ) | (enumLiteral_4= 'GATE' ) ) ;
     public final Enumerator ruleDeviceType() throws RecognitionException {
         Enumerator current = null;
 
@@ -6400,52 +5930,52 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:2911:2: ( ( (enumLiteral_0= 'THERMOSTAT' ) | (enumLiteral_1= 'APPLIANCE' ) | (enumLiteral_2= 'SOCKET' ) | (enumLiteral_3= 'ROLLER_SHUTTERS' ) | (enumLiteral_4= 'GATE' ) ) )
-            // InternalHouseBuilderV2.g:2912:2: ( (enumLiteral_0= 'THERMOSTAT' ) | (enumLiteral_1= 'APPLIANCE' ) | (enumLiteral_2= 'SOCKET' ) | (enumLiteral_3= 'ROLLER_SHUTTERS' ) | (enumLiteral_4= 'GATE' ) )
+            // InternalHouseBuilderV2.g:2703:2: ( ( (enumLiteral_0= 'THERMOSTAT' ) | (enumLiteral_1= 'APPLIANCE' ) | (enumLiteral_2= 'SOCKET' ) | (enumLiteral_3= 'ROLLER_SHUTTERS' ) | (enumLiteral_4= 'GATE' ) ) )
+            // InternalHouseBuilderV2.g:2704:2: ( (enumLiteral_0= 'THERMOSTAT' ) | (enumLiteral_1= 'APPLIANCE' ) | (enumLiteral_2= 'SOCKET' ) | (enumLiteral_3= 'ROLLER_SHUTTERS' ) | (enumLiteral_4= 'GATE' ) )
             {
-            // InternalHouseBuilderV2.g:2912:2: ( (enumLiteral_0= 'THERMOSTAT' ) | (enumLiteral_1= 'APPLIANCE' ) | (enumLiteral_2= 'SOCKET' ) | (enumLiteral_3= 'ROLLER_SHUTTERS' ) | (enumLiteral_4= 'GATE' ) )
-            int alt60=5;
+            // InternalHouseBuilderV2.g:2704:2: ( (enumLiteral_0= 'THERMOSTAT' ) | (enumLiteral_1= 'APPLIANCE' ) | (enumLiteral_2= 'SOCKET' ) | (enumLiteral_3= 'ROLLER_SHUTTERS' ) | (enumLiteral_4= 'GATE' ) )
+            int alt52=5;
             switch ( input.LA(1) ) {
+            case 65:
+                {
+                alt52=1;
+                }
+                break;
+            case 66:
+                {
+                alt52=2;
+                }
+                break;
             case 67:
                 {
-                alt60=1;
+                alt52=3;
                 }
                 break;
             case 68:
                 {
-                alt60=2;
+                alt52=4;
                 }
                 break;
             case 69:
                 {
-                alt60=3;
-                }
-                break;
-            case 70:
-                {
-                alt60=4;
-                }
-                break;
-            case 71:
-                {
-                alt60=5;
+                alt52=5;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 60, 0, input);
+                    new NoViableAltException("", 52, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt60) {
+            switch (alt52) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:2913:3: (enumLiteral_0= 'THERMOSTAT' )
+                    // InternalHouseBuilderV2.g:2705:3: (enumLiteral_0= 'THERMOSTAT' )
                     {
-                    // InternalHouseBuilderV2.g:2913:3: (enumLiteral_0= 'THERMOSTAT' )
-                    // InternalHouseBuilderV2.g:2914:4: enumLiteral_0= 'THERMOSTAT'
+                    // InternalHouseBuilderV2.g:2705:3: (enumLiteral_0= 'THERMOSTAT' )
+                    // InternalHouseBuilderV2.g:2706:4: enumLiteral_0= 'THERMOSTAT'
                     {
-                    enumLiteral_0=(Token)match(input,67,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,65,FOLLOW_2); 
 
                     				current = grammarAccess.getDeviceTypeAccess().getTHERMOSTATEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getDeviceTypeAccess().getTHERMOSTATEnumLiteralDeclaration_0());
@@ -6457,12 +5987,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalHouseBuilderV2.g:2921:3: (enumLiteral_1= 'APPLIANCE' )
+                    // InternalHouseBuilderV2.g:2713:3: (enumLiteral_1= 'APPLIANCE' )
                     {
-                    // InternalHouseBuilderV2.g:2921:3: (enumLiteral_1= 'APPLIANCE' )
-                    // InternalHouseBuilderV2.g:2922:4: enumLiteral_1= 'APPLIANCE'
+                    // InternalHouseBuilderV2.g:2713:3: (enumLiteral_1= 'APPLIANCE' )
+                    // InternalHouseBuilderV2.g:2714:4: enumLiteral_1= 'APPLIANCE'
                     {
-                    enumLiteral_1=(Token)match(input,68,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,66,FOLLOW_2); 
 
                     				current = grammarAccess.getDeviceTypeAccess().getAPPLIANCEEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getDeviceTypeAccess().getAPPLIANCEEnumLiteralDeclaration_1());
@@ -6474,12 +6004,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalHouseBuilderV2.g:2929:3: (enumLiteral_2= 'SOCKET' )
+                    // InternalHouseBuilderV2.g:2721:3: (enumLiteral_2= 'SOCKET' )
                     {
-                    // InternalHouseBuilderV2.g:2929:3: (enumLiteral_2= 'SOCKET' )
-                    // InternalHouseBuilderV2.g:2930:4: enumLiteral_2= 'SOCKET'
+                    // InternalHouseBuilderV2.g:2721:3: (enumLiteral_2= 'SOCKET' )
+                    // InternalHouseBuilderV2.g:2722:4: enumLiteral_2= 'SOCKET'
                     {
-                    enumLiteral_2=(Token)match(input,69,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,67,FOLLOW_2); 
 
                     				current = grammarAccess.getDeviceTypeAccess().getSOCKETEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_2, grammarAccess.getDeviceTypeAccess().getSOCKETEnumLiteralDeclaration_2());
@@ -6491,12 +6021,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalHouseBuilderV2.g:2937:3: (enumLiteral_3= 'ROLLER_SHUTTERS' )
+                    // InternalHouseBuilderV2.g:2729:3: (enumLiteral_3= 'ROLLER_SHUTTERS' )
                     {
-                    // InternalHouseBuilderV2.g:2937:3: (enumLiteral_3= 'ROLLER_SHUTTERS' )
-                    // InternalHouseBuilderV2.g:2938:4: enumLiteral_3= 'ROLLER_SHUTTERS'
+                    // InternalHouseBuilderV2.g:2729:3: (enumLiteral_3= 'ROLLER_SHUTTERS' )
+                    // InternalHouseBuilderV2.g:2730:4: enumLiteral_3= 'ROLLER_SHUTTERS'
                     {
-                    enumLiteral_3=(Token)match(input,70,FOLLOW_2); 
+                    enumLiteral_3=(Token)match(input,68,FOLLOW_2); 
 
                     				current = grammarAccess.getDeviceTypeAccess().getROLLER_SHUTTERSEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_3, grammarAccess.getDeviceTypeAccess().getROLLER_SHUTTERSEnumLiteralDeclaration_3());
@@ -6508,12 +6038,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalHouseBuilderV2.g:2945:3: (enumLiteral_4= 'GATE' )
+                    // InternalHouseBuilderV2.g:2737:3: (enumLiteral_4= 'GATE' )
                     {
-                    // InternalHouseBuilderV2.g:2945:3: (enumLiteral_4= 'GATE' )
-                    // InternalHouseBuilderV2.g:2946:4: enumLiteral_4= 'GATE'
+                    // InternalHouseBuilderV2.g:2737:3: (enumLiteral_4= 'GATE' )
+                    // InternalHouseBuilderV2.g:2738:4: enumLiteral_4= 'GATE'
                     {
-                    enumLiteral_4=(Token)match(input,71,FOLLOW_2); 
+                    enumLiteral_4=(Token)match(input,69,FOLLOW_2); 
 
                     				current = grammarAccess.getDeviceTypeAccess().getGATEEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_4, grammarAccess.getDeviceTypeAccess().getGATEEnumLiteralDeclaration_4());
@@ -6547,7 +6077,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleActuatorType"
-    // InternalHouseBuilderV2.g:2956:1: ruleActuatorType returns [Enumerator current=null] : ( (enumLiteral_0= 'IDRAULIC' ) | (enumLiteral_1= 'PNEUMATIC' ) | (enumLiteral_2= 'ELECTRICAL' ) | (enumLiteral_3= 'THERMAL' ) | (enumLiteral_4= 'MECHANICAL' ) ) ;
+    // InternalHouseBuilderV2.g:2748:1: ruleActuatorType returns [Enumerator current=null] : ( (enumLiteral_0= 'IDRAULIC' ) | (enumLiteral_1= 'PNEUMATIC' ) | (enumLiteral_2= 'ELECTRICAL' ) | (enumLiteral_3= 'THERMAL' ) | (enumLiteral_4= 'MECHANICAL' ) ) ;
     public final Enumerator ruleActuatorType() throws RecognitionException {
         Enumerator current = null;
 
@@ -6561,52 +6091,52 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:2962:2: ( ( (enumLiteral_0= 'IDRAULIC' ) | (enumLiteral_1= 'PNEUMATIC' ) | (enumLiteral_2= 'ELECTRICAL' ) | (enumLiteral_3= 'THERMAL' ) | (enumLiteral_4= 'MECHANICAL' ) ) )
-            // InternalHouseBuilderV2.g:2963:2: ( (enumLiteral_0= 'IDRAULIC' ) | (enumLiteral_1= 'PNEUMATIC' ) | (enumLiteral_2= 'ELECTRICAL' ) | (enumLiteral_3= 'THERMAL' ) | (enumLiteral_4= 'MECHANICAL' ) )
+            // InternalHouseBuilderV2.g:2754:2: ( ( (enumLiteral_0= 'IDRAULIC' ) | (enumLiteral_1= 'PNEUMATIC' ) | (enumLiteral_2= 'ELECTRICAL' ) | (enumLiteral_3= 'THERMAL' ) | (enumLiteral_4= 'MECHANICAL' ) ) )
+            // InternalHouseBuilderV2.g:2755:2: ( (enumLiteral_0= 'IDRAULIC' ) | (enumLiteral_1= 'PNEUMATIC' ) | (enumLiteral_2= 'ELECTRICAL' ) | (enumLiteral_3= 'THERMAL' ) | (enumLiteral_4= 'MECHANICAL' ) )
             {
-            // InternalHouseBuilderV2.g:2963:2: ( (enumLiteral_0= 'IDRAULIC' ) | (enumLiteral_1= 'PNEUMATIC' ) | (enumLiteral_2= 'ELECTRICAL' ) | (enumLiteral_3= 'THERMAL' ) | (enumLiteral_4= 'MECHANICAL' ) )
-            int alt61=5;
+            // InternalHouseBuilderV2.g:2755:2: ( (enumLiteral_0= 'IDRAULIC' ) | (enumLiteral_1= 'PNEUMATIC' ) | (enumLiteral_2= 'ELECTRICAL' ) | (enumLiteral_3= 'THERMAL' ) | (enumLiteral_4= 'MECHANICAL' ) )
+            int alt53=5;
             switch ( input.LA(1) ) {
+            case 70:
+                {
+                alt53=1;
+                }
+                break;
+            case 71:
+                {
+                alt53=2;
+                }
+                break;
             case 72:
                 {
-                alt61=1;
+                alt53=3;
                 }
                 break;
             case 73:
                 {
-                alt61=2;
+                alt53=4;
                 }
                 break;
             case 74:
                 {
-                alt61=3;
-                }
-                break;
-            case 75:
-                {
-                alt61=4;
-                }
-                break;
-            case 76:
-                {
-                alt61=5;
+                alt53=5;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 61, 0, input);
+                    new NoViableAltException("", 53, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt61) {
+            switch (alt53) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:2964:3: (enumLiteral_0= 'IDRAULIC' )
+                    // InternalHouseBuilderV2.g:2756:3: (enumLiteral_0= 'IDRAULIC' )
                     {
-                    // InternalHouseBuilderV2.g:2964:3: (enumLiteral_0= 'IDRAULIC' )
-                    // InternalHouseBuilderV2.g:2965:4: enumLiteral_0= 'IDRAULIC'
+                    // InternalHouseBuilderV2.g:2756:3: (enumLiteral_0= 'IDRAULIC' )
+                    // InternalHouseBuilderV2.g:2757:4: enumLiteral_0= 'IDRAULIC'
                     {
-                    enumLiteral_0=(Token)match(input,72,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,70,FOLLOW_2); 
 
                     				current = grammarAccess.getActuatorTypeAccess().getIDRAULICEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getActuatorTypeAccess().getIDRAULICEnumLiteralDeclaration_0());
@@ -6618,12 +6148,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalHouseBuilderV2.g:2972:3: (enumLiteral_1= 'PNEUMATIC' )
+                    // InternalHouseBuilderV2.g:2764:3: (enumLiteral_1= 'PNEUMATIC' )
                     {
-                    // InternalHouseBuilderV2.g:2972:3: (enumLiteral_1= 'PNEUMATIC' )
-                    // InternalHouseBuilderV2.g:2973:4: enumLiteral_1= 'PNEUMATIC'
+                    // InternalHouseBuilderV2.g:2764:3: (enumLiteral_1= 'PNEUMATIC' )
+                    // InternalHouseBuilderV2.g:2765:4: enumLiteral_1= 'PNEUMATIC'
                     {
-                    enumLiteral_1=(Token)match(input,73,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,71,FOLLOW_2); 
 
                     				current = grammarAccess.getActuatorTypeAccess().getPNEUMATICEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getActuatorTypeAccess().getPNEUMATICEnumLiteralDeclaration_1());
@@ -6635,12 +6165,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalHouseBuilderV2.g:2980:3: (enumLiteral_2= 'ELECTRICAL' )
+                    // InternalHouseBuilderV2.g:2772:3: (enumLiteral_2= 'ELECTRICAL' )
                     {
-                    // InternalHouseBuilderV2.g:2980:3: (enumLiteral_2= 'ELECTRICAL' )
-                    // InternalHouseBuilderV2.g:2981:4: enumLiteral_2= 'ELECTRICAL'
+                    // InternalHouseBuilderV2.g:2772:3: (enumLiteral_2= 'ELECTRICAL' )
+                    // InternalHouseBuilderV2.g:2773:4: enumLiteral_2= 'ELECTRICAL'
                     {
-                    enumLiteral_2=(Token)match(input,74,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,72,FOLLOW_2); 
 
                     				current = grammarAccess.getActuatorTypeAccess().getELECTRICALEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_2, grammarAccess.getActuatorTypeAccess().getELECTRICALEnumLiteralDeclaration_2());
@@ -6652,12 +6182,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalHouseBuilderV2.g:2988:3: (enumLiteral_3= 'THERMAL' )
+                    // InternalHouseBuilderV2.g:2780:3: (enumLiteral_3= 'THERMAL' )
                     {
-                    // InternalHouseBuilderV2.g:2988:3: (enumLiteral_3= 'THERMAL' )
-                    // InternalHouseBuilderV2.g:2989:4: enumLiteral_3= 'THERMAL'
+                    // InternalHouseBuilderV2.g:2780:3: (enumLiteral_3= 'THERMAL' )
+                    // InternalHouseBuilderV2.g:2781:4: enumLiteral_3= 'THERMAL'
                     {
-                    enumLiteral_3=(Token)match(input,75,FOLLOW_2); 
+                    enumLiteral_3=(Token)match(input,73,FOLLOW_2); 
 
                     				current = grammarAccess.getActuatorTypeAccess().getTHERMALEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_3, grammarAccess.getActuatorTypeAccess().getTHERMALEnumLiteralDeclaration_3());
@@ -6669,12 +6199,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalHouseBuilderV2.g:2996:3: (enumLiteral_4= 'MECHANICAL' )
+                    // InternalHouseBuilderV2.g:2788:3: (enumLiteral_4= 'MECHANICAL' )
                     {
-                    // InternalHouseBuilderV2.g:2996:3: (enumLiteral_4= 'MECHANICAL' )
-                    // InternalHouseBuilderV2.g:2997:4: enumLiteral_4= 'MECHANICAL'
+                    // InternalHouseBuilderV2.g:2788:3: (enumLiteral_4= 'MECHANICAL' )
+                    // InternalHouseBuilderV2.g:2789:4: enumLiteral_4= 'MECHANICAL'
                     {
-                    enumLiteral_4=(Token)match(input,76,FOLLOW_2); 
+                    enumLiteral_4=(Token)match(input,74,FOLLOW_2); 
 
                     				current = grammarAccess.getActuatorTypeAccess().getMECHANICALEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_4, grammarAccess.getActuatorTypeAccess().getMECHANICALEnumLiteralDeclaration_4());
@@ -6708,7 +6238,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSensorType"
-    // InternalHouseBuilderV2.g:3007:1: ruleSensorType returns [Enumerator current=null] : ( (enumLiteral_0= 'TEMPERATURE' ) | (enumLiteral_1= 'PRESSURE' ) | (enumLiteral_2= 'PROXIMITY' ) | (enumLiteral_3= 'ACCELEROMETER' ) | (enumLiteral_4= 'GAS' ) | (enumLiteral_5= 'SMOKE' ) | (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' ) ) ;
+    // InternalHouseBuilderV2.g:2799:1: ruleSensorType returns [Enumerator current=null] : ( (enumLiteral_0= 'TEMPERATURE' ) | (enumLiteral_1= 'PRESSURE' ) | (enumLiteral_2= 'PROXIMITY' ) | (enumLiteral_3= 'ACCELEROMETER' ) | (enumLiteral_4= 'GAS' ) | (enumLiteral_5= 'SMOKE' ) | (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' ) ) ;
     public final Enumerator ruleSensorType() throws RecognitionException {
         Enumerator current = null;
 
@@ -6724,62 +6254,62 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:3013:2: ( ( (enumLiteral_0= 'TEMPERATURE' ) | (enumLiteral_1= 'PRESSURE' ) | (enumLiteral_2= 'PROXIMITY' ) | (enumLiteral_3= 'ACCELEROMETER' ) | (enumLiteral_4= 'GAS' ) | (enumLiteral_5= 'SMOKE' ) | (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' ) ) )
-            // InternalHouseBuilderV2.g:3014:2: ( (enumLiteral_0= 'TEMPERATURE' ) | (enumLiteral_1= 'PRESSURE' ) | (enumLiteral_2= 'PROXIMITY' ) | (enumLiteral_3= 'ACCELEROMETER' ) | (enumLiteral_4= 'GAS' ) | (enumLiteral_5= 'SMOKE' ) | (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' ) )
+            // InternalHouseBuilderV2.g:2805:2: ( ( (enumLiteral_0= 'TEMPERATURE' ) | (enumLiteral_1= 'PRESSURE' ) | (enumLiteral_2= 'PROXIMITY' ) | (enumLiteral_3= 'ACCELEROMETER' ) | (enumLiteral_4= 'GAS' ) | (enumLiteral_5= 'SMOKE' ) | (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' ) ) )
+            // InternalHouseBuilderV2.g:2806:2: ( (enumLiteral_0= 'TEMPERATURE' ) | (enumLiteral_1= 'PRESSURE' ) | (enumLiteral_2= 'PROXIMITY' ) | (enumLiteral_3= 'ACCELEROMETER' ) | (enumLiteral_4= 'GAS' ) | (enumLiteral_5= 'SMOKE' ) | (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' ) )
             {
-            // InternalHouseBuilderV2.g:3014:2: ( (enumLiteral_0= 'TEMPERATURE' ) | (enumLiteral_1= 'PRESSURE' ) | (enumLiteral_2= 'PROXIMITY' ) | (enumLiteral_3= 'ACCELEROMETER' ) | (enumLiteral_4= 'GAS' ) | (enumLiteral_5= 'SMOKE' ) | (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' ) )
-            int alt62=7;
+            // InternalHouseBuilderV2.g:2806:2: ( (enumLiteral_0= 'TEMPERATURE' ) | (enumLiteral_1= 'PRESSURE' ) | (enumLiteral_2= 'PROXIMITY' ) | (enumLiteral_3= 'ACCELEROMETER' ) | (enumLiteral_4= 'GAS' ) | (enumLiteral_5= 'SMOKE' ) | (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' ) )
+            int alt54=7;
             switch ( input.LA(1) ) {
+            case 75:
+                {
+                alt54=1;
+                }
+                break;
+            case 76:
+                {
+                alt54=2;
+                }
+                break;
             case 77:
                 {
-                alt62=1;
+                alt54=3;
                 }
                 break;
             case 78:
                 {
-                alt62=2;
+                alt54=4;
                 }
                 break;
             case 79:
                 {
-                alt62=3;
+                alt54=5;
                 }
                 break;
             case 80:
                 {
-                alt62=4;
+                alt54=6;
                 }
                 break;
             case 81:
                 {
-                alt62=5;
-                }
-                break;
-            case 82:
-                {
-                alt62=6;
-                }
-                break;
-            case 83:
-                {
-                alt62=7;
+                alt54=7;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 62, 0, input);
+                    new NoViableAltException("", 54, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt62) {
+            switch (alt54) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:3015:3: (enumLiteral_0= 'TEMPERATURE' )
+                    // InternalHouseBuilderV2.g:2807:3: (enumLiteral_0= 'TEMPERATURE' )
                     {
-                    // InternalHouseBuilderV2.g:3015:3: (enumLiteral_0= 'TEMPERATURE' )
-                    // InternalHouseBuilderV2.g:3016:4: enumLiteral_0= 'TEMPERATURE'
+                    // InternalHouseBuilderV2.g:2807:3: (enumLiteral_0= 'TEMPERATURE' )
+                    // InternalHouseBuilderV2.g:2808:4: enumLiteral_0= 'TEMPERATURE'
                     {
-                    enumLiteral_0=(Token)match(input,77,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,75,FOLLOW_2); 
 
                     				current = grammarAccess.getSensorTypeAccess().getTEMPERATUREEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getSensorTypeAccess().getTEMPERATUREEnumLiteralDeclaration_0());
@@ -6791,12 +6321,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalHouseBuilderV2.g:3023:3: (enumLiteral_1= 'PRESSURE' )
+                    // InternalHouseBuilderV2.g:2815:3: (enumLiteral_1= 'PRESSURE' )
                     {
-                    // InternalHouseBuilderV2.g:3023:3: (enumLiteral_1= 'PRESSURE' )
-                    // InternalHouseBuilderV2.g:3024:4: enumLiteral_1= 'PRESSURE'
+                    // InternalHouseBuilderV2.g:2815:3: (enumLiteral_1= 'PRESSURE' )
+                    // InternalHouseBuilderV2.g:2816:4: enumLiteral_1= 'PRESSURE'
                     {
-                    enumLiteral_1=(Token)match(input,78,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,76,FOLLOW_2); 
 
                     				current = grammarAccess.getSensorTypeAccess().getPRESSUREEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getSensorTypeAccess().getPRESSUREEnumLiteralDeclaration_1());
@@ -6808,12 +6338,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalHouseBuilderV2.g:3031:3: (enumLiteral_2= 'PROXIMITY' )
+                    // InternalHouseBuilderV2.g:2823:3: (enumLiteral_2= 'PROXIMITY' )
                     {
-                    // InternalHouseBuilderV2.g:3031:3: (enumLiteral_2= 'PROXIMITY' )
-                    // InternalHouseBuilderV2.g:3032:4: enumLiteral_2= 'PROXIMITY'
+                    // InternalHouseBuilderV2.g:2823:3: (enumLiteral_2= 'PROXIMITY' )
+                    // InternalHouseBuilderV2.g:2824:4: enumLiteral_2= 'PROXIMITY'
                     {
-                    enumLiteral_2=(Token)match(input,79,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,77,FOLLOW_2); 
 
                     				current = grammarAccess.getSensorTypeAccess().getPROXIMITYEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_2, grammarAccess.getSensorTypeAccess().getPROXIMITYEnumLiteralDeclaration_2());
@@ -6825,12 +6355,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalHouseBuilderV2.g:3039:3: (enumLiteral_3= 'ACCELEROMETER' )
+                    // InternalHouseBuilderV2.g:2831:3: (enumLiteral_3= 'ACCELEROMETER' )
                     {
-                    // InternalHouseBuilderV2.g:3039:3: (enumLiteral_3= 'ACCELEROMETER' )
-                    // InternalHouseBuilderV2.g:3040:4: enumLiteral_3= 'ACCELEROMETER'
+                    // InternalHouseBuilderV2.g:2831:3: (enumLiteral_3= 'ACCELEROMETER' )
+                    // InternalHouseBuilderV2.g:2832:4: enumLiteral_3= 'ACCELEROMETER'
                     {
-                    enumLiteral_3=(Token)match(input,80,FOLLOW_2); 
+                    enumLiteral_3=(Token)match(input,78,FOLLOW_2); 
 
                     				current = grammarAccess.getSensorTypeAccess().getACCELEROMETEREnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_3, grammarAccess.getSensorTypeAccess().getACCELEROMETEREnumLiteralDeclaration_3());
@@ -6842,12 +6372,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalHouseBuilderV2.g:3047:3: (enumLiteral_4= 'GAS' )
+                    // InternalHouseBuilderV2.g:2839:3: (enumLiteral_4= 'GAS' )
                     {
-                    // InternalHouseBuilderV2.g:3047:3: (enumLiteral_4= 'GAS' )
-                    // InternalHouseBuilderV2.g:3048:4: enumLiteral_4= 'GAS'
+                    // InternalHouseBuilderV2.g:2839:3: (enumLiteral_4= 'GAS' )
+                    // InternalHouseBuilderV2.g:2840:4: enumLiteral_4= 'GAS'
                     {
-                    enumLiteral_4=(Token)match(input,81,FOLLOW_2); 
+                    enumLiteral_4=(Token)match(input,79,FOLLOW_2); 
 
                     				current = grammarAccess.getSensorTypeAccess().getGASEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_4, grammarAccess.getSensorTypeAccess().getGASEnumLiteralDeclaration_4());
@@ -6859,12 +6389,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // InternalHouseBuilderV2.g:3055:3: (enumLiteral_5= 'SMOKE' )
+                    // InternalHouseBuilderV2.g:2847:3: (enumLiteral_5= 'SMOKE' )
                     {
-                    // InternalHouseBuilderV2.g:3055:3: (enumLiteral_5= 'SMOKE' )
-                    // InternalHouseBuilderV2.g:3056:4: enumLiteral_5= 'SMOKE'
+                    // InternalHouseBuilderV2.g:2847:3: (enumLiteral_5= 'SMOKE' )
+                    // InternalHouseBuilderV2.g:2848:4: enumLiteral_5= 'SMOKE'
                     {
-                    enumLiteral_5=(Token)match(input,82,FOLLOW_2); 
+                    enumLiteral_5=(Token)match(input,80,FOLLOW_2); 
 
                     				current = grammarAccess.getSensorTypeAccess().getSMOKEEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_5, grammarAccess.getSensorTypeAccess().getSMOKEEnumLiteralDeclaration_5());
@@ -6876,12 +6406,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // InternalHouseBuilderV2.g:3063:3: (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' )
+                    // InternalHouseBuilderV2.g:2855:3: (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' )
                     {
-                    // InternalHouseBuilderV2.g:3063:3: (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' )
-                    // InternalHouseBuilderV2.g:3064:4: enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA'
+                    // InternalHouseBuilderV2.g:2855:3: (enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA' )
+                    // InternalHouseBuilderV2.g:2856:4: enumLiteral_6= 'VIDEO_SURVAILLANCE_CAMERA'
                     {
-                    enumLiteral_6=(Token)match(input,83,FOLLOW_2); 
+                    enumLiteral_6=(Token)match(input,81,FOLLOW_2); 
 
                     				current = grammarAccess.getSensorTypeAccess().getVIDEO_SURVAILLANCE_CAMERAEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_6, grammarAccess.getSensorTypeAccess().getVIDEO_SURVAILLANCE_CAMERAEnumLiteralDeclaration_6());
@@ -6915,7 +6445,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRoomType"
-    // InternalHouseBuilderV2.g:3074:1: ruleRoomType returns [Enumerator current=null] : ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'BATHROOM' ) | (enumLiteral_2= 'LIVING_ROOM' ) | (enumLiteral_3= 'BEDROOM' ) | (enumLiteral_4= 'HALLWAY' ) | (enumLiteral_5= 'STUDY' ) | (enumLiteral_6= 'ENTRANCE' ) | (enumLiteral_7= 'STORAGE_ROOM' ) | (enumLiteral_8= 'GARAGE' ) | (enumLiteral_9= 'LAUNDRY_ROOM' ) | (enumLiteral_10= 'HOBBY_ROOM' ) | (enumLiteral_11= 'CELLAR' ) | (enumLiteral_12= 'LUNCHROOM' ) | (enumLiteral_13= 'RUMPUS_ROOM' ) | (enumLiteral_14= 'STAIRS' ) | (enumLiteral_15= 'KITCHEN' ) ) ;
+    // InternalHouseBuilderV2.g:2866:1: ruleRoomType returns [Enumerator current=null] : ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'BATHROOM' ) | (enumLiteral_2= 'LIVING_ROOM' ) | (enumLiteral_3= 'BEDROOM' ) | (enumLiteral_4= 'HALLWAY' ) | (enumLiteral_5= 'STUDY' ) | (enumLiteral_6= 'ENTRANCE' ) | (enumLiteral_7= 'STORAGE_ROOM' ) | (enumLiteral_8= 'GARAGE' ) | (enumLiteral_9= 'LAUNDRY_ROOM' ) | (enumLiteral_10= 'HOBBY_ROOM' ) | (enumLiteral_11= 'CELLAR' ) | (enumLiteral_12= 'LUNCHROOM' ) | (enumLiteral_13= 'RUMPUS_ROOM' ) | (enumLiteral_14= 'STAIRS' ) | (enumLiteral_15= 'KITCHEN' ) ) ;
     public final Enumerator ruleRoomType() throws RecognitionException {
         Enumerator current = null;
 
@@ -6940,107 +6470,107 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:3080:2: ( ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'BATHROOM' ) | (enumLiteral_2= 'LIVING_ROOM' ) | (enumLiteral_3= 'BEDROOM' ) | (enumLiteral_4= 'HALLWAY' ) | (enumLiteral_5= 'STUDY' ) | (enumLiteral_6= 'ENTRANCE' ) | (enumLiteral_7= 'STORAGE_ROOM' ) | (enumLiteral_8= 'GARAGE' ) | (enumLiteral_9= 'LAUNDRY_ROOM' ) | (enumLiteral_10= 'HOBBY_ROOM' ) | (enumLiteral_11= 'CELLAR' ) | (enumLiteral_12= 'LUNCHROOM' ) | (enumLiteral_13= 'RUMPUS_ROOM' ) | (enumLiteral_14= 'STAIRS' ) | (enumLiteral_15= 'KITCHEN' ) ) )
-            // InternalHouseBuilderV2.g:3081:2: ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'BATHROOM' ) | (enumLiteral_2= 'LIVING_ROOM' ) | (enumLiteral_3= 'BEDROOM' ) | (enumLiteral_4= 'HALLWAY' ) | (enumLiteral_5= 'STUDY' ) | (enumLiteral_6= 'ENTRANCE' ) | (enumLiteral_7= 'STORAGE_ROOM' ) | (enumLiteral_8= 'GARAGE' ) | (enumLiteral_9= 'LAUNDRY_ROOM' ) | (enumLiteral_10= 'HOBBY_ROOM' ) | (enumLiteral_11= 'CELLAR' ) | (enumLiteral_12= 'LUNCHROOM' ) | (enumLiteral_13= 'RUMPUS_ROOM' ) | (enumLiteral_14= 'STAIRS' ) | (enumLiteral_15= 'KITCHEN' ) )
+            // InternalHouseBuilderV2.g:2872:2: ( ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'BATHROOM' ) | (enumLiteral_2= 'LIVING_ROOM' ) | (enumLiteral_3= 'BEDROOM' ) | (enumLiteral_4= 'HALLWAY' ) | (enumLiteral_5= 'STUDY' ) | (enumLiteral_6= 'ENTRANCE' ) | (enumLiteral_7= 'STORAGE_ROOM' ) | (enumLiteral_8= 'GARAGE' ) | (enumLiteral_9= 'LAUNDRY_ROOM' ) | (enumLiteral_10= 'HOBBY_ROOM' ) | (enumLiteral_11= 'CELLAR' ) | (enumLiteral_12= 'LUNCHROOM' ) | (enumLiteral_13= 'RUMPUS_ROOM' ) | (enumLiteral_14= 'STAIRS' ) | (enumLiteral_15= 'KITCHEN' ) ) )
+            // InternalHouseBuilderV2.g:2873:2: ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'BATHROOM' ) | (enumLiteral_2= 'LIVING_ROOM' ) | (enumLiteral_3= 'BEDROOM' ) | (enumLiteral_4= 'HALLWAY' ) | (enumLiteral_5= 'STUDY' ) | (enumLiteral_6= 'ENTRANCE' ) | (enumLiteral_7= 'STORAGE_ROOM' ) | (enumLiteral_8= 'GARAGE' ) | (enumLiteral_9= 'LAUNDRY_ROOM' ) | (enumLiteral_10= 'HOBBY_ROOM' ) | (enumLiteral_11= 'CELLAR' ) | (enumLiteral_12= 'LUNCHROOM' ) | (enumLiteral_13= 'RUMPUS_ROOM' ) | (enumLiteral_14= 'STAIRS' ) | (enumLiteral_15= 'KITCHEN' ) )
             {
-            // InternalHouseBuilderV2.g:3081:2: ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'BATHROOM' ) | (enumLiteral_2= 'LIVING_ROOM' ) | (enumLiteral_3= 'BEDROOM' ) | (enumLiteral_4= 'HALLWAY' ) | (enumLiteral_5= 'STUDY' ) | (enumLiteral_6= 'ENTRANCE' ) | (enumLiteral_7= 'STORAGE_ROOM' ) | (enumLiteral_8= 'GARAGE' ) | (enumLiteral_9= 'LAUNDRY_ROOM' ) | (enumLiteral_10= 'HOBBY_ROOM' ) | (enumLiteral_11= 'CELLAR' ) | (enumLiteral_12= 'LUNCHROOM' ) | (enumLiteral_13= 'RUMPUS_ROOM' ) | (enumLiteral_14= 'STAIRS' ) | (enumLiteral_15= 'KITCHEN' ) )
-            int alt63=16;
+            // InternalHouseBuilderV2.g:2873:2: ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'BATHROOM' ) | (enumLiteral_2= 'LIVING_ROOM' ) | (enumLiteral_3= 'BEDROOM' ) | (enumLiteral_4= 'HALLWAY' ) | (enumLiteral_5= 'STUDY' ) | (enumLiteral_6= 'ENTRANCE' ) | (enumLiteral_7= 'STORAGE_ROOM' ) | (enumLiteral_8= 'GARAGE' ) | (enumLiteral_9= 'LAUNDRY_ROOM' ) | (enumLiteral_10= 'HOBBY_ROOM' ) | (enumLiteral_11= 'CELLAR' ) | (enumLiteral_12= 'LUNCHROOM' ) | (enumLiteral_13= 'RUMPUS_ROOM' ) | (enumLiteral_14= 'STAIRS' ) | (enumLiteral_15= 'KITCHEN' ) )
+            int alt55=16;
             switch ( input.LA(1) ) {
+            case 82:
+                {
+                alt55=1;
+                }
+                break;
+            case 83:
+                {
+                alt55=2;
+                }
+                break;
             case 84:
                 {
-                alt63=1;
+                alt55=3;
                 }
                 break;
             case 85:
                 {
-                alt63=2;
+                alt55=4;
                 }
                 break;
             case 86:
                 {
-                alt63=3;
+                alt55=5;
                 }
                 break;
             case 87:
                 {
-                alt63=4;
+                alt55=6;
                 }
                 break;
             case 88:
                 {
-                alt63=5;
+                alt55=7;
                 }
                 break;
             case 89:
                 {
-                alt63=6;
+                alt55=8;
                 }
                 break;
             case 90:
                 {
-                alt63=7;
+                alt55=9;
                 }
                 break;
             case 91:
                 {
-                alt63=8;
+                alt55=10;
                 }
                 break;
             case 92:
                 {
-                alt63=9;
+                alt55=11;
                 }
                 break;
             case 93:
                 {
-                alt63=10;
+                alt55=12;
                 }
                 break;
             case 94:
                 {
-                alt63=11;
+                alt55=13;
                 }
                 break;
             case 95:
                 {
-                alt63=12;
+                alt55=14;
                 }
                 break;
             case 96:
                 {
-                alt63=13;
+                alt55=15;
                 }
                 break;
             case 97:
                 {
-                alt63=14;
-                }
-                break;
-            case 98:
-                {
-                alt63=15;
-                }
-                break;
-            case 99:
-                {
-                alt63=16;
+                alt55=16;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 63, 0, input);
+                    new NoViableAltException("", 55, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt63) {
+            switch (alt55) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:3082:3: (enumLiteral_0= 'SIMPLE' )
+                    // InternalHouseBuilderV2.g:2874:3: (enumLiteral_0= 'SIMPLE' )
                     {
-                    // InternalHouseBuilderV2.g:3082:3: (enumLiteral_0= 'SIMPLE' )
-                    // InternalHouseBuilderV2.g:3083:4: enumLiteral_0= 'SIMPLE'
+                    // InternalHouseBuilderV2.g:2874:3: (enumLiteral_0= 'SIMPLE' )
+                    // InternalHouseBuilderV2.g:2875:4: enumLiteral_0= 'SIMPLE'
                     {
-                    enumLiteral_0=(Token)match(input,84,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,82,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getSIMPLEEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getRoomTypeAccess().getSIMPLEEnumLiteralDeclaration_0());
@@ -7052,12 +6582,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalHouseBuilderV2.g:3090:3: (enumLiteral_1= 'BATHROOM' )
+                    // InternalHouseBuilderV2.g:2882:3: (enumLiteral_1= 'BATHROOM' )
                     {
-                    // InternalHouseBuilderV2.g:3090:3: (enumLiteral_1= 'BATHROOM' )
-                    // InternalHouseBuilderV2.g:3091:4: enumLiteral_1= 'BATHROOM'
+                    // InternalHouseBuilderV2.g:2882:3: (enumLiteral_1= 'BATHROOM' )
+                    // InternalHouseBuilderV2.g:2883:4: enumLiteral_1= 'BATHROOM'
                     {
-                    enumLiteral_1=(Token)match(input,85,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,83,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getBATHROOMEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getRoomTypeAccess().getBATHROOMEnumLiteralDeclaration_1());
@@ -7069,12 +6599,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalHouseBuilderV2.g:3098:3: (enumLiteral_2= 'LIVING_ROOM' )
+                    // InternalHouseBuilderV2.g:2890:3: (enumLiteral_2= 'LIVING_ROOM' )
                     {
-                    // InternalHouseBuilderV2.g:3098:3: (enumLiteral_2= 'LIVING_ROOM' )
-                    // InternalHouseBuilderV2.g:3099:4: enumLiteral_2= 'LIVING_ROOM'
+                    // InternalHouseBuilderV2.g:2890:3: (enumLiteral_2= 'LIVING_ROOM' )
+                    // InternalHouseBuilderV2.g:2891:4: enumLiteral_2= 'LIVING_ROOM'
                     {
-                    enumLiteral_2=(Token)match(input,86,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,84,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getLIVING_ROOMEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_2, grammarAccess.getRoomTypeAccess().getLIVING_ROOMEnumLiteralDeclaration_2());
@@ -7086,12 +6616,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalHouseBuilderV2.g:3106:3: (enumLiteral_3= 'BEDROOM' )
+                    // InternalHouseBuilderV2.g:2898:3: (enumLiteral_3= 'BEDROOM' )
                     {
-                    // InternalHouseBuilderV2.g:3106:3: (enumLiteral_3= 'BEDROOM' )
-                    // InternalHouseBuilderV2.g:3107:4: enumLiteral_3= 'BEDROOM'
+                    // InternalHouseBuilderV2.g:2898:3: (enumLiteral_3= 'BEDROOM' )
+                    // InternalHouseBuilderV2.g:2899:4: enumLiteral_3= 'BEDROOM'
                     {
-                    enumLiteral_3=(Token)match(input,87,FOLLOW_2); 
+                    enumLiteral_3=(Token)match(input,85,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getBEDROOMEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_3, grammarAccess.getRoomTypeAccess().getBEDROOMEnumLiteralDeclaration_3());
@@ -7103,12 +6633,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalHouseBuilderV2.g:3114:3: (enumLiteral_4= 'HALLWAY' )
+                    // InternalHouseBuilderV2.g:2906:3: (enumLiteral_4= 'HALLWAY' )
                     {
-                    // InternalHouseBuilderV2.g:3114:3: (enumLiteral_4= 'HALLWAY' )
-                    // InternalHouseBuilderV2.g:3115:4: enumLiteral_4= 'HALLWAY'
+                    // InternalHouseBuilderV2.g:2906:3: (enumLiteral_4= 'HALLWAY' )
+                    // InternalHouseBuilderV2.g:2907:4: enumLiteral_4= 'HALLWAY'
                     {
-                    enumLiteral_4=(Token)match(input,88,FOLLOW_2); 
+                    enumLiteral_4=(Token)match(input,86,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getHALLWAYEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_4, grammarAccess.getRoomTypeAccess().getHALLWAYEnumLiteralDeclaration_4());
@@ -7120,12 +6650,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // InternalHouseBuilderV2.g:3122:3: (enumLiteral_5= 'STUDY' )
+                    // InternalHouseBuilderV2.g:2914:3: (enumLiteral_5= 'STUDY' )
                     {
-                    // InternalHouseBuilderV2.g:3122:3: (enumLiteral_5= 'STUDY' )
-                    // InternalHouseBuilderV2.g:3123:4: enumLiteral_5= 'STUDY'
+                    // InternalHouseBuilderV2.g:2914:3: (enumLiteral_5= 'STUDY' )
+                    // InternalHouseBuilderV2.g:2915:4: enumLiteral_5= 'STUDY'
                     {
-                    enumLiteral_5=(Token)match(input,89,FOLLOW_2); 
+                    enumLiteral_5=(Token)match(input,87,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getSTUDYEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_5, grammarAccess.getRoomTypeAccess().getSTUDYEnumLiteralDeclaration_5());
@@ -7137,12 +6667,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // InternalHouseBuilderV2.g:3130:3: (enumLiteral_6= 'ENTRANCE' )
+                    // InternalHouseBuilderV2.g:2922:3: (enumLiteral_6= 'ENTRANCE' )
                     {
-                    // InternalHouseBuilderV2.g:3130:3: (enumLiteral_6= 'ENTRANCE' )
-                    // InternalHouseBuilderV2.g:3131:4: enumLiteral_6= 'ENTRANCE'
+                    // InternalHouseBuilderV2.g:2922:3: (enumLiteral_6= 'ENTRANCE' )
+                    // InternalHouseBuilderV2.g:2923:4: enumLiteral_6= 'ENTRANCE'
                     {
-                    enumLiteral_6=(Token)match(input,90,FOLLOW_2); 
+                    enumLiteral_6=(Token)match(input,88,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getENTRANCEEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_6, grammarAccess.getRoomTypeAccess().getENTRANCEEnumLiteralDeclaration_6());
@@ -7154,12 +6684,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 8 :
-                    // InternalHouseBuilderV2.g:3138:3: (enumLiteral_7= 'STORAGE_ROOM' )
+                    // InternalHouseBuilderV2.g:2930:3: (enumLiteral_7= 'STORAGE_ROOM' )
                     {
-                    // InternalHouseBuilderV2.g:3138:3: (enumLiteral_7= 'STORAGE_ROOM' )
-                    // InternalHouseBuilderV2.g:3139:4: enumLiteral_7= 'STORAGE_ROOM'
+                    // InternalHouseBuilderV2.g:2930:3: (enumLiteral_7= 'STORAGE_ROOM' )
+                    // InternalHouseBuilderV2.g:2931:4: enumLiteral_7= 'STORAGE_ROOM'
                     {
-                    enumLiteral_7=(Token)match(input,91,FOLLOW_2); 
+                    enumLiteral_7=(Token)match(input,89,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getSTORAGE_ROOMEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_7, grammarAccess.getRoomTypeAccess().getSTORAGE_ROOMEnumLiteralDeclaration_7());
@@ -7171,12 +6701,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 9 :
-                    // InternalHouseBuilderV2.g:3146:3: (enumLiteral_8= 'GARAGE' )
+                    // InternalHouseBuilderV2.g:2938:3: (enumLiteral_8= 'GARAGE' )
                     {
-                    // InternalHouseBuilderV2.g:3146:3: (enumLiteral_8= 'GARAGE' )
-                    // InternalHouseBuilderV2.g:3147:4: enumLiteral_8= 'GARAGE'
+                    // InternalHouseBuilderV2.g:2938:3: (enumLiteral_8= 'GARAGE' )
+                    // InternalHouseBuilderV2.g:2939:4: enumLiteral_8= 'GARAGE'
                     {
-                    enumLiteral_8=(Token)match(input,92,FOLLOW_2); 
+                    enumLiteral_8=(Token)match(input,90,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getGARAGEEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_8, grammarAccess.getRoomTypeAccess().getGARAGEEnumLiteralDeclaration_8());
@@ -7188,12 +6718,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 10 :
-                    // InternalHouseBuilderV2.g:3154:3: (enumLiteral_9= 'LAUNDRY_ROOM' )
+                    // InternalHouseBuilderV2.g:2946:3: (enumLiteral_9= 'LAUNDRY_ROOM' )
                     {
-                    // InternalHouseBuilderV2.g:3154:3: (enumLiteral_9= 'LAUNDRY_ROOM' )
-                    // InternalHouseBuilderV2.g:3155:4: enumLiteral_9= 'LAUNDRY_ROOM'
+                    // InternalHouseBuilderV2.g:2946:3: (enumLiteral_9= 'LAUNDRY_ROOM' )
+                    // InternalHouseBuilderV2.g:2947:4: enumLiteral_9= 'LAUNDRY_ROOM'
                     {
-                    enumLiteral_9=(Token)match(input,93,FOLLOW_2); 
+                    enumLiteral_9=(Token)match(input,91,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getLAUNDRY_ROOMEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_9, grammarAccess.getRoomTypeAccess().getLAUNDRY_ROOMEnumLiteralDeclaration_9());
@@ -7205,12 +6735,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 11 :
-                    // InternalHouseBuilderV2.g:3162:3: (enumLiteral_10= 'HOBBY_ROOM' )
+                    // InternalHouseBuilderV2.g:2954:3: (enumLiteral_10= 'HOBBY_ROOM' )
                     {
-                    // InternalHouseBuilderV2.g:3162:3: (enumLiteral_10= 'HOBBY_ROOM' )
-                    // InternalHouseBuilderV2.g:3163:4: enumLiteral_10= 'HOBBY_ROOM'
+                    // InternalHouseBuilderV2.g:2954:3: (enumLiteral_10= 'HOBBY_ROOM' )
+                    // InternalHouseBuilderV2.g:2955:4: enumLiteral_10= 'HOBBY_ROOM'
                     {
-                    enumLiteral_10=(Token)match(input,94,FOLLOW_2); 
+                    enumLiteral_10=(Token)match(input,92,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getHOBBY_ROOMEnumLiteralDeclaration_10().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_10, grammarAccess.getRoomTypeAccess().getHOBBY_ROOMEnumLiteralDeclaration_10());
@@ -7222,12 +6752,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 12 :
-                    // InternalHouseBuilderV2.g:3170:3: (enumLiteral_11= 'CELLAR' )
+                    // InternalHouseBuilderV2.g:2962:3: (enumLiteral_11= 'CELLAR' )
                     {
-                    // InternalHouseBuilderV2.g:3170:3: (enumLiteral_11= 'CELLAR' )
-                    // InternalHouseBuilderV2.g:3171:4: enumLiteral_11= 'CELLAR'
+                    // InternalHouseBuilderV2.g:2962:3: (enumLiteral_11= 'CELLAR' )
+                    // InternalHouseBuilderV2.g:2963:4: enumLiteral_11= 'CELLAR'
                     {
-                    enumLiteral_11=(Token)match(input,95,FOLLOW_2); 
+                    enumLiteral_11=(Token)match(input,93,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getCELLAREnumLiteralDeclaration_11().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_11, grammarAccess.getRoomTypeAccess().getCELLAREnumLiteralDeclaration_11());
@@ -7239,12 +6769,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 13 :
-                    // InternalHouseBuilderV2.g:3178:3: (enumLiteral_12= 'LUNCHROOM' )
+                    // InternalHouseBuilderV2.g:2970:3: (enumLiteral_12= 'LUNCHROOM' )
                     {
-                    // InternalHouseBuilderV2.g:3178:3: (enumLiteral_12= 'LUNCHROOM' )
-                    // InternalHouseBuilderV2.g:3179:4: enumLiteral_12= 'LUNCHROOM'
+                    // InternalHouseBuilderV2.g:2970:3: (enumLiteral_12= 'LUNCHROOM' )
+                    // InternalHouseBuilderV2.g:2971:4: enumLiteral_12= 'LUNCHROOM'
                     {
-                    enumLiteral_12=(Token)match(input,96,FOLLOW_2); 
+                    enumLiteral_12=(Token)match(input,94,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getLUNCHROOMEnumLiteralDeclaration_12().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_12, grammarAccess.getRoomTypeAccess().getLUNCHROOMEnumLiteralDeclaration_12());
@@ -7256,12 +6786,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 14 :
-                    // InternalHouseBuilderV2.g:3186:3: (enumLiteral_13= 'RUMPUS_ROOM' )
+                    // InternalHouseBuilderV2.g:2978:3: (enumLiteral_13= 'RUMPUS_ROOM' )
                     {
-                    // InternalHouseBuilderV2.g:3186:3: (enumLiteral_13= 'RUMPUS_ROOM' )
-                    // InternalHouseBuilderV2.g:3187:4: enumLiteral_13= 'RUMPUS_ROOM'
+                    // InternalHouseBuilderV2.g:2978:3: (enumLiteral_13= 'RUMPUS_ROOM' )
+                    // InternalHouseBuilderV2.g:2979:4: enumLiteral_13= 'RUMPUS_ROOM'
                     {
-                    enumLiteral_13=(Token)match(input,97,FOLLOW_2); 
+                    enumLiteral_13=(Token)match(input,95,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getRUMPUS_ROOMEnumLiteralDeclaration_13().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_13, grammarAccess.getRoomTypeAccess().getRUMPUS_ROOMEnumLiteralDeclaration_13());
@@ -7273,12 +6803,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 15 :
-                    // InternalHouseBuilderV2.g:3194:3: (enumLiteral_14= 'STAIRS' )
+                    // InternalHouseBuilderV2.g:2986:3: (enumLiteral_14= 'STAIRS' )
                     {
-                    // InternalHouseBuilderV2.g:3194:3: (enumLiteral_14= 'STAIRS' )
-                    // InternalHouseBuilderV2.g:3195:4: enumLiteral_14= 'STAIRS'
+                    // InternalHouseBuilderV2.g:2986:3: (enumLiteral_14= 'STAIRS' )
+                    // InternalHouseBuilderV2.g:2987:4: enumLiteral_14= 'STAIRS'
                     {
-                    enumLiteral_14=(Token)match(input,98,FOLLOW_2); 
+                    enumLiteral_14=(Token)match(input,96,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getSTAIRSEnumLiteralDeclaration_14().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_14, grammarAccess.getRoomTypeAccess().getSTAIRSEnumLiteralDeclaration_14());
@@ -7290,12 +6820,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 16 :
-                    // InternalHouseBuilderV2.g:3202:3: (enumLiteral_15= 'KITCHEN' )
+                    // InternalHouseBuilderV2.g:2994:3: (enumLiteral_15= 'KITCHEN' )
                     {
-                    // InternalHouseBuilderV2.g:3202:3: (enumLiteral_15= 'KITCHEN' )
-                    // InternalHouseBuilderV2.g:3203:4: enumLiteral_15= 'KITCHEN'
+                    // InternalHouseBuilderV2.g:2994:3: (enumLiteral_15= 'KITCHEN' )
+                    // InternalHouseBuilderV2.g:2995:4: enumLiteral_15= 'KITCHEN'
                     {
-                    enumLiteral_15=(Token)match(input,99,FOLLOW_2); 
+                    enumLiteral_15=(Token)match(input,97,FOLLOW_2); 
 
                     				current = grammarAccess.getRoomTypeAccess().getKITCHENEnumLiteralDeclaration_15().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_15, grammarAccess.getRoomTypeAccess().getKITCHENEnumLiteralDeclaration_15());
@@ -7329,7 +6859,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOuterSpaceType"
-    // InternalHouseBuilderV2.g:3213:1: ruleOuterSpaceType returns [Enumerator current=null] : ( (enumLiteral_0= 'BALCONY' ) | (enumLiteral_1= 'GARDEN' ) | (enumLiteral_2= 'TERRACE' ) ) ;
+    // InternalHouseBuilderV2.g:3005:1: ruleOuterSpaceType returns [Enumerator current=null] : ( (enumLiteral_0= 'BALCONY' ) | (enumLiteral_1= 'GARDEN' ) | (enumLiteral_2= 'TERRACE' ) ) ;
     public final Enumerator ruleOuterSpaceType() throws RecognitionException {
         Enumerator current = null;
 
@@ -7341,42 +6871,42 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:3219:2: ( ( (enumLiteral_0= 'BALCONY' ) | (enumLiteral_1= 'GARDEN' ) | (enumLiteral_2= 'TERRACE' ) ) )
-            // InternalHouseBuilderV2.g:3220:2: ( (enumLiteral_0= 'BALCONY' ) | (enumLiteral_1= 'GARDEN' ) | (enumLiteral_2= 'TERRACE' ) )
+            // InternalHouseBuilderV2.g:3011:2: ( ( (enumLiteral_0= 'BALCONY' ) | (enumLiteral_1= 'GARDEN' ) | (enumLiteral_2= 'TERRACE' ) ) )
+            // InternalHouseBuilderV2.g:3012:2: ( (enumLiteral_0= 'BALCONY' ) | (enumLiteral_1= 'GARDEN' ) | (enumLiteral_2= 'TERRACE' ) )
             {
-            // InternalHouseBuilderV2.g:3220:2: ( (enumLiteral_0= 'BALCONY' ) | (enumLiteral_1= 'GARDEN' ) | (enumLiteral_2= 'TERRACE' ) )
-            int alt64=3;
+            // InternalHouseBuilderV2.g:3012:2: ( (enumLiteral_0= 'BALCONY' ) | (enumLiteral_1= 'GARDEN' ) | (enumLiteral_2= 'TERRACE' ) )
+            int alt56=3;
             switch ( input.LA(1) ) {
+            case 98:
+                {
+                alt56=1;
+                }
+                break;
+            case 99:
+                {
+                alt56=2;
+                }
+                break;
             case 100:
                 {
-                alt64=1;
-                }
-                break;
-            case 101:
-                {
-                alt64=2;
-                }
-                break;
-            case 102:
-                {
-                alt64=3;
+                alt56=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 64, 0, input);
+                    new NoViableAltException("", 56, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt64) {
+            switch (alt56) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:3221:3: (enumLiteral_0= 'BALCONY' )
+                    // InternalHouseBuilderV2.g:3013:3: (enumLiteral_0= 'BALCONY' )
                     {
-                    // InternalHouseBuilderV2.g:3221:3: (enumLiteral_0= 'BALCONY' )
-                    // InternalHouseBuilderV2.g:3222:4: enumLiteral_0= 'BALCONY'
+                    // InternalHouseBuilderV2.g:3013:3: (enumLiteral_0= 'BALCONY' )
+                    // InternalHouseBuilderV2.g:3014:4: enumLiteral_0= 'BALCONY'
                     {
-                    enumLiteral_0=(Token)match(input,100,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,98,FOLLOW_2); 
 
                     				current = grammarAccess.getOuterSpaceTypeAccess().getBALCONYEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getOuterSpaceTypeAccess().getBALCONYEnumLiteralDeclaration_0());
@@ -7388,12 +6918,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalHouseBuilderV2.g:3229:3: (enumLiteral_1= 'GARDEN' )
+                    // InternalHouseBuilderV2.g:3021:3: (enumLiteral_1= 'GARDEN' )
                     {
-                    // InternalHouseBuilderV2.g:3229:3: (enumLiteral_1= 'GARDEN' )
-                    // InternalHouseBuilderV2.g:3230:4: enumLiteral_1= 'GARDEN'
+                    // InternalHouseBuilderV2.g:3021:3: (enumLiteral_1= 'GARDEN' )
+                    // InternalHouseBuilderV2.g:3022:4: enumLiteral_1= 'GARDEN'
                     {
-                    enumLiteral_1=(Token)match(input,101,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,99,FOLLOW_2); 
 
                     				current = grammarAccess.getOuterSpaceTypeAccess().getGARDENEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getOuterSpaceTypeAccess().getGARDENEnumLiteralDeclaration_1());
@@ -7405,12 +6935,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalHouseBuilderV2.g:3237:3: (enumLiteral_2= 'TERRACE' )
+                    // InternalHouseBuilderV2.g:3029:3: (enumLiteral_2= 'TERRACE' )
                     {
-                    // InternalHouseBuilderV2.g:3237:3: (enumLiteral_2= 'TERRACE' )
-                    // InternalHouseBuilderV2.g:3238:4: enumLiteral_2= 'TERRACE'
+                    // InternalHouseBuilderV2.g:3029:3: (enumLiteral_2= 'TERRACE' )
+                    // InternalHouseBuilderV2.g:3030:4: enumLiteral_2= 'TERRACE'
                     {
-                    enumLiteral_2=(Token)match(input,102,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,100,FOLLOW_2); 
 
                     				current = grammarAccess.getOuterSpaceTypeAccess().getTERRACEEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_2, grammarAccess.getOuterSpaceTypeAccess().getTERRACEEnumLiteralDeclaration_2());
@@ -7444,7 +6974,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleGroundType"
-    // InternalHouseBuilderV2.g:3248:1: ruleGroundType returns [Enumerator current=null] : ( (enumLiteral_0= 'ASPALTH' ) | (enumLiteral_1= 'TERRAIN' ) | (enumLiteral_2= 'PAVING' ) ) ;
+    // InternalHouseBuilderV2.g:3040:1: ruleGroundType returns [Enumerator current=null] : ( (enumLiteral_0= 'ASPALTH' ) | (enumLiteral_1= 'TERRAIN' ) | (enumLiteral_2= 'PAVING' ) ) ;
     public final Enumerator ruleGroundType() throws RecognitionException {
         Enumerator current = null;
 
@@ -7456,42 +6986,42 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:3254:2: ( ( (enumLiteral_0= 'ASPALTH' ) | (enumLiteral_1= 'TERRAIN' ) | (enumLiteral_2= 'PAVING' ) ) )
-            // InternalHouseBuilderV2.g:3255:2: ( (enumLiteral_0= 'ASPALTH' ) | (enumLiteral_1= 'TERRAIN' ) | (enumLiteral_2= 'PAVING' ) )
+            // InternalHouseBuilderV2.g:3046:2: ( ( (enumLiteral_0= 'ASPALTH' ) | (enumLiteral_1= 'TERRAIN' ) | (enumLiteral_2= 'PAVING' ) ) )
+            // InternalHouseBuilderV2.g:3047:2: ( (enumLiteral_0= 'ASPALTH' ) | (enumLiteral_1= 'TERRAIN' ) | (enumLiteral_2= 'PAVING' ) )
             {
-            // InternalHouseBuilderV2.g:3255:2: ( (enumLiteral_0= 'ASPALTH' ) | (enumLiteral_1= 'TERRAIN' ) | (enumLiteral_2= 'PAVING' ) )
-            int alt65=3;
+            // InternalHouseBuilderV2.g:3047:2: ( (enumLiteral_0= 'ASPALTH' ) | (enumLiteral_1= 'TERRAIN' ) | (enumLiteral_2= 'PAVING' ) )
+            int alt57=3;
             switch ( input.LA(1) ) {
+            case 101:
+                {
+                alt57=1;
+                }
+                break;
+            case 102:
+                {
+                alt57=2;
+                }
+                break;
             case 103:
                 {
-                alt65=1;
-                }
-                break;
-            case 104:
-                {
-                alt65=2;
-                }
-                break;
-            case 105:
-                {
-                alt65=3;
+                alt57=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 65, 0, input);
+                    new NoViableAltException("", 57, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt65) {
+            switch (alt57) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:3256:3: (enumLiteral_0= 'ASPALTH' )
+                    // InternalHouseBuilderV2.g:3048:3: (enumLiteral_0= 'ASPALTH' )
                     {
-                    // InternalHouseBuilderV2.g:3256:3: (enumLiteral_0= 'ASPALTH' )
-                    // InternalHouseBuilderV2.g:3257:4: enumLiteral_0= 'ASPALTH'
+                    // InternalHouseBuilderV2.g:3048:3: (enumLiteral_0= 'ASPALTH' )
+                    // InternalHouseBuilderV2.g:3049:4: enumLiteral_0= 'ASPALTH'
                     {
-                    enumLiteral_0=(Token)match(input,103,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,101,FOLLOW_2); 
 
                     				current = grammarAccess.getGroundTypeAccess().getASPALTHEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getGroundTypeAccess().getASPALTHEnumLiteralDeclaration_0());
@@ -7503,12 +7033,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalHouseBuilderV2.g:3264:3: (enumLiteral_1= 'TERRAIN' )
+                    // InternalHouseBuilderV2.g:3056:3: (enumLiteral_1= 'TERRAIN' )
                     {
-                    // InternalHouseBuilderV2.g:3264:3: (enumLiteral_1= 'TERRAIN' )
-                    // InternalHouseBuilderV2.g:3265:4: enumLiteral_1= 'TERRAIN'
+                    // InternalHouseBuilderV2.g:3056:3: (enumLiteral_1= 'TERRAIN' )
+                    // InternalHouseBuilderV2.g:3057:4: enumLiteral_1= 'TERRAIN'
                     {
-                    enumLiteral_1=(Token)match(input,104,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,102,FOLLOW_2); 
 
                     				current = grammarAccess.getGroundTypeAccess().getTERRAINEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getGroundTypeAccess().getTERRAINEnumLiteralDeclaration_1());
@@ -7520,12 +7050,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalHouseBuilderV2.g:3272:3: (enumLiteral_2= 'PAVING' )
+                    // InternalHouseBuilderV2.g:3064:3: (enumLiteral_2= 'PAVING' )
                     {
-                    // InternalHouseBuilderV2.g:3272:3: (enumLiteral_2= 'PAVING' )
-                    // InternalHouseBuilderV2.g:3273:4: enumLiteral_2= 'PAVING'
+                    // InternalHouseBuilderV2.g:3064:3: (enumLiteral_2= 'PAVING' )
+                    // InternalHouseBuilderV2.g:3065:4: enumLiteral_2= 'PAVING'
                     {
-                    enumLiteral_2=(Token)match(input,105,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,103,FOLLOW_2); 
 
                     				current = grammarAccess.getGroundTypeAccess().getPAVINGEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_2, grammarAccess.getGroundTypeAccess().getPAVINGEnumLiteralDeclaration_2());
@@ -7559,7 +7089,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDoorType"
-    // InternalHouseBuilderV2.g:3283:1: ruleDoorType returns [Enumerator current=null] : ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'DOOR_WINDOW' ) | (enumLiteral_2= 'PANIC_DOOR' ) | (enumLiteral_3= 'ENTRANCE_DOOR' ) | (enumLiteral_4= 'SLIDING_DOOR' ) | (enumLiteral_5= 'GATE' ) | (enumLiteral_6= 'EMPTY' ) ) ;
+    // InternalHouseBuilderV2.g:3075:1: ruleDoorType returns [Enumerator current=null] : ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'DOOR_WINDOW' ) | (enumLiteral_2= 'PANIC_DOOR' ) | (enumLiteral_3= 'ENTRANCE_DOOR' ) | (enumLiteral_4= 'SLIDING_DOOR' ) | (enumLiteral_5= 'GATE' ) | (enumLiteral_6= 'EMPTY' ) ) ;
     public final Enumerator ruleDoorType() throws RecognitionException {
         Enumerator current = null;
 
@@ -7575,62 +7105,62 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalHouseBuilderV2.g:3289:2: ( ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'DOOR_WINDOW' ) | (enumLiteral_2= 'PANIC_DOOR' ) | (enumLiteral_3= 'ENTRANCE_DOOR' ) | (enumLiteral_4= 'SLIDING_DOOR' ) | (enumLiteral_5= 'GATE' ) | (enumLiteral_6= 'EMPTY' ) ) )
-            // InternalHouseBuilderV2.g:3290:2: ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'DOOR_WINDOW' ) | (enumLiteral_2= 'PANIC_DOOR' ) | (enumLiteral_3= 'ENTRANCE_DOOR' ) | (enumLiteral_4= 'SLIDING_DOOR' ) | (enumLiteral_5= 'GATE' ) | (enumLiteral_6= 'EMPTY' ) )
+            // InternalHouseBuilderV2.g:3081:2: ( ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'DOOR_WINDOW' ) | (enumLiteral_2= 'PANIC_DOOR' ) | (enumLiteral_3= 'ENTRANCE_DOOR' ) | (enumLiteral_4= 'SLIDING_DOOR' ) | (enumLiteral_5= 'GATE' ) | (enumLiteral_6= 'EMPTY' ) ) )
+            // InternalHouseBuilderV2.g:3082:2: ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'DOOR_WINDOW' ) | (enumLiteral_2= 'PANIC_DOOR' ) | (enumLiteral_3= 'ENTRANCE_DOOR' ) | (enumLiteral_4= 'SLIDING_DOOR' ) | (enumLiteral_5= 'GATE' ) | (enumLiteral_6= 'EMPTY' ) )
             {
-            // InternalHouseBuilderV2.g:3290:2: ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'DOOR_WINDOW' ) | (enumLiteral_2= 'PANIC_DOOR' ) | (enumLiteral_3= 'ENTRANCE_DOOR' ) | (enumLiteral_4= 'SLIDING_DOOR' ) | (enumLiteral_5= 'GATE' ) | (enumLiteral_6= 'EMPTY' ) )
-            int alt66=7;
+            // InternalHouseBuilderV2.g:3082:2: ( (enumLiteral_0= 'SIMPLE' ) | (enumLiteral_1= 'DOOR_WINDOW' ) | (enumLiteral_2= 'PANIC_DOOR' ) | (enumLiteral_3= 'ENTRANCE_DOOR' ) | (enumLiteral_4= 'SLIDING_DOOR' ) | (enumLiteral_5= 'GATE' ) | (enumLiteral_6= 'EMPTY' ) )
+            int alt58=7;
             switch ( input.LA(1) ) {
-            case 84:
+            case 82:
                 {
-                alt66=1;
+                alt58=1;
+                }
+                break;
+            case 104:
+                {
+                alt58=2;
+                }
+                break;
+            case 105:
+                {
+                alt58=3;
                 }
                 break;
             case 106:
                 {
-                alt66=2;
+                alt58=4;
                 }
                 break;
             case 107:
                 {
-                alt66=3;
+                alt58=5;
+                }
+                break;
+            case 69:
+                {
+                alt58=6;
                 }
                 break;
             case 108:
                 {
-                alt66=4;
-                }
-                break;
-            case 109:
-                {
-                alt66=5;
-                }
-                break;
-            case 71:
-                {
-                alt66=6;
-                }
-                break;
-            case 110:
-                {
-                alt66=7;
+                alt58=7;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 66, 0, input);
+                    new NoViableAltException("", 58, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt66) {
+            switch (alt58) {
                 case 1 :
-                    // InternalHouseBuilderV2.g:3291:3: (enumLiteral_0= 'SIMPLE' )
+                    // InternalHouseBuilderV2.g:3083:3: (enumLiteral_0= 'SIMPLE' )
                     {
-                    // InternalHouseBuilderV2.g:3291:3: (enumLiteral_0= 'SIMPLE' )
-                    // InternalHouseBuilderV2.g:3292:4: enumLiteral_0= 'SIMPLE'
+                    // InternalHouseBuilderV2.g:3083:3: (enumLiteral_0= 'SIMPLE' )
+                    // InternalHouseBuilderV2.g:3084:4: enumLiteral_0= 'SIMPLE'
                     {
-                    enumLiteral_0=(Token)match(input,84,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,82,FOLLOW_2); 
 
                     				current = grammarAccess.getDoorTypeAccess().getSIMPLEEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getDoorTypeAccess().getSIMPLEEnumLiteralDeclaration_0());
@@ -7642,12 +7172,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalHouseBuilderV2.g:3299:3: (enumLiteral_1= 'DOOR_WINDOW' )
+                    // InternalHouseBuilderV2.g:3091:3: (enumLiteral_1= 'DOOR_WINDOW' )
                     {
-                    // InternalHouseBuilderV2.g:3299:3: (enumLiteral_1= 'DOOR_WINDOW' )
-                    // InternalHouseBuilderV2.g:3300:4: enumLiteral_1= 'DOOR_WINDOW'
+                    // InternalHouseBuilderV2.g:3091:3: (enumLiteral_1= 'DOOR_WINDOW' )
+                    // InternalHouseBuilderV2.g:3092:4: enumLiteral_1= 'DOOR_WINDOW'
                     {
-                    enumLiteral_1=(Token)match(input,106,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,104,FOLLOW_2); 
 
                     				current = grammarAccess.getDoorTypeAccess().getDOOR_WINDOWEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getDoorTypeAccess().getDOOR_WINDOWEnumLiteralDeclaration_1());
@@ -7659,12 +7189,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalHouseBuilderV2.g:3307:3: (enumLiteral_2= 'PANIC_DOOR' )
+                    // InternalHouseBuilderV2.g:3099:3: (enumLiteral_2= 'PANIC_DOOR' )
                     {
-                    // InternalHouseBuilderV2.g:3307:3: (enumLiteral_2= 'PANIC_DOOR' )
-                    // InternalHouseBuilderV2.g:3308:4: enumLiteral_2= 'PANIC_DOOR'
+                    // InternalHouseBuilderV2.g:3099:3: (enumLiteral_2= 'PANIC_DOOR' )
+                    // InternalHouseBuilderV2.g:3100:4: enumLiteral_2= 'PANIC_DOOR'
                     {
-                    enumLiteral_2=(Token)match(input,107,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,105,FOLLOW_2); 
 
                     				current = grammarAccess.getDoorTypeAccess().getPANIC_DOOREnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_2, grammarAccess.getDoorTypeAccess().getPANIC_DOOREnumLiteralDeclaration_2());
@@ -7676,12 +7206,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalHouseBuilderV2.g:3315:3: (enumLiteral_3= 'ENTRANCE_DOOR' )
+                    // InternalHouseBuilderV2.g:3107:3: (enumLiteral_3= 'ENTRANCE_DOOR' )
                     {
-                    // InternalHouseBuilderV2.g:3315:3: (enumLiteral_3= 'ENTRANCE_DOOR' )
-                    // InternalHouseBuilderV2.g:3316:4: enumLiteral_3= 'ENTRANCE_DOOR'
+                    // InternalHouseBuilderV2.g:3107:3: (enumLiteral_3= 'ENTRANCE_DOOR' )
+                    // InternalHouseBuilderV2.g:3108:4: enumLiteral_3= 'ENTRANCE_DOOR'
                     {
-                    enumLiteral_3=(Token)match(input,108,FOLLOW_2); 
+                    enumLiteral_3=(Token)match(input,106,FOLLOW_2); 
 
                     				current = grammarAccess.getDoorTypeAccess().getENTRANCE_DOOREnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_3, grammarAccess.getDoorTypeAccess().getENTRANCE_DOOREnumLiteralDeclaration_3());
@@ -7693,12 +7223,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalHouseBuilderV2.g:3323:3: (enumLiteral_4= 'SLIDING_DOOR' )
+                    // InternalHouseBuilderV2.g:3115:3: (enumLiteral_4= 'SLIDING_DOOR' )
                     {
-                    // InternalHouseBuilderV2.g:3323:3: (enumLiteral_4= 'SLIDING_DOOR' )
-                    // InternalHouseBuilderV2.g:3324:4: enumLiteral_4= 'SLIDING_DOOR'
+                    // InternalHouseBuilderV2.g:3115:3: (enumLiteral_4= 'SLIDING_DOOR' )
+                    // InternalHouseBuilderV2.g:3116:4: enumLiteral_4= 'SLIDING_DOOR'
                     {
-                    enumLiteral_4=(Token)match(input,109,FOLLOW_2); 
+                    enumLiteral_4=(Token)match(input,107,FOLLOW_2); 
 
                     				current = grammarAccess.getDoorTypeAccess().getSLIDING_DOOREnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_4, grammarAccess.getDoorTypeAccess().getSLIDING_DOOREnumLiteralDeclaration_4());
@@ -7710,12 +7240,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // InternalHouseBuilderV2.g:3331:3: (enumLiteral_5= 'GATE' )
+                    // InternalHouseBuilderV2.g:3123:3: (enumLiteral_5= 'GATE' )
                     {
-                    // InternalHouseBuilderV2.g:3331:3: (enumLiteral_5= 'GATE' )
-                    // InternalHouseBuilderV2.g:3332:4: enumLiteral_5= 'GATE'
+                    // InternalHouseBuilderV2.g:3123:3: (enumLiteral_5= 'GATE' )
+                    // InternalHouseBuilderV2.g:3124:4: enumLiteral_5= 'GATE'
                     {
-                    enumLiteral_5=(Token)match(input,71,FOLLOW_2); 
+                    enumLiteral_5=(Token)match(input,69,FOLLOW_2); 
 
                     				current = grammarAccess.getDoorTypeAccess().getGATEEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_5, grammarAccess.getDoorTypeAccess().getGATEEnumLiteralDeclaration_5());
@@ -7727,12 +7257,12 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // InternalHouseBuilderV2.g:3339:3: (enumLiteral_6= 'EMPTY' )
+                    // InternalHouseBuilderV2.g:3131:3: (enumLiteral_6= 'EMPTY' )
                     {
-                    // InternalHouseBuilderV2.g:3339:3: (enumLiteral_6= 'EMPTY' )
-                    // InternalHouseBuilderV2.g:3340:4: enumLiteral_6= 'EMPTY'
+                    // InternalHouseBuilderV2.g:3131:3: (enumLiteral_6= 'EMPTY' )
+                    // InternalHouseBuilderV2.g:3132:4: enumLiteral_6= 'EMPTY'
                     {
-                    enumLiteral_6=(Token)match(input,110,FOLLOW_2); 
+                    enumLiteral_6=(Token)match(input,108,FOLLOW_2); 
 
                     				current = grammarAccess.getDoorTypeAccess().getEMPTYEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_6, grammarAccess.getDoorTypeAccess().getEMPTYEnumLiteralDeclaration_6());
@@ -7793,9 +7323,9 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000008000000L});
     public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000200000000040L});
     public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x4040000000000000L});
+    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x1040000000000000L});
     public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000000000000000L,0x00007C0000100080L});
+    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000000000000000L,0x00001F0000040020L});
     public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000080000000L});
     public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0000000100000000L});
     public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0000600000000040L});
@@ -7808,7 +7338,7 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x0000038000000000L});
     public static final BitSet FOLLOW_38 = new BitSet(new long[]{0x0000030000000000L});
     public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x4000000000000000L});
     public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x0000040000000000L});
     public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x0010000000000000L});
     public static final BitSet FOLLOW_43 = new BitSet(new long[]{0x0000100000000000L});
@@ -7817,35 +7347,31 @@ public class InternalHouseBuilderV2Parser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_46 = new BitSet(new long[]{0x0000400000000000L});
     public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x0001800000000002L});
     public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x000C004000200000L});
-    public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x0000000000000000L,0x00000000000000F8L});
+    public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x0000000000000000L,0x000000000000003EL});
     public static final BitSet FOLLOW_50 = new BitSet(new long[]{0x0008004000200000L});
     public static final BitSet FOLLOW_51 = new BitSet(new long[]{0x0008000000200000L});
     public static final BitSet FOLLOW_52 = new BitSet(new long[]{0x0004000000000000L});
-    public static final BitSet FOLLOW_53 = new BitSet(new long[]{0x0000000000000000L,0x00000000000FE000L});
+    public static final BitSet FOLLOW_53 = new BitSet(new long[]{0x0000000000000000L,0x000000000003F800L});
     public static final BitSet FOLLOW_54 = new BitSet(new long[]{0x0020000000000000L});
     public static final BitSet FOLLOW_55 = new BitSet(new long[]{0x0000104000000000L});
     public static final BitSet FOLLOW_56 = new BitSet(new long[]{0x0080000000000000L});
-    public static final BitSet FOLLOW_57 = new BitSet(new long[]{0x3900041001200000L});
-    public static final BitSet FOLLOW_58 = new BitSet(new long[]{0x0000000000000000L,0x0000000FFFF00000L});
-    public static final BitSet FOLLOW_59 = new BitSet(new long[]{0x3800041001200000L});
+    public static final BitSet FOLLOW_57 = new BitSet(new long[]{0x0900041001200000L});
+    public static final BitSet FOLLOW_58 = new BitSet(new long[]{0x0000000000000000L,0x00000003FFFC0000L});
+    public static final BitSet FOLLOW_59 = new BitSet(new long[]{0x0800041001200000L});
     public static final BitSet FOLLOW_60 = new BitSet(new long[]{0x0200000000000000L});
     public static final BitSet FOLLOW_61 = new BitSet(new long[]{0x0400000000100000L});
-    public static final BitSet FOLLOW_62 = new BitSet(new long[]{0x3800001001200000L});
-    public static final BitSet FOLLOW_63 = new BitSet(new long[]{0x3000001001200000L});
-    public static final BitSet FOLLOW_64 = new BitSet(new long[]{0x2000001001200000L});
-    public static final BitSet FOLLOW_65 = new BitSet(new long[]{0x2000001000200000L});
-    public static final BitSet FOLLOW_66 = new BitSet(new long[]{0x2000000000200000L});
-    public static final BitSet FOLLOW_67 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000004L});
-    public static final BitSet FOLLOW_68 = new BitSet(new long[]{0x9804041001200000L});
-    public static final BitSet FOLLOW_69 = new BitSet(new long[]{0x0000000000000000L,0x0000007000000000L});
-    public static final BitSet FOLLOW_70 = new BitSet(new long[]{0x9800041001200000L});
-    public static final BitSet FOLLOW_71 = new BitSet(new long[]{0x0000000000000000L,0x0000038000000000L});
-    public static final BitSet FOLLOW_72 = new BitSet(new long[]{0x1800041001200000L});
-    public static final BitSet FOLLOW_73 = new BitSet(new long[]{0x1800001001200000L});
-    public static final BitSet FOLLOW_74 = new BitSet(new long[]{0x1000001001200000L});
-    public static final BitSet FOLLOW_75 = new BitSet(new long[]{0x0000001001200000L});
-    public static final BitSet FOLLOW_76 = new BitSet(new long[]{0x0000000000000000L,0x0000000000001F00L});
-    public static final BitSet FOLLOW_77 = new BitSet(new long[]{0x0000004000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_78 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_62 = new BitSet(new long[]{0x0800001001200000L});
+    public static final BitSet FOLLOW_63 = new BitSet(new long[]{0x0800001000200000L});
+    public static final BitSet FOLLOW_64 = new BitSet(new long[]{0x0800000000200000L});
+    public static final BitSet FOLLOW_65 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_66 = new BitSet(new long[]{0x2004041001200000L});
+    public static final BitSet FOLLOW_67 = new BitSet(new long[]{0x0000000000000000L,0x0000001C00000000L});
+    public static final BitSet FOLLOW_68 = new BitSet(new long[]{0x2000041001200000L});
+    public static final BitSet FOLLOW_69 = new BitSet(new long[]{0x0000000000000000L,0x000000E000000000L});
+    public static final BitSet FOLLOW_70 = new BitSet(new long[]{0x0000041001200000L});
+    public static final BitSet FOLLOW_71 = new BitSet(new long[]{0x0000001001200000L});
+    public static final BitSet FOLLOW_72 = new BitSet(new long[]{0x0000000000000000L,0x00000000000007C0L});
+    public static final BitSet FOLLOW_73 = new BitSet(new long[]{0x8000004000000000L});
+    public static final BitSet FOLLOW_74 = new BitSet(new long[]{0x8000000000000000L});
 
 }

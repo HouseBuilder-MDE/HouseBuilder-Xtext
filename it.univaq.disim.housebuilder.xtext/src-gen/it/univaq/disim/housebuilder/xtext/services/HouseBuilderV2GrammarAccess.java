@@ -1261,62 +1261,38 @@ public class HouseBuilderV2GrammarAccess extends AbstractElementFinder.AbstractG
 		private final RuleCall cSensorsSensorEStringParserRuleCall_10_3_1_0_1 = (RuleCall)cSensorsSensorCrossReference_10_3_1_0.eContents().get(1);
 		private final Keyword cRightParenthesisKeyword_10_4 = (Keyword)cGroup_10.eContents().get(4);
 		private final Group cGroup_11 = (Group)cGroup.eContents().get(11);
-		private final Keyword cPassagesAKeyword_11_0 = (Keyword)cGroup_11.eContents().get(0);
+		private final Keyword cEntrancesKeyword_11_0 = (Keyword)cGroup_11.eContents().get(0);
 		private final Keyword cLeftParenthesisKeyword_11_1 = (Keyword)cGroup_11.eContents().get(1);
-		private final Assignment cPassagesAAssignment_11_2 = (Assignment)cGroup_11.eContents().get(2);
-		private final CrossReference cPassagesAPassageCrossReference_11_2_0 = (CrossReference)cPassagesAAssignment_11_2.eContents().get(0);
-		private final RuleCall cPassagesAPassageEStringParserRuleCall_11_2_0_1 = (RuleCall)cPassagesAPassageCrossReference_11_2_0.eContents().get(1);
+		private final Assignment cEntrancesAssignment_11_2 = (Assignment)cGroup_11.eContents().get(2);
+		private final CrossReference cEntrancesEntranceCrossReference_11_2_0 = (CrossReference)cEntrancesAssignment_11_2.eContents().get(0);
+		private final RuleCall cEntrancesEntranceEStringParserRuleCall_11_2_0_1 = (RuleCall)cEntrancesEntranceCrossReference_11_2_0.eContents().get(1);
 		private final Group cGroup_11_3 = (Group)cGroup_11.eContents().get(3);
 		private final Keyword cCommaKeyword_11_3_0 = (Keyword)cGroup_11_3.eContents().get(0);
-		private final Assignment cPassagesAAssignment_11_3_1 = (Assignment)cGroup_11_3.eContents().get(1);
-		private final CrossReference cPassagesAPassageCrossReference_11_3_1_0 = (CrossReference)cPassagesAAssignment_11_3_1.eContents().get(0);
-		private final RuleCall cPassagesAPassageEStringParserRuleCall_11_3_1_0_1 = (RuleCall)cPassagesAPassageCrossReference_11_3_1_0.eContents().get(1);
+		private final Assignment cEntrancesAssignment_11_3_1 = (Assignment)cGroup_11_3.eContents().get(1);
+		private final CrossReference cEntrancesEntranceCrossReference_11_3_1_0 = (CrossReference)cEntrancesAssignment_11_3_1.eContents().get(0);
+		private final RuleCall cEntrancesEntranceEStringParserRuleCall_11_3_1_0_1 = (RuleCall)cEntrancesEntranceCrossReference_11_3_1_0.eContents().get(1);
 		private final Keyword cRightParenthesisKeyword_11_4 = (Keyword)cGroup_11.eContents().get(4);
 		private final Group cGroup_12 = (Group)cGroup.eContents().get(12);
-		private final Keyword cPassagesBKeyword_12_0 = (Keyword)cGroup_12.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_12_1 = (Keyword)cGroup_12.eContents().get(1);
-		private final Assignment cPassagesBAssignment_12_2 = (Assignment)cGroup_12.eContents().get(2);
-		private final CrossReference cPassagesBPassageCrossReference_12_2_0 = (CrossReference)cPassagesBAssignment_12_2.eContents().get(0);
-		private final RuleCall cPassagesBPassageEStringParserRuleCall_12_2_0_1 = (RuleCall)cPassagesBPassageCrossReference_12_2_0.eContents().get(1);
+		private final Keyword cDevicesKeyword_12_0 = (Keyword)cGroup_12.eContents().get(0);
+		private final Keyword cLeftCurlyBracketKeyword_12_1 = (Keyword)cGroup_12.eContents().get(1);
+		private final Assignment cDevicesAssignment_12_2 = (Assignment)cGroup_12.eContents().get(2);
+		private final RuleCall cDevicesDeviceParserRuleCall_12_2_0 = (RuleCall)cDevicesAssignment_12_2.eContents().get(0);
 		private final Group cGroup_12_3 = (Group)cGroup_12.eContents().get(3);
 		private final Keyword cCommaKeyword_12_3_0 = (Keyword)cGroup_12_3.eContents().get(0);
-		private final Assignment cPassagesBAssignment_12_3_1 = (Assignment)cGroup_12_3.eContents().get(1);
-		private final CrossReference cPassagesBPassageCrossReference_12_3_1_0 = (CrossReference)cPassagesBAssignment_12_3_1.eContents().get(0);
-		private final RuleCall cPassagesBPassageEStringParserRuleCall_12_3_1_0_1 = (RuleCall)cPassagesBPassageCrossReference_12_3_1_0.eContents().get(1);
-		private final Keyword cRightParenthesisKeyword_12_4 = (Keyword)cGroup_12.eContents().get(4);
+		private final Assignment cDevicesAssignment_12_3_1 = (Assignment)cGroup_12_3.eContents().get(1);
+		private final RuleCall cDevicesDeviceParserRuleCall_12_3_1_0 = (RuleCall)cDevicesAssignment_12_3_1.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_12_4 = (Keyword)cGroup_12.eContents().get(4);
 		private final Group cGroup_13 = (Group)cGroup.eContents().get(13);
-		private final Keyword cEntrancesKeyword_13_0 = (Keyword)cGroup_13.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_13_1 = (Keyword)cGroup_13.eContents().get(1);
-		private final Assignment cEntrancesAssignment_13_2 = (Assignment)cGroup_13.eContents().get(2);
-		private final CrossReference cEntrancesEntranceCrossReference_13_2_0 = (CrossReference)cEntrancesAssignment_13_2.eContents().get(0);
-		private final RuleCall cEntrancesEntranceEStringParserRuleCall_13_2_0_1 = (RuleCall)cEntrancesEntranceCrossReference_13_2_0.eContents().get(1);
+		private final Keyword cWindowsKeyword_13_0 = (Keyword)cGroup_13.eContents().get(0);
+		private final Keyword cLeftCurlyBracketKeyword_13_1 = (Keyword)cGroup_13.eContents().get(1);
+		private final Assignment cWindowsAssignment_13_2 = (Assignment)cGroup_13.eContents().get(2);
+		private final RuleCall cWindowsWindowParserRuleCall_13_2_0 = (RuleCall)cWindowsAssignment_13_2.eContents().get(0);
 		private final Group cGroup_13_3 = (Group)cGroup_13.eContents().get(3);
 		private final Keyword cCommaKeyword_13_3_0 = (Keyword)cGroup_13_3.eContents().get(0);
-		private final Assignment cEntrancesAssignment_13_3_1 = (Assignment)cGroup_13_3.eContents().get(1);
-		private final CrossReference cEntrancesEntranceCrossReference_13_3_1_0 = (CrossReference)cEntrancesAssignment_13_3_1.eContents().get(0);
-		private final RuleCall cEntrancesEntranceEStringParserRuleCall_13_3_1_0_1 = (RuleCall)cEntrancesEntranceCrossReference_13_3_1_0.eContents().get(1);
-		private final Keyword cRightParenthesisKeyword_13_4 = (Keyword)cGroup_13.eContents().get(4);
-		private final Group cGroup_14 = (Group)cGroup.eContents().get(14);
-		private final Keyword cDevicesKeyword_14_0 = (Keyword)cGroup_14.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_14_1 = (Keyword)cGroup_14.eContents().get(1);
-		private final Assignment cDevicesAssignment_14_2 = (Assignment)cGroup_14.eContents().get(2);
-		private final RuleCall cDevicesDeviceParserRuleCall_14_2_0 = (RuleCall)cDevicesAssignment_14_2.eContents().get(0);
-		private final Group cGroup_14_3 = (Group)cGroup_14.eContents().get(3);
-		private final Keyword cCommaKeyword_14_3_0 = (Keyword)cGroup_14_3.eContents().get(0);
-		private final Assignment cDevicesAssignment_14_3_1 = (Assignment)cGroup_14_3.eContents().get(1);
-		private final RuleCall cDevicesDeviceParserRuleCall_14_3_1_0 = (RuleCall)cDevicesAssignment_14_3_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_14_4 = (Keyword)cGroup_14.eContents().get(4);
-		private final Group cGroup_15 = (Group)cGroup.eContents().get(15);
-		private final Keyword cWindowsKeyword_15_0 = (Keyword)cGroup_15.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_15_1 = (Keyword)cGroup_15.eContents().get(1);
-		private final Assignment cWindowsAssignment_15_2 = (Assignment)cGroup_15.eContents().get(2);
-		private final RuleCall cWindowsWindowParserRuleCall_15_2_0 = (RuleCall)cWindowsAssignment_15_2.eContents().get(0);
-		private final Group cGroup_15_3 = (Group)cGroup_15.eContents().get(3);
-		private final Keyword cCommaKeyword_15_3_0 = (Keyword)cGroup_15_3.eContents().get(0);
-		private final Assignment cWindowsAssignment_15_3_1 = (Assignment)cGroup_15_3.eContents().get(1);
-		private final RuleCall cWindowsWindowParserRuleCall_15_3_1_0 = (RuleCall)cWindowsAssignment_15_3_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_15_4 = (Keyword)cGroup_15.eContents().get(4);
-		private final Keyword cRightCurlyBracketKeyword_16 = (Keyword)cGroup.eContents().get(16);
+		private final Assignment cWindowsAssignment_13_3_1 = (Assignment)cGroup_13_3.eContents().get(1);
+		private final RuleCall cWindowsWindowParserRuleCall_13_3_1_0 = (RuleCall)cWindowsAssignment_13_3_1.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_13_4 = (Keyword)cGroup_13.eContents().get(4);
+		private final Keyword cRightCurlyBracketKeyword_14 = (Keyword)cGroup.eContents().get(14);
 		
 		//Room returns Room:
 		//    'Room'
@@ -1327,8 +1303,6 @@ public class HouseBuilderV2GrammarAccess extends AbstractElementFinder.AbstractG
 		//        'height' height=EFloat
 		//        ('roomType' roomType=RoomType)?
 		//        ('sensors' '(' sensors+=[Sensor|EString] ( "," sensors+=[Sensor|EString])* ')' )?
-		//        ('passagesA' '(' passagesA+=[Passage|EString] ( "," passagesA+=[Passage|EString])* ')' )?
-		//        ('passagesB' '(' passagesB+=[Passage|EString] ( "," passagesB+=[Passage|EString])* ')' )?
 		//        ('entrances' '(' entrances+=[Entrance|EString] ( "," entrances+=[Entrance|EString])* ')' )?
 		//        ('devices' '{' devices+=Device ( "," devices+=Device)* '}' )?
 		//        ('windows' '{' windows+=Window ( "," windows+=Window)* '}' )?
@@ -1343,8 +1317,6 @@ public class HouseBuilderV2GrammarAccess extends AbstractElementFinder.AbstractG
 		//    'height' height=EFloat
 		//    ('roomType' roomType=RoomType)?
 		//    ('sensors' '(' sensors+=[Sensor|EString] ( "," sensors+=[Sensor|EString])* ')' )?
-		//    ('passagesA' '(' passagesA+=[Passage|EString] ( "," passagesA+=[Passage|EString])* ')' )?
-		//    ('passagesB' '(' passagesB+=[Passage|EString] ( "," passagesB+=[Passage|EString])* ')' )?
 		//    ('entrances' '(' entrances+=[Entrance|EString] ( "," entrances+=[Entrance|EString])* ')' )?
 		//    ('devices' '{' devices+=Device ( "," devices+=Device)* '}' )?
 		//    ('windows' '{' windows+=Window ( "," windows+=Window)* '}' )?
@@ -1438,176 +1410,104 @@ public class HouseBuilderV2GrammarAccess extends AbstractElementFinder.AbstractG
 		//')'
 		public Keyword getRightParenthesisKeyword_10_4() { return cRightParenthesisKeyword_10_4; }
 		
-		//('passagesA' '(' passagesA+=[Passage|EString] ( "," passagesA+=[Passage|EString])* ')' )?
+		//('entrances' '(' entrances+=[Entrance|EString] ( "," entrances+=[Entrance|EString])* ')' )?
 		public Group getGroup_11() { return cGroup_11; }
 		
-		//'passagesA'
-		public Keyword getPassagesAKeyword_11_0() { return cPassagesAKeyword_11_0; }
+		//'entrances'
+		public Keyword getEntrancesKeyword_11_0() { return cEntrancesKeyword_11_0; }
 		
 		//'('
 		public Keyword getLeftParenthesisKeyword_11_1() { return cLeftParenthesisKeyword_11_1; }
 		
-		//passagesA+=[Passage|EString]
-		public Assignment getPassagesAAssignment_11_2() { return cPassagesAAssignment_11_2; }
+		//entrances+=[Entrance|EString]
+		public Assignment getEntrancesAssignment_11_2() { return cEntrancesAssignment_11_2; }
 		
-		//[Passage|EString]
-		public CrossReference getPassagesAPassageCrossReference_11_2_0() { return cPassagesAPassageCrossReference_11_2_0; }
+		//[Entrance|EString]
+		public CrossReference getEntrancesEntranceCrossReference_11_2_0() { return cEntrancesEntranceCrossReference_11_2_0; }
 		
 		//EString
-		public RuleCall getPassagesAPassageEStringParserRuleCall_11_2_0_1() { return cPassagesAPassageEStringParserRuleCall_11_2_0_1; }
+		public RuleCall getEntrancesEntranceEStringParserRuleCall_11_2_0_1() { return cEntrancesEntranceEStringParserRuleCall_11_2_0_1; }
 		
-		//( "," passagesA+=[Passage|EString])*
+		//( "," entrances+=[Entrance|EString])*
 		public Group getGroup_11_3() { return cGroup_11_3; }
 		
 		//","
 		public Keyword getCommaKeyword_11_3_0() { return cCommaKeyword_11_3_0; }
 		
-		//passagesA+=[Passage|EString]
-		public Assignment getPassagesAAssignment_11_3_1() { return cPassagesAAssignment_11_3_1; }
+		//entrances+=[Entrance|EString]
+		public Assignment getEntrancesAssignment_11_3_1() { return cEntrancesAssignment_11_3_1; }
 		
-		//[Passage|EString]
-		public CrossReference getPassagesAPassageCrossReference_11_3_1_0() { return cPassagesAPassageCrossReference_11_3_1_0; }
+		//[Entrance|EString]
+		public CrossReference getEntrancesEntranceCrossReference_11_3_1_0() { return cEntrancesEntranceCrossReference_11_3_1_0; }
 		
 		//EString
-		public RuleCall getPassagesAPassageEStringParserRuleCall_11_3_1_0_1() { return cPassagesAPassageEStringParserRuleCall_11_3_1_0_1; }
+		public RuleCall getEntrancesEntranceEStringParserRuleCall_11_3_1_0_1() { return cEntrancesEntranceEStringParserRuleCall_11_3_1_0_1; }
 		
 		//')'
 		public Keyword getRightParenthesisKeyword_11_4() { return cRightParenthesisKeyword_11_4; }
 		
-		//('passagesB' '(' passagesB+=[Passage|EString] ( "," passagesB+=[Passage|EString])* ')' )?
+		//('devices' '{' devices+=Device ( "," devices+=Device)* '}' )?
 		public Group getGroup_12() { return cGroup_12; }
 		
-		//'passagesB'
-		public Keyword getPassagesBKeyword_12_0() { return cPassagesBKeyword_12_0; }
+		//'devices'
+		public Keyword getDevicesKeyword_12_0() { return cDevicesKeyword_12_0; }
 		
-		//'('
-		public Keyword getLeftParenthesisKeyword_12_1() { return cLeftParenthesisKeyword_12_1; }
+		//'{'
+		public Keyword getLeftCurlyBracketKeyword_12_1() { return cLeftCurlyBracketKeyword_12_1; }
 		
-		//passagesB+=[Passage|EString]
-		public Assignment getPassagesBAssignment_12_2() { return cPassagesBAssignment_12_2; }
+		//devices+=Device
+		public Assignment getDevicesAssignment_12_2() { return cDevicesAssignment_12_2; }
 		
-		//[Passage|EString]
-		public CrossReference getPassagesBPassageCrossReference_12_2_0() { return cPassagesBPassageCrossReference_12_2_0; }
+		//Device
+		public RuleCall getDevicesDeviceParserRuleCall_12_2_0() { return cDevicesDeviceParserRuleCall_12_2_0; }
 		
-		//EString
-		public RuleCall getPassagesBPassageEStringParserRuleCall_12_2_0_1() { return cPassagesBPassageEStringParserRuleCall_12_2_0_1; }
-		
-		//( "," passagesB+=[Passage|EString])*
+		//( "," devices+=Device)*
 		public Group getGroup_12_3() { return cGroup_12_3; }
 		
 		//","
 		public Keyword getCommaKeyword_12_3_0() { return cCommaKeyword_12_3_0; }
 		
-		//passagesB+=[Passage|EString]
-		public Assignment getPassagesBAssignment_12_3_1() { return cPassagesBAssignment_12_3_1; }
+		//devices+=Device
+		public Assignment getDevicesAssignment_12_3_1() { return cDevicesAssignment_12_3_1; }
 		
-		//[Passage|EString]
-		public CrossReference getPassagesBPassageCrossReference_12_3_1_0() { return cPassagesBPassageCrossReference_12_3_1_0; }
+		//Device
+		public RuleCall getDevicesDeviceParserRuleCall_12_3_1_0() { return cDevicesDeviceParserRuleCall_12_3_1_0; }
 		
-		//EString
-		public RuleCall getPassagesBPassageEStringParserRuleCall_12_3_1_0_1() { return cPassagesBPassageEStringParserRuleCall_12_3_1_0_1; }
+		//'}'
+		public Keyword getRightCurlyBracketKeyword_12_4() { return cRightCurlyBracketKeyword_12_4; }
 		
-		//')'
-		public Keyword getRightParenthesisKeyword_12_4() { return cRightParenthesisKeyword_12_4; }
-		
-		//('entrances' '(' entrances+=[Entrance|EString] ( "," entrances+=[Entrance|EString])* ')' )?
+		//('windows' '{' windows+=Window ( "," windows+=Window)* '}' )?
 		public Group getGroup_13() { return cGroup_13; }
 		
-		//'entrances'
-		public Keyword getEntrancesKeyword_13_0() { return cEntrancesKeyword_13_0; }
+		//'windows'
+		public Keyword getWindowsKeyword_13_0() { return cWindowsKeyword_13_0; }
 		
-		//'('
-		public Keyword getLeftParenthesisKeyword_13_1() { return cLeftParenthesisKeyword_13_1; }
+		//'{'
+		public Keyword getLeftCurlyBracketKeyword_13_1() { return cLeftCurlyBracketKeyword_13_1; }
 		
-		//entrances+=[Entrance|EString]
-		public Assignment getEntrancesAssignment_13_2() { return cEntrancesAssignment_13_2; }
+		//windows+=Window
+		public Assignment getWindowsAssignment_13_2() { return cWindowsAssignment_13_2; }
 		
-		//[Entrance|EString]
-		public CrossReference getEntrancesEntranceCrossReference_13_2_0() { return cEntrancesEntranceCrossReference_13_2_0; }
+		//Window
+		public RuleCall getWindowsWindowParserRuleCall_13_2_0() { return cWindowsWindowParserRuleCall_13_2_0; }
 		
-		//EString
-		public RuleCall getEntrancesEntranceEStringParserRuleCall_13_2_0_1() { return cEntrancesEntranceEStringParserRuleCall_13_2_0_1; }
-		
-		//( "," entrances+=[Entrance|EString])*
+		//( "," windows+=Window)*
 		public Group getGroup_13_3() { return cGroup_13_3; }
 		
 		//","
 		public Keyword getCommaKeyword_13_3_0() { return cCommaKeyword_13_3_0; }
 		
-		//entrances+=[Entrance|EString]
-		public Assignment getEntrancesAssignment_13_3_1() { return cEntrancesAssignment_13_3_1; }
-		
-		//[Entrance|EString]
-		public CrossReference getEntrancesEntranceCrossReference_13_3_1_0() { return cEntrancesEntranceCrossReference_13_3_1_0; }
-		
-		//EString
-		public RuleCall getEntrancesEntranceEStringParserRuleCall_13_3_1_0_1() { return cEntrancesEntranceEStringParserRuleCall_13_3_1_0_1; }
-		
-		//')'
-		public Keyword getRightParenthesisKeyword_13_4() { return cRightParenthesisKeyword_13_4; }
-		
-		//('devices' '{' devices+=Device ( "," devices+=Device)* '}' )?
-		public Group getGroup_14() { return cGroup_14; }
-		
-		//'devices'
-		public Keyword getDevicesKeyword_14_0() { return cDevicesKeyword_14_0; }
-		
-		//'{'
-		public Keyword getLeftCurlyBracketKeyword_14_1() { return cLeftCurlyBracketKeyword_14_1; }
-		
-		//devices+=Device
-		public Assignment getDevicesAssignment_14_2() { return cDevicesAssignment_14_2; }
-		
-		//Device
-		public RuleCall getDevicesDeviceParserRuleCall_14_2_0() { return cDevicesDeviceParserRuleCall_14_2_0; }
-		
-		//( "," devices+=Device)*
-		public Group getGroup_14_3() { return cGroup_14_3; }
-		
-		//","
-		public Keyword getCommaKeyword_14_3_0() { return cCommaKeyword_14_3_0; }
-		
-		//devices+=Device
-		public Assignment getDevicesAssignment_14_3_1() { return cDevicesAssignment_14_3_1; }
-		
-		//Device
-		public RuleCall getDevicesDeviceParserRuleCall_14_3_1_0() { return cDevicesDeviceParserRuleCall_14_3_1_0; }
-		
-		//'}'
-		public Keyword getRightCurlyBracketKeyword_14_4() { return cRightCurlyBracketKeyword_14_4; }
-		
-		//('windows' '{' windows+=Window ( "," windows+=Window)* '}' )?
-		public Group getGroup_15() { return cGroup_15; }
-		
-		//'windows'
-		public Keyword getWindowsKeyword_15_0() { return cWindowsKeyword_15_0; }
-		
-		//'{'
-		public Keyword getLeftCurlyBracketKeyword_15_1() { return cLeftCurlyBracketKeyword_15_1; }
-		
 		//windows+=Window
-		public Assignment getWindowsAssignment_15_2() { return cWindowsAssignment_15_2; }
+		public Assignment getWindowsAssignment_13_3_1() { return cWindowsAssignment_13_3_1; }
 		
 		//Window
-		public RuleCall getWindowsWindowParserRuleCall_15_2_0() { return cWindowsWindowParserRuleCall_15_2_0; }
-		
-		//( "," windows+=Window)*
-		public Group getGroup_15_3() { return cGroup_15_3; }
-		
-		//","
-		public Keyword getCommaKeyword_15_3_0() { return cCommaKeyword_15_3_0; }
-		
-		//windows+=Window
-		public Assignment getWindowsAssignment_15_3_1() { return cWindowsAssignment_15_3_1; }
-		
-		//Window
-		public RuleCall getWindowsWindowParserRuleCall_15_3_1_0() { return cWindowsWindowParserRuleCall_15_3_1_0; }
+		public RuleCall getWindowsWindowParserRuleCall_13_3_1_0() { return cWindowsWindowParserRuleCall_13_3_1_0; }
 		
 		//'}'
-		public Keyword getRightCurlyBracketKeyword_15_4() { return cRightCurlyBracketKeyword_15_4; }
+		public Keyword getRightCurlyBracketKeyword_13_4() { return cRightCurlyBracketKeyword_13_4; }
 		
 		//'}'
-		public Keyword getRightCurlyBracketKeyword_16() { return cRightCurlyBracketKeyword_16; }
+		public Keyword getRightCurlyBracketKeyword_14() { return cRightCurlyBracketKeyword_14; }
 	}
 	public class ExternalSpaceElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.housebuilder.xtext.HouseBuilderV2.ExternalSpace");
@@ -1643,52 +1543,28 @@ public class HouseBuilderV2GrammarAccess extends AbstractElementFinder.AbstractG
 		private final RuleCall cSensorsSensorEStringParserRuleCall_9_3_1_0_1 = (RuleCall)cSensorsSensorCrossReference_9_3_1_0.eContents().get(1);
 		private final Keyword cRightParenthesisKeyword_9_4 = (Keyword)cGroup_9.eContents().get(4);
 		private final Group cGroup_10 = (Group)cGroup.eContents().get(10);
-		private final Keyword cPassagesAKeyword_10_0 = (Keyword)cGroup_10.eContents().get(0);
+		private final Keyword cEntrancesKeyword_10_0 = (Keyword)cGroup_10.eContents().get(0);
 		private final Keyword cLeftParenthesisKeyword_10_1 = (Keyword)cGroup_10.eContents().get(1);
-		private final Assignment cPassagesAAssignment_10_2 = (Assignment)cGroup_10.eContents().get(2);
-		private final CrossReference cPassagesAPassageCrossReference_10_2_0 = (CrossReference)cPassagesAAssignment_10_2.eContents().get(0);
-		private final RuleCall cPassagesAPassageEStringParserRuleCall_10_2_0_1 = (RuleCall)cPassagesAPassageCrossReference_10_2_0.eContents().get(1);
+		private final Assignment cEntrancesAssignment_10_2 = (Assignment)cGroup_10.eContents().get(2);
+		private final CrossReference cEntrancesEntranceCrossReference_10_2_0 = (CrossReference)cEntrancesAssignment_10_2.eContents().get(0);
+		private final RuleCall cEntrancesEntranceEStringParserRuleCall_10_2_0_1 = (RuleCall)cEntrancesEntranceCrossReference_10_2_0.eContents().get(1);
 		private final Group cGroup_10_3 = (Group)cGroup_10.eContents().get(3);
 		private final Keyword cCommaKeyword_10_3_0 = (Keyword)cGroup_10_3.eContents().get(0);
-		private final Assignment cPassagesAAssignment_10_3_1 = (Assignment)cGroup_10_3.eContents().get(1);
-		private final CrossReference cPassagesAPassageCrossReference_10_3_1_0 = (CrossReference)cPassagesAAssignment_10_3_1.eContents().get(0);
-		private final RuleCall cPassagesAPassageEStringParserRuleCall_10_3_1_0_1 = (RuleCall)cPassagesAPassageCrossReference_10_3_1_0.eContents().get(1);
+		private final Assignment cEntrancesAssignment_10_3_1 = (Assignment)cGroup_10_3.eContents().get(1);
+		private final CrossReference cEntrancesEntranceCrossReference_10_3_1_0 = (CrossReference)cEntrancesAssignment_10_3_1.eContents().get(0);
+		private final RuleCall cEntrancesEntranceEStringParserRuleCall_10_3_1_0_1 = (RuleCall)cEntrancesEntranceCrossReference_10_3_1_0.eContents().get(1);
 		private final Keyword cRightParenthesisKeyword_10_4 = (Keyword)cGroup_10.eContents().get(4);
 		private final Group cGroup_11 = (Group)cGroup.eContents().get(11);
-		private final Keyword cPassagesBKeyword_11_0 = (Keyword)cGroup_11.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_11_1 = (Keyword)cGroup_11.eContents().get(1);
-		private final Assignment cPassagesBAssignment_11_2 = (Assignment)cGroup_11.eContents().get(2);
-		private final CrossReference cPassagesBPassageCrossReference_11_2_0 = (CrossReference)cPassagesBAssignment_11_2.eContents().get(0);
-		private final RuleCall cPassagesBPassageEStringParserRuleCall_11_2_0_1 = (RuleCall)cPassagesBPassageCrossReference_11_2_0.eContents().get(1);
+		private final Keyword cDevicesKeyword_11_0 = (Keyword)cGroup_11.eContents().get(0);
+		private final Keyword cLeftCurlyBracketKeyword_11_1 = (Keyword)cGroup_11.eContents().get(1);
+		private final Assignment cDevicesAssignment_11_2 = (Assignment)cGroup_11.eContents().get(2);
+		private final RuleCall cDevicesDeviceParserRuleCall_11_2_0 = (RuleCall)cDevicesAssignment_11_2.eContents().get(0);
 		private final Group cGroup_11_3 = (Group)cGroup_11.eContents().get(3);
 		private final Keyword cCommaKeyword_11_3_0 = (Keyword)cGroup_11_3.eContents().get(0);
-		private final Assignment cPassagesBAssignment_11_3_1 = (Assignment)cGroup_11_3.eContents().get(1);
-		private final CrossReference cPassagesBPassageCrossReference_11_3_1_0 = (CrossReference)cPassagesBAssignment_11_3_1.eContents().get(0);
-		private final RuleCall cPassagesBPassageEStringParserRuleCall_11_3_1_0_1 = (RuleCall)cPassagesBPassageCrossReference_11_3_1_0.eContents().get(1);
-		private final Keyword cRightParenthesisKeyword_11_4 = (Keyword)cGroup_11.eContents().get(4);
-		private final Group cGroup_12 = (Group)cGroup.eContents().get(12);
-		private final Keyword cEntrancesKeyword_12_0 = (Keyword)cGroup_12.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_12_1 = (Keyword)cGroup_12.eContents().get(1);
-		private final Assignment cEntrancesAssignment_12_2 = (Assignment)cGroup_12.eContents().get(2);
-		private final CrossReference cEntrancesEntranceCrossReference_12_2_0 = (CrossReference)cEntrancesAssignment_12_2.eContents().get(0);
-		private final RuleCall cEntrancesEntranceEStringParserRuleCall_12_2_0_1 = (RuleCall)cEntrancesEntranceCrossReference_12_2_0.eContents().get(1);
-		private final Group cGroup_12_3 = (Group)cGroup_12.eContents().get(3);
-		private final Keyword cCommaKeyword_12_3_0 = (Keyword)cGroup_12_3.eContents().get(0);
-		private final Assignment cEntrancesAssignment_12_3_1 = (Assignment)cGroup_12_3.eContents().get(1);
-		private final CrossReference cEntrancesEntranceCrossReference_12_3_1_0 = (CrossReference)cEntrancesAssignment_12_3_1.eContents().get(0);
-		private final RuleCall cEntrancesEntranceEStringParserRuleCall_12_3_1_0_1 = (RuleCall)cEntrancesEntranceCrossReference_12_3_1_0.eContents().get(1);
-		private final Keyword cRightParenthesisKeyword_12_4 = (Keyword)cGroup_12.eContents().get(4);
-		private final Group cGroup_13 = (Group)cGroup.eContents().get(13);
-		private final Keyword cDevicesKeyword_13_0 = (Keyword)cGroup_13.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_13_1 = (Keyword)cGroup_13.eContents().get(1);
-		private final Assignment cDevicesAssignment_13_2 = (Assignment)cGroup_13.eContents().get(2);
-		private final RuleCall cDevicesDeviceParserRuleCall_13_2_0 = (RuleCall)cDevicesAssignment_13_2.eContents().get(0);
-		private final Group cGroup_13_3 = (Group)cGroup_13.eContents().get(3);
-		private final Keyword cCommaKeyword_13_3_0 = (Keyword)cGroup_13_3.eContents().get(0);
-		private final Assignment cDevicesAssignment_13_3_1 = (Assignment)cGroup_13_3.eContents().get(1);
-		private final RuleCall cDevicesDeviceParserRuleCall_13_3_1_0 = (RuleCall)cDevicesAssignment_13_3_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_13_4 = (Keyword)cGroup_13.eContents().get(4);
-		private final Keyword cRightCurlyBracketKeyword_14 = (Keyword)cGroup.eContents().get(14);
+		private final Assignment cDevicesAssignment_11_3_1 = (Assignment)cGroup_11_3.eContents().get(1);
+		private final RuleCall cDevicesDeviceParserRuleCall_11_3_1_0 = (RuleCall)cDevicesAssignment_11_3_1.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_11_4 = (Keyword)cGroup_11.eContents().get(4);
+		private final Keyword cRightCurlyBracketKeyword_12 = (Keyword)cGroup.eContents().get(12);
 		
 		//ExternalSpace returns ExternalSpace:
 		//    'ExternalSpace'
@@ -1699,8 +1575,6 @@ public class HouseBuilderV2GrammarAccess extends AbstractElementFinder.AbstractG
 		//        ('type' type=OuterSpaceType)?
 		//        ('ground' ground=GroundType)?
 		//        ('sensors' '(' sensors+=[Sensor|EString] ( "," sensors+=[Sensor|EString])* ')' )?
-		//        ('passagesA' '(' passagesA+=[Passage|EString] ( "," passagesA+=[Passage|EString])* ')' )?
-		//        ('passagesB' '(' passagesB+=[Passage|EString] ( "," passagesB+=[Passage|EString])* ')' )?
 		//        ('entrances' '(' entrances+=[Entrance|EString] ( "," entrances+=[Entrance|EString])* ')' )?
 		//        ('devices' '{' devices+=Device ( "," devices+=Device)* '}' )?
 		//    '}';
@@ -1714,8 +1588,6 @@ public class HouseBuilderV2GrammarAccess extends AbstractElementFinder.AbstractG
 		//    ('type' type=OuterSpaceType)?
 		//    ('ground' ground=GroundType)?
 		//    ('sensors' '(' sensors+=[Sensor|EString] ( "," sensors+=[Sensor|EString])* ')' )?
-		//    ('passagesA' '(' passagesA+=[Passage|EString] ( "," passagesA+=[Passage|EString])* ')' )?
-		//    ('passagesB' '(' passagesB+=[Passage|EString] ( "," passagesB+=[Passage|EString])* ')' )?
 		//    ('entrances' '(' entrances+=[Entrance|EString] ( "," entrances+=[Entrance|EString])* ')' )?
 		//    ('devices' '{' devices+=Device ( "," devices+=Device)* '}' )?
 		//'}'
@@ -1811,146 +1683,74 @@ public class HouseBuilderV2GrammarAccess extends AbstractElementFinder.AbstractG
 		//')'
 		public Keyword getRightParenthesisKeyword_9_4() { return cRightParenthesisKeyword_9_4; }
 		
-		//('passagesA' '(' passagesA+=[Passage|EString] ( "," passagesA+=[Passage|EString])* ')' )?
+		//('entrances' '(' entrances+=[Entrance|EString] ( "," entrances+=[Entrance|EString])* ')' )?
 		public Group getGroup_10() { return cGroup_10; }
 		
-		//'passagesA'
-		public Keyword getPassagesAKeyword_10_0() { return cPassagesAKeyword_10_0; }
+		//'entrances'
+		public Keyword getEntrancesKeyword_10_0() { return cEntrancesKeyword_10_0; }
 		
 		//'('
 		public Keyword getLeftParenthesisKeyword_10_1() { return cLeftParenthesisKeyword_10_1; }
 		
-		//passagesA+=[Passage|EString]
-		public Assignment getPassagesAAssignment_10_2() { return cPassagesAAssignment_10_2; }
+		//entrances+=[Entrance|EString]
+		public Assignment getEntrancesAssignment_10_2() { return cEntrancesAssignment_10_2; }
 		
-		//[Passage|EString]
-		public CrossReference getPassagesAPassageCrossReference_10_2_0() { return cPassagesAPassageCrossReference_10_2_0; }
+		//[Entrance|EString]
+		public CrossReference getEntrancesEntranceCrossReference_10_2_0() { return cEntrancesEntranceCrossReference_10_2_0; }
 		
 		//EString
-		public RuleCall getPassagesAPassageEStringParserRuleCall_10_2_0_1() { return cPassagesAPassageEStringParserRuleCall_10_2_0_1; }
+		public RuleCall getEntrancesEntranceEStringParserRuleCall_10_2_0_1() { return cEntrancesEntranceEStringParserRuleCall_10_2_0_1; }
 		
-		//( "," passagesA+=[Passage|EString])*
+		//( "," entrances+=[Entrance|EString])*
 		public Group getGroup_10_3() { return cGroup_10_3; }
 		
 		//","
 		public Keyword getCommaKeyword_10_3_0() { return cCommaKeyword_10_3_0; }
 		
-		//passagesA+=[Passage|EString]
-		public Assignment getPassagesAAssignment_10_3_1() { return cPassagesAAssignment_10_3_1; }
+		//entrances+=[Entrance|EString]
+		public Assignment getEntrancesAssignment_10_3_1() { return cEntrancesAssignment_10_3_1; }
 		
-		//[Passage|EString]
-		public CrossReference getPassagesAPassageCrossReference_10_3_1_0() { return cPassagesAPassageCrossReference_10_3_1_0; }
+		//[Entrance|EString]
+		public CrossReference getEntrancesEntranceCrossReference_10_3_1_0() { return cEntrancesEntranceCrossReference_10_3_1_0; }
 		
 		//EString
-		public RuleCall getPassagesAPassageEStringParserRuleCall_10_3_1_0_1() { return cPassagesAPassageEStringParserRuleCall_10_3_1_0_1; }
+		public RuleCall getEntrancesEntranceEStringParserRuleCall_10_3_1_0_1() { return cEntrancesEntranceEStringParserRuleCall_10_3_1_0_1; }
 		
 		//')'
 		public Keyword getRightParenthesisKeyword_10_4() { return cRightParenthesisKeyword_10_4; }
 		
-		//('passagesB' '(' passagesB+=[Passage|EString] ( "," passagesB+=[Passage|EString])* ')' )?
+		//('devices' '{' devices+=Device ( "," devices+=Device)* '}' )?
 		public Group getGroup_11() { return cGroup_11; }
 		
-		//'passagesB'
-		public Keyword getPassagesBKeyword_11_0() { return cPassagesBKeyword_11_0; }
+		//'devices'
+		public Keyword getDevicesKeyword_11_0() { return cDevicesKeyword_11_0; }
 		
-		//'('
-		public Keyword getLeftParenthesisKeyword_11_1() { return cLeftParenthesisKeyword_11_1; }
+		//'{'
+		public Keyword getLeftCurlyBracketKeyword_11_1() { return cLeftCurlyBracketKeyword_11_1; }
 		
-		//passagesB+=[Passage|EString]
-		public Assignment getPassagesBAssignment_11_2() { return cPassagesBAssignment_11_2; }
+		//devices+=Device
+		public Assignment getDevicesAssignment_11_2() { return cDevicesAssignment_11_2; }
 		
-		//[Passage|EString]
-		public CrossReference getPassagesBPassageCrossReference_11_2_0() { return cPassagesBPassageCrossReference_11_2_0; }
+		//Device
+		public RuleCall getDevicesDeviceParserRuleCall_11_2_0() { return cDevicesDeviceParserRuleCall_11_2_0; }
 		
-		//EString
-		public RuleCall getPassagesBPassageEStringParserRuleCall_11_2_0_1() { return cPassagesBPassageEStringParserRuleCall_11_2_0_1; }
-		
-		//( "," passagesB+=[Passage|EString])*
+		//( "," devices+=Device)*
 		public Group getGroup_11_3() { return cGroup_11_3; }
 		
 		//","
 		public Keyword getCommaKeyword_11_3_0() { return cCommaKeyword_11_3_0; }
 		
-		//passagesB+=[Passage|EString]
-		public Assignment getPassagesBAssignment_11_3_1() { return cPassagesBAssignment_11_3_1; }
-		
-		//[Passage|EString]
-		public CrossReference getPassagesBPassageCrossReference_11_3_1_0() { return cPassagesBPassageCrossReference_11_3_1_0; }
-		
-		//EString
-		public RuleCall getPassagesBPassageEStringParserRuleCall_11_3_1_0_1() { return cPassagesBPassageEStringParserRuleCall_11_3_1_0_1; }
-		
-		//')'
-		public Keyword getRightParenthesisKeyword_11_4() { return cRightParenthesisKeyword_11_4; }
-		
-		//('entrances' '(' entrances+=[Entrance|EString] ( "," entrances+=[Entrance|EString])* ')' )?
-		public Group getGroup_12() { return cGroup_12; }
-		
-		//'entrances'
-		public Keyword getEntrancesKeyword_12_0() { return cEntrancesKeyword_12_0; }
-		
-		//'('
-		public Keyword getLeftParenthesisKeyword_12_1() { return cLeftParenthesisKeyword_12_1; }
-		
-		//entrances+=[Entrance|EString]
-		public Assignment getEntrancesAssignment_12_2() { return cEntrancesAssignment_12_2; }
-		
-		//[Entrance|EString]
-		public CrossReference getEntrancesEntranceCrossReference_12_2_0() { return cEntrancesEntranceCrossReference_12_2_0; }
-		
-		//EString
-		public RuleCall getEntrancesEntranceEStringParserRuleCall_12_2_0_1() { return cEntrancesEntranceEStringParserRuleCall_12_2_0_1; }
-		
-		//( "," entrances+=[Entrance|EString])*
-		public Group getGroup_12_3() { return cGroup_12_3; }
-		
-		//","
-		public Keyword getCommaKeyword_12_3_0() { return cCommaKeyword_12_3_0; }
-		
-		//entrances+=[Entrance|EString]
-		public Assignment getEntrancesAssignment_12_3_1() { return cEntrancesAssignment_12_3_1; }
-		
-		//[Entrance|EString]
-		public CrossReference getEntrancesEntranceCrossReference_12_3_1_0() { return cEntrancesEntranceCrossReference_12_3_1_0; }
-		
-		//EString
-		public RuleCall getEntrancesEntranceEStringParserRuleCall_12_3_1_0_1() { return cEntrancesEntranceEStringParserRuleCall_12_3_1_0_1; }
-		
-		//')'
-		public Keyword getRightParenthesisKeyword_12_4() { return cRightParenthesisKeyword_12_4; }
-		
-		//('devices' '{' devices+=Device ( "," devices+=Device)* '}' )?
-		public Group getGroup_13() { return cGroup_13; }
-		
-		//'devices'
-		public Keyword getDevicesKeyword_13_0() { return cDevicesKeyword_13_0; }
-		
-		//'{'
-		public Keyword getLeftCurlyBracketKeyword_13_1() { return cLeftCurlyBracketKeyword_13_1; }
-		
 		//devices+=Device
-		public Assignment getDevicesAssignment_13_2() { return cDevicesAssignment_13_2; }
+		public Assignment getDevicesAssignment_11_3_1() { return cDevicesAssignment_11_3_1; }
 		
 		//Device
-		public RuleCall getDevicesDeviceParserRuleCall_13_2_0() { return cDevicesDeviceParserRuleCall_13_2_0; }
-		
-		//( "," devices+=Device)*
-		public Group getGroup_13_3() { return cGroup_13_3; }
-		
-		//","
-		public Keyword getCommaKeyword_13_3_0() { return cCommaKeyword_13_3_0; }
-		
-		//devices+=Device
-		public Assignment getDevicesAssignment_13_3_1() { return cDevicesAssignment_13_3_1; }
-		
-		//Device
-		public RuleCall getDevicesDeviceParserRuleCall_13_3_1_0() { return cDevicesDeviceParserRuleCall_13_3_1_0; }
+		public RuleCall getDevicesDeviceParserRuleCall_11_3_1_0() { return cDevicesDeviceParserRuleCall_11_3_1_0; }
 		
 		//'}'
-		public Keyword getRightCurlyBracketKeyword_13_4() { return cRightCurlyBracketKeyword_13_4; }
+		public Keyword getRightCurlyBracketKeyword_11_4() { return cRightCurlyBracketKeyword_11_4; }
 		
 		//'}'
-		public Keyword getRightCurlyBracketKeyword_14() { return cRightCurlyBracketKeyword_14; }
+		public Keyword getRightCurlyBracketKeyword_12() { return cRightCurlyBracketKeyword_12; }
 	}
 	public class ActuatorElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Actuator");
@@ -2838,8 +2638,6 @@ public class HouseBuilderV2GrammarAccess extends AbstractElementFinder.AbstractG
 	//        'height' height=EFloat
 	//        ('roomType' roomType=RoomType)?
 	//        ('sensors' '(' sensors+=[Sensor|EString] ( "," sensors+=[Sensor|EString])* ')' )?
-	//        ('passagesA' '(' passagesA+=[Passage|EString] ( "," passagesA+=[Passage|EString])* ')' )?
-	//        ('passagesB' '(' passagesB+=[Passage|EString] ( "," passagesB+=[Passage|EString])* ')' )?
 	//        ('entrances' '(' entrances+=[Entrance|EString] ( "," entrances+=[Entrance|EString])* ')' )?
 	//        ('devices' '{' devices+=Device ( "," devices+=Device)* '}' )?
 	//        ('windows' '{' windows+=Window ( "," windows+=Window)* '}' )?
@@ -2861,8 +2659,6 @@ public class HouseBuilderV2GrammarAccess extends AbstractElementFinder.AbstractG
 	//        ('type' type=OuterSpaceType)?
 	//        ('ground' ground=GroundType)?
 	//        ('sensors' '(' sensors+=[Sensor|EString] ( "," sensors+=[Sensor|EString])* ')' )?
-	//        ('passagesA' '(' passagesA+=[Passage|EString] ( "," passagesA+=[Passage|EString])* ')' )?
-	//        ('passagesB' '(' passagesB+=[Passage|EString] ( "," passagesB+=[Passage|EString])* ')' )?
 	//        ('entrances' '(' entrances+=[Entrance|EString] ( "," entrances+=[Entrance|EString])* ')' )?
 	//        ('devices' '{' devices+=Device ( "," devices+=Device)* '}' )?
 	//    '}';

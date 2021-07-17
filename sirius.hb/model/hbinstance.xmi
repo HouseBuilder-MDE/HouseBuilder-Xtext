@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hb:House xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hb="http://www.example.org/hb" xsi:schemaLocation="http://www.example.org/hb hb.ecore" name="Nuovo piano">
+  <floors name="Terzo piano" level="3">
+    <spaces xsi:type="hb:Room" name="Salotto" length="5.2" width="5.0" passagesA="//@passages.1 //@passages.8" passagesB="//@passages.2" entrances="//@entrances.0" height="2.8" roomType="LIVING_ROOM">
+      <devices name="Smart TV" type="APPLIANCE" model="Samsung Q85T 55"/>
+      <devices name="Telefono di casa" type="SOCKET" model="Telecom"/>
+    </spaces>
+    <spaces xsi:type="hb:Room" name="Cucina" length="4.3" width="3.6" sensors="//@controllers.0/@sensors.1 //@controllers.0/@sensors.2" passagesA="//@passages.0" passagesB="//@passages.8" height="2.8" roomType="KITCHEN">
+      <devices name="Lavastoviglie smart" type="APPLIANCE" model="Hotpoint Ariston "/>
+    </spaces>
+    <spaces xsi:type="hb:Room" name="Corridoio" length="4.0" width="1.2" sensors="//@controllers.0/@sensors.0" passagesA="//@passages.2 //@passages.3 //@passages.4 //@passages.5 //@passages.6 //@passages.7" height="3.0" roomType="HALLWAY">
+      <devices name="Termostato principale" model="Thermocare"/>
+    </spaces>
+    <spaces xsi:type="hb:Room" name="Cameretta piccola" length="4.0" width="3.0" passagesA="//@passages.9" passagesB="//@passages.5" height="2.2" roomType="BEDROOM"/>
+    <spaces xsi:type="hb:Room" name="Cameretta grande" length="4.8" width="3.6" passagesA="//@passages.10" passagesB="//@passages.6" height="2.8" roomType="BEDROOM">
+      <devices name="Modem-router per internet e telefono" type="APPLIANCE" model="Vodafone Station Revolution"/>
+    </spaces>
+    <spaces xsi:type="hb:Room" name="Bagno piccolo" length="3.2" width="2.8" passagesA="//@passages.11" passagesB="//@passages.4" height="2.8" roomType="BATHROOM"/>
+    <spaces xsi:type="hb:Room" name="Bagno grande" length="4.3" width="2.7" passagesB="//@passages.3" height="2.8" roomType="BATHROOM">
+      <devices name="Asciugatrice smart" type="APPLIANCE" model="Samsung 800KV"/>
+      <windows name="A ribalta del bagno grande" doorsNumber="1" width="0.8" height="0.8"/>
+    </spaces>
+    <spaces xsi:type="hb:Room" name="Camera matrimoniale" length="4.9" width="4.4" passagesB="//@passages.7" height="2.8" roomType="BEDROOM">
+      <devices name="Telefono secondario" type="SOCKET" model="Telecom"/>
+      <windows name="Finestra della camera matrimoniale" doorsNumber="2" width="1.2" height="1.2"/>
+    </spaces>
+    <spaces xsi:type="hb:Room" name="Ripostiglio esterno" length="1.4" width="0.8" passagesB="//@passages.12" height="3.4" roomType="STORAGE_ROOM"/>
+    <spaces xsi:type="hb:ExternalSpace" name="Balcone principale" length="3.2" width="8.0" passagesA="//@passages.12" passagesB="//@passages.0 //@passages.1" ground="PAVING"/>
+    <spaces xsi:type="hb:ExternalSpace" name="Balconcino del bagno piccolo" length="2.0" width="2.4" passagesB="//@passages.11" ground="PAVING"/>
+    <spaces xsi:type="hb:ExternalSpace" name="Balcone delle camerette" length="1.4" width="6.4" passagesB="//@passages.9 //@passages.10" ground="PAVING"/>
+  </floors>
+  <floors name="Seminterrato" level="-1">
+    <spaces xsi:type="hb:Room" name="Garage principale" length="5.6" width="6.0" entrances="//@entrances.1" height="3.5" roomType="GARAGE"/>
+  </floors>
+  <passages name="Porta-finestra della cucina" doorType="DOOR_WINDOW" width="1.2" height="2.2" spaceA="//@floors.0/@spaces.1" spaceB="//@floors.0/@spaces.9"/>
+  <passages name="Porta-finestra del salotto" doorType="DOOR_WINDOW" width="1.8" height="2.2" spaceA="//@floors.0/@spaces.0" spaceB="//@floors.0/@spaces.9"/>
+  <passages name="Corridoio-salotto" width="0.7" height="2.2" spaceA="//@floors.0/@spaces.2" spaceB="//@floors.0/@spaces.0"/>
+  <passages name="Corridoio-bagno grande" width="0.7" height="2.2" spaceA="//@floors.0/@spaces.2" spaceB="//@floors.0/@spaces.6"/>
+  <passages name="Corridoio-bagno piccolo" width="0.7" height="2.2" spaceA="//@floors.0/@spaces.2" spaceB="//@floors.0/@spaces.5"/>
+  <passages name="Corridoio-cameretta piccola" width="0.7" height="2.2" spaceA="//@floors.0/@spaces.2" spaceB="//@floors.0/@spaces.3"/>
+  <passages name="Corridoio-cameretta grande" width="0.7" height="2.2" spaceA="//@floors.0/@spaces.2" spaceB="//@floors.0/@spaces.4"/>
+  <passages name="Corridoio-camera matrimoniale" width="0.7" height="2.2" spaceA="//@floors.0/@spaces.2" spaceB="//@floors.0/@spaces.7"/>
+  <passages name="Scorrevole salotto-cucina" doorType="SLIDING_DOOR" width="1.2" height="2.2" spaceA="//@floors.0/@spaces.0" spaceB="//@floors.0/@spaces.1"/>
+  <passages name="Porta-finestra della cameretta piccola" doorType="DOOR_WINDOW" width="1.2" height="2.2" spaceA="//@floors.0/@spaces.3" spaceB="//@floors.0/@spaces.11"/>
+  <passages name="Porta-finestra della cameretta grande" doorType="DOOR_WINDOW" width="1.2" height="2.2" spaceA="//@floors.0/@spaces.4" spaceB="//@floors.0/@spaces.11"/>
+  <passages name="Porta-finestra del balcone piccolo" doorType="DOOR_WINDOW" width="0.7" height="2.2" spaceA="//@floors.0/@spaces.5" spaceB="//@floors.0/@spaces.10"/>
+  <passages name="Porta del ripostiglio esterno" width="0.7" height="2.6" spaceA="//@floors.0/@spaces.9" spaceB="//@floors.0/@spaces.8"/>
+  <controllers name="Controller principale" model="Raspberry CR4" os="Raspberry Pi OS" osVersion="1.6">
+    <sensors name="Temperatura della casa" space="//@floors.0/@spaces.2"/>
+    <sensors name="Allerta fughe di gas" type="GAS" space="//@floors.0/@spaces.1"/>
+    <sensors name="Anti-incendio" type="SMOKE" space="//@floors.0/@spaces.1"/>
+  </controllers>
+  <entrances name="Entrata principale" doorType="ENTRANCE_DOOR" doorsNumber="1" width="1.1" height="2.2" space="//@floors.0/@spaces.0"/>
+  <entrances name="Nuova entrata" space="//@floors.1/@spaces.0"/>
+</hb:House>

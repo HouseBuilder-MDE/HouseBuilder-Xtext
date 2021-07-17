@@ -1974,9 +1974,9 @@ ruleRoom returns [EObject current=null]
 			}
 		)?
 		(
-			otherlv_17='passagesA'
+			otherlv_17='entrances'
 			{
-				newLeafNode(otherlv_17, grammarAccess.getRoomAccess().getPassagesAKeyword_11_0());
+				newLeafNode(otherlv_17, grammarAccess.getRoomAccess().getEntrancesKeyword_11_0());
 			}
 			otherlv_18='('
 			{
@@ -1990,7 +1990,7 @@ ruleRoom returns [EObject current=null]
 						}
 					}
 					{
-						newCompositeNode(grammarAccess.getRoomAccess().getPassagesAPassageCrossReference_11_2_0());
+						newCompositeNode(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_11_2_0());
 					}
 					ruleEString
 					{
@@ -2011,7 +2011,7 @@ ruleRoom returns [EObject current=null]
 							}
 						}
 						{
-							newCompositeNode(grammarAccess.getRoomAccess().getPassagesAPassageCrossReference_11_3_1_0());
+							newCompositeNode(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_11_3_1_0());
 						}
 						ruleEString
 						{
@@ -2026,26 +2026,29 @@ ruleRoom returns [EObject current=null]
 			}
 		)?
 		(
-			otherlv_23='passagesB'
+			otherlv_23='devices'
 			{
-				newLeafNode(otherlv_23, grammarAccess.getRoomAccess().getPassagesBKeyword_12_0());
+				newLeafNode(otherlv_23, grammarAccess.getRoomAccess().getDevicesKeyword_12_0());
 			}
-			otherlv_24='('
+			otherlv_24='{'
 			{
-				newLeafNode(otherlv_24, grammarAccess.getRoomAccess().getLeftParenthesisKeyword_12_1());
+				newLeafNode(otherlv_24, grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_12_1());
 			}
 			(
 				(
 					{
+						newCompositeNode(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_12_2_0());
+					}
+					lv_devices_25_0=ruleDevice
+					{
 						if ($current==null) {
-							$current = createModelElement(grammarAccess.getRoomRule());
+							$current = createModelElementForParent(grammarAccess.getRoomRule());
 						}
-					}
-					{
-						newCompositeNode(grammarAccess.getRoomAccess().getPassagesBPassageCrossReference_12_2_0());
-					}
-					ruleEString
-					{
+						add(
+							$current,
+							"devices",
+							lv_devices_25_0,
+							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
 						afterParserOrEnumRuleCall();
 					}
 				)
@@ -2058,46 +2061,52 @@ ruleRoom returns [EObject current=null]
 				(
 					(
 						{
+							newCompositeNode(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_12_3_1_0());
+						}
+						lv_devices_27_0=ruleDevice
+						{
 							if ($current==null) {
-								$current = createModelElement(grammarAccess.getRoomRule());
+								$current = createModelElementForParent(grammarAccess.getRoomRule());
 							}
-						}
-						{
-							newCompositeNode(grammarAccess.getRoomAccess().getPassagesBPassageCrossReference_12_3_1_0());
-						}
-						ruleEString
-						{
+							add(
+								$current,
+								"devices",
+								lv_devices_27_0,
+								"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_28=')'
+			otherlv_28='}'
 			{
-				newLeafNode(otherlv_28, grammarAccess.getRoomAccess().getRightParenthesisKeyword_12_4());
+				newLeafNode(otherlv_28, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_12_4());
 			}
 		)?
 		(
-			otherlv_29='entrances'
+			otherlv_29='windows'
 			{
-				newLeafNode(otherlv_29, grammarAccess.getRoomAccess().getEntrancesKeyword_13_0());
+				newLeafNode(otherlv_29, grammarAccess.getRoomAccess().getWindowsKeyword_13_0());
 			}
-			otherlv_30='('
+			otherlv_30='{'
 			{
-				newLeafNode(otherlv_30, grammarAccess.getRoomAccess().getLeftParenthesisKeyword_13_1());
+				newLeafNode(otherlv_30, grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_13_1());
 			}
 			(
 				(
 					{
+						newCompositeNode(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_13_2_0());
+					}
+					lv_windows_31_0=ruleWindow
+					{
 						if ($current==null) {
-							$current = createModelElement(grammarAccess.getRoomRule());
+							$current = createModelElementForParent(grammarAccess.getRoomRule());
 						}
-					}
-					{
-						newCompositeNode(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_13_2_0());
-					}
-					ruleEString
-					{
+						add(
+							$current,
+							"windows",
+							lv_windows_31_0,
+							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Window");
 						afterParserOrEnumRuleCall();
 					}
 				)
@@ -2110,122 +2119,9 @@ ruleRoom returns [EObject current=null]
 				(
 					(
 						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getRoomRule());
-							}
+							newCompositeNode(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_13_3_1_0());
 						}
-						{
-							newCompositeNode(grammarAccess.getRoomAccess().getEntrancesEntranceCrossReference_13_3_1_0());
-						}
-						ruleEString
-						{
-							afterParserOrEnumRuleCall();
-						}
-					)
-				)
-			)*
-			otherlv_34=')'
-			{
-				newLeafNode(otherlv_34, grammarAccess.getRoomAccess().getRightParenthesisKeyword_13_4());
-			}
-		)?
-		(
-			otherlv_35='devices'
-			{
-				newLeafNode(otherlv_35, grammarAccess.getRoomAccess().getDevicesKeyword_14_0());
-			}
-			otherlv_36='{'
-			{
-				newLeafNode(otherlv_36, grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_14_1());
-			}
-			(
-				(
-					{
-						newCompositeNode(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_14_2_0());
-					}
-					lv_devices_37_0=ruleDevice
-					{
-						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getRoomRule());
-						}
-						add(
-							$current,
-							"devices",
-							lv_devices_37_0,
-							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
-						afterParserOrEnumRuleCall();
-					}
-				)
-			)
-			(
-				otherlv_38=','
-				{
-					newLeafNode(otherlv_38, grammarAccess.getRoomAccess().getCommaKeyword_14_3_0());
-				}
-				(
-					(
-						{
-							newCompositeNode(grammarAccess.getRoomAccess().getDevicesDeviceParserRuleCall_14_3_1_0());
-						}
-						lv_devices_39_0=ruleDevice
-						{
-							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getRoomRule());
-							}
-							add(
-								$current,
-								"devices",
-								lv_devices_39_0,
-								"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
-							afterParserOrEnumRuleCall();
-						}
-					)
-				)
-			)*
-			otherlv_40='}'
-			{
-				newLeafNode(otherlv_40, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_14_4());
-			}
-		)?
-		(
-			otherlv_41='windows'
-			{
-				newLeafNode(otherlv_41, grammarAccess.getRoomAccess().getWindowsKeyword_15_0());
-			}
-			otherlv_42='{'
-			{
-				newLeafNode(otherlv_42, grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_15_1());
-			}
-			(
-				(
-					{
-						newCompositeNode(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_15_2_0());
-					}
-					lv_windows_43_0=ruleWindow
-					{
-						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getRoomRule());
-						}
-						add(
-							$current,
-							"windows",
-							lv_windows_43_0,
-							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Window");
-						afterParserOrEnumRuleCall();
-					}
-				)
-			)
-			(
-				otherlv_44=','
-				{
-					newLeafNode(otherlv_44, grammarAccess.getRoomAccess().getCommaKeyword_15_3_0());
-				}
-				(
-					(
-						{
-							newCompositeNode(grammarAccess.getRoomAccess().getWindowsWindowParserRuleCall_15_3_1_0());
-						}
-						lv_windows_45_0=ruleWindow
+						lv_windows_33_0=ruleWindow
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getRoomRule());
@@ -2233,21 +2129,21 @@ ruleRoom returns [EObject current=null]
 							add(
 								$current,
 								"windows",
-								lv_windows_45_0,
+								lv_windows_33_0,
 								"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Window");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_46='}'
+			otherlv_34='}'
 			{
-				newLeafNode(otherlv_46, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_15_4());
+				newLeafNode(otherlv_34, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_13_4());
 			}
 		)?
-		otherlv_47='}'
+		otherlv_35='}'
 		{
-			newLeafNode(otherlv_47, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_16());
+			newLeafNode(otherlv_35, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_14());
 		}
 	)
 ;
@@ -2444,9 +2340,9 @@ ruleExternalSpace returns [EObject current=null]
 			}
 		)?
 		(
-			otherlv_17='passagesA'
+			otherlv_17='entrances'
 			{
-				newLeafNode(otherlv_17, grammarAccess.getExternalSpaceAccess().getPassagesAKeyword_10_0());
+				newLeafNode(otherlv_17, grammarAccess.getExternalSpaceAccess().getEntrancesKeyword_10_0());
 			}
 			otherlv_18='('
 			{
@@ -2460,7 +2356,7 @@ ruleExternalSpace returns [EObject current=null]
 						}
 					}
 					{
-						newCompositeNode(grammarAccess.getExternalSpaceAccess().getPassagesAPassageCrossReference_10_2_0());
+						newCompositeNode(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_10_2_0());
 					}
 					ruleEString
 					{
@@ -2481,7 +2377,7 @@ ruleExternalSpace returns [EObject current=null]
 							}
 						}
 						{
-							newCompositeNode(grammarAccess.getExternalSpaceAccess().getPassagesAPassageCrossReference_10_3_1_0());
+							newCompositeNode(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_10_3_1_0());
 						}
 						ruleEString
 						{
@@ -2496,26 +2392,29 @@ ruleExternalSpace returns [EObject current=null]
 			}
 		)?
 		(
-			otherlv_23='passagesB'
+			otherlv_23='devices'
 			{
-				newLeafNode(otherlv_23, grammarAccess.getExternalSpaceAccess().getPassagesBKeyword_11_0());
+				newLeafNode(otherlv_23, grammarAccess.getExternalSpaceAccess().getDevicesKeyword_11_0());
 			}
-			otherlv_24='('
+			otherlv_24='{'
 			{
-				newLeafNode(otherlv_24, grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_11_1());
+				newLeafNode(otherlv_24, grammarAccess.getExternalSpaceAccess().getLeftCurlyBracketKeyword_11_1());
 			}
 			(
 				(
 					{
+						newCompositeNode(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_11_2_0());
+					}
+					lv_devices_25_0=ruleDevice
+					{
 						if ($current==null) {
-							$current = createModelElement(grammarAccess.getExternalSpaceRule());
+							$current = createModelElementForParent(grammarAccess.getExternalSpaceRule());
 						}
-					}
-					{
-						newCompositeNode(grammarAccess.getExternalSpaceAccess().getPassagesBPassageCrossReference_11_2_0());
-					}
-					ruleEString
-					{
+						add(
+							$current,
+							"devices",
+							lv_devices_25_0,
+							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
 						afterParserOrEnumRuleCall();
 					}
 				)
@@ -2528,116 +2427,9 @@ ruleExternalSpace returns [EObject current=null]
 				(
 					(
 						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getExternalSpaceRule());
-							}
+							newCompositeNode(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_11_3_1_0());
 						}
-						{
-							newCompositeNode(grammarAccess.getExternalSpaceAccess().getPassagesBPassageCrossReference_11_3_1_0());
-						}
-						ruleEString
-						{
-							afterParserOrEnumRuleCall();
-						}
-					)
-				)
-			)*
-			otherlv_28=')'
-			{
-				newLeafNode(otherlv_28, grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_11_4());
-			}
-		)?
-		(
-			otherlv_29='entrances'
-			{
-				newLeafNode(otherlv_29, grammarAccess.getExternalSpaceAccess().getEntrancesKeyword_12_0());
-			}
-			otherlv_30='('
-			{
-				newLeafNode(otherlv_30, grammarAccess.getExternalSpaceAccess().getLeftParenthesisKeyword_12_1());
-			}
-			(
-				(
-					{
-						if ($current==null) {
-							$current = createModelElement(grammarAccess.getExternalSpaceRule());
-						}
-					}
-					{
-						newCompositeNode(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_12_2_0());
-					}
-					ruleEString
-					{
-						afterParserOrEnumRuleCall();
-					}
-				)
-			)
-			(
-				otherlv_32=','
-				{
-					newLeafNode(otherlv_32, grammarAccess.getExternalSpaceAccess().getCommaKeyword_12_3_0());
-				}
-				(
-					(
-						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getExternalSpaceRule());
-							}
-						}
-						{
-							newCompositeNode(grammarAccess.getExternalSpaceAccess().getEntrancesEntranceCrossReference_12_3_1_0());
-						}
-						ruleEString
-						{
-							afterParserOrEnumRuleCall();
-						}
-					)
-				)
-			)*
-			otherlv_34=')'
-			{
-				newLeafNode(otherlv_34, grammarAccess.getExternalSpaceAccess().getRightParenthesisKeyword_12_4());
-			}
-		)?
-		(
-			otherlv_35='devices'
-			{
-				newLeafNode(otherlv_35, grammarAccess.getExternalSpaceAccess().getDevicesKeyword_13_0());
-			}
-			otherlv_36='{'
-			{
-				newLeafNode(otherlv_36, grammarAccess.getExternalSpaceAccess().getLeftCurlyBracketKeyword_13_1());
-			}
-			(
-				(
-					{
-						newCompositeNode(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_13_2_0());
-					}
-					lv_devices_37_0=ruleDevice
-					{
-						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getExternalSpaceRule());
-						}
-						add(
-							$current,
-							"devices",
-							lv_devices_37_0,
-							"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
-						afterParserOrEnumRuleCall();
-					}
-				)
-			)
-			(
-				otherlv_38=','
-				{
-					newLeafNode(otherlv_38, grammarAccess.getExternalSpaceAccess().getCommaKeyword_13_3_0());
-				}
-				(
-					(
-						{
-							newCompositeNode(grammarAccess.getExternalSpaceAccess().getDevicesDeviceParserRuleCall_13_3_1_0());
-						}
-						lv_devices_39_0=ruleDevice
+						lv_devices_27_0=ruleDevice
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getExternalSpaceRule());
@@ -2645,21 +2437,21 @@ ruleExternalSpace returns [EObject current=null]
 							add(
 								$current,
 								"devices",
-								lv_devices_39_0,
+								lv_devices_27_0,
 								"it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Device");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_40='}'
+			otherlv_28='}'
 			{
-				newLeafNode(otherlv_40, grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_13_4());
+				newLeafNode(otherlv_28, grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_11_4());
 			}
 		)?
-		otherlv_41='}'
+		otherlv_29='}'
 		{
-			newLeafNode(otherlv_41, grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_14());
+			newLeafNode(otherlv_29, grammarAccess.getExternalSpaceAccess().getRightCurlyBracketKeyword_12());
 		}
 	)
 ;
