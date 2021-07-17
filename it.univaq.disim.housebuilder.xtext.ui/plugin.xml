@@ -4,48 +4,48 @@
 	<extension
 		point="org.eclipse.ui.editors">
 		<editor
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.XtextEditor"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.XtextEditor"
 			contributorClass="org.eclipse.ui.editors.text.TextEditorActionContributor"
 			default="true"
 			extensions="hb2"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
-			name="HouseBuilderV2 Editor">
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder"
+			name="HouseBuilder Editor">
 		</editor>
 	</extension>
 	<extension
 		point="org.eclipse.ui.handlers">
 		<handler
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.hyperlinking.OpenDeclarationHandler"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.hyperlinking.OpenDeclarationHandler"
 			commandId="org.eclipse.xtext.ui.editor.hyperlinking.OpenDeclaration">
 			<activeWhen>
 				<reference
-					definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened">
+					definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened">
 				</reference>
 			</activeWhen>
 		</handler>
 		<handler
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.handler.ValidateActionHandler"
-			commandId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.validate">
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.handler.ValidateActionHandler"
+			commandId="it.univaq.disim.housebuilder.xtext.HouseBuilder.validate">
 			<activeWhen>
 				<reference
-					definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened">
+					definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened">
 				</reference>
 			</activeWhen>
 		</handler>
 		<!-- copy qualified name -->
 		<handler
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedNameHandler"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedNameHandler"
 			commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedName">
 			<activeWhen>
-				<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened" />
+				<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened" />
 			</activeWhen>
 		</handler>
 		<handler
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.copyqualifiedname.OutlineCopyQualifiedNameHandler"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.copyqualifiedname.OutlineCopyQualifiedNameHandler"
 			commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.OutlineCopyQualifiedName">
 			<activeWhen>
 				<and>
-					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.XtextEditor.opened" />
+					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.XtextEditor.opened" />
 					<iterate>
 						<adapt type="org.eclipse.xtext.ui.editor.outline.IOutlineNode" />
 					</iterate>
@@ -54,22 +54,22 @@
 		</handler>
 	</extension>
 	<extension point="org.eclipse.core.expressions.definitions">
-		<definition id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened">
+		<definition id="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened">
 			<and>
 				<reference definitionId="isActiveEditorAnInstanceOfXtextEditor"/>
 				<with variable="activeEditor">
 					<test property="org.eclipse.xtext.ui.editor.XtextEditor.languageName"
-						value="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
+						value="it.univaq.disim.housebuilder.xtext.HouseBuilder"
 						forcePluginActivation="true"/>
 				</with>
 			</and>
 		</definition>
-		<definition id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.XtextEditor.opened">
+		<definition id="it.univaq.disim.housebuilder.xtext.HouseBuilder.XtextEditor.opened">
 			<and>
 				<reference definitionId="isXtextEditorActive"/>
 				<with variable="activeEditor">
 					<test property="org.eclipse.xtext.ui.editor.XtextEditor.languageName"
-						value="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
+						value="it.univaq.disim.housebuilder.xtext.HouseBuilder"
 						forcePluginActivation="true"/>
 				</with>
 			</and>
@@ -78,33 +78,33 @@
 	<extension
 			point="org.eclipse.ui.preferencePages">
 		<page
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.preferences.LanguageRootPreferencePage"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
-			name="HouseBuilderV2">
-			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilderV2"/>
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.preferences.LanguageRootPreferencePage"
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder"
+			name="HouseBuilder">
+			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilder"/>
 		</page>
 		<page
-			category="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.syntaxcoloring.SyntaxColoringPreferencePage"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.coloring"
+			category="it.univaq.disim.housebuilder.xtext.HouseBuilder"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.syntaxcoloring.SyntaxColoringPreferencePage"
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder.coloring"
 			name="Syntax Coloring">
-			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilderV2"/>
+			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilder"/>
 		</page>
 		<page
-			category="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.templates.XtextTemplatePreferencePage"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.templates"
+			category="it.univaq.disim.housebuilder.xtext.HouseBuilder"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.templates.XtextTemplatePreferencePage"
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder.templates"
 			name="Templates">
-			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilderV2"/>
+			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilder"/>
 		</page>
 	</extension>
 	<extension
 			point="org.eclipse.ui.propertyPages">
 		<page
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.preferences.LanguageRootPreferencePage"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
-			name="HouseBuilderV2">
-			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilderV2"/>
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.preferences.LanguageRootPreferencePage"
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder"
+			name="HouseBuilder">
+			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilder"/>
 			<enabledWhen>
 				<adapt type="org.eclipse.core.resources.IProject"/>
 			</enabledWhen>
@@ -114,14 +114,14 @@
 	<extension
 		point="org.eclipse.ui.keywords">
 		<keyword
-			id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilderV2"
-			label="HouseBuilderV2"/>
+			id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilder"
+			label="HouseBuilder"/>
 	</extension>
 	<extension
 		point="org.eclipse.ui.commands">
 		<command
 			description="Trigger expensive validation"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.validate"
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder.validate"
 			name="Validate">
 		</command>
 		<!-- copy qualified name -->
@@ -142,12 +142,12 @@
 		<menuContribution
 			locationURI="popup:#TextEditorContext?after=group.edit">
 			<command
-				commandId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.validate"
+				commandId="it.univaq.disim.housebuilder.xtext.HouseBuilder.validate"
 				style="push"
 				tooltip="Trigger expensive validation">
 				<visibleWhen checkEnabled="false">
 					<reference
-						definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened">
+						definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened">
 					</reference>
 				</visibleWhen>
 			</command>
@@ -157,7 +157,7 @@
 			<command commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedName"
 				style="push" tooltip="Copy Qualified Name">
 				<visibleWhen checkEnabled="false">
-					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened" />
+					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened" />
 				</visibleWhen>
 			</command>
 		</menuContribution>
@@ -165,7 +165,7 @@
 			<command commandId="org.eclipse.xtext.ui.editor.copyqualifiedname.EditorCopyQualifiedName"
 				style="push" tooltip="Copy Qualified Name">
 				<visibleWhen checkEnabled="false">
-					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened" />
+					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened" />
 				</visibleWhen>
 			</command>
 		</menuContribution>
@@ -174,7 +174,7 @@
 				style="push" tooltip="Copy Qualified Name">
 				<visibleWhen checkEnabled="false">
 					<and>
-						<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.XtextEditor.opened" />
+						<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.XtextEditor.opened" />
 						<iterate>
 							<adapt type="org.eclipse.xtext.ui.editor.outline.IOutlineNode" />
 						</iterate>
@@ -187,7 +187,7 @@
 		<menuContribution locationURI="popup:#TextEditorContext?endof=group.find">
 			<command commandId="org.eclipse.xtext.ui.editor.FindReferences">
 				<visibleWhen checkEnabled="false">
-					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened">
+					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened">
 					</reference>
 				</visibleWhen>
 			</command>
@@ -195,11 +195,11 @@
 	</extension>
 	<extension point="org.eclipse.ui.handlers">
 		<handler
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.findrefs.FindReferencesHandler"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.findrefs.FindReferencesHandler"
 			commandId="org.eclipse.xtext.ui.editor.FindReferences">
 			<activeWhen>
 				<reference
-					definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened">
+					definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened">
 				</reference>
 			</activeWhen>
 		</handler>
@@ -208,8 +208,8 @@
 		<content-type
 			base-type="org.eclipse.core.runtime.text"
 			file-extensions="hb2"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.contenttype"
-			name="HouseBuilderV2 File"
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder.contenttype"
+			name="HouseBuilder File"
 			priority="normal">
 		</content-type>
 	</extension>
@@ -217,68 +217,68 @@
 	<extension
 		point="org.eclipse.emf.ecore.extension_parser">
 		<parser
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.resource.IResourceFactory"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.resource.IResourceFactory"
 			type="hb2">
 		</parser>
 	</extension>
 	<extension point="org.eclipse.xtext.extension_resourceServiceProvider">
 		<resourceServiceProvider
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.resource.IResourceUIServiceProvider"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.resource.IResourceUIServiceProvider"
 			uriExtension="hb2">
 		</resourceServiceProvider>
 	</extension>
-	<!-- marker definitions for it.univaq.disim.housebuilder.xtext.HouseBuilderV2 -->
+	<!-- marker definitions for it.univaq.disim.housebuilder.xtext.HouseBuilder -->
 	<extension
-			id="housebuilderv2.check.fast"
-			name="HouseBuilderV2 Problem"
+			id="housebuilder.check.fast"
+			name="HouseBuilder Problem"
 			point="org.eclipse.core.resources.markers">
 		<super type="org.eclipse.xtext.ui.check.fast"/>
 		<persistent value="true"/>
 	</extension>
 	<extension
-			id="housebuilderv2.check.normal"
-			name="HouseBuilderV2 Problem"
+			id="housebuilder.check.normal"
+			name="HouseBuilder Problem"
 			point="org.eclipse.core.resources.markers">
 		<super type="org.eclipse.xtext.ui.check.normal"/>
 		<persistent value="true"/>
 	</extension>
 	<extension
-			id="housebuilderv2.check.expensive"
-			name="HouseBuilderV2 Problem"
+			id="housebuilder.check.expensive"
+			name="HouseBuilder Problem"
 			point="org.eclipse.core.resources.markers">
 		<super type="org.eclipse.xtext.ui.check.expensive"/>
 		<persistent value="true"/>
 	</extension>
 	<extension point="org.eclipse.ui.preferencePages">
 		<page
-			category="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.validation.ValidatorPreferencePage"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.validator.preferencePage"
+			category="it.univaq.disim.housebuilder.xtext.HouseBuilder"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.validation.ValidatorPreferencePage"
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder.validator.preferencePage"
 			name="Errors/Warnings">
-			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilderV2"/>
+			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilder"/>
 		</page>
 	</extension>
 	<extension point="org.eclipse.xtext.builder.participant">
 		<participant
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.builder.IXtextBuilderParticipant"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.builder.IXtextBuilderParticipant"
 			fileExtensions="hb2"/>
 	</extension>
 	<extension point="org.eclipse.ui.preferencePages">
 		<page
-			category="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.builder.preferences.BuilderPreferencePage"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.compiler.preferencePage"
+			category="it.univaq.disim.housebuilder.xtext.HouseBuilder"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.builder.preferences.BuilderPreferencePage"
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder.compiler.preferencePage"
 			name="Compiler">
-			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilderV2"/>
+			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilder"/>
 		</page>
 	</extension>
 	<extension point="org.eclipse.ui.propertyPages">
 		<page
-			category="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.builder.preferences.BuilderPreferencePage"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.compiler.propertyPage"
+			category="it.univaq.disim.housebuilder.xtext.HouseBuilder"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.builder.preferences.BuilderPreferencePage"
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder.compiler.propertyPage"
 			name="Compiler">
-			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilderV2"/>
+			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilder"/>
 			<enabledWhen>
 				<adapt type="org.eclipse.core.resources.IProject"/>
 			</enabledWhen>
@@ -289,20 +289,20 @@
 		<menuContribution locationURI="popup:#TextEditorContext?after=xtext.ui.openDeclaration">
 			<command
 				commandId="org.eclipse.xtext.ui.OpenGeneratedFileCommand"
-				id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.OpenGeneratedCode"
+				id="it.univaq.disim.housebuilder.xtext.HouseBuilder.OpenGeneratedCode"
 				style="push">
 				<visibleWhen checkEnabled="false">
-					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened" />
+					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened" />
 				</visibleWhen>
 			</command>
 		</menuContribution>
 	</extension>
 	<extension point="org.eclipse.ui.handlers">
 		<handler
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.generator.trace.OpenGeneratedFileHandler"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.generator.trace.OpenGeneratedFileHandler"
 			commandId="org.eclipse.xtext.ui.OpenGeneratedFileCommand">
 			<activeWhen>
-				<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened" />
+				<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened" />
 			</activeWhen>
 		</handler>
 	</extension>
@@ -310,11 +310,11 @@
 	<extension
 		point="org.eclipse.ui.handlers">
 		<handler
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.outline.quickoutline.ShowQuickOutlineActionHandler"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.outline.quickoutline.ShowQuickOutlineActionHandler"
 			commandId="org.eclipse.xtext.ui.editor.outline.QuickOutline">
 			<activeWhen>
 				<reference
-					definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened">
+					definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened">
 				</reference>
 			</activeWhen>
 		</handler>
@@ -334,33 +334,33 @@
 				style="push"
 				tooltip="Open Quick Outline">
 				<visibleWhen checkEnabled="false">
-					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened"/>
+					<reference definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened"/>
 				</visibleWhen>
 			</command>
 		</menuContribution>
 	</extension>
-	<!-- quickfix marker resolution generator for it.univaq.disim.housebuilder.xtext.HouseBuilderV2 -->
+	<!-- quickfix marker resolution generator for it.univaq.disim.housebuilder.xtext.HouseBuilder -->
 	<extension
 			point="org.eclipse.ui.ide.markerResolution">
 		<markerResolutionGenerator
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.quickfix.MarkerResolutionGenerator"
-			markerType="it.univaq.disim.housebuilder.xtext.ui.housebuilderv2.check.fast">
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.quickfix.MarkerResolutionGenerator"
+			markerType="it.univaq.disim.housebuilder.xtext.ui.housebuilder.check.fast">
 			<attribute
 				name="FIXABLE_KEY"
 				value="true">
 			</attribute>
 		</markerResolutionGenerator>
 		<markerResolutionGenerator
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.quickfix.MarkerResolutionGenerator"
-			markerType="it.univaq.disim.housebuilder.xtext.ui.housebuilderv2.check.normal">
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.quickfix.MarkerResolutionGenerator"
+			markerType="it.univaq.disim.housebuilder.xtext.ui.housebuilder.check.normal">
 			<attribute
 				name="FIXABLE_KEY"
 				value="true">
 			</attribute>
 		</markerResolutionGenerator>
 		<markerResolutionGenerator
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.quickfix.MarkerResolutionGenerator"
-			markerType="it.univaq.disim.housebuilder.xtext.ui.housebuilderv2.check.expensive">
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.quickfix.MarkerResolutionGenerator"
+			markerType="it.univaq.disim.housebuilder.xtext.ui.housebuilder.check.expensive">
 			<attribute
 				name="FIXABLE_KEY"
 				value="true">
@@ -370,11 +370,11 @@
 	<!-- Rename Refactoring -->
 	<extension point="org.eclipse.ui.handlers">
 		<handler
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler"
 			commandId="org.eclipse.xtext.ui.refactoring.RenameElement">
 			<activeWhen>
 				<reference
-					definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened">
+					definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened">
 				</reference>
 			</activeWhen>
 		</handler>
@@ -386,7 +386,7 @@
 				style="push">
 				<visibleWhen checkEnabled="false">
 					<reference
-						definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.Editor.opened">
+						definitionId="it.univaq.disim.housebuilder.xtext.HouseBuilder.Editor.opened">
 					</reference>
 				</visibleWhen>
 			</command>
@@ -394,34 +394,34 @@
 	</extension>
 	<extension point="org.eclipse.ui.preferencePages">
 		<page
-			category="it.univaq.disim.housebuilder.xtext.HouseBuilderV2"
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.RefactoringPreferencePage"
-			id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.refactoring"
+			category="it.univaq.disim.housebuilder.xtext.HouseBuilder"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.RefactoringPreferencePage"
+			id="it.univaq.disim.housebuilder.xtext.HouseBuilder.refactoring"
 			name="Refactoring">
-			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilderV2"/>
+			<keywordReference id="it.univaq.disim.housebuilder.xtext.ui.keyword_HouseBuilder"/>
 		</page>
 	</extension>
 	<extension point="org.eclipse.compare.contentViewers">
-		<viewer id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.compare.contentViewers"
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.compare.InjectableViewerCreator"
+		<viewer id="it.univaq.disim.housebuilder.xtext.HouseBuilder.compare.contentViewers"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.compare.InjectableViewerCreator"
 			extensions="hb2">
 		</viewer>
 		<contentTypeBinding
-			contentTypeId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.contenttype"
-			contentViewerId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.compare.contentViewers" />
+			contentTypeId="it.univaq.disim.housebuilder.xtext.HouseBuilder.contenttype"
+			contentViewerId="it.univaq.disim.housebuilder.xtext.HouseBuilder.compare.contentViewers" />
 	</extension>
 	<extension point="org.eclipse.compare.contentMergeViewers">
-		<viewer id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.compare.contentMergeViewers"
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.compare.InjectableViewerCreator"
-			extensions="hb2" label="HouseBuilderV2 Compare">
+		<viewer id="it.univaq.disim.housebuilder.xtext.HouseBuilder.compare.contentMergeViewers"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.compare.InjectableViewerCreator"
+			extensions="hb2" label="HouseBuilder Compare">
 		</viewer>
 		<contentTypeBinding
-			contentTypeId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.contenttype"
-			contentMergeViewerId="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.compare.contentMergeViewers" />
+			contentTypeId="it.univaq.disim.housebuilder.xtext.HouseBuilder.contenttype"
+			contentMergeViewerId="it.univaq.disim.housebuilder.xtext.HouseBuilder.compare.contentMergeViewers" />
 	</extension>
 	<extension point="org.eclipse.ui.editors.documentProviders">
-		<provider id="it.univaq.disim.housebuilder.xtext.HouseBuilderV2.editors.documentProviders"
-			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2ExecutableExtensionFactory:org.eclipse.xtext.ui.editor.model.XtextDocumentProvider"
+		<provider id="it.univaq.disim.housebuilder.xtext.HouseBuilder.editors.documentProviders"
+			class="it.univaq.disim.housebuilder.xtext.ui.HouseBuilderExecutableExtensionFactory:org.eclipse.xtext.ui.editor.model.XtextDocumentProvider"
 			extensions="hb2">
 		</provider>
 	</extension>

@@ -6,8 +6,8 @@ package it.univaq.disim.housebuilder.xtext.ui.internal;
 import com.google.common.collect.Maps;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import it.univaq.disim.housebuilder.xtext.HouseBuilderV2RuntimeModule;
-import it.univaq.disim.housebuilder.xtext.ui.HouseBuilderV2UiModule;
+import it.univaq.disim.housebuilder.xtext.HouseBuilderRuntimeModule;
+import it.univaq.disim.housebuilder.xtext.ui.HouseBuilderUiModule;
 import java.util.Collections;
 import java.util.Map;
 import org.apache.log4j.Logger;
@@ -23,7 +23,7 @@ import org.osgi.framework.BundleContext;
 public class XtextActivator extends AbstractUIPlugin {
 
 	public static final String PLUGIN_ID = "it.univaq.disim.housebuilder.xtext.ui";
-	public static final String IT_UNIVAQ_DISIM_HOUSEBUILDER_XTEXT_HOUSEBUILDERV2 = "it.univaq.disim.housebuilder.xtext.HouseBuilderV2";
+	public static final String IT_UNIVAQ_DISIM_HOUSEBUILDER_XTEXT_HOUSEBUILDER = "it.univaq.disim.housebuilder.xtext.HouseBuilder";
 	
 	private static final Logger logger = Logger.getLogger(XtextActivator.class);
 	
@@ -73,15 +73,15 @@ public class XtextActivator extends AbstractUIPlugin {
 	}
 	
 	protected com.google.inject.Module getRuntimeModule(String grammar) {
-		if (IT_UNIVAQ_DISIM_HOUSEBUILDER_XTEXT_HOUSEBUILDERV2.equals(grammar)) {
-			return new HouseBuilderV2RuntimeModule();
+		if (IT_UNIVAQ_DISIM_HOUSEBUILDER_XTEXT_HOUSEBUILDER.equals(grammar)) {
+			return new HouseBuilderRuntimeModule();
 		}
 		throw new IllegalArgumentException(grammar);
 	}
 	
 	protected com.google.inject.Module getUiModule(String grammar) {
-		if (IT_UNIVAQ_DISIM_HOUSEBUILDER_XTEXT_HOUSEBUILDERV2.equals(grammar)) {
-			return new HouseBuilderV2UiModule(this);
+		if (IT_UNIVAQ_DISIM_HOUSEBUILDER_XTEXT_HOUSEBUILDER.equals(grammar)) {
+			return new HouseBuilderUiModule(this);
 		}
 		throw new IllegalArgumentException(grammar);
 	}
